@@ -1,0 +1,18 @@
+PODS:
+  - TLKit (0.0.1):
+    - TLKit/TLShortcut (= 0.0.1)
+  - TLKit/TLShortcut (0.0.1)
+
+DEPENDENCIES:
+  - TLKit (from `../`)
+
+EXTERNAL SOURCES:
+  TLKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TLKit: 167a1dd81538f45e9070adb75408ceed64896847
+
+PODFILE CHECKSUM: e06e5cf624c24caf42e0d3035e28f50bdb122752
+
+COCOAPODS: 1.2.1

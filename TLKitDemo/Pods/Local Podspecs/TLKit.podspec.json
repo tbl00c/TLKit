@@ -1,0 +1,28 @@
+{
+  "name": "TLKit",
+  "version": "0.0.1",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "summary": "iOS开发基础组件库",
+  "description": "iOS开发基础组件库，主要包含以下内容：\n1、shortcut: 通用宏，通用快捷c方法\n2、Categories：通用类拓展",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "libokun": "libokun@126.com"
+  },
+  "homepage": "https://github.com/tbl00c/TLKit",
+  "social_media_url": "https://github.com/tbl00c",
+  "source": {
+    "git": "https://github.com/tbl00c/TLKit.git",
+    "tag": "0.0.1"
+  },
+  "subspecs": [
+    {
+      "name": "TLShortcut",
+      "source_files": "TLKit/TLShortcut/*.{h, m}"
+    }
+  ]
+}
