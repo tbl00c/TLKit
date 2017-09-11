@@ -9,10 +9,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TLKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F75D13D8B19DB1F2748A07DCDC2916C8</key>
+		<key>997DFAAB8316F31B8C55CC70C1753361</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC45ABF23376D55752B751725441A295</key>
 		<dict>
 			<key>primary</key>
 			<true/>

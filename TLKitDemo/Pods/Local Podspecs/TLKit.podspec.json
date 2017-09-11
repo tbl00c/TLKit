@@ -6,15 +6,14 @@
   },
   "summary": "iOS开发基础组件库",
   "description": "iOS开发基础组件库，主要包含以下内容：\n1、shortcut: 通用宏，通用快捷c方法\n2、Categories：通用类拓展",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
   "authors": {
     "libokun": "libokun@126.com"
   },
   "homepage": "https://github.com/tbl00c/TLKit",
-  "social_media_url": "https://github.com/tbl00c",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "source": {
     "git": "https://github.com/tbl00c/TLKit.git",
     "tag": "0.0.1"
@@ -22,7 +21,103 @@
   "subspecs": [
     {
       "name": "TLShortcut",
-      "source_files": "TLKit/TLShortcut/*.{h, m}"
+      "source_files": "TLKit/TLShortcut/*.{h,m}"
+    },
+    {
+      "name": "TLCategories",
+      "subspecs": [
+        {
+          "name": "Foundation",
+          "subspecs": [
+            {
+              "name": "NSData",
+              "source_files": "TLKit/TLCategories/Foundation/NSData/*/*.{h,m}"
+            },
+            {
+              "name": "NSDate",
+              "source_files": "TLKit/TLCategories/Foundation/NSDate/*.{h,m}"
+            }
+          ]
+        },
+        {
+          "name": "UIKit",
+          "subspecs": [
+            {
+              "name": "UIView",
+              "source_files": "TLKit/TLCategories/UIKit/UIView/*.{h,m}",
+              "dependencies": {
+                "TLKit/TLShortcut": [
+
+                ],
+                "TLKit/TLCategories/Foundation/NSData": [
+
+                ]
+              }
+            },
+            {
+              "name": "UIScrollView",
+              "source_files": "TLKit/TLCategories/UIKit/UIScrollView/*.{h,m}"
+            },
+            {
+              "name": "UIButton",
+              "source_files": "TLKit/TLCategories/UIKit/UIButton/*.{h,m}",
+              "dependencies": {
+                "TLKit/TLCategories/UIKit/UIImage": [
+
+                ]
+              }
+            },
+            {
+              "name": "UIControl",
+              "source_files": "TLKit/TLCategories/UIKit/UIControl/*.{h,m}"
+            },
+            {
+              "name": "UICollectionViewCell",
+              "source_files": "TLKit/TLCategories/UIKit/UICollectionViewCell/*.{h,m}"
+            },
+            {
+              "name": "UIWindow",
+              "source_files": "TLKit/TLCategories/UIKit/UIWindow/*.{h,m}"
+            },
+            {
+              "name": "UIViewController",
+              "source_files": "TLKit/TLCategories/UIKit/UIViewController/*.{h,m}",
+              "dependencies": {
+                "TLKit/TLCategories/UIKit/UIView": [
+
+                ],
+                "TLKit/TLCategories/UIKit/UINavigationController": [
+
+                ]
+              }
+            },
+            {
+              "name": "UINavigationController",
+              "source_files": "TLKit/TLCategories/UIKit/UINavigationController/**/*.{h,m}"
+            },
+            {
+              "name": "UIColor",
+              "source_files": "TLKit/TLCategories/UIKit/UIColor/*.{h,m}"
+            },
+            {
+              "name": "UIImage",
+              "source_files": "TLKit/TLCategories/UIKit/UIImage/*.{h,m}"
+            },
+            {
+              "name": "UINavigationBar",
+              "source_files": "TLKit/TLCategories/UIKit/UINavigationBar/*.{h,m}"
+            },
+            {
+              "name": "UITextField",
+              "source_files": "TLKit/TLCategories/UIKit/UITextField/*.{h,m}"
+            },
+            {
+              "name": "UITextView",
+              "source_files": "TLKit/TLCategories/UIKit/UITextView/*.{h,m}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
