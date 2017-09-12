@@ -1,1 +1,1 @@
-../../../../../TLKit/TLCategories/Foundation/NSData/TLAssosiation/NSObject+Dealloc.h
+../../../../../TLKit/TLCategories/Foundation/NSObject/TLAssosiation/NSObject+Dealloc.h

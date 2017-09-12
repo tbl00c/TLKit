@@ -18,6 +18,8 @@
     "git": "https://github.com/tbl00c/TLKit.git",
     "tag": "0.0.1"
   },
+  "public_header_files": "TLKit/TLKit.h",
+  "source_files": "TLKit/TLKit.h",
   "subspecs": [
     {
       "name": "TLShortcut",
@@ -25,10 +27,18 @@
     },
     {
       "name": "TLCategories",
+      "public_header_files": "TLKit/TLCategories/TLCategories.h",
+      "source_files": "TLKit/TLCategories/TLCategories.h",
       "subspecs": [
         {
           "name": "Foundation",
+          "public_header_files": "TLKit/TLCategories/Foundation/Foundation+TLCategories.h",
+          "source_files": "TLKit/TLCategories/Foundation/Foundation+TLCategories.h",
           "subspecs": [
+            {
+              "name": "NSObject",
+              "source_files": "TLKit/TLCategories/Foundation/NSObject/**/*.{h,m}"
+            },
             {
               "name": "NSArray",
               "source_files": "TLKit/TLCategories/Foundation/NSArray/*.{h,m}"
@@ -47,7 +57,7 @@
             },
             {
               "name": "NSData",
-              "source_files": "TLKit/TLCategories/Foundation/NSData/**/*.{h,m}"
+              "source_files": "TLKit/TLCategories/Foundation/NSData/*.{h,m}"
             },
             {
               "name": "NSDate",
@@ -90,6 +100,8 @@
         },
         {
           "name": "UIKit",
+          "public_header_files": "TLKit/TLCategories/UIKit/UIKit+TLCategories.h",
+          "source_files": "TLKit/TLCategories/UIKit/UIKit+TLCategories.h",
           "subspecs": [
             {
               "name": "UIView",
@@ -98,7 +110,7 @@
                 "TLKit/TLShortcut": [
 
                 ],
-                "TLKit/TLCategories/Foundation/NSData": [
+                "TLKit/TLCategories/Foundation/NSObject": [
 
                 ]
               }

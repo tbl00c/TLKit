@@ -19,9 +19,6 @@
 		C2581F7E1F66ADE20029C3F4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2581F7D1F66ADE20029C3F4 /* QuartzCore.framework */; };
 		C2C2C8EB1F67A4850030FD2A /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C84B1F67A4850030FD2A /* NSArray+SafeAccess.m */; };
 		C2C2C8EC1F67A4850030FD2A /* NSBundle+AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C84E1F67A4850030FD2A /* NSBundle+AppIcon.m */; };
-		C2C2C8F11F67A4850030FD2A /* NSObject+Association.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C85A1F67A4850030FD2A /* NSObject+Association.m */; };
-		C2C2C8F21F67A4850030FD2A /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C85C1F67A4850030FD2A /* NSObject+Dealloc.m */; };
-		C2C2C8F31F67A4850030FD2A /* TLDeallocTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C85E1F67A4850030FD2A /* TLDeallocTask.m */; };
 		C2C2C8F41F67A4850030FD2A /* NSDate+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8611F67A4850030FD2A /* NSDate+Extensions.m */; };
 		C2C2C8F51F67A4850030FD2A /* NSDate+Relation.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8631F67A4850030FD2A /* NSDate+Relation.m */; };
 		C2C2C8F61F67A4850030FD2A /* NSDictionary+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8661F67A4850030FD2A /* NSDictionary+Extensions.m */; };
@@ -81,6 +78,10 @@
 		C2C2C9341F67A5210030FD2A /* NSData+Gzip.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C92F1F67A5210030FD2A /* NSData+Gzip.m */; };
 		C2C2C9351F67A5210030FD2A /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C9311F67A5210030FD2A /* NSData+Hash.m */; };
 		C2C2C9381F67A6520030FD2A /* UINavigationItem+Fixed.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C9371F67A6520030FD2A /* UINavigationItem+Fixed.m */; };
+		C2C2C9441F67B0500030FD2A /* NSObject+Association.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C93F1F67B0500030FD2A /* NSObject+Association.m */; };
+		C2C2C9451F67B0500030FD2A /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C9411F67B0500030FD2A /* NSObject+Dealloc.m */; };
+		C2C2C9461F67B0500030FD2A /* TLDeallocTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C9431F67B0500030FD2A /* TLDeallocTask.m */; };
+		C2C2C9491F67B7F60030FD2A /* UIViewController+NavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C9481F67B7F60030FD2A /* UIViewController+NavBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,12 +105,6 @@
 		C2C2C84B1F67A4850030FD2A /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
 		C2C2C84D1F67A4850030FD2A /* NSBundle+AppIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AppIcon.h"; sourceTree = "<group>"; };
 		C2C2C84E1F67A4850030FD2A /* NSBundle+AppIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AppIcon.m"; sourceTree = "<group>"; };
-		C2C2C8591F67A4850030FD2A /* NSObject+Association.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Association.h"; sourceTree = "<group>"; };
-		C2C2C85A1F67A4850030FD2A /* NSObject+Association.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Association.m"; sourceTree = "<group>"; };
-		C2C2C85B1F67A4850030FD2A /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
-		C2C2C85C1F67A4850030FD2A /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
-		C2C2C85D1F67A4850030FD2A /* TLDeallocTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDeallocTask.h; sourceTree = "<group>"; };
-		C2C2C85E1F67A4850030FD2A /* TLDeallocTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDeallocTask.m; sourceTree = "<group>"; };
 		C2C2C8601F67A4850030FD2A /* NSDate+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extensions.h"; sourceTree = "<group>"; };
 		C2C2C8611F67A4850030FD2A /* NSDate+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extensions.m"; sourceTree = "<group>"; };
 		C2C2C8621F67A4850030FD2A /* NSDate+Relation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Relation.h"; sourceTree = "<group>"; };
@@ -231,6 +226,18 @@
 		C2C2C9311F67A5210030FD2A /* NSData+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hash.m"; sourceTree = "<group>"; };
 		C2C2C9361F67A6520030FD2A /* UINavigationItem+Fixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Fixed.h"; sourceTree = "<group>"; };
 		C2C2C9371F67A6520030FD2A /* UINavigationItem+Fixed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Fixed.m"; sourceTree = "<group>"; };
+		C2C2C9391F67AEF50030FD2A /* TLCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLCategories.h; sourceTree = "<group>"; };
+		C2C2C93A1F67AF0E0030FD2A /* Foundation+TLCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Foundation+TLCategories.h"; sourceTree = "<group>"; };
+		C2C2C93B1F67AF1D0030FD2A /* UIKit+TLCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKit+TLCategories.h"; sourceTree = "<group>"; };
+		C2C2C93C1F67AF4B0030FD2A /* TLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLKit.h; sourceTree = "<group>"; };
+		C2C2C93E1F67B0500030FD2A /* NSObject+Association.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Association.h"; sourceTree = "<group>"; };
+		C2C2C93F1F67B0500030FD2A /* NSObject+Association.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Association.m"; sourceTree = "<group>"; };
+		C2C2C9401F67B0500030FD2A /* NSObject+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
+		C2C2C9411F67B0500030FD2A /* NSObject+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
+		C2C2C9421F67B0500030FD2A /* TLDeallocTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDeallocTask.h; sourceTree = "<group>"; };
+		C2C2C9431F67B0500030FD2A /* TLDeallocTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDeallocTask.m; sourceTree = "<group>"; };
+		C2C2C9471F67B7F60030FD2A /* UIViewController+NavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavBar.h"; sourceTree = "<group>"; };
+		C2C2C9481F67B7F60030FD2A /* UIViewController+NavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavBar.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +313,7 @@
 		C2C2C8461F67A4850030FD2A /* TLKit */ = {
 			isa = PBXGroup;
 			children = (
+				C2C2C93C1F67AF4B0030FD2A /* TLKit.h */,
 				C2C2C8471F67A4850030FD2A /* TLCategories */,
 				C2C2C8E71F67A4850030FD2A /* TLShortcut */,
 			);
@@ -316,6 +324,7 @@
 		C2C2C8471F67A4850030FD2A /* TLCategories */ = {
 			isa = PBXGroup;
 			children = (
+				C2C2C9391F67AEF50030FD2A /* TLCategories.h */,
 				C2C2C8481F67A4850030FD2A /* Foundation */,
 				C2C2C8951F67A4850030FD2A /* UIKit */,
 			);
@@ -325,19 +334,20 @@
 		C2C2C8481F67A4850030FD2A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				C2C2C8491F67A4850030FD2A /* NSArray */,
-				C2C2C84C1F67A4850030FD2A /* NSBundle */,
-				C2C2C84F1F67A4850030FD2A /* NSData */,
-				C2C2C85F1F67A4850030FD2A /* NSDate */,
-				C2C2C8641F67A4850030FD2A /* NSDictionary */,
-				C2C2C8691F67A4850030FD2A /* NSFileManager */,
-				C2C2C86C1F67A4850030FD2A /* NSMutableArray */,
-				C2C2C86F1F67A4850030FD2A /* NSMutableDictionary */,
-				C2C2C8721F67A4850030FD2A /* NSNotificationCenter */,
+				C2C2C93A1F67AF0E0030FD2A /* Foundation+TLCategories.h */,
 				C2C2C8751F67A4850030FD2A /* NSObject */,
 				C2C2C87C1F67A4850030FD2A /* NSString */,
-				C2C2C88F1F67A4850030FD2A /* NSTimer */,
+				C2C2C84F1F67A4850030FD2A /* NSData */,
+				C2C2C8491F67A4850030FD2A /* NSArray */,
+				C2C2C86C1F67A4850030FD2A /* NSMutableArray */,
+				C2C2C8641F67A4850030FD2A /* NSDictionary */,
+				C2C2C86F1F67A4850030FD2A /* NSMutableDictionary */,
 				C2C2C8921F67A4850030FD2A /* NSURL */,
+				C2C2C85F1F67A4850030FD2A /* NSDate */,
+				C2C2C88F1F67A4850030FD2A /* NSTimer */,
+				C2C2C8691F67A4850030FD2A /* NSFileManager */,
+				C2C2C8721F67A4850030FD2A /* NSNotificationCenter */,
+				C2C2C84C1F67A4850030FD2A /* NSBundle */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -371,22 +381,8 @@
 				C2C2C92F1F67A5210030FD2A /* NSData+Gzip.m */,
 				C2C2C9301F67A5210030FD2A /* NSData+Hash.h */,
 				C2C2C9311F67A5210030FD2A /* NSData+Hash.m */,
-				C2C2C8581F67A4850030FD2A /* TLAssosiation */,
 			);
 			path = NSData;
-			sourceTree = "<group>";
-		};
-		C2C2C8581F67A4850030FD2A /* TLAssosiation */ = {
-			isa = PBXGroup;
-			children = (
-				C2C2C8591F67A4850030FD2A /* NSObject+Association.h */,
-				C2C2C85A1F67A4850030FD2A /* NSObject+Association.m */,
-				C2C2C85B1F67A4850030FD2A /* NSObject+Dealloc.h */,
-				C2C2C85C1F67A4850030FD2A /* NSObject+Dealloc.m */,
-				C2C2C85D1F67A4850030FD2A /* TLDeallocTask.h */,
-				C2C2C85E1F67A4850030FD2A /* TLDeallocTask.m */,
-			);
-			path = TLAssosiation;
 			sourceTree = "<group>";
 		};
 		C2C2C85F1F67A4850030FD2A /* NSDate */ = {
@@ -450,6 +446,7 @@
 		C2C2C8751F67A4850030FD2A /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				C2C2C93D1F67B0500030FD2A /* TLAssosiation */,
 				C2C2C8761F67A4850030FD2A /* NSObject+EasyCopy.h */,
 				C2C2C8771F67A4850030FD2A /* NSObject+EasyCopy.m */,
 				C2C2C8781F67A4850030FD2A /* NSObject+KVOBlock.h */,
@@ -506,19 +503,20 @@
 		C2C2C8951F67A4850030FD2A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				C2C2C8961F67A4850030FD2A /* UIBarButtonItem */,
-				C2C2C8991F67A4850030FD2A /* UIButton */,
-				C2C2C89C1F67A4850030FD2A /* UICollectionViewCell */,
-				C2C2C89F1F67A4850030FD2A /* UIColor */,
+				C2C2C93B1F67AF1D0030FD2A /* UIKit+TLCategories.h */,
+				C2C2C8D61F67A4850030FD2A /* UIView */,
 				C2C2C8A41F67A4850030FD2A /* UIControl */,
+				C2C2C8991F67A4850030FD2A /* UIButton */,
 				C2C2C8A71F67A4850030FD2A /* UIImage */,
-				C2C2C8AC1F67A4850030FD2A /* UINavigationBar */,
-				C2C2C8AF1F67A4850030FD2A /* UINavigationController */,
-				C2C2C8C41F67A4850030FD2A /* UINavigationItem */,
+				C2C2C89F1F67A4850030FD2A /* UIColor */,
 				C2C2C8C51F67A4850030FD2A /* UIScrollView */,
 				C2C2C8CA1F67A4850030FD2A /* UITextField */,
 				C2C2C8CF1F67A4850030FD2A /* UITextView */,
-				C2C2C8D61F67A4850030FD2A /* UIView */,
+				C2C2C89C1F67A4850030FD2A /* UICollectionViewCell */,
+				C2C2C8961F67A4850030FD2A /* UIBarButtonItem */,
+				C2C2C8AC1F67A4850030FD2A /* UINavigationBar */,
+				C2C2C8C41F67A4850030FD2A /* UINavigationItem */,
+				C2C2C8AF1F67A4850030FD2A /* UINavigationController */,
 				C2C2C8E11F67A4850030FD2A /* UIViewController */,
 				C2C2C8E41F67A4850030FD2A /* UIWindow */,
 			);
@@ -680,10 +678,10 @@
 		C2C2C8D61F67A4850030FD2A /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C2C2C8D71F67A4850030FD2A /* UIView+Extensions.h */,
-				C2C2C8D81F67A4850030FD2A /* UIView+Extensions.m */,
 				C2C2C8D91F67A4850030FD2A /* UIView+Frame.h */,
 				C2C2C8DA1F67A4850030FD2A /* UIView+Frame.m */,
+				C2C2C8D71F67A4850030FD2A /* UIView+Extensions.h */,
+				C2C2C8D81F67A4850030FD2A /* UIView+Extensions.m */,
 				C2C2C8DB1F67A4850030FD2A /* UIView+Screenshot.h */,
 				C2C2C8DC1F67A4850030FD2A /* UIView+Screenshot.m */,
 				C2C2C8DD1F67A4850030FD2A /* UIView+Separator.h */,
@@ -699,6 +697,8 @@
 			children = (
 				C2C2C8E21F67A4850030FD2A /* UIViewController+TipView.h */,
 				C2C2C8E31F67A4850030FD2A /* UIViewController+TipView.m */,
+				C2C2C9471F67B7F60030FD2A /* UIViewController+NavBar.h */,
+				C2C2C9481F67B7F60030FD2A /* UIViewController+NavBar.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -720,6 +720,19 @@
 				C2C2C8EA1F67A4850030FD2A /* TLShortcutMethod.m */,
 			);
 			path = TLShortcut;
+			sourceTree = "<group>";
+		};
+		C2C2C93D1F67B0500030FD2A /* TLAssosiation */ = {
+			isa = PBXGroup;
+			children = (
+				C2C2C93E1F67B0500030FD2A /* NSObject+Association.h */,
+				C2C2C93F1F67B0500030FD2A /* NSObject+Association.m */,
+				C2C2C9401F67B0500030FD2A /* NSObject+Dealloc.h */,
+				C2C2C9411F67B0500030FD2A /* NSObject+Dealloc.m */,
+				C2C2C9421F67B0500030FD2A /* TLDeallocTask.h */,
+				C2C2C9431F67B0500030FD2A /* TLDeallocTask.m */,
+			);
+			path = TLAssosiation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -796,7 +809,6 @@
 			files = (
 				C2C2C9381F67A6520030FD2A /* UINavigationItem+Fixed.m in Sources */,
 				C2C2C90B1F67A4850030FD2A /* UIButton+Extensions.m in Sources */,
-				C2C2C8F31F67A4850030FD2A /* TLDeallocTask.m in Sources */,
 				C2C2C9221F67A4850030FD2A /* UIView+Extensions.m in Sources */,
 				C2C2C91E1F67A4850030FD2A /* UITextField+Select.m in Sources */,
 				C2C2C9351F67A5210030FD2A /* NSData+Hash.m in Sources */,
@@ -806,7 +818,6 @@
 				C2C2C9061F67A4850030FD2A /* NSString+StringPages.m in Sources */,
 				C2C2C9081F67A4850030FD2A /* NSTimer+Block.m in Sources */,
 				C2C2C91B1F67A4850030FD2A /* UIScrollView+Extensions.m in Sources */,
-				C2C2C8F11F67A4850030FD2A /* NSObject+Association.m in Sources */,
 				C2C2C9131F67A4850030FD2A /* _JZNavigationInteractiveTransition.m in Sources */,
 				C2C2C9051F67A4850030FD2A /* NSString+Size.m in Sources */,
 				C2C2C90A1F67A4850030FD2A /* UIBarButtonItem+Action.m in Sources */,
@@ -827,13 +838,13 @@
 				C2C2C9001F67A4850030FD2A /* NSString+Contains.m in Sources */,
 				C2C2C9121F67A4850030FD2A /* UINavigationBar+Extensions.m in Sources */,
 				C2C2C8F51F67A4850030FD2A /* NSDate+Relation.m in Sources */,
+				C2C2C9441F67B0500030FD2A /* NSObject+Association.m in Sources */,
 				C2C2C8F71F67A4850030FD2A /* NSDictionary+SafeAccess.m in Sources */,
 				C2C2C8FC1F67A4850030FD2A /* NSObject+EasyCopy.m in Sources */,
 				C2C2C9011F67A4850030FD2A /* NSString+Encrypt.m in Sources */,
 				C2C2C9041F67A4850030FD2A /* NSString+PinYin.m in Sources */,
 				C2C2C9281F67A4850030FD2A /* UIWindow+Extensions.m in Sources */,
 				C2C2C8FF1F67A4850030FD2A /* NSString+Base64.m in Sources */,
-				C2C2C8F21F67A4850030FD2A /* NSObject+Dealloc.m in Sources */,
 				C2C2C90F1F67A4850030FD2A /* UIControl+ActionBlocks.m in Sources */,
 				C2C2C9251F67A4850030FD2A /* UIView+Separator.m in Sources */,
 				C2C2C9291F67A4850030FD2A /* TLShortcutMethod.m in Sources */,
@@ -842,10 +853,13 @@
 				C2C2C9161F67A4850030FD2A /* UINavigationBar+JZExtension.m in Sources */,
 				C2C2C9091F67A4850030FD2A /* NSURL+Params.m in Sources */,
 				C2C2C91D1F67A4850030FD2A /* UITextField+LengthLimit.m in Sources */,
+				C2C2C9491F67B7F60030FD2A /* UIViewController+NavBar.m in Sources */,
 				C2C2C91C1F67A4850030FD2A /* UIScrollView+Pages.m in Sources */,
 				C2C2C9031F67A4850030FD2A /* NSString+NormalRegex.m in Sources */,
 				C2C2C8F61F67A4850030FD2A /* NSDictionary+Extensions.m in Sources */,
 				C2C2C8FE1F67A4850030FD2A /* NSObject+Reflection.m in Sources */,
+				C2C2C9461F67B0500030FD2A /* TLDeallocTask.m in Sources */,
+				C2C2C9451F67B0500030FD2A /* NSObject+Dealloc.m in Sources */,
 				C2581E761F66A71F0029C3F4 /* AppDelegate.m in Sources */,
 				C2C2C9111F67A4850030FD2A /* UIImage+Size.m in Sources */,
 				C2C2C91F1F67A4850030FD2A /* UITextView+LengthLimit.m in Sources */,

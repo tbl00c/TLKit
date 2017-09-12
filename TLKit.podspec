@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TLKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.platform     = :ios, "8.0"
   s.summary      = "iOS开发基础组件库"
   s.description  = <<-DESC
@@ -14,6 +14,9 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.source       = { :git => "https://github.com/tbl00c/TLKit.git", :tag => s.version }
 
+  s.public_header_files = "TLKit/TLKit.h"
+  s.source_files = "TLKit/TLKit.h"
+
   # 通用宏定义、快捷方法
   s.subspec 'TLShortcut' do |shortcut|
     shortcut.source_files = "TLKit/TLShortcut/*.{h,m}"
@@ -22,9 +25,19 @@ Pod::Spec.new do |s|
   
   # 通用分类
   s.subspec 'TLCategories' do |categories|
+  	categories.public_header_files = "TLKit/TLCategories/TLCategories.h"
+  	categories.source_files = "TLKit/TLCategories/TLCategories.h"
 
     # Foundation
     categories.subspec 'Foundation' do |foundation|
+      foundation.public_header_files = "TLKit/TLCategories/Foundation/Foundation+TLCategories.h"
+      foundation.source_files = "TLKit/TLCategories/Foundation/Foundation+TLCategories.h"
+
+      # NSObject
+      foundation.subspec 'NSObject' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSObject/**/*.{h,m}"
+      end
+
       # NSArray
       foundation.subspec 'NSArray' do |ss|
         ss.source_files = "TLKit/TLCategories/Foundation/NSArray/*.{h,m}"
@@ -47,7 +60,7 @@ Pod::Spec.new do |s|
 
       # NSData
       foundation.subspec 'NSData' do |ss|
-        ss.source_files = "TLKit/TLCategories/Foundation/NSData/**/*.{h,m}"
+        ss.source_files = "TLKit/TLCategories/Foundation/NSData/*.{h,m}"
       end
 
       # NSDate
@@ -95,11 +108,14 @@ Pod::Spec.new do |s|
 
     # UIKit
     categories.subspec 'UIKit' do |uikit|
+      uikit.public_header_files = 'TLKit/TLCategories/UIKit/UIKit+TLCategories.h'
+      uikit.source_files = 'TLKit/TLCategories/UIKit/UIKit+TLCategories.h'
+
       # UIView
       uikit.subspec 'UIView' do |ss|
         ss.source_files = "TLKit/TLCategories/UIKit/UIView/*.{h,m}"
         ss.dependency "TLKit/TLShortcut"
-        ss.dependency "TLKit/TLCategories/Foundation/NSData"
+        ss.dependency "TLKit/TLCategories/Foundation/NSObject"
       end
 
       # UIScrollView

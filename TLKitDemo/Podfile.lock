@@ -16,6 +16,7 @@ PODS:
     - TLKit/TLCategories/Foundation/NSMutableArray (= 0.0.1)
     - TLKit/TLCategories/Foundation/NSMutableDictionary (= 0.0.1)
     - TLKit/TLCategories/Foundation/NSNotificationCenter (= 0.0.1)
+    - TLKit/TLCategories/Foundation/NSObject (= 0.0.1)
     - TLKit/TLCategories/Foundation/NSString (= 0.0.1)
     - TLKit/TLCategories/Foundation/NSTimer (= 0.0.1)
     - TLKit/TLCategories/Foundation/NSURL (= 0.0.1)
@@ -28,6 +29,7 @@ PODS:
   - TLKit/TLCategories/Foundation/NSMutableArray (0.0.1)
   - TLKit/TLCategories/Foundation/NSMutableDictionary (0.0.1)
   - TLKit/TLCategories/Foundation/NSNotificationCenter (0.0.1)
+  - TLKit/TLCategories/Foundation/NSObject (0.0.1)
   - TLKit/TLCategories/Foundation/NSString (0.0.1):
     - TLKit/TLCategories/Foundation/NSData
   - TLKit/TLCategories/Foundation/NSTimer (0.0.1)
@@ -63,7 +65,7 @@ PODS:
   - TLKit/TLCategories/UIKit/UITextField (0.0.1)
   - TLKit/TLCategories/UIKit/UITextView (0.0.1)
   - TLKit/TLCategories/UIKit/UIView (0.0.1):
-    - TLKit/TLCategories/Foundation/NSData
+    - TLKit/TLCategories/Foundation/NSObject
     - TLKit/TLShortcut
   - TLKit/TLCategories/UIKit/UIViewController (0.0.1):
     - TLKit/TLCategories/UIKit/UIBarButtonItem
@@ -80,8 +82,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TLKit: 332151a6d7763abc8b132e6575956a7185acfd09
+  TLKit: 77c7f97fbf994e5d7faf6f8795d93162306a1416
 
-PODFILE CHECKSUM: e06e5cf624c24caf42e0d3035e28f50bdb122752
+PODFILE CHECKSUM: 63cba13f7c30dfd331aeac0d7ae64a87fa8b7d30
 
 COCOAPODS: 1.2.1
