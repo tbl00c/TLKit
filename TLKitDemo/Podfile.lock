@@ -16,6 +16,7 @@ PODS:
     - TLKit/TLCategories/Foundation/NSMutableArray (= 0.0.1)
     - TLKit/TLCategories/Foundation/NSMutableDictionary (= 0.0.1)
     - TLKit/TLCategories/Foundation/NSNotificationCenter (= 0.0.1)
+    - TLKit/TLCategories/Foundation/NSString (= 0.0.1)
     - TLKit/TLCategories/Foundation/NSTimer (= 0.0.1)
     - TLKit/TLCategories/Foundation/NSURL (= 0.0.1)
   - TLKit/TLCategories/Foundation/NSArray (0.0.1)
@@ -27,6 +28,8 @@ PODS:
   - TLKit/TLCategories/Foundation/NSMutableArray (0.0.1)
   - TLKit/TLCategories/Foundation/NSMutableDictionary (0.0.1)
   - TLKit/TLCategories/Foundation/NSNotificationCenter (0.0.1)
+  - TLKit/TLCategories/Foundation/NSString (0.0.1):
+    - TLKit/TLCategories/Foundation/NSData
   - TLKit/TLCategories/Foundation/NSTimer (0.0.1)
   - TLKit/TLCategories/Foundation/NSURL (0.0.1)
   - TLKit/TLCategories/UIKit (0.0.1):
@@ -77,7 +80,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TLKit: eceee980e7579b81d2920d5eeb899963b7d4dadc
+  TLKit: 332151a6d7763abc8b132e6575956a7185acfd09
 
 PODFILE CHECKSUM: e06e5cf624c24caf42e0d3035e28f50bdb122752
 

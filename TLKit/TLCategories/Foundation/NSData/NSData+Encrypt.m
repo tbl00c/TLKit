@@ -7,6 +7,7 @@
 //
 
 #import "NSData+Encrypt.h"
+#import <CommonCrypto/CommonCryptor.h>
 
 @implementation NSData (Encrypt)
 static void FixKeyLengths(CCAlgorithm algorithm, NSMutableData * keyData, NSMutableData * ivData)

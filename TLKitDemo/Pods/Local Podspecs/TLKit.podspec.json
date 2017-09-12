@@ -47,11 +47,20 @@
             },
             {
               "name": "NSData",
-              "source_files": "TLKit/TLCategories/Foundation/NSData/*/*.{h,m}"
+              "source_files": "TLKit/TLCategories/Foundation/NSData/**/*.{h,m}"
             },
             {
               "name": "NSDate",
               "source_files": "TLKit/TLCategories/Foundation/NSDate/*.{h,m}"
+            },
+            {
+              "name": "NSString",
+              "source_files": "TLKit/TLCategories/Foundation/NSString/*.{h,m}",
+              "dependencies": {
+                "TLKit/TLCategories/Foundation/NSData": [
+
+                ]
+              }
             },
             {
               "name": "NSTimer",
