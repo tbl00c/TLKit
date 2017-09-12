@@ -1,1 +1,1 @@
-../../../../../TLKit/TLCategories/Foundation/NSNotificationCenter/NSNotificationCenter+MainThread.h
+../../../TLKit/TLKit/TLCategories/Foundation/NSNotificationCenter/NSNotificationCenter+MainThread.h

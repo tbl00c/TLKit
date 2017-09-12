@@ -9,12 +9,10 @@
 #ifndef TLCategories_h
 #define TLCategories_h
 
-//MARK: 通用宏定义、快捷方法
-#import "TLShortcutMacros.h"
-#import "TLShortcutMethod.h"
+// Foundation 常用分类
+#import "Foundation+TLCategories.h"
 
-//MARK: 分类
-#import "Foundation+TLCategories.h"                 // Foundation 常用分类
-#import "UIKit+TLCategories.h"                      // UIKit 常用分类
+// UIKit 常用分类
+#import "UIKit+TLCategories.h"
 
 #endif /* TLCategories_h */

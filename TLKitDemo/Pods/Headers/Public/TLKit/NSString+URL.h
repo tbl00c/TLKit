@@ -1,1 +1,1 @@
-../../../../../TLKit/TLCategories/Foundation/NSString/NSString+URL.h
+../../../TLKit/TLKit/TLCategories/Foundation/NSString/NSString+URL.h

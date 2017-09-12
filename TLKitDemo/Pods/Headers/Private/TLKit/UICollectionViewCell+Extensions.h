@@ -1,1 +1,1 @@
-../../../../../TLKit/TLCategories/UIKit/UICollectionViewCell/UICollectionViewCell+Extensions.h
+../../../TLKit/TLKit/TLCategories/UIKit/UICollectionViewCell/UICollectionViewCell+Extensions.h

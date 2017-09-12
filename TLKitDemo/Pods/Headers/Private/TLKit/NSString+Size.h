@@ -1,1 +1,1 @@
-../../../../../TLKit/TLCategories/Foundation/NSString/NSString+Size.h
+../../../TLKit/TLKit/TLCategories/Foundation/NSString/NSString+Size.h

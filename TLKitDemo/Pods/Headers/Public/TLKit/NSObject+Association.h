@@ -1,1 +1,1 @@
-../../../../../TLKit/TLCategories/Foundation/NSObject/TLAssosiation/NSObject+Association.h
+../../../TLKit/TLKit/TLCategories/Foundation/NSObject/TLAssosiation/NSObject+Association.h

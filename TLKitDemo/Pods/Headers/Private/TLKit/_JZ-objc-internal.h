@@ -1,1 +1,1 @@
-../../../../../TLKit/TLCategories/UIKit/UINavigationController/JZNavigationExtension/Private/_JZ-objc-internal.h
+../../../TLKit/TLKit/TLCategories/UIKit/UINavigationController/JZNavigationExtension/Private/_JZ-objc-internal.h
