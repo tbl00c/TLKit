@@ -25,9 +25,29 @@ Pod::Spec.new do |s|
 
     # Foundation
     categories.subspec 'Foundation' do |foundation|
+      # NSArray
+      foundation.subspec 'NSArray' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSArray/*.{h,m}"
+      end
+
+      # NSMutableArray
+      foundation.subspec 'NSMutableArray' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSMutableArray/*.{h,m}"
+      end
+
+      # NSDictionary
+      foundation.subspec 'NSDictionary' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSDictionary/*.{h,m}"
+      end
+
+      # NSMutableDictionary
+      foundation.subspec 'NSMutableDictionary' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSMutableDictionary/*.{h,m}"
+      end
+
       # NSData
       foundation.subspec 'NSData' do |ss|
-        ss.source_files = "TLKit/TLCategories/Foundation/NSData/*/*.{h,m}"
+        ss.source_files = "TLKit/TLCategories/Foundation/NSData/**/*.{h,m}"
       end
 
       # NSDate
@@ -35,6 +55,41 @@ Pod::Spec.new do |s|
         ss.source_files = "TLKit/TLCategories/Foundation/NSDate/*.{h,m}"
       end
 
+      # NSString
+      foundation.subspec 'NSString' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSString/*.{h,m}"
+        ss.dependency "TLKit/TLCategories/Foundation/NSData"
+      end
+
+      # NSTimer
+      foundation.subspec 'NSTimer' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSTimer/*.{h,m}"
+      end
+
+      # NSBundle
+      foundation.subspec 'NSBundle' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSBundle/*.{h,m}"
+      end
+
+      # NSURL
+      foundation.subspec 'NSURL' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSURL/*.{h,m}"
+      end
+
+      # NSFileManager
+      foundation.subspec 'NSFileManager' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSFileManager/*.{h,m}"
+      end
+
+      # NSNotificationCenter
+      foundation.subspec 'NSNotificationCenter' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSNotificationCenter/*.{h,m}"
+      end
+
+      # NSDictionary
+      foundation.subspec 'NSDictionary' do |ss|
+        ss.source_files = "TLKit/TLCategories/Foundation/NSDictionary/*.{h,m}"
+      end
       
     end
 
@@ -78,6 +133,7 @@ Pod::Spec.new do |s|
         ss.source_files = "TLKit/TLCategories/UIKit/UIViewController/*.{h,m}"
         ss.dependency "TLKit/TLCategories/UIKit/UIView"
         ss.dependency "TLKit/TLCategories/UIKit/UINavigationController"
+        ss.dependency "TLKit/TLCategories/UIKit/UIBarButtonItem"
       end
 
       # UINavigationController
@@ -95,11 +151,6 @@ Pod::Spec.new do |s|
         ss.source_files = "TLKit/TLCategories/UIKit/UIImage/*.{h,m}"
       end
 
-      # UINavigationBar
-      uikit.subspec 'UINavigationBar' do |ss|
-        ss.source_files = "TLKit/TLCategories/UIKit/UINavigationBar/*.{h,m}"
-      end
-
       # UITextField
       uikit.subspec 'UITextField' do |ss|
         ss.source_files = "TLKit/TLCategories/UIKit/UITextField/*.{h,m}"
@@ -110,6 +161,21 @@ Pod::Spec.new do |s|
         ss.source_files = "TLKit/TLCategories/UIKit/UITextView/*.{h,m}"
       end
 
+      # UIBarButtonItem
+      uikit.subspec 'UIBarButtonItem' do |ss|
+        ss.source_files = "TLKit/TLCategories/UIKit/UIBarButtonItem/*.{h,m}"
+      end
+
+      # UINavigationItem
+      uikit.subspec 'UINavigationItem' do |ss|
+        ss.source_files = "TLKit/TLCategories/UIKit/UINavigationItem/*.{h,m}"
+        ss.dependency "TLKit/TLCategories/UIKit/UIBarButtonItem"
+      end
+
+      # UINavigationBar
+      uikit.subspec 'UINavigationBar' do |ss|
+        ss.source_files = "TLKit/TLCategories/UIKit/UINavigationBar/*.{h,m}"
+      end
     end
     
   end

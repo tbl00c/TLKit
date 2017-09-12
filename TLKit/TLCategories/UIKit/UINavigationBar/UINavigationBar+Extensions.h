@@ -10,9 +10,9 @@
 
 @interface UINavigationBar (Extensions)
 
-- (void)setBackgroundColor:(UIColor *)backgroundColor;
-- (void)setElementsAlpha:(CGFloat)alpha;
-- (void)setTranslationY:(CGFloat)translationY;
-- (void)reset;
+- (void)tt_setBackgroundColor:(UIColor *)backgroundColor;
+- (void)tt_setElementsAlpha:(CGFloat)alpha;
+- (void)tt_setTranslationY:(CGFloat)translationY;
+- (void)tt_reset;
 
 @end

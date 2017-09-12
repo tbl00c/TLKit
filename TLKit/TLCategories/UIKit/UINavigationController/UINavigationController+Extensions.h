@@ -1,9 +1,9 @@
 //
 //  UINavigationController+Extensions.h
-//  zhuanzhuan
+//  TLKit
 //
 //  Created by 李伯坤 on 2017/8/28.
-//  Copyright © 2017年 转转. All rights reserved.
+//  Copyright © 2017年 libokun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,7 +11,7 @@
 @interface UINavigationController (Extensions)
 
 /// 跟控制器
-@property (nonatomic, strong, readonly) UIViewController *zzRootViewController;
+@property (nonatomic, strong, readonly) UIViewController *ttRootViewController;
 
 /// 是不是只有rootVC
 @property (nonatomic, assign, readonly) BOOL isOnlyContainRootViewController;

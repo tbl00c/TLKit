@@ -59,7 +59,7 @@
         [tipView removeFromSuperview];
     }
     
-    [self setZz_tipView:tipView];
+    [self setTt_tipView:tipView];
     [self set__tt_tipview_userData:userData];
     [self set__tt_tipview_retryAction:retryAction];
     [tipView setFrame:self.bounds];
@@ -73,16 +73,16 @@
 
 - (void)removeTipView
 {
-    if (self.zz_tipView) {
-        [self.zz_tipView removeFromSuperview];
+    if (self.tt_tipView) {
+        [self.tt_tipView removeFromSuperview];
     }
 }
 
-- (void)setZz_tipView:(UIView *)zz_tipView
+- (void)setTt_tipView:(UIView *)tt_tipView
 {
-    [self setAssociatedObject:zz_tipView forKey:@"__tt_tipView" association:TLAssociationStrong isAtomic:NO];
+    [self setAssociatedObject:tt_tipView forKey:@"__tt_tipView" association:TLAssociationStrong isAtomic:NO];
 }
-- (UIView *)zz_tipView
+- (UIView *)tt_tipView
 {
     return [self associatedObjectForKey:@"__tt_tipView"];
 }

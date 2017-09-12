@@ -30,12 +30,52 @@
           "name": "Foundation",
           "subspecs": [
             {
+              "name": "NSArray",
+              "source_files": "TLKit/TLCategories/Foundation/NSArray/*.{h,m}"
+            },
+            {
+              "name": "NSMutableArray",
+              "source_files": "TLKit/TLCategories/Foundation/NSMutableArray/*.{h,m}"
+            },
+            {
+              "name": "NSDictionary",
+              "source_files": "TLKit/TLCategories/Foundation/NSDictionary/*.{h,m}"
+            },
+            {
+              "name": "NSMutableDictionary",
+              "source_files": "TLKit/TLCategories/Foundation/NSMutableDictionary/*.{h,m}"
+            },
+            {
               "name": "NSData",
               "source_files": "TLKit/TLCategories/Foundation/NSData/*/*.{h,m}"
             },
             {
               "name": "NSDate",
               "source_files": "TLKit/TLCategories/Foundation/NSDate/*.{h,m}"
+            },
+            {
+              "name": "NSTimer",
+              "source_files": "TLKit/TLCategories/Foundation/NSTimer/*.{h,m}"
+            },
+            {
+              "name": "NSBundle",
+              "source_files": "TLKit/TLCategories/Foundation/NSBundle/*.{h,m}"
+            },
+            {
+              "name": "NSURL",
+              "source_files": "TLKit/TLCategories/Foundation/NSURL/*.{h,m}"
+            },
+            {
+              "name": "NSFileManager",
+              "source_files": "TLKit/TLCategories/Foundation/NSFileManager/*.{h,m}"
+            },
+            {
+              "name": "NSNotificationCenter",
+              "source_files": "TLKit/TLCategories/Foundation/NSNotificationCenter/*.{h,m}"
+            },
+            {
+              "name": "NSDictionary",
+              "source_files": "TLKit/TLCategories/Foundation/NSDictionary/*.{h,m}"
             }
           ]
         },
@@ -88,6 +128,9 @@
                 ],
                 "TLKit/TLCategories/UIKit/UINavigationController": [
 
+                ],
+                "TLKit/TLCategories/UIKit/UIBarButtonItem": [
+
                 ]
               }
             },
@@ -104,16 +147,29 @@
               "source_files": "TLKit/TLCategories/UIKit/UIImage/*.{h,m}"
             },
             {
-              "name": "UINavigationBar",
-              "source_files": "TLKit/TLCategories/UIKit/UINavigationBar/*.{h,m}"
-            },
-            {
               "name": "UITextField",
               "source_files": "TLKit/TLCategories/UIKit/UITextField/*.{h,m}"
             },
             {
               "name": "UITextView",
               "source_files": "TLKit/TLCategories/UIKit/UITextView/*.{h,m}"
+            },
+            {
+              "name": "UIBarButtonItem",
+              "source_files": "TLKit/TLCategories/UIKit/UIBarButtonItem/*.{h,m}"
+            },
+            {
+              "name": "UINavigationItem",
+              "source_files": "TLKit/TLCategories/UIKit/UINavigationItem/*.{h,m}",
+              "dependencies": {
+                "TLKit/TLCategories/UIKit/UIBarButtonItem": [
+
+                ]
+              }
+            },
+            {
+              "name": "UINavigationBar",
+              "source_files": "TLKit/TLCategories/UIKit/UINavigationBar/*.{h,m}"
             }
           ]
         }

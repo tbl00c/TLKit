@@ -30,7 +30,6 @@ static const char *tt_placeholderTextView = "tt_placeholderTextView";
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidBeginEditing:) name:UITextViewTextDidBeginEditingNotification object:self];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidEndEditing:) name:UITextViewTextDidEndEditingNotification object:self];
-        
     }
     return textView;
 }

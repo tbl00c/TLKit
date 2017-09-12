@@ -346,7 +346,7 @@ __attribute__((constructor)) static void JZ_Inject(void) {
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wundeclared-selector"
-    // zz pop gesture
+    // pop gesture
     if ([fromViewController respondsToSelector:@selector(viewControllerWillPop)]) {
         [fromViewController performSelector:@selector(viewControllerWillPop) withObject:nil];
     }
@@ -369,7 +369,7 @@ __attribute__((constructor)) static void JZ_Inject(void) {
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wundeclared-selector"
-    // zz pop gesture
+    // pop gesture
     if ([fromViewController respondsToSelector:@selector(viewControllerWillPop)]) {
         [fromViewController performSelector:@selector(viewControllerWillPop) withObject:nil];
     }
@@ -393,7 +393,7 @@ __attribute__((constructor)) static void JZ_Inject(void) {
     UIViewController *fromViewController = self.childViewControllers.lastObject;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wundeclared-selector"
-    // zz pop gesture
+    // pop gesture
     if ([fromViewController respondsToSelector:@selector(viewControllerWillPop)]) {
         [fromViewController performSelector:@selector(viewControllerWillPop) withObject:nil];
     }

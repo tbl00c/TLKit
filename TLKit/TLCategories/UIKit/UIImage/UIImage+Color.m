@@ -39,15 +39,6 @@
     return newImage;
 }
 
-+ (UIImage *)imageFromColor:(UIColor *)color {
-    CGSize imageSize = CGSizeMake(1, 1);
-    UIGraphicsBeginImageContextWithOptions(imageSize, 0, [UIScreen mainScreen].scale);
-    [color set];
-    UIRectFill(CGRectMake(0, 0, imageSize.width, imageSize.height));
-    UIImage *retImg = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return retImg;
-}
 
 #pragma mark - 
 - (UIImage *)grayImage {

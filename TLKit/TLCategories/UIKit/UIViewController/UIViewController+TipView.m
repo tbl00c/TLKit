@@ -26,9 +26,9 @@
     [self.view removeTipView];
 }
 
-- (UIView *)zz_tipView
+- (UIView *)tt_tipView
 {
-    return self.view.zz_tipView;
+    return self.view.tt_tipView;
 }
 
 @end

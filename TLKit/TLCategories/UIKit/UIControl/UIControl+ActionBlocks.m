@@ -9,7 +9,7 @@
 #import "UIControl+ActionBlocks.h"
 #import <objc/runtime.h>
 
-#define ZZ_UICONTROL_EVENT(methodName, eventName) \
+#define TL_UICONTROL_EVENT(methodName, eventName) \
 -(void)methodName : (void (^)(void))eventBlock \
 { \
     objc_setAssociatedObject(self, @selector(methodName:), eventBlock, OBJC_ASSOCIATION_COPY_NONATOMIC); \
@@ -27,19 +27,19 @@
 
 @implementation UIControl (ActionBlocks)
 
-ZZ_UICONTROL_EVENT(zz_touchDown, TouchDown)
-ZZ_UICONTROL_EVENT(zz_touchDownRepeat, TouchDownRepeat)
-ZZ_UICONTROL_EVENT(zz_touchDragInside, TouchDragInside)
-ZZ_UICONTROL_EVENT(zz_touchDragOutside, TouchDragOutside)
-ZZ_UICONTROL_EVENT(zz_touchDragEnter, TouchDragEnter)
-ZZ_UICONTROL_EVENT(zz_touchDragExit, TouchDragExit)
-ZZ_UICONTROL_EVENT(zz_touchUpInside, TouchUpInside)
-ZZ_UICONTROL_EVENT(zz_touchUpOutside, TouchUpOutside)
-ZZ_UICONTROL_EVENT(zz_touchCancel, TouchCancel)
-ZZ_UICONTROL_EVENT(zz_valueChanged, ValueChanged)
-ZZ_UICONTROL_EVENT(zz_editingDidBegin, EditingDidBegin)
-ZZ_UICONTROL_EVENT(zz_editingChanged, EditingChanged)
-ZZ_UICONTROL_EVENT(zz_editingDidEnd, EditingDidEnd)
-ZZ_UICONTROL_EVENT(zz_editingDidEndOnExit, EditingDidEndOnExit)
+TL_UICONTROL_EVENT(tt_touchDown, TouchDown)
+TL_UICONTROL_EVENT(tt_touchDownRepeat, TouchDownRepeat)
+TL_UICONTROL_EVENT(tt_touchDragInside, TouchDragInside)
+TL_UICONTROL_EVENT(tt_touchDragOutside, TouchDragOutside)
+TL_UICONTROL_EVENT(tt_touchDragEnter, TouchDragEnter)
+TL_UICONTROL_EVENT(tt_touchDragExit, TouchDragExit)
+TL_UICONTROL_EVENT(tt_touchUpInside, TouchUpInside)
+TL_UICONTROL_EVENT(tt_touchUpOutside, TouchUpOutside)
+TL_UICONTROL_EVENT(tt_touchCancel, TouchCancel)
+TL_UICONTROL_EVENT(tt_valueChanged, ValueChanged)
+TL_UICONTROL_EVENT(tt_editingDidBegin, EditingDidBegin)
+TL_UICONTROL_EVENT(tt_editingChanged, EditingChanged)
+TL_UICONTROL_EVENT(tt_editingDidEnd, EditingDidEnd)
+TL_UICONTROL_EVENT(tt_editingDidEndOnExit, EditingDidEndOnExit)
 
 @end

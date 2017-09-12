@@ -10,7 +10,7 @@
 
 @interface UIView (TipView)
 
-@property (nonatomic, strong, readonly) UIView *zz_tipView;
+@property (nonatomic, strong, readonly) UIView *tt_tipView;
 
 - (void)showTipView:(UIView *)tipView retryAction:(void (^)(id userData))retryAction;
 

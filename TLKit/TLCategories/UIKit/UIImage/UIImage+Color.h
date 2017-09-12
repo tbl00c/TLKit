@@ -14,8 +14,6 @@
 
 - (UIImage *)imageWithColor:(UIColor *)color;
 
-+ (UIImage *)imageFromColor:(UIColor *)color;
-
 // 灰色图像
 - (UIImage *)grayImage;
 

@@ -1,9 +1,9 @@
 //
 //  UINavigationController+Extensions.m
-//  zhuanzhuan
+//  TLKit
 //
 //  Created by 李伯坤 on 2017/8/28.
-//  Copyright © 2017年 转转. All rights reserved.
+//  Copyright © 2017年 libokun. All rights reserved.
 //
 
 #import "UINavigationController+Extensions.h"
@@ -11,7 +11,7 @@
 @implementation UINavigationController (Extensions)
 
 #pragma mark - # Extensions
-- (UIViewController *)zzRootViewController
+- (UIViewController *)ttRootViewController
 {
     if (self.viewControllers && [self.viewControllers count] >0) {
         return [self.viewControllers firstObject];
