@@ -82,6 +82,11 @@
 		C2C2C9451F67B0500030FD2A /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C9411F67B0500030FD2A /* NSObject+Dealloc.m */; };
 		C2C2C9461F67B0500030FD2A /* TLDeallocTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C9431F67B0500030FD2A /* TLDeallocTask.m */; };
 		C2C2C9491F67B7F60030FD2A /* UIViewController+NavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C9481F67B7F60030FD2A /* UIViewController+NavBar.m */; };
+		C2DADD641F691EBC00120B7A /* TLActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DADD631F691EBC00120B7A /* TLActionSheet.m */; };
+		C2DADD691F6929C500120B7A /* TLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DADD681F6929C500120B7A /* TLBadge.m */; };
+		C2DADD7E1F69531300120B7A /* TLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DADD781F69531300120B7A /* TLTabBar.m */; };
+		C2DADD7F1F69531300120B7A /* TLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DADD7A1F69531300120B7A /* TLTabBarController.m */; };
+		C2DADD801F69531300120B7A /* TLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DADD7D1F69531300120B7A /* TLTabBarItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -238,6 +243,18 @@
 		C2C2C9431F67B0500030FD2A /* TLDeallocTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDeallocTask.m; sourceTree = "<group>"; };
 		C2C2C9471F67B7F60030FD2A /* UIViewController+NavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavBar.h"; sourceTree = "<group>"; };
 		C2C2C9481F67B7F60030FD2A /* UIViewController+NavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavBar.m"; sourceTree = "<group>"; };
+		C2DADD621F691EBC00120B7A /* TLActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLActionSheet.h; sourceTree = "<group>"; };
+		C2DADD631F691EBC00120B7A /* TLActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLActionSheet.m; sourceTree = "<group>"; };
+		C2DADD651F69209000120B7A /* TLFunctional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLFunctional.h; sourceTree = "<group>"; };
+		C2DADD671F6929C500120B7A /* TLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBadge.h; sourceTree = "<group>"; };
+		C2DADD681F6929C500120B7A /* TLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBadge.m; sourceTree = "<group>"; };
+		C2DADD771F69531300120B7A /* TLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabBar.h; sourceTree = "<group>"; };
+		C2DADD781F69531300120B7A /* TLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTabBar.m; sourceTree = "<group>"; };
+		C2DADD791F69531300120B7A /* TLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabBarController.h; sourceTree = "<group>"; };
+		C2DADD7A1F69531300120B7A /* TLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTabBarController.m; sourceTree = "<group>"; };
+		C2DADD7B1F69531300120B7A /* TLTabBarControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabBarControllerProtocol.h; sourceTree = "<group>"; };
+		C2DADD7C1F69531300120B7A /* TLTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabBarItem.h; sourceTree = "<group>"; };
+		C2DADD7D1F69531300120B7A /* TLTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTabBarItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,8 +331,9 @@
 			isa = PBXGroup;
 			children = (
 				C2C2C93C1F67AF4B0030FD2A /* TLKit.h */,
-				C2C2C8471F67A4850030FD2A /* TLCategories */,
 				C2C2C8E71F67A4850030FD2A /* TLShortcut */,
+				C2C2C8471F67A4850030FD2A /* TLCategories */,
+				C2DADD601F691EBC00120B7A /* TLFunctional */,
 			);
 			name = TLKit;
 			path = ../../TLKit;
@@ -735,6 +753,49 @@
 			path = TLAssosiation;
 			sourceTree = "<group>";
 		};
+		C2DADD601F691EBC00120B7A /* TLFunctional */ = {
+			isa = PBXGroup;
+			children = (
+				C2DADD651F69209000120B7A /* TLFunctional.h */,
+				C2DADD661F6929C500120B7A /* TLBadge */,
+				C2DADD611F691EBC00120B7A /* TLActionSheet */,
+				C2DADD761F69531300120B7A /* TLTabBarController */,
+			);
+			path = TLFunctional;
+			sourceTree = "<group>";
+		};
+		C2DADD611F691EBC00120B7A /* TLActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				C2DADD621F691EBC00120B7A /* TLActionSheet.h */,
+				C2DADD631F691EBC00120B7A /* TLActionSheet.m */,
+			);
+			path = TLActionSheet;
+			sourceTree = "<group>";
+		};
+		C2DADD661F6929C500120B7A /* TLBadge */ = {
+			isa = PBXGroup;
+			children = (
+				C2DADD671F6929C500120B7A /* TLBadge.h */,
+				C2DADD681F6929C500120B7A /* TLBadge.m */,
+			);
+			path = TLBadge;
+			sourceTree = "<group>";
+		};
+		C2DADD761F69531300120B7A /* TLTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				C2DADD771F69531300120B7A /* TLTabBar.h */,
+				C2DADD781F69531300120B7A /* TLTabBar.m */,
+				C2DADD791F69531300120B7A /* TLTabBarController.h */,
+				C2DADD7A1F69531300120B7A /* TLTabBarController.m */,
+				C2DADD7B1F69531300120B7A /* TLTabBarControllerProtocol.h */,
+				C2DADD7C1F69531300120B7A /* TLTabBarItem.h */,
+				C2DADD7D1F69531300120B7A /* TLTabBarItem.m */,
+			);
+			path = TLTabBarController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -830,6 +891,7 @@
 				C2C2C8FD1F67A4850030FD2A /* NSObject+KVOBlock.m in Sources */,
 				C2C2C9211F67A4850030FD2A /* UITextView+Select.m in Sources */,
 				C2C2C9331F67A5210030FD2A /* NSData+Encrypt.m in Sources */,
+				C2DADD7F1F69531300120B7A /* TLTabBarController.m in Sources */,
 				C2C2C90D1F67A4850030FD2A /* UIColor+Extensions.m in Sources */,
 				C2C2C9151F67A4850030FD2A /* NSNumber+JZExtension.m in Sources */,
 				C2C2C9141F67A4850030FD2A /* _JZValue.m in Sources */,
@@ -856,6 +918,8 @@
 				C2C2C9491F67B7F60030FD2A /* UIViewController+NavBar.m in Sources */,
 				C2C2C91C1F67A4850030FD2A /* UIScrollView+Pages.m in Sources */,
 				C2C2C9031F67A4850030FD2A /* NSString+NormalRegex.m in Sources */,
+				C2DADD801F69531300120B7A /* TLTabBarItem.m in Sources */,
+				C2DADD691F6929C500120B7A /* TLBadge.m in Sources */,
 				C2C2C8F61F67A4850030FD2A /* NSDictionary+Extensions.m in Sources */,
 				C2C2C8FE1F67A4850030FD2A /* NSObject+Reflection.m in Sources */,
 				C2C2C9461F67B0500030FD2A /* TLDeallocTask.m in Sources */,
@@ -864,6 +928,7 @@
 				C2C2C9111F67A4850030FD2A /* UIImage+Size.m in Sources */,
 				C2C2C91F1F67A4850030FD2A /* UITextView+LengthLimit.m in Sources */,
 				C2C2C9231F67A4850030FD2A /* UIView+Frame.m in Sources */,
+				C2DADD7E1F69531300120B7A /* TLTabBar.m in Sources */,
 				C2C2C9201F67A4850030FD2A /* UITextView+Placeholder.m in Sources */,
 				C2C2C9341F67A5210030FD2A /* NSData+Gzip.m in Sources */,
 				C2C2C9181F67A4850030FD2A /* UINavigationController+JZExtension.m in Sources */,
@@ -874,6 +939,7 @@
 				C2C2C8F81F67A4850030FD2A /* NSFileManager+Paths.m in Sources */,
 				C2C2C8FA1F67A4850030FD2A /* NSMutableDictionary+SafeAccess.m in Sources */,
 				C2C2C9071F67A4850030FD2A /* NSString+URL.m in Sources */,
+				C2DADD641F691EBC00120B7A /* TLActionSheet.m in Sources */,
 				C2C2C9241F67A4850030FD2A /* UIView+Screenshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

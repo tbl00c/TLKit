@@ -75,11 +75,21 @@ PODS:
   - TLKit/TLShortcut (0.0.2)
 
 DEPENDENCIES:
-  - TLKit (~> 0.0.1)
+  - TLKit (from `git@github.com:tbl00c/TLKit.git`, tag `0.0.3`)
+
+EXTERNAL SOURCES:
+  TLKit:
+    :git: git@github.com:tbl00c/TLKit.git
+    :tag: 0.0.3
+
+CHECKOUT OPTIONS:
+  TLKit:
+    :git: git@github.com:tbl00c/TLKit.git
+    :tag: 0.0.3
 
 SPEC CHECKSUMS:
-  TLKit: fcbd2de589c912deab8b86c475beeae694767220
+  TLKit: 19798447d64f284e521f7c5334912558d150eac4
 
-PODFILE CHECKSUM: 6e403ab00aad2cf7dbaae05186448008c83dd222
+PODFILE CHECKSUM: 0e7836a0e90ad15a60abd26a8301e961a627c282
 
 COCOAPODS: 1.2.1

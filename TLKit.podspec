@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TLKit"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.platform     = :ios, "8.0"
   s.summary      = "iOS开发基础组件库"
   s.description  = <<-DESC
@@ -20,6 +20,28 @@ Pod::Spec.new do |s|
   # 通用宏定义、快捷方法
   s.subspec 'TLShortcut' do |shortcut|
     shortcut.source_files = "TLKit/TLShortcut/*.{h,m}"
+  end
+
+  # 基础控件
+  s.subspec 'TLFunctional' do |founc|
+    founc.public_header_files = "TLKit/TLFunctional/TLFunctional.h"
+    founc.source_files = "TLKit/TLFunctional/TLFunctional.h"
+
+    # TLActionSheet
+    founc.subspec 'TLActionSheet' do |ss|
+      ss.source_files = "TLKit/TLFunctional/TLActionSheet/*.{h,m}"
+    end
+
+    # TLBadge
+    founc.subspec 'TLBadge' do |ss|
+      ss.source_files = "TLKit/TLFunctional/TLBadge/*.{h,m}"
+    end
+
+    # TLTabBarController
+    founc.subspec 'TLTabBarController' do |ss|
+      ss.source_files = "TLKit/TLFunctional/TLTabBarController/*.{h,m}"
+    end
+
   end
 
   

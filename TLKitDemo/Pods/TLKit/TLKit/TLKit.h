@@ -9,6 +9,11 @@
 #ifndef TLKit_h
 #define TLKit_h
 
+//MARK: 通用宏定义、快捷方法
+#import "TLShortcutMacros.h"
+#import "TLShortcutMethod.h"
+
+//MARK: 分类
 #import "TLCategories.h"
 
 #endif /* TLKit_h */

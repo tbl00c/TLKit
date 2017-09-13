@@ -1,10 +1,8 @@
-source 'git@github.com:tbl00c/TLSpecs.git'
-
 platform :ios, '8.0'
 
 target ‘TLKitDemo’ do
 #    pod 'TLKit', :path => '../'
     
-    pod 'TLKit', '~> 0.0.1'
-
+    pod 'TLKit', :git => 'git@github.com:tbl00c/TLKit.git', :tag => '0.0.3'
+#    pod 'TLKit', '~> 0.0.3'
 end
