@@ -84,8 +84,11 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{    
+{
+    // 标题
     [self setTitle:self.systemTabBarItem.title forState:UIControlStateNormal];
+    
+    // 图片
     [self setImage:self.systemTabBarItem.image forState:UIControlStateNormal];
     if (self.systemTabBarItem.selectedImage) {
         [self setImage:self.systemTabBarItem.selectedImage forState:UIControlStateSelected];
@@ -94,6 +97,7 @@
         [self setImage:[self.systemTabBarItem.image imageWithColor:self.tintColor] forState:UIControlStateSelected];
     }
     
+    // 红点颜色
     if (self.systemTabBarItem.badgeValue) {
         [self.badge setHidden:NO];
         [self.badge setValue:self.systemTabBarItem.badgeValue];
@@ -102,6 +106,7 @@
         [self.badge setHidden:YES];
     }
     
+    // 红点字体
     if (self.systemTabBarItem.badgeColor) {
         [self.badge setBackgroundColor:self.systemTabBarItem.badgeColor];
     }
@@ -114,8 +119,9 @@
 /// 图片位置
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
+    BOOL hasTitle = self.systemTabBarItem.title.length > 0;
     CGFloat y = 3;
-    CGFloat height = contentRect.size.height - 15 - y;
+    CGFloat height = contentRect.size.height - y - (hasTitle ? 15 : 3);
     return CGRectMake(0, y, contentRect.size.width, height);
 }
 
