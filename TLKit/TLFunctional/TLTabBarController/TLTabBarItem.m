@@ -56,6 +56,7 @@
 - (void)dealloc
 {
     [self.systemTabBarItem removeObserver:self forKeyPath:@"badgeValue"];
+    [self.systemTabBarItem removeObserver:self forKeyPath:@"badgeColor"];
     [self.systemTabBarItem removeObserver:self forKeyPath:@"title"];
     [self.systemTabBarItem removeObserver:self forKeyPath:@"image"];
     [self.systemTabBarItem removeObserver:self forKeyPath:@"selectedImage"];
@@ -74,6 +75,7 @@
 {
     _systemTabBarItem = systemTabBarItem;
     [systemTabBarItem addObserver:self forKeyPath:@"badgeValue" options:NSKeyValueObservingOptionNew context:nil];
+    [systemTabBarItem addObserver:self forKeyPath:@"badgeColor" options:NSKeyValueObservingOptionNew context:nil];
     [systemTabBarItem addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
     [systemTabBarItem addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew context:nil];
     [systemTabBarItem addObserver:self forKeyPath:@"selectedImage" options:NSKeyValueObservingOptionNew context:nil];
@@ -86,7 +88,7 @@
     [self setTitle:self.systemTabBarItem.title forState:UIControlStateNormal];
     [self setImage:self.systemTabBarItem.image forState:UIControlStateNormal];
     if (self.systemTabBarItem.selectedImage) {
-        [self setImage:[self.systemTabBarItem.selectedImage imageWithColor:self.tintColor] forState:UIControlStateSelected];
+        [self setImage:self.systemTabBarItem.selectedImage forState:UIControlStateSelected];
     }
     else {
         [self setImage:[self.systemTabBarItem.image imageWithColor:self.tintColor] forState:UIControlStateSelected];
@@ -98,6 +100,10 @@
     }
     else {
         [self.badge setHidden:YES];
+    }
+    
+    if (self.systemTabBarItem.badgeColor) {
+        [self.badge setBackgroundColor:self.systemTabBarItem.badgeColor];
     }
     
     if (self.didChangedTabBarItem) {

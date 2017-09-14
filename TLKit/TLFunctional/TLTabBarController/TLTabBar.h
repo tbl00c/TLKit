@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TLTabBar : UIView
+@interface TLTabBar : UITabBar
 
 @property (nonatomic, copy) void (^didSelectItemAtIndex)(NSInteger index);
 @property (nonatomic, copy) void (^didDoubleClickItemAtIndex)(NSInteger index);

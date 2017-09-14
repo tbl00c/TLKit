@@ -33,7 +33,7 @@
         return CGSizeMake(10, 10);
     }
     CGSize size = [value sizeWithAttributes:@{NSFontAttributeName : font}];
-    CGFloat width = MAX(size.width + HEIGHT_BADGE * 0.7, HEIGHT_BADGE);
+    CGFloat width = MAX(size.width + HEIGHT_BADGE * 0.6, HEIGHT_BADGE);
     return CGSizeMake(width, HEIGHT_BADGE);
 }
 

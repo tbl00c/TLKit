@@ -23,6 +23,7 @@
 - (id)initWithSystemTabBar:(UITabBar *)systemTabBar
 {
     if (self = [super initWithFrame:systemTabBar.bounds]) {
+        _tabBarItems = [[NSMutableArray alloc] init];
         [self setSystemTabBar:systemTabBar];
     }
     return self;
@@ -30,7 +31,7 @@
 
 - (void)dealloc
 {
-    [self.systemTabBar removeObserver:self forKeyPath:@"tintColor"];
+    [self.systemTabBar removeObserver:self forKeyPath:@"barTintColor"];
 }
 
 #pragma mark - # Public Methods
@@ -62,7 +63,8 @@
 - (void)setSystemTabBar:(UITabBar *)systemTabBar
 {
     _systemTabBar = systemTabBar;
-    [systemTabBar addObserver:self forKeyPath:@"tintColor" options:NSKeyValueObservingOptionNew context:nil];
+    [self setBarTintColor:self.systemTabBar.barTintColor];
+    [systemTabBar addObserver:self forKeyPath:@"barTintColor" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 #pragma mark - # Event Response
@@ -112,15 +114,7 @@
 #pragma mark - # Private Methods
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {
-    if (object != self.systemTabBar) {
-        return;
-    }
-    
-    if ([keyPath isEqualToString:@"tintColor"]) {
-        for (TLTabBarItem *item in self.tabBarItems) {
-            [item setTintColor:self.systemTabBar.tintColor];
-        }
-    }
+    [self setBarTintColor:self.systemTabBar.barTintColor];
 }
 
 - (void)p_resetTabBarItemFrames
@@ -131,15 +125,6 @@
         [tabBarItem setFrame:CGRectMake(x + width * 0.05, 0, width * 0.9, self.frame.size.height)];
         x += width;
     }
-}
-
-#pragma mark - # Getters
-- (NSMutableArray *)tabBarItems
-{
-    if (!_tabBarItems) {
-        _tabBarItems = [[NSMutableArray alloc] init];
-    }
-    return _tabBarItems;
 }
 
 @end
