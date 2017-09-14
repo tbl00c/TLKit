@@ -30,7 +30,7 @@
     [self addChildViewController:viewController actionBlock:nil];
 }
 
-- (void)addChildViewController:(UIViewController *)viewController actionBlock:(void (^)())actionBlock
+- (void)addChildViewController:(UIViewController *)viewController actionBlock:(BOOL (^)())actionBlock
 {
     [super addChildViewController:viewController];
     if ([viewController isKindOfClass:[UINavigationController class]] && viewController.childViewControllers.count > 0) {
@@ -42,6 +42,24 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [self p_removeAllSystemControl];
     });
+}
+
+- (void)addPlusItemWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem actionBlock:(void (^)())actionBlock
+{
+    [super addChildViewController:[[UIViewController alloc] init]];
+    [self.tlTabBar addPlusItemWithSystemTabBarItem:systemTabBarItem actionBlock:^BOOL{
+        actionBlock();
+        return NO;
+    }];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self p_removeAllSystemControl];
+    });
+}
+
+- (void)setSelectedIndex:(NSUInteger)selectedIndex
+{
+    [super setSelectedIndex:selectedIndex];
+    [self.tlTabBar setSelectedIndex:selectedIndex];
 }
 
 #pragma mark - # Private Methods
@@ -111,10 +129,31 @@
 #pragma mark - ## UITabBar (TLExtension)
 @implementation UITabBar (TLExtension)
 
-- (void)setHiddenShadow
+- (void)setHiddenShadow:(BOOL)hiddenShadow
 {
-    [self setBackgroundImage:[UIImage new]];
-    [self setShadowImage:[UIImage new]];
+    if (self.barTintColor) {
+        [self setBackgroundImage:[UIImage imageWithColor:self.barTintColor]];
+    }
+    else {
+        [self setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1.0]]];
+    }
+    if (hiddenShadow) {
+        [self setShadowImage:[UIImage new]];
+    }
+    else {
+        [self setShadowImage:nil];
+    }
+}
+
+- (void)setShadowColor:(UIColor *)shadowColor
+{
+    [self setHiddenShadow:NO];
+    if (shadowColor) {
+        [self setShadowImage:[UIImage imageWithColor:shadowColor]];
+    }
+    else {
+        [self setShadowImage:[UIImage new]];
+    }
 }
 
 @end

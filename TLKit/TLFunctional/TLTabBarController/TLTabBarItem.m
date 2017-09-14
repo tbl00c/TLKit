@@ -23,9 +23,10 @@
 
 @implementation TLTabBarItem
 
-- (id)initWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem clickActionBlock:(void (^)())clickActionBlock
+- (id)initWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem clickActionBlock:(BOOL (^)())clickActionBlock
 {
     if (self = [super initWithFrame:systemTabBarItem.accessibilityFrame]) {
+        [self.imageView setClipsToBounds:NO];
         [self setClickActionBlock:clickActionBlock];
         [self.imageView setContentMode:UIViewContentModeCenter];
         [self.titleLabel setTextAlignment:NSTextAlignmentCenter];
@@ -122,9 +123,8 @@
 /// 图片位置
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
-    BOOL hasTitle = self.systemTabBarItem.title.length > 0;
     CGFloat y = 3;
-    CGFloat height = contentRect.size.height - y - (hasTitle ? 15 : 3);
+    CGFloat height = contentRect.size.height - y - (self.hasTitle ? 15 : 3);
     return CGRectMake(0, y, contentRect.size.width, height);
 }
 
@@ -146,6 +146,14 @@
         _badge = [[TLBadge alloc] init];
     }
     return _badge;
+}
+
+- (BOOL)hasTitle
+{
+    if (self.systemTabBarItem) {
+        return self.systemTabBarItem.title.length > 0;
+    }
+    return NO;
 }
 
 @end

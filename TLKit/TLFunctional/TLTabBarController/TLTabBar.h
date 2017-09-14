@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TLTabBar : UITabBar
+@interface TLTabBar : UIView
 
-/// 单击（已选中状态）
+/// 单击
 @property (nonatomic, copy) void (^didSelectItemAtIndex)(NSInteger index);
 
 /// 双击
 @property (nonatomic, copy) void (^didDoubleClickItemAtIndex)(NSInteger index);
+
+@property (nonatomic, assign) NSInteger selectedIndex;
 
 /**
  *  根据系统的tabBar初始化
@@ -26,6 +28,13 @@
  *
  *  @param  actionBlock     自定义选中事件，默认传nil
  */
-- (void)addTabBarItemWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem actionBlock:(void (^)())actionBlock;
+- (void)addTabBarItemWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem actionBlock:(BOOL (^)())actionBlock;
+
+/**
+ *  添加plusItem
+ *
+ *  @param  actionBlock     自定义选中事件，默认传nil
+ */
+- (void)addPlusItemWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem actionBlock:(BOOL (^)())actionBlock;
 
 @end

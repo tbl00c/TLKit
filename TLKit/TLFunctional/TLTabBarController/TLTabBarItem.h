@@ -10,10 +10,12 @@
 
 @interface TLTabBarItem : UIButton
 
-@property (nonatomic, copy) void (^clickActionBlock)();
+@property (nonatomic, assign) BOOL hasTitle;
+
+@property (nonatomic, copy) BOOL (^clickActionBlock)();
 
 @property (nonatomic, copy) void (^didChangedTabBarItem)();
 
-- (id)initWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem clickActionBlock:(void (^)())clickActionBlock;
+- (id)initWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem clickActionBlock:(BOOL (^)())clickActionBlock;
 
 @end
