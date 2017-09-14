@@ -27,12 +27,17 @@
 
 - (void)addChildViewController:(UIViewController *)viewController
 {
+    [self addChildViewController:viewController actionBlock:nil];
+}
+
+- (void)addChildViewController:(UIViewController *)viewController actionBlock:(void (^)())actionBlock
+{
     [super addChildViewController:viewController];
     if ([viewController isKindOfClass:[UINavigationController class]] && viewController.childViewControllers.count > 0) {
-        [self.tlTabBar addTabBarItemWithSystemTabBarItem:viewController.childViewControllers.firstObject.tabBarItem];
+        [self.tlTabBar addTabBarItemWithSystemTabBarItem:viewController.childViewControllers.firstObject.tabBarItem actionBlock:actionBlock];
     }
     else {
-        [self.tlTabBar addTabBarItemWithSystemTabBarItem:viewController.tabBarItem];
+        [self.tlTabBar addTabBarItemWithSystemTabBarItem:viewController.tabBarItem actionBlock:actionBlock];
     }
     dispatch_async(dispatch_get_main_queue(), ^{
         [self p_removeAllSystemControl];

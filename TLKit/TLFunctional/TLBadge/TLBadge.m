@@ -97,6 +97,7 @@
         [_titleLabel setFont:FONT_TITLE];
         [_titleLabel setTextColor:[UIColor whiteColor]];
         [_titleLabel setTextAlignment:NSTextAlignmentCenter];
+        [_titleLabel setLineBreakMode:NSLineBreakByTruncatingMiddle];
     }
     return _titleLabel;
 }

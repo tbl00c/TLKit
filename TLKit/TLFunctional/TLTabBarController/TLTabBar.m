@@ -32,12 +32,14 @@
 - (void)dealloc
 {
     [self.systemTabBar removeObserver:self forKeyPath:@"barTintColor"];
+    [self.systemTabBar removeObserver:self forKeyPath:@"unselectedItemTintColor"];
+    [self.systemTabBar removeObserver:self forKeyPath:@"tintColor"];
 }
 
 #pragma mark - # Public Methods
-- (void)addTabBarItemWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem
+- (void)addTabBarItemWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem actionBlock:(void (^)())actionBlock
 {
-    TLTabBarItem *tabBarItem = [[TLTabBarItem alloc] initWithSystemTabBarItem:systemTabBarItem];
+    TLTabBarItem *tabBarItem = [[TLTabBarItem alloc] initWithSystemTabBarItem:systemTabBarItem clickActionBlock:actionBlock];
     [tabBarItem setTintColor:self.systemTabBar.tintColor];
     [tabBarItem addTarget:self action:@selector(tabBarItemTouchDown:) forControlEvents:UIControlEventTouchDown];
     [tabBarItem addTarget:self action:@selector(tabBarItemTouchDownRepeat:) forControlEvents:UIControlEventTouchDownRepeat];
@@ -65,6 +67,8 @@
     _systemTabBar = systemTabBar;
     [self setBarTintColor:self.systemTabBar.barTintColor];
     [systemTabBar addObserver:self forKeyPath:@"barTintColor" options:NSKeyValueObservingOptionNew context:nil];
+    [systemTabBar addObserver:self forKeyPath:@"unselectedItemTintColor" options:NSKeyValueObservingOptionNew context:nil];
+    [systemTabBar addObserver:self forKeyPath:@"tintColor" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 #pragma mark - # Event Response
@@ -115,6 +119,15 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {
     [self setBarTintColor:self.systemTabBar.barTintColor];
+    for (TLTabBarItem *item in self.tabBarItems) {
+        [item setTintColor:self.systemTabBar.tintColor];
+        if (self.systemTabBar.unselectedItemTintColor) {
+            [item setTitleColor:self.systemTabBar.unselectedItemTintColor forState:UIControlStateNormal];
+        }
+        else {
+            [item setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        }
+    }
 }
 
 - (void)p_resetTabBarItemFrames

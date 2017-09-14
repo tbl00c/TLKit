@@ -23,9 +23,10 @@
 
 @implementation TLTabBarItem
 
-- (id)initWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem
+- (id)initWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem clickActionBlock:(void (^)())clickActionBlock
 {
     if (self = [super initWithFrame:systemTabBarItem.accessibilityFrame]) {
+        [self setClickActionBlock:clickActionBlock];
         [self.imageView setContentMode:UIViewContentModeCenter];
         [self.titleLabel setTextAlignment:NSTextAlignmentCenter];
         [self.titleLabel setFont:[UIFont systemFontOfSize:10]];
@@ -66,7 +67,9 @@
 - (void)setTintColor:(UIColor *)tintColor
 {
     [super setTintColor:tintColor];
-    [self setImage:[self.systemTabBarItem.selectedImage imageWithColor:tintColor] forState:UIControlStateSelected];
+    if (!self.systemTabBarItem.selectedImage) {
+        [self setImage:[self.systemTabBarItem.selectedImage imageWithColor:tintColor] forState:UIControlStateSelected];
+    }
     [self setTitleColor:tintColor forState:UIControlStateSelected];
 }
 

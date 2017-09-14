@@ -12,6 +12,8 @@
 #pragma mark - ## TLTabBarController
 @interface TLTabBarController : UITabBarController
 
+- (void)addChildViewController:(UIViewController *)viewController actionBlock:(void (^)())actionBlock;
+
 @end
 
 
