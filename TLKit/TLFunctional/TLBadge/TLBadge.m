@@ -8,8 +8,10 @@
 
 #import "TLBadge.h"
 
-#define     FONT_TITLE      [UIFont systemFontOfSize:12]
-#define     EDGE_TITLE      self.frame.size.height * 0.3
+#define     FONT_TITLE          [UIFont systemFontOfSize:12]
+#define     EDGE_TITLE          self.frame.size.height * 0.3
+#define     MAX_HEIGHT          18.0f
+#define     MIN_HEIGHT          10.0f
 
 @interface TLBadge ()
 
@@ -19,6 +21,7 @@
 
 @implementation TLBadge
 
+#pragma mark - # Class Methods
 + (CGSize)badgeSizeWithValue:(NSString *)value
 {
     return [self badgeSizeWithValue:value font:FONT_TITLE];
@@ -26,24 +29,35 @@
 
 + (CGSize)badgeSizeWithValue:(NSString *)value font:(UIFont *)font
 {
+    return [self badgeSizeWithValue:value font:font maxHeight:MAX_HEIGHT minHeight:MIN_HEIGHT];
+}
+
++ (CGSize)badgeSizeWithValue:(NSString *)value font:(UIFont *)font maxHeight:(CGFloat)maxHeight minHeight:(CGFloat)minHeight
+{
     if (!value) {
         return CGSizeZero;
     }
-    if (value.length == 0) {
-        return CGSizeMake(10, 10);
+    if ([value isEqualToString:@""]) {
+        return CGSizeMake(minHeight, minHeight);
     }
     CGSize size = [value sizeWithAttributes:@{NSFontAttributeName : font}];
-    CGFloat width = MAX(size.width + HEIGHT_BADGE * 0.6, HEIGHT_BADGE);
-    return CGSizeMake(width, HEIGHT_BADGE);
+    CGFloat width = MAX(size.width + maxHeight * 0.6, maxHeight);
+    return CGSizeMake(width, maxHeight);
 }
 
+#pragma mark - # Init
 - (id)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
         [self.layer setMasksToBounds:YES];
-        [self setBackgroundColor:[UIColor redColor]];
-        
         [self addSubview:self.titleLabel];
+        
+        // 默认属性设置
+        [self setBackgroundColor:[UIColor redColor]];
+        [self setTitleColor:[UIColor whiteColor]];
+        [self setTitleFont:FONT_TITLE];
+        [self setMaxHeight:MAX_HEIGHT];
+        [self setMinHeight:MIN_HEIGHT];
     }
     return self;
 }
@@ -51,42 +65,65 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    
+    // 更新圆角大小
     [self.layer setCornerRadius:self.frame.size.height / 2.0];
     // 更新titleLabel坐标和大小
-    CGFloat height = [self.titleLabel sizeThatFits:CGSizeMake(MAXFLOAT, MAXFLOAT)].height;
-    [self.titleLabel setFrame:CGRectMake(0, 0, self.frame.size.width - EDGE_TITLE * 2, height)];
+    if ([self.badgeValue isEqualToString:@""]) {
+        [self.titleLabel setFrame:CGRectMake(0, 0, self.minHeight, self.minHeight)];
+    }
+    else {
+        CGFloat height = [self.titleLabel sizeThatFits:CGSizeMake(MAXFLOAT, MAXFLOAT)].height;
+        [self.titleLabel setFrame:CGRectMake(0, 0, self.frame.size.width - EDGE_TITLE * 2, height)];
+    }
+    
     [self.titleLabel setCenter:CGPointMake(self.frame.size.width / 2.0, self.frame.size.height / 2.0)];
 }
 
-- (void)setValue:(id)value
+#pragma mark - # Public Methods
+- (void)setBadgeValue:(id)badgeValue
 {
-    _value = value;
-    [self.titleLabel setText:value];
+    _badgeValue = badgeValue;
+    [self.titleLabel setText:badgeValue];
     [self.titleLabel sizeToFit];
-    CGSize size = [TLBadge badgeSizeWithValue:value];
-    [self setFrame:CGRectMake(self.frame.origin.x,
-                             self.frame.origin.y,
-                             size.width,
-                              size.height)];
-    [self setNeedsDisplay];
+    
+    [self p_resetFrame];
 }
 
 - (void)setTitleFont:(UIFont *)titleFont
 {
+    _titleFont = titleFont;
     [self.titleLabel setFont:titleFont];
-}
-- (UIFont *)titleFont
-{
-    return self.titleLabel.font;
+    
+    [self p_resetFrame];
 }
 
 - (void)setTitleColor:(UIColor *)titleColor
 {
+    _titleColor = titleColor;
     [self.titleLabel setTextColor:titleColor];
 }
-- (UIColor *)titleColor
+
+- (void)setMaxHeight:(CGFloat)maxHeight
 {
-    return self.titleLabel.textColor;
+    _maxHeight = maxHeight;
+    
+    [self p_resetFrame];
+}
+
+- (void)setMinHeight:(CGFloat)minHeight
+{
+    _minHeight = minHeight;
+    
+    [self p_resetFrame];
+}
+
+#pragma mark - # Private Methods
+- (void)p_resetFrame
+{
+    CGSize size = [TLBadge badgeSizeWithValue:self.badgeValue font:self.titleFont maxHeight:self.maxHeight minHeight:self.minHeight];
+    [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, size.width, size.height)];
+    [self setNeedsDisplay];
 }
 
 #pragma mark - # Getters
@@ -94,8 +131,6 @@
 {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        [_titleLabel setFont:FONT_TITLE];
-        [_titleLabel setTextColor:[UIColor whiteColor]];
         [_titleLabel setTextAlignment:NSTextAlignmentCenter];
         [_titleLabel setLineBreakMode:NSLineBreakByTruncatingMiddle];
     }

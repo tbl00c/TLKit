@@ -1,6 +1,6 @@
 //
 //  TLTabBarControllerProtocol.h
-//  TLChat
+//  TLTabBarController
 //
 //  Created by 李伯坤 on 2017/7/18.
 //  Copyright © 2017年 李伯坤. All rights reserved.
@@ -13,14 +13,17 @@
 #import <Foundation/Foundation.h>
 
 @protocol TLTabBarControllerProtocol <NSObject>
+
 @optional;
 /**
- * tabBar被单击（仅在已选中时调用）
+ *  tabBar被单击
+ *
+ *  @param  isSelected      是否已经选中
  */
-- (void)tabBarItemDidClick;
+- (void)tabBarItemDidClick:(BOOL)isSelected;
 
 /**
- * tabBar被双击（仅在已选中时调用）
+ *  tabBar被双击（仅在已选中时调用）
  */
 - (void)tabBarItemDidDoubleClick;
 

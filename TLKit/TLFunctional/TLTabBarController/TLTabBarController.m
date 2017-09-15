@@ -1,18 +1,97 @@
 //
 //  TLTabBarController.m
-//  TLChat
+//  TLTabBarController
 //
-//  Created by 李伯坤 on 2017/7/6.
+//  Created by 李伯坤 on 2017/7/18.
 //  Copyright © 2017年 李伯坤. All rights reserved.
 //
 
 #import "TLTabBarController.h"
+#import "TLTabBarControllerProtocol.h"
 #import "TLTabBar.h"
-#import "UIImage+Color.h"
+#import "UITabBarItem+TLPrivateExtension.h"
 
+#define     TL_DOUBLE_CLICK_TIME_INTERVAL       0.5
+
+#pragma mark - ## TLTabBarControllerDelegateEvent
+@interface TLTabBarControllerDelegateEvent : NSObject <UITabBarControllerDelegate>
+
+@property (nonatomic, assign) NSInteger lastIndex;
+
+@property (nonatomic, strong) NSDate *lastClickDate;
+
+- (id)initWithTabBarController:(TLTabBarController *)tabBarController;
+
+@end
+
+@implementation TLTabBarControllerDelegateEvent
+
+- (id)initWithTabBarController:(TLTabBarController *)tabBarController
+{
+    if (self = [super init]) {
+        self.lastIndex = -1;
+        [tabBarController setDelegate:self];
+    }
+    return self;
+}
+
+#pragma mark - # UITabBarControllerDelegate
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    UIViewController *vc = viewController;
+    if (([viewController isKindOfClass:[UINavigationController class]] || [viewController isMemberOfClass:[UINavigationController class]]) && viewController.childViewControllers.count > 0) {
+        vc = viewController.childViewControllers.firstObject;
+    }
+    
+    // 判断是否已选中
+    NSInteger index = [tabBarController.tabBar.items indexOfObject:viewController.tabBarItem];
+    if (self.lastIndex == index) {
+        NSDate *date = [NSDate date];
+        BOOL isDoubleClick = NO;
+        // 判断是不是双击
+        if (self.lastClickDate) {
+            CGFloat time = [date timeIntervalSinceDate:self.lastClickDate];
+            isDoubleClick = time < TL_DOUBLE_CLICK_TIME_INTERVAL;
+        }
+    
+        if (isDoubleClick) {
+            self.lastClickDate = nil;
+            if ([vc respondsToSelector:@selector(tabBarItemDidDoubleClick)]) {
+                [(UIViewController<TLTabBarControllerProtocol> *)vc tabBarItemDidDoubleClick];
+            }
+        }
+        else {
+            self.lastClickDate = date;
+            if (self.lastClickDate) {
+                if ([vc respondsToSelector:@selector(tabBarItemDidClick:)]) {
+                    [(UIViewController<TLTabBarControllerProtocol> *)vc tabBarItemDidClick:YES];
+                }
+            }
+        }
+        return NO;
+    }
+    
+    // 根据自定义事件判断是否允许选中
+    BOOL canSelected = YES;
+    if (viewController.tabBarItem.clickActionBlock) {
+        canSelected = viewController.tabBarItem.clickActionBlock();
+    }
+    if (canSelected) {
+        self.lastIndex = index;
+        if ([vc respondsToSelector:@selector(tabBarItemDidClick:)]) {
+            [(UIViewController<TLTabBarControllerProtocol> *)vc tabBarItemDidClick:NO];
+        }
+    }
+    return canSelected;
+}
+
+@end
+
+
+#pragma mark - ## TLTabBarController
 @interface TLTabBarController ()
 
-@property (nonatomic, strong) TLTabBar *tlTabBar;
+@property (nonatomic, strong) TLTabBarControllerDelegateEvent *delegateEvent;
 
 @end
 
@@ -21,139 +100,37 @@
 - (void)loadView
 {
     [super loadView];
-
-    [self.tabBar addSubview:self.tlTabBar];
-}
-
-- (void)addChildViewController:(UIViewController *)viewController
-{
-    [self addChildViewController:viewController actionBlock:nil];
+    
+    self.delegateEvent = [[TLTabBarControllerDelegateEvent alloc] initWithTabBarController:self];
+    [self setValue:[TLTabBar new] forKey:@"tabBar"];
 }
 
 - (void)addChildViewController:(UIViewController *)viewController actionBlock:(BOOL (^)())actionBlock
 {
     [super addChildViewController:viewController];
-    if ([viewController isKindOfClass:[UINavigationController class]] && viewController.childViewControllers.count > 0) {
-        [self.tlTabBar addTabBarItemWithSystemTabBarItem:viewController.childViewControllers.firstObject.tabBarItem actionBlock:actionBlock];
+    
+    if (actionBlock) {
+        if (([viewController isKindOfClass:[UINavigationController class]] || [viewController isMemberOfClass:[UINavigationController class]]) && viewController.childViewControllers.count > 0) {
+            [viewController.childViewControllers.firstObject.tabBarItem setClickActionBlock:actionBlock];
+        }
+        else {
+            [viewController.tabBarItem setClickActionBlock:actionBlock];
+        }
     }
-    else {
-        [self.tlTabBar addTabBarItemWithSystemTabBarItem:viewController.tabBarItem actionBlock:actionBlock];
-    }
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self p_removeAllSystemControl];
-    });
 }
 
 - (void)addPlusItemWithSystemTabBarItem:(UITabBarItem *)systemTabBarItem actionBlock:(void (^)())actionBlock
 {
-    [super addChildViewController:[[UIViewController alloc] init]];
-    [self.tlTabBar addPlusItemWithSystemTabBarItem:systemTabBarItem actionBlock:^BOOL{
-        actionBlock();
+    [systemTabBarItem setIsPlusButton:YES];
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.tabBarItem = systemTabBarItem;
+    
+    [self addChildViewController:vc actionBlock:^BOOL{
+        if (actionBlock) {
+            actionBlock();
+        }
         return NO;
     }];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self p_removeAllSystemControl];
-    });
-}
-
-- (void)setSelectedIndex:(NSUInteger)selectedIndex
-{
-    [super setSelectedIndex:selectedIndex];
-    [self.tlTabBar setSelectedIndex:selectedIndex];
-}
-
-#pragma mark - # Private Methods
-// 移除系统控件
-- (void)p_removeAllSystemControl
-{
-    [self.tabBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * obj, NSUInteger idx, BOOL * stop) {
-        if ([obj isKindOfClass:[UIControl class]]) {
-            [obj setHidden:YES];
-        }
-    }];
-}
-
-#pragma mark - # Getters
-- (TLTabBar *)tlTabBar
-{
-    if (!_tlTabBar) {
-        _tlTabBar = [[TLTabBar alloc] initWithSystemTabBar:self.tabBar];
-        __weak typeof(self) weakSelf = self;
-        [_tlTabBar setDidSelectItemAtIndex:^(NSInteger index){
-            if (index >= weakSelf.viewControllers.count) {
-                return;
-            }
-            if (index == weakSelf.selectedIndex) {
-                UIViewController<TLTabBarControllerProtocol> *vc = weakSelf.viewControllers[index];
-                if ([vc respondsToSelector:@selector(tabBarItemDidClick)]) {
-                    [vc tabBarItemDidClick];
-                }
-                else if ([vc isKindOfClass:[UINavigationController class]] && vc.childViewControllers.count > 0) {
-                    vc = vc.childViewControllers.firstObject;
-                    if ([vc respondsToSelector:@selector(tabBarItemDidClick)]) {
-                        [vc tabBarItemDidClick];
-                    }
-                }
-            }
-            else {
-                [weakSelf setSelectedIndex:index];
-            }
-        }];
-        [_tlTabBar setDidDoubleClickItemAtIndex:^(NSInteger index){
-            if (index >= weakSelf.viewControllers.count) {
-                return;
-            }
-            if (index == weakSelf.selectedIndex) {
-                UIViewController<TLTabBarControllerProtocol> *vc = weakSelf.viewControllers[index];
-                if ([vc respondsToSelector:@selector(tabBarItemDidDoubleClick)]) {
-                    [vc tabBarItemDidDoubleClick];
-                }
-                else if ([vc isKindOfClass:[UINavigationController class]] && vc.childViewControllers.count > 0) {
-                    vc = vc.childViewControllers.firstObject;
-                    if ([vc respondsToSelector:@selector(tabBarItemDidDoubleClick)]) {
-                        [vc tabBarItemDidDoubleClick];
-                    }
-                }
-            }
-            else {
-                [weakSelf setSelectedIndex:index];
-            }
-        }];
-    }
-    return _tlTabBar;
-}
-
-@end
-
-
-#pragma mark - ## UITabBar (TLExtension)
-@implementation UITabBar (TLExtension)
-
-- (void)setHiddenShadow:(BOOL)hiddenShadow
-{
-    if (self.barTintColor) {
-        [self setBackgroundImage:[UIImage imageWithColor:self.barTintColor]];
-    }
-    else {
-        [self setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1.0]]];
-    }
-    if (hiddenShadow) {
-        [self setShadowImage:[UIImage new]];
-    }
-    else {
-        [self setShadowImage:nil];
-    }
-}
-
-- (void)setShadowColor:(UIColor *)shadowColor
-{
-    [self setHiddenShadow:NO];
-    if (shadowColor) {
-        [self setShadowImage:[UIImage imageWithColor:shadowColor]];
-    }
-    else {
-        [self setShadowImage:[UIImage new]];
-    }
 }
 
 @end
