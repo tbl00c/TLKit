@@ -84,6 +84,7 @@
 		C2C2C9491F67B7F60030FD2A /* UIViewController+NavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C9481F67B7F60030FD2A /* UIViewController+NavBar.m */; };
 		C2DADD641F691EBC00120B7A /* TLActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DADD631F691EBC00120B7A /* TLActionSheet.m */; };
 		C2DADD691F6929C500120B7A /* TLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DADD681F6929C500120B7A /* TLBadge.m */; };
+		C2EAC3421F71189D00BA2ED3 /* UIAlertView+ActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EAC3411F71189D00BA2ED3 /* UIAlertView+ActionBlocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -245,6 +246,8 @@
 		C2DADD651F69209000120B7A /* TLFunctional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLFunctional.h; sourceTree = "<group>"; };
 		C2DADD671F6929C500120B7A /* TLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLBadge.h; sourceTree = "<group>"; };
 		C2DADD681F6929C500120B7A /* TLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLBadge.m; sourceTree = "<group>"; };
+		C2EAC3401F71189D00BA2ED3 /* UIAlertView+ActionBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ActionBlocks.h"; sourceTree = "<group>"; };
+		C2EAC3411F71189D00BA2ED3 /* UIAlertView+ActionBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ActionBlocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -526,6 +529,7 @@
 				C2C2C8C41F67A4850030FD2A /* UINavigationItem */,
 				C2C2C8AF1F67A4850030FD2A /* UINavigationController */,
 				C2C2C8E11F67A4850030FD2A /* UIViewController */,
+				C2EAC33C1F71187800BA2ED3 /* UIAlertView */,
 				C2C2C8E41F67A4850030FD2A /* UIWindow */,
 			);
 			path = UIKit;
@@ -771,6 +775,15 @@
 			path = TLBadge;
 			sourceTree = "<group>";
 		};
+		C2EAC33C1F71187800BA2ED3 /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				C2EAC3401F71189D00BA2ED3 /* UIAlertView+ActionBlocks.h */,
+				C2EAC3411F71189D00BA2ED3 /* UIAlertView+ActionBlocks.m */,
+			);
+			path = UIAlertView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -891,6 +904,7 @@
 				C2C2C91D1F67A4850030FD2A /* UITextField+LengthLimit.m in Sources */,
 				C2C2C9491F67B7F60030FD2A /* UIViewController+NavBar.m in Sources */,
 				C2C2C91C1F67A4850030FD2A /* UIScrollView+Pages.m in Sources */,
+				C2EAC3421F71189D00BA2ED3 /* UIAlertView+ActionBlocks.m in Sources */,
 				C2C2C9031F67A4850030FD2A /* NSString+NormalRegex.m in Sources */,
 				C2DADD691F6929C500120B7A /* TLBadge.m in Sources */,
 				C2C2C8F61F67A4850030FD2A /* NSDictionary+Extensions.m in Sources */,

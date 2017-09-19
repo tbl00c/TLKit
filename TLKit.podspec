@@ -209,6 +209,11 @@ Pod::Spec.new do |s|
       uikit.subspec 'UINavigationBar' do |ss|
         ss.source_files = "TLKit/TLCategories/UIKit/UINavigationBar/*.{h,m}"
       end
+
+      # UIAlertView
+      uikit.subspec 'UIAlertView' do |ss|
+        ss.source_files = "TLKit/TLCategories/UIKit/UIAlertView/*.{h,m}"
+      end
     end
     
   end
