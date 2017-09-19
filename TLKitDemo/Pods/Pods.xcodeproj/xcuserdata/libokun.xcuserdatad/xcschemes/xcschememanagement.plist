@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-TLKitDemo.xcscheme</key>
+		<key>Pods-TLKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TLKit.xcscheme</key>
+		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>997DFAAB8316F31B8C55CC70C1753361</key>
+		<key>A06526DE1FD816BA8DFC75E76F883494</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC45ABF23376D55752B751725441A295</key>
+		<key>E53B595EBEDC2E2039E63B5BB98BC17D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

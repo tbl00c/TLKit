@@ -1,8 +1,6 @@
 platform :ios, '8.0'
+inhibit_all_warnings!
 
-target ‘TLKitDemo’ do
-#    pod 'TLKit', :path => '../'
-    
-    pod 'TLKit', :git => 'git@github.com:tbl00c/TLKit.git', :tag => '0.0.3'
-#    pod 'TLKit', '~> 0.0.3'
+target :TLKit do
+    pod 'SVProgressHUD', '~> 2.2'
 end

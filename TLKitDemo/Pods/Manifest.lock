@@ -1,95 +1,12 @@
 PODS:
-  - TLKit (0.0.2):
-    - TLKit/TLCategories (= 0.0.2)
-    - TLKit/TLShortcut (= 0.0.2)
-  - TLKit/TLCategories (0.0.2):
-    - TLKit/TLCategories/Foundation (= 0.0.2)
-    - TLKit/TLCategories/UIKit (= 0.0.2)
-  - TLKit/TLCategories/Foundation (0.0.2):
-    - TLKit/TLCategories/Foundation/NSArray (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSBundle (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSData (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSDate (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSDictionary (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSDictionary (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSFileManager (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSMutableArray (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSMutableDictionary (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSNotificationCenter (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSObject (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSString (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSTimer (= 0.0.2)
-    - TLKit/TLCategories/Foundation/NSURL (= 0.0.2)
-  - TLKit/TLCategories/Foundation/NSArray (0.0.2)
-  - TLKit/TLCategories/Foundation/NSBundle (0.0.2)
-  - TLKit/TLCategories/Foundation/NSData (0.0.2)
-  - TLKit/TLCategories/Foundation/NSDate (0.0.2)
-  - TLKit/TLCategories/Foundation/NSDictionary (0.0.2)
-  - TLKit/TLCategories/Foundation/NSFileManager (0.0.2)
-  - TLKit/TLCategories/Foundation/NSMutableArray (0.0.2)
-  - TLKit/TLCategories/Foundation/NSMutableDictionary (0.0.2)
-  - TLKit/TLCategories/Foundation/NSNotificationCenter (0.0.2)
-  - TLKit/TLCategories/Foundation/NSObject (0.0.2)
-  - TLKit/TLCategories/Foundation/NSString (0.0.2):
-    - TLKit/TLCategories/Foundation/NSData
-  - TLKit/TLCategories/Foundation/NSTimer (0.0.2)
-  - TLKit/TLCategories/Foundation/NSURL (0.0.2)
-  - TLKit/TLCategories/UIKit (0.0.2):
-    - TLKit/TLCategories/UIKit/UIBarButtonItem (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UIButton (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UICollectionViewCell (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UIColor (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UIControl (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UIImage (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UINavigationBar (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UINavigationController (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UINavigationItem (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UIScrollView (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UITextField (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UITextView (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UIView (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UIViewController (= 0.0.2)
-    - TLKit/TLCategories/UIKit/UIWindow (= 0.0.2)
-  - TLKit/TLCategories/UIKit/UIBarButtonItem (0.0.2)
-  - TLKit/TLCategories/UIKit/UIButton (0.0.2):
-    - TLKit/TLCategories/UIKit/UIImage
-  - TLKit/TLCategories/UIKit/UICollectionViewCell (0.0.2)
-  - TLKit/TLCategories/UIKit/UIColor (0.0.2)
-  - TLKit/TLCategories/UIKit/UIControl (0.0.2)
-  - TLKit/TLCategories/UIKit/UIImage (0.0.2)
-  - TLKit/TLCategories/UIKit/UINavigationBar (0.0.2)
-  - TLKit/TLCategories/UIKit/UINavigationController (0.0.2)
-  - TLKit/TLCategories/UIKit/UINavigationItem (0.0.2):
-    - TLKit/TLCategories/UIKit/UIBarButtonItem
-  - TLKit/TLCategories/UIKit/UIScrollView (0.0.2)
-  - TLKit/TLCategories/UIKit/UITextField (0.0.2)
-  - TLKit/TLCategories/UIKit/UITextView (0.0.2)
-  - TLKit/TLCategories/UIKit/UIView (0.0.2):
-    - TLKit/TLCategories/Foundation/NSObject
-    - TLKit/TLShortcut
-  - TLKit/TLCategories/UIKit/UIViewController (0.0.2):
-    - TLKit/TLCategories/UIKit/UIBarButtonItem
-    - TLKit/TLCategories/UIKit/UINavigationController
-    - TLKit/TLCategories/UIKit/UIView
-  - TLKit/TLCategories/UIKit/UIWindow (0.0.2)
-  - TLKit/TLShortcut (0.0.2)
+  - SVProgressHUD (2.2)
 
 DEPENDENCIES:
-  - TLKit (from `git@github.com:tbl00c/TLKit.git`, tag `0.0.3`)
-
-EXTERNAL SOURCES:
-  TLKit:
-    :git: git@github.com:tbl00c/TLKit.git
-    :tag: 0.0.3
-
-CHECKOUT OPTIONS:
-  TLKit:
-    :git: git@github.com:tbl00c/TLKit.git
-    :tag: 0.0.3
+  - SVProgressHUD (~> 2.2)
 
 SPEC CHECKSUMS:
-  TLKit: 19798447d64f284e521f7c5334912558d150eac4
+  SVProgressHUD: 3f37f3409ddb15f35c99315ae7dc33c474aa3256
 
-PODFILE CHECKSUM: 0e7836a0e90ad15a60abd26a8301e961a627c282
+PODFILE CHECKSUM: d6184b6bed576b70d341cba0ff19ed4519b12396
 
 COCOAPODS: 1.2.1

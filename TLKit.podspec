@@ -37,6 +37,14 @@ Pod::Spec.new do |s|
     #  ss.source_files = "TLKit/TLFunctional/TLBadge/*.{h,m}"
     #end
 
+    # TLUIUtility
+    founc.subspec 'TLUIUtility' do |ss|
+      ss.source_files = "TLKit/TLFunctional/TLUIUtility/*.{h,m}"
+      ss.dependency "TLKit/TLCategories/UIKit/UIAlertView"
+      ss.dependency "TLKit/TLCategories/UIKit/UIWindow"
+      ss.dependency "SVProgressHUD", "~> 2.2"
+    end
+
   end
 
   
