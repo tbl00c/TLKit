@@ -11,8 +11,8 @@
 
 #pragma mark - # 屏幕尺寸
 #define     SCREEN_SIZE                 [UIScreen mainScreen].bounds.size
-#define     SCREEN_WIDTH                SIZE_SCREEN.width
-#define     SCREEN_HEIGHT               SIZE_SCREEN.height
+#define     SCREEN_WIDTH                SCREEN_SIZE.width
+#define     SCREEN_HEIGHT               SCREEN_SIZE.height
 
 #pragma mark - # 常用控件高度
 #define     STATUSBAR_HEIGHT            20.0f
