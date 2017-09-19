@@ -10,6 +10,6 @@
 #define TLFunctional_h
 
 #import "TLActionSheet.h"
-#import "TLBadge.h"
+//#import "TLBadge.h"
 
 #endif /* TLFunctional_h */

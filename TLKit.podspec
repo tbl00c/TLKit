@@ -33,9 +33,9 @@ Pod::Spec.new do |s|
     end
 
     # TLBadge
-    founc.subspec 'TLBadge' do |ss|
-      ss.source_files = "TLKit/TLFunctional/TLBadge/*.{h,m}"
-    end
+    #founc.subspec 'TLBadge' do |ss|
+    #  ss.source_files = "TLKit/TLFunctional/TLBadge/*.{h,m}"
+    #end
 
   end
 
