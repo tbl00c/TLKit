@@ -11,6 +11,5 @@
 
 #import "TLActionSheet.h"
 #import "TLBadge.h"
-#import "TLTabBarController.h"
 
 #endif /* TLFunctional_h */

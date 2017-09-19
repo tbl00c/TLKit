@@ -37,12 +37,6 @@ Pod::Spec.new do |s|
       ss.source_files = "TLKit/TLFunctional/TLBadge/*.{h,m}"
     end
 
-    # TLTabBarController
-    founc.subspec 'TLTabBarController' do |ss|
-      ss.source_files = "TLKit/TLFunctional/TLTabBarController/**/*.{h,m}"
-      ss.dependency "TLKit/TLFunctional/TLBadge"
-    end
-
   end
 
   
