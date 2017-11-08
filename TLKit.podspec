@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TLKit"
-  s.version      = "0.0.9"
+  s.version      = "0.0.10"
   s.platform     = :ios, "8.0"
   s.summary      = "iOS开发基础组件库"
   s.description  = <<-DESC
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
       ss.source_files = "TLKit/TLFunctional/TLUIUtility/*.{h,m}"
       ss.dependency "TLKit/TLCategories/UIKit/UIAlertView"
       ss.dependency "TLKit/TLCategories/UIKit/UIWindow"
-      ss.dependency "SVProgressHUD", "~> 2.2"
+      ss.dependency "SVProgressHUD", "~> 2.2.2"
     end
 
   end
@@ -179,7 +179,8 @@ Pod::Spec.new do |s|
 
       # UINavigationController
       uikit.subspec 'UINavigationController' do |ss|
-        ss.source_files = "TLKit/TLCategories/UIKit/UINavigationController/**/*.{h,m}"
+        ss.source_files = "TLKit/TLCategories/UIKit/UINavigationController/*.{h,m}"
+        ss.dependency 'JZNavigationExtension', '~> 1.5.0.1'
       end
 
       # UIColor
