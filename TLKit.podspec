@@ -180,7 +180,7 @@ Pod::Spec.new do |s|
       # UINavigationController
       uikit.subspec 'UINavigationController' do |ss|
         ss.source_files = "TLKit/TLCategories/UIKit/UINavigationController/*.{h,m}"
-        ss.dependency 'JZNavigationExtension', '~> 1.5.0.1'
+        ss.dependency 'JZNavigationExtension', '~> 2.0'
       end
 
       # UIColor
