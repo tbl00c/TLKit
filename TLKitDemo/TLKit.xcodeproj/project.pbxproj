@@ -51,13 +51,6 @@
 		C2C2C9101F67A4850030FD2A /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8A91F67A4850030FD2A /* UIImage+Color.m */; };
 		C2C2C9111F67A4850030FD2A /* UIImage+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8AB1F67A4850030FD2A /* UIImage+Size.m */; };
 		C2C2C9121F67A4850030FD2A /* UINavigationBar+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8AE1F67A4850030FD2A /* UINavigationBar+Extensions.m */; };
-		C2C2C9131F67A4850030FD2A /* _JZNavigationInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8B51F67A4850030FD2A /* _JZNavigationInteractiveTransition.m */; };
-		C2C2C9141F67A4850030FD2A /* _JZValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8B71F67A4850030FD2A /* _JZValue.m */; };
-		C2C2C9151F67A4850030FD2A /* NSNumber+JZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8B91F67A4850030FD2A /* NSNumber+JZExtension.m */; };
-		C2C2C9161F67A4850030FD2A /* UINavigationBar+JZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8BB1F67A4850030FD2A /* UINavigationBar+JZExtension.m */; };
-		C2C2C9171F67A4850030FD2A /* UIToolbar+JZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8BD1F67A4850030FD2A /* UIToolbar+JZExtension.m */; };
-		C2C2C9181F67A4850030FD2A /* UINavigationController+JZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8BF1F67A4850030FD2A /* UINavigationController+JZExtension.m */; };
-		C2C2C9191F67A4850030FD2A /* UIViewController+JZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8C11F67A4850030FD2A /* UIViewController+JZExtension.m */; };
 		C2C2C91A1F67A4850030FD2A /* UINavigationController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8C31F67A4850030FD2A /* UINavigationController+Extensions.m */; };
 		C2C2C91B1F67A4850030FD2A /* UIScrollView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8C71F67A4850030FD2A /* UIScrollView+Extensions.m */; };
 		C2C2C91C1F67A4850030FD2A /* UIScrollView+Pages.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C2C8C91F67A4850030FD2A /* UIScrollView+Pages.m */; };
@@ -174,22 +167,6 @@
 		C2C2C8AB1F67A4850030FD2A /* UIImage+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Size.m"; sourceTree = "<group>"; };
 		C2C2C8AD1F67A4850030FD2A /* UINavigationBar+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extensions.h"; sourceTree = "<group>"; };
 		C2C2C8AE1F67A4850030FD2A /* UINavigationBar+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extensions.m"; sourceTree = "<group>"; };
-		C2C2C8B11F67A4850030FD2A /* JZNavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZNavigationExtension.h; sourceTree = "<group>"; };
-		C2C2C8B31F67A4850030FD2A /* _JZ-objc-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_JZ-objc-internal.h"; sourceTree = "<group>"; };
-		C2C2C8B41F67A4850030FD2A /* _JZNavigationInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JZNavigationInteractiveTransition.h; sourceTree = "<group>"; };
-		C2C2C8B51F67A4850030FD2A /* _JZNavigationInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JZNavigationInteractiveTransition.m; sourceTree = "<group>"; };
-		C2C2C8B61F67A4850030FD2A /* _JZValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _JZValue.h; sourceTree = "<group>"; };
-		C2C2C8B71F67A4850030FD2A /* _JZValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _JZValue.m; sourceTree = "<group>"; };
-		C2C2C8B81F67A4850030FD2A /* NSNumber+JZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+JZExtension.h"; sourceTree = "<group>"; };
-		C2C2C8B91F67A4850030FD2A /* NSNumber+JZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+JZExtension.m"; sourceTree = "<group>"; };
-		C2C2C8BA1F67A4850030FD2A /* UINavigationBar+JZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JZExtension.h"; sourceTree = "<group>"; };
-		C2C2C8BB1F67A4850030FD2A /* UINavigationBar+JZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JZExtension.m"; sourceTree = "<group>"; };
-		C2C2C8BC1F67A4850030FD2A /* UIToolbar+JZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+JZExtension.h"; sourceTree = "<group>"; };
-		C2C2C8BD1F67A4850030FD2A /* UIToolbar+JZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+JZExtension.m"; sourceTree = "<group>"; };
-		C2C2C8BE1F67A4850030FD2A /* UINavigationController+JZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JZExtension.h"; sourceTree = "<group>"; };
-		C2C2C8BF1F67A4850030FD2A /* UINavigationController+JZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JZExtension.m"; sourceTree = "<group>"; };
-		C2C2C8C01F67A4850030FD2A /* UIViewController+JZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JZExtension.h"; sourceTree = "<group>"; };
-		C2C2C8C11F67A4850030FD2A /* UIViewController+JZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JZExtension.m"; sourceTree = "<group>"; };
 		C2C2C8C21F67A4850030FD2A /* UINavigationController+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Extensions.h"; sourceTree = "<group>"; };
 		C2C2C8C31F67A4850030FD2A /* UINavigationController+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Extensions.m"; sourceTree = "<group>"; };
 		C2C2C8C61F67A4850030FD2A /* UIScrollView+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extensions.h"; sourceTree = "<group>"; };
@@ -615,42 +592,10 @@
 		C2C2C8AF1F67A4850030FD2A /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				C2C2C8B01F67A4850030FD2A /* JZNavigationExtension */,
 				C2C2C8C21F67A4850030FD2A /* UINavigationController+Extensions.h */,
 				C2C2C8C31F67A4850030FD2A /* UINavigationController+Extensions.m */,
 			);
 			path = UINavigationController;
-			sourceTree = "<group>";
-		};
-		C2C2C8B01F67A4850030FD2A /* JZNavigationExtension */ = {
-			isa = PBXGroup;
-			children = (
-				C2C2C8B11F67A4850030FD2A /* JZNavigationExtension.h */,
-				C2C2C8B21F67A4850030FD2A /* Private */,
-				C2C2C8BE1F67A4850030FD2A /* UINavigationController+JZExtension.h */,
-				C2C2C8BF1F67A4850030FD2A /* UINavigationController+JZExtension.m */,
-				C2C2C8C01F67A4850030FD2A /* UIViewController+JZExtension.h */,
-				C2C2C8C11F67A4850030FD2A /* UIViewController+JZExtension.m */,
-			);
-			path = JZNavigationExtension;
-			sourceTree = "<group>";
-		};
-		C2C2C8B21F67A4850030FD2A /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				C2C2C8B31F67A4850030FD2A /* _JZ-objc-internal.h */,
-				C2C2C8B41F67A4850030FD2A /* _JZNavigationInteractiveTransition.h */,
-				C2C2C8B51F67A4850030FD2A /* _JZNavigationInteractiveTransition.m */,
-				C2C2C8B61F67A4850030FD2A /* _JZValue.h */,
-				C2C2C8B71F67A4850030FD2A /* _JZValue.m */,
-				C2C2C8B81F67A4850030FD2A /* NSNumber+JZExtension.h */,
-				C2C2C8B91F67A4850030FD2A /* NSNumber+JZExtension.m */,
-				C2C2C8BA1F67A4850030FD2A /* UINavigationBar+JZExtension.h */,
-				C2C2C8BB1F67A4850030FD2A /* UINavigationBar+JZExtension.m */,
-				C2C2C8BC1F67A4850030FD2A /* UIToolbar+JZExtension.h */,
-				C2C2C8BD1F67A4850030FD2A /* UIToolbar+JZExtension.m */,
-			);
-			path = Private;
 			sourceTree = "<group>";
 		};
 		C2C2C8C41F67A4850030FD2A /* UINavigationItem */ = {
@@ -943,11 +888,9 @@
 				C2C2C9351F67A5210030FD2A /* NSData+Hash.m in Sources */,
 				C2C2C9271F67A4850030FD2A /* UIViewController+TipView.m in Sources */,
 				C2C2C8F91F67A4850030FD2A /* NSMutableArray+SafeAccess.m in Sources */,
-				C2C2C9191F67A4850030FD2A /* UIViewController+JZExtension.m in Sources */,
 				C2C2C9061F67A4850030FD2A /* NSString+StringPages.m in Sources */,
 				C2C2C9081F67A4850030FD2A /* NSTimer+Block.m in Sources */,
 				C2C2C91B1F67A4850030FD2A /* UIScrollView+Extensions.m in Sources */,
-				C2C2C9131F67A4850030FD2A /* _JZNavigationInteractiveTransition.m in Sources */,
 				C2C2C9051F67A4850030FD2A /* NSString+Size.m in Sources */,
 				C2C2C90A1F67A4850030FD2A /* UIBarButtonItem+Action.m in Sources */,
 				C2581E791F66A71F0029C3F4 /* ViewController.m in Sources */,
@@ -960,8 +903,6 @@
 				C2C2C9211F67A4850030FD2A /* UITextView+Select.m in Sources */,
 				C2C2C9331F67A5210030FD2A /* NSData+Encrypt.m in Sources */,
 				C2C2C90D1F67A4850030FD2A /* UIColor+Extensions.m in Sources */,
-				C2C2C9151F67A4850030FD2A /* NSNumber+JZExtension.m in Sources */,
-				C2C2C9141F67A4850030FD2A /* _JZValue.m in Sources */,
 				C2EAC3491F7126FF00BA2ED3 /* TLUIUtility.m in Sources */,
 				C2C2C9101F67A4850030FD2A /* UIImage+Color.m in Sources */,
 				C2C2C90E1F67A4850030FD2A /* UIColor+Gradient.m in Sources */,
@@ -978,9 +919,7 @@
 				C2C2C90F1F67A4850030FD2A /* UIControl+ActionBlocks.m in Sources */,
 				C2C2C9251F67A4850030FD2A /* UIView+Separator.m in Sources */,
 				C2C2C9291F67A4850030FD2A /* TLShortcutMethod.m in Sources */,
-				C2C2C9171F67A4850030FD2A /* UIToolbar+JZExtension.m in Sources */,
 				C2C2C91A1F67A4850030FD2A /* UINavigationController+Extensions.m in Sources */,
-				C2C2C9161F67A4850030FD2A /* UINavigationBar+JZExtension.m in Sources */,
 				C2C2C9091F67A4850030FD2A /* NSURL+Params.m in Sources */,
 				C2C2C91D1F67A4850030FD2A /* UITextField+LengthLimit.m in Sources */,
 				C2C2C9491F67B7F60030FD2A /* UIViewController+NavBar.m in Sources */,
@@ -998,7 +937,6 @@
 				C2C2C9231F67A4850030FD2A /* UIView+Frame.m in Sources */,
 				C2C2C9201F67A4850030FD2A /* UITextView+Placeholder.m in Sources */,
 				C2C2C9341F67A5210030FD2A /* NSData+Gzip.m in Sources */,
-				C2C2C9181F67A4850030FD2A /* UINavigationController+JZExtension.m in Sources */,
 				C2C2C8EC1F67A4850030FD2A /* NSBundle+AppIcon.m in Sources */,
 				C2581E731F66A71F0029C3F4 /* main.m in Sources */,
 				C2C2C8EB1F67A4850030FD2A /* NSArray+SafeAccess.m in Sources */,
