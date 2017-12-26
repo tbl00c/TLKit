@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TLKit"
-  s.version      = "0.0.15"
+  s.version      = "0.0.16"
   s.platform     = :ios, "8.0"
   s.summary      = "iOS开发基础组件库"
   s.description  = <<-DESC
@@ -180,6 +180,11 @@ Pod::Spec.new do |s|
       # UINavigationController
       uikit.subspec 'UINavigationController' do |ss|
         ss.source_files = "TLKit/TLCategories/UIKit/UINavigationController/*.{h,m}"
+      end
+
+      # UINavigationController
+      uikit.subspec 'UITabBarController' do |ss|
+        ss.source_files = "TLKit/TLCategories/UIKit/UITabBarController/*.{h,m}"
       end
 
       # UIColor
