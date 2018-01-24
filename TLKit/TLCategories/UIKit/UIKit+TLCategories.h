@@ -12,7 +12,6 @@
 //MARK: UIView
 #import "UIView+Frame.h"                        // UIView 的一些关于坐标、大小的快捷属性
 #import "UIView+Extensions.h"                   // UIView 关于subView、所在VC、当前状态的拓展
-#import "UIView+Separator.h"                    // UIView 画分割线的拓展，链式API
 #import "UIView+Screenshot.h"                   // UIView 截屏
 #import "UIView+TipView.h"                      // UIView 错误提示View（无网、无数据等）
 
