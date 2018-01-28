@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TLKit"
-  s.version      = "0.0.21"
+  s.version      = "0.0.22"
   s.platform     = :ios, "8.0"
   s.summary      = "iOS开发基础组件库"
   s.description  = <<-DESC
