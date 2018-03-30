@@ -26,7 +26,7 @@ static UILabel *hLabel = nil;
 #pragma mark - # HUD
 + (void)showLoading:(NSString *)hintText
 {
-    [SVProgressHUD showWithStatus:nil];
+    [SVProgressHUD showWithStatus:hintText];
 }
 
 + (void)hiddenLoading
