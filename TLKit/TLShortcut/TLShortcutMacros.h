@@ -34,6 +34,10 @@
 
 #define     SAFEAREA_INSETS_BOTTOM      (SAFEAREA_INSETS.bottom)
 
+//MAKR: 设备类型
+#define     IS_IPAD                 [[UIDevice currentDevice].model isEqualToString:@"iPad"]
+#define     IS_IPHONE               [[UIDevice currentDevice].model isEqualToString:@"iPhone"]
+
 #pragma mark - # 设备(屏幕)类型
 #define     SCRREN_IPHONE4              (SCREEN_HEIGHT >= 480.0f)           // 320 * 480
 #define     SCRREN_IPHONE5              (SCREEN_HEIGHT >= 568.0f)           // 320 * 568
