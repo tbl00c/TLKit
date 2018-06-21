@@ -32,8 +32,6 @@
 
 @property (nonatomic, strong) NSString *destructiveButtonTitle;
 
-@property (nonatomic, strong) NSMutableArray *otherButtonTitles;
-
 @property (nonatomic, strong) UIButton *backgroudView;
 
 @property (nonatomic, strong) UIView *actionSheetView;
@@ -50,7 +48,7 @@
 
 - (instancetype)initWithTitle:(NSString *)title delegate:(id<TLActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...
 {
-    if (self = [super init]) {
+    if (self = [self initWithFrame:CGRectZero]) {
         [self setDelegate:delegate];
         [self setTitle:title];
         [self setCancelButtonTitle:cancelButtonTitle];
@@ -58,31 +56,25 @@
         
         va_list list;
         if (otherButtonTitles) {
-            self.otherButtonTitles = [[NSMutableArray alloc] initWithCapacity:0];
-            [self.otherButtonTitles addObject:otherButtonTitles];
+            _otherButtonTitles = [[NSMutableArray alloc] initWithCapacity:0];
+            [_otherButtonTitles addObject:otherButtonTitles];
             
             va_start(list, otherButtonTitles);
             NSString *otherTitle = va_arg(list, id);
             while (otherTitle) {
-                [self.otherButtonTitles addObject:otherTitle];
+                [_otherButtonTitles addObject:otherTitle];
                 otherTitle = va_arg(list, id);
             }
         }
-        
-        tableViewButtonCount = self.otherButtonTitles.count + (destructiveButtonTitle ? 1 : 0);
-        _numberOfButtons = tableViewButtonCount + (cancelButtonTitle ? 1 : 0);
-        _destructiveButtonIndex = (destructiveButtonTitle ? 0 : -1);
-        _cancelButtonIndex = (self.cancelButtonTitle ? self.otherButtonTitles.count + (self.destructiveButtonTitle ? 1 : 0) : -1);
         
         [self p_initSubViews];
     }
     return self;
 }
 
-
 - (id)initWithTitle:(NSString *)title clickAction:(void (^)(NSInteger buttonIndex))clickAction cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...
 {
-    if (self = [super init]) {
+    if (self = [self initWithFrame:CGRectZero]) {
         [self setTitle:title];
         [self setClickAction:clickAction];
         [self setCancelButtonTitle:cancelButtonTitle];
@@ -90,25 +82,39 @@
         
         va_list list;
         if (otherButtonTitles) {
-            self.otherButtonTitles = [[NSMutableArray alloc] initWithCapacity:0];
-            [self.otherButtonTitles addObject:otherButtonTitles];
+            _otherButtonTitles = [[NSMutableArray alloc] initWithCapacity:0];
+            [_otherButtonTitles addObject:otherButtonTitles];
             
             va_start(list, otherButtonTitles);
             NSString *otherTitle = va_arg(list, id);
             while (otherTitle) {
-                [self.otherButtonTitles addObject:otherTitle];
+                [_otherButtonTitles addObject:otherTitle];
                 otherTitle = va_arg(list, id);
             }
         }
         
-        tableViewButtonCount = self.otherButtonTitles.count + (destructiveButtonTitle ? 1 : 0);
-        _numberOfButtons = tableViewButtonCount + (cancelButtonTitle ? 1 : 0);
-        _destructiveButtonIndex = (destructiveButtonTitle ? 0 : -1);
-        _cancelButtonIndex = (self.cancelButtonTitle ? self.otherButtonTitles.count + (self.destructiveButtonTitle ? 1 : 0) : -1);
-        
         [self p_initSubViews];
     }
     return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:[UIScreen mainScreen].bounds]) {
+        [self addSubview:self.backgroudView];
+        [self addSubview:self.actionSheetView];
+        [self.tableView setFrame:CGRectMake(0, 0, self.frame.size.width, 0)];
+        [self.actionSheetView addSubview:self.tableView];
+        [self.backgroudView setFrame:self.bounds];
+    }
+    return self;
+}
+
+- (void)setOtherButtonTitles:(NSMutableArray *)otherButtonTitles
+{
+    _otherButtonTitles = otherButtonTitles;
+    
+    [self p_initSubViews];
 }
 
 #pragma mark - # Public Methods
@@ -142,10 +148,10 @@
     if (buttonIndex == -1) {
         return self.destructiveButtonTitle;
     }
-    else if (buttonIndex >= 0 &&  buttonIndex < self.otherButtonTitles.count) {
-        return self.otherButtonTitles[buttonIndex];
+    else if (buttonIndex >= 0 &&  buttonIndex < _otherButtonTitles.count) {
+        return _otherButtonTitles[buttonIndex];
     }
-    else if (buttonIndex == self.otherButtonTitles.count) {
+    else if (buttonIndex == _otherButtonTitles.count) {
         return self.cancelButtonTitle;
     }
     return nil;
@@ -198,12 +204,12 @@
         }
         else {
             [cell.textLabel setTextColor:[UIColor blackColor]];
-            [cell.textLabel setText:self.otherButtonTitles[indexPath.row - 1]];
+            [cell.textLabel setText:_otherButtonTitles[indexPath.row - 1]];
         }
     }
     else {
         [cell.textLabel setTextColor:[UIColor blackColor]];
-        [cell.textLabel setText:self.otherButtonTitles[indexPath.row]];
+        [cell.textLabel setText:_otherButtonTitles[indexPath.row]];
     }
     
     return cell;
@@ -225,7 +231,7 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIEdgeInsets edgeInset = UIEdgeInsetsZero;
-    if ((self.destructiveButtonTitle && indexPath.row >= self.otherButtonTitles.count) || (!self.destructiveButtonTitle && indexPath.row >= self.otherButtonTitles.count - 1)) {
+    if ((self.destructiveButtonTitle && indexPath.row >= _otherButtonTitles.count) || (!self.destructiveButtonTitle && indexPath.row >= _otherButtonTitles.count - 1)) {
         edgeInset = UIEdgeInsetsMake(0, 0, 0, self.frame.size.width);
     }
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
@@ -239,12 +245,10 @@
 #pragma mark - # Private Methods
 - (void)p_initSubViews
 {
-    [self setFrame:[UIScreen mainScreen].bounds];
-    [self addSubview:self.backgroudView];
-    [self addSubview:self.actionSheetView];
-    [self.tableView setFrame:CGRectMake(0, 0, self.frame.size.width, 0)];
-    [self.actionSheetView addSubview:self.tableView];
-    [self.backgroudView setFrame:self.bounds];
+    tableViewButtonCount = _otherButtonTitles.count + (self.destructiveButtonTitle ? 1 : 0);
+    _numberOfButtons = tableViewButtonCount + (self.cancelButtonTitle ? 1 : 0);
+    _destructiveButtonIndex = (self.destructiveButtonTitle ? 0 : -1);
+    _cancelButtonIndex = (self.cancelButtonTitle ? _otherButtonTitles.count + (self.destructiveButtonTitle ? 1 : 0) : -1);
     
     NSInteger bottomHeight = 0;
     NSInteger tableHeight = 0;

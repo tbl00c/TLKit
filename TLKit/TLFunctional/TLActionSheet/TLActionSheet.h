@@ -19,6 +19,8 @@
 
 @interface TLActionSheet : UIView
 
+@property (nonatomic, strong) NSMutableArray *otherButtonTitles;
+
 /// 按钮个数
 @property (nonatomic, assign, readonly) NSInteger numberOfButtons;
 
