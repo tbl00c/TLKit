@@ -9,7 +9,7 @@
 #ifndef TLShortcutMacros_h
 #define TLShortcutMacros_h
 
-#define     IS_IPHONEX              ([UIScreen mainScreen].bounds.size.width == 375.0f && [UIScreen mainScreen].bounds.size.height == 812.0f)
+#define     IS_IPHONEX              (([UIScreen mainScreen].bounds.size.width == 375.0f && [UIScreen mainScreen].bounds.size.height == 812.0f) || ([UIScreen mainScreen].bounds.size.width == 414.0f && [UIScreen mainScreen].bounds.size.height == 896.0f))
 
 #pragma mark - # 屏幕尺寸
 #define     SCREEN_SIZE                 [UIScreen mainScreen].bounds.size
