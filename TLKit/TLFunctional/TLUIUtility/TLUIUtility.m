@@ -15,7 +15,7 @@
 static UILabel *hLabel = nil;
 
 @implementation TLUIUtility
-+ (void)load
++ (void)initialize
 {
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD setMinimumSize:CGSizeMake(110, 110)];
