@@ -92,7 +92,7 @@ static UILabel *hLabel = nil;
 
 + (void)showAlertWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *)otherButtonTitles actionHandler:(void (^)(NSInteger buttonIndex))actionHandler
 {
-    cancelButtonTitle = cancelButtonTitle ? cancelButtonTitle : @"取消";
+    cancelButtonTitle = cancelButtonTitle ? cancelButtonTitle : @"确定";
     if (([[[UIDevice currentDevice] systemVersion] compare:@"8.0" options:NSNumericSearch] != NSOrderedAscending)) {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
         
