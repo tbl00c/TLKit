@@ -250,7 +250,11 @@
     _destructiveButtonIndex = (self.destructiveButtonTitle ? 0 : -1);
     _cancelButtonIndex = (self.cancelButtonTitle ? _otherButtonTitles.count + (self.destructiveButtonTitle ? 1 : 0) : -1);
     
-    NSInteger bottomHeight = 0;
+    UIEdgeInsets edgeInsets = UIEdgeInsetsZero;
+    if (@available(iOS 11.0, *)) {
+        edgeInsets = [UIApplication sharedApplication].keyWindow.safeAreaInsets;
+    }
+    NSInteger bottomHeight = edgeInsets.bottom;
     NSInteger tableHeight = 0;
     if (self.cancelButtonTitle) {
         [self.cancelButton setTitle:self.cancelButtonTitle forState:UIControlStateNormal];
