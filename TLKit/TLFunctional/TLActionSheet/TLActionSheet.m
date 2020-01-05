@@ -10,8 +10,8 @@
 #import "UIImage+Color.h"
 
 #define     TITLE_FONT_SIZE             13.0f
-#define     BUTTON_FONT_SIZE            18.0f
-#define     HEIGHT_BUTTON               48.0f
+#define     BUTTON_FONT_SIZE            17.0f
+#define     HEIGHT_BUTTON               52.0f
 #define     SPACE_MIDDEL                8.0f
 #define     SPACE_TITLE_LEFT            22.0f
 #define     SPACE_TITLE_TOP             20.0f
@@ -20,6 +20,10 @@
 #define     COLOR_DESTRUCTIVE_TITLE     [UIColor redColor]
 #define     COLOR_TABLEVIEW_BG          [UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1.0]
 #define     COLOR_SEPERATOR             [UIColor colorWithRed:220.0/255.0 green:220.0/255.0 blue:220.0/255.0 alpha:1.0]
+
+@implementation TLActionSheetItem
+
+@end
 
 @interface TLActionSheet() <UITableViewDataSource, UITableViewDelegate>
 {
@@ -45,32 +49,6 @@
 @end
 
 @implementation TLActionSheet
-
-- (instancetype)initWithTitle:(NSString *)title delegate:(id<TLActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...
-{
-    if (self = [self initWithFrame:CGRectZero]) {
-        [self setDelegate:delegate];
-        [self setTitle:title];
-        [self setCancelButtonTitle:cancelButtonTitle];
-        [self setDestructiveButtonTitle:destructiveButtonTitle];
-        
-        va_list list;
-        if (otherButtonTitles) {
-            _otherButtonTitles = [[NSMutableArray alloc] initWithCapacity:0];
-            [_otherButtonTitles addObject:otherButtonTitles];
-            
-            va_start(list, otherButtonTitles);
-            NSString *otherTitle = va_arg(list, id);
-            while (otherTitle) {
-                [_otherButtonTitles addObject:otherTitle];
-                otherTitle = va_arg(list, id);
-            }
-        }
-        
-        [self p_initSubViews];
-    }
-    return self;
-}
 
 - (id)initWithTitle:(NSString *)title clickAction:(void (^)(NSInteger buttonIndex))clickAction cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...
 {
@@ -117,6 +95,13 @@
     [self p_initSubViews];
 }
 
+- (void)setCustomHeaderView:(UIView *)customHeaderView
+{
+    _customHeaderView = customHeaderView;
+    
+    [self p_initSubViews];
+}
+
 #pragma mark - # Public Methods
 - (void)show
 {
@@ -142,6 +127,11 @@
     }];
 }
 
+- (void)dismiss
+{
+    [self dismissWithClickedButtonIndex:self.cancelButtonIndex animated:YES];
+}
+
 - (NSString *)buttonTitleAtIndex:(NSInteger)buttonIndex
 {
     buttonIndex -= self.destructiveButtonTitle ? 1 : 0;
@@ -157,15 +147,13 @@
     return nil;
 }
 
+
 #pragma mark - # Event Response
 - (void)didTapBackground:(id)sender
 {
     if (self.clickAction) {
         self.clickAction(self.cancelButtonIndex);
         self.clickAction = nil;
-    }
-    if (self.cancelButtonTitle && self.delegate && [self.delegate respondsToSelector:@selector(actionSheet:clickedButtonAtIndex:)]) {
-        [self.delegate actionSheet:self clickedButtonAtIndex:self.cancelButtonIndex];
     }
     [self dismissWithClickedButtonIndex:self.cancelButtonIndex animated:YES];
 }
@@ -175,9 +163,6 @@
     if (self.clickAction) {
         self.clickAction(self.cancelButtonIndex);
         self.clickAction = nil;
-    }
-    if (self.delegate && [self.delegate respondsToSelector:@selector(actionSheet:clickedButtonAtIndex:)]) {
-        [self.delegate actionSheet:self clickedButtonAtIndex:self.cancelButtonIndex];
     }
     [self dismissWithClickedButtonIndex:self.cancelButtonIndex animated:YES];
 }
@@ -212,6 +197,10 @@
         [cell.textLabel setText:_otherButtonTitles[indexPath.row]];
     }
     
+    if (self.cellConfigAction) {
+        self.cellConfigAction(cell, cell.textLabel.text);
+    }
+    
     return cell;
 }
 
@@ -220,9 +209,6 @@
     if (self.clickAction) {
         self.clickAction(indexPath.row);
         self.clickAction = nil;
-    }
-    if (self.delegate && [self.delegate respondsToSelector:@selector(actionSheet:clickedButtonAtIndex:)]) {
-        [self.delegate actionSheet:self clickedButtonAtIndex:indexPath.row];
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self dismissWithClickedButtonIndex:indexPath.row animated:YES];
@@ -278,7 +264,17 @@
             [self.tableView setBounces:NO];
         }
         
-        if (self.title.length > 0) {
+        if (self.customHeaderView) {
+            if (tableViewButtonCount > 0) {
+                CGFloat height = 1.0 / [UIScreen mainScreen].scale;
+                UIView * lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.customHeaderView.frame.size.height - height, self.frame.size.width, height)];
+                [lineView setBackgroundColor:COLOR_SEPERATOR];
+                [self.customHeaderView addSubview:lineView];
+            }
+            [self.tableView setTableHeaderView:self.customHeaderView];
+            tableHeight += self.customHeaderView.frame.size.height;
+        }
+        else if (self.title.length > 0) {
             [self.headerTitleLabel setFrame:CGRectMake(SPACE_TITLE_LEFT, SPACE_TITLE_TOP, self.frame.size.width - SPACE_TITLE_LEFT * 2, 0)];
             [self.headerTitleLabel setText:self.title];
             CGFloat hightTitle = [self.headerTitleLabel sizeThatFits:CGSizeMake(self.headerTitleLabel.frame.size.width, MAXFLOAT)].height;
@@ -293,7 +289,8 @@
             [headerView addSubview:self.headerTitleLabel];
             
             if (self.destructiveButtonTitle || tableViewButtonCount > 0) {
-                UIView * lineView = [[UIView alloc] initWithFrame:CGRectMake(0, hightHeader - 0.5, self.frame.size.width, 0.5)];
+                CGFloat height = 1.0 / [UIScreen mainScreen].scale;
+                UIView * lineView = [[UIView alloc] initWithFrame:CGRectMake(0, hightHeader - height, self.frame.size.width, height)];
                 [lineView setBackgroundColor:COLOR_SEPERATOR];
                 [headerView addSubview:lineView];
             }
@@ -302,10 +299,21 @@
             tableHeight += hightHeader;
         }
     }
-    
-    [self.actionSheetView setFrame:CGRectMake(0, self.frame.size.height - bottomHeight - tableHeight, self.frame.size.width, bottomHeight + tableHeight)];
+
+    CGFloat actionSheetHight = bottomHeight + tableHeight;
+    [self.actionSheetView setFrame:CGRectMake(0, self.frame.size.height - actionSheetHight, self.frame.size.width, actionSheetHight)];
     [self.tableView setFrame:CGRectMake(0, 0, self.frame.size.width, tableHeight)];
-    [self.cancelButton setFrame:CGRectMake(0, tableHeight, self.frame.size.width, HEIGHT_BUTTON)];
+    CGFloat bottom = 0;
+    if (@available(iOS 11.0, *)) {
+        bottom = [UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom;
+    }
+    [self.cancelButton setFrame:CGRectMake(0, tableHeight, self.frame.size.width, HEIGHT_BUTTON + bottom)];
+    [self.cancelButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, bottom, 0)];
+    
+    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.actionSheetView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:(CGSize){10}];
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.path = bezierPath.CGPath;
+    self.actionSheetView.layer.mask = shapeLayer;
 }
 
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated
@@ -329,7 +337,6 @@
 {
     if (_backgroudView == nil) {
         _backgroudView = [[UIButton alloc] init];
-        [_backgroudView setBackgroundColor:[UIColor blueColor]];
         [_backgroudView addTarget:self action:@selector(didTapBackground:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _backgroudView;
