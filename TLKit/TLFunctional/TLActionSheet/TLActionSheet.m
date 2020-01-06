@@ -36,12 +36,16 @@
 
 @property (nonatomic, strong) NSString *destructiveButtonTitle;
 
-@property (nonatomic, strong) UIButton *backgroudView;
+/// 遮罩
+@property (nonatomic, strong) UIButton *shadowView;
 
+/// 弹窗
 @property (nonatomic, strong) UIView *actionSheetView;
-
+/// 顶部视图
+@property (nonatomic, strong) UIView *headerView;
+/// 选项
 @property (nonatomic, strong) UITableView *tableView;
-
+/// 按钮
 @property (nonatomic, strong) UIButton *cancelButton;
 
 @property (nonatomic, strong) UILabel *headerTitleLabel;
@@ -71,7 +75,7 @@
             }
         }
         
-        [self p_initSubViews];
+        [self _resetActionSheetUI];
     }
     return self;
 }
@@ -79,11 +83,12 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:[UIScreen mainScreen].bounds]) {
-        [self addSubview:self.backgroudView];
+        [self addSubview:self.shadowView];
         [self addSubview:self.actionSheetView];
-        [self.tableView setFrame:CGRectMake(0, 0, self.frame.size.width, 0)];
+        [self.actionSheetView addSubview:self.headerView];
         [self.actionSheetView addSubview:self.tableView];
-        [self.backgroudView setFrame:self.bounds];
+        [self.actionSheetView addSubview:self.cancelButton];
+        [self.shadowView setFrame:self.bounds];
     }
     return self;
 }
@@ -92,14 +97,14 @@
 {
     _otherButtonTitles = otherButtonTitles;
     
-    [self p_initSubViews];
+    [self _resetActionSheetUI];
 }
 
 - (void)setCustomHeaderView:(UIView *)customHeaderView
 {
     _customHeaderView = customHeaderView;
     
-    [self p_initSubViews];
+    [self _resetActionSheetUI];
 }
 
 #pragma mark - # Public Methods
@@ -116,14 +121,14 @@
     [view addSubview:self];
     
     CGRect rect = CGRectMake(0, self.frame.size.height - self.actionSheetView.frame.size.height, self.frame.size.width, self.actionSheetView.frame.size.height);
-    [self.backgroudView setBackgroundColor:[UIColor clearColor]];
+    [self.shadowView setBackgroundColor:[UIColor clearColor]];
     [self.actionSheetView setFrame:CGRectMake(0,
                                               self.frame.size.height,
                                               self.actionSheetView.frame.size.width,
                                               self.actionSheetView.frame.size.height)];
     [UIView animateWithDuration:0.2 animations:^{
         [self.actionSheetView setFrame:rect];
-        [self.backgroudView setBackgroundColor:COLOR_BACKGROUND];
+        [self.shadowView setBackgroundColor:COLOR_BACKGROUND];
     }];
 }
 
@@ -147,15 +152,10 @@
     return nil;
 }
 
-
 #pragma mark - # Event Response
 - (void)didTapBackground:(id)sender
 {
-    if (self.clickAction) {
-        self.clickAction(self.cancelButtonIndex);
-        self.clickAction = nil;
-    }
-    [self dismissWithClickedButtonIndex:self.cancelButtonIndex animated:YES];
+    [self cancelButtonClicked:sender];
 }
 
 - (void)cancelButtonClicked:(id)sender
@@ -229,91 +229,86 @@
 }
 
 #pragma mark - # Private Methods
-- (void)p_initSubViews
+- (void)_resetActionSheetUI
 {
     tableViewButtonCount = _otherButtonTitles.count + (self.destructiveButtonTitle ? 1 : 0);
     _numberOfButtons = tableViewButtonCount + (self.cancelButtonTitle ? 1 : 0);
     _destructiveButtonIndex = (self.destructiveButtonTitle ? 0 : -1);
     _cancelButtonIndex = (self.cancelButtonTitle ? _otherButtonTitles.count + (self.destructiveButtonTitle ? 1 : 0) : -1);
     
-    UIEdgeInsets edgeInsets = UIEdgeInsetsZero;
-    if (@available(iOS 11.0, *)) {
-        edgeInsets = [UIApplication sharedApplication].keyWindow.safeAreaInsets;
-    }
-    NSInteger bottomHeight = edgeInsets.bottom;
-    NSInteger tableHeight = 0;
-    if (self.cancelButtonTitle) {
-        [self.cancelButton setTitle:self.cancelButtonTitle forState:UIControlStateNormal];
-        [self.cancelButton setFrame:CGRectMake(0, self.frame.size.height - HEIGHT_BUTTON, self.frame.size.width, HEIGHT_BUTTON)];
-        [self.actionSheetView addSubview:self.cancelButton];
-        
-        bottomHeight += HEIGHT_BUTTON;
-        tableHeight += SPACE_MIDDEL;
-    }
-    else {
-        [self.cancelButton removeFromSuperview];
-    }
-    
+    // 顶部视图
     {
-        if (tableViewButtonCount * HEIGHT_BUTTON > self.frame.size.height - bottomHeight - 20) {
-            tableHeight += (self.frame.size.height - bottomHeight - 20);
-            [self.tableView setBounces:YES];
-        }
-        else {
-            tableHeight += (tableViewButtonCount * HEIGHT_BUTTON);
-            [self.tableView setBounces:NO];
+        // 移除旧视图
+        while (self.headerView.subviews.count > 0) {
+            [self.headerView.subviews.firstObject removeFromSuperview];
         }
         
+        // 添加新视图
         if (self.customHeaderView) {
-            if (tableViewButtonCount > 0) {
-                CGFloat height = 1.0 / [UIScreen mainScreen].scale;
-                UIView * lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.customHeaderView.frame.size.height - height, self.frame.size.width, height)];
-                [lineView setBackgroundColor:COLOR_SEPERATOR];
-                [self.customHeaderView addSubview:lineView];
-            }
-            [self.tableView setTableHeaderView:self.customHeaderView];
-            tableHeight += self.customHeaderView.frame.size.height;
+            [self.headerView addSubview:self.customHeaderView];
+            [self.headerView setFrame:CGRectMake(0, 0, self.frame.size.width, self.customHeaderView.frame.size.height)];
         }
         else if (self.title.length > 0) {
+            [self.headerTitleLabel removeFromSuperview];
             [self.headerTitleLabel setFrame:CGRectMake(SPACE_TITLE_LEFT, SPACE_TITLE_TOP, self.frame.size.width - SPACE_TITLE_LEFT * 2, 0)];
             [self.headerTitleLabel setText:self.title];
             CGFloat hightTitle = [self.headerTitleLabel sizeThatFits:CGSizeMake(self.headerTitleLabel.frame.size.width, MAXFLOAT)].height;
-            [self.headerTitleLabel setFrame:CGRectMake(self.headerTitleLabel.frame.origin.x,
-                                                       self.headerTitleLabel.frame.origin.y,
-                                                       self.headerTitleLabel.frame.size.width,
-                                                       hightTitle)];
+            [self.headerTitleLabel setFrame:CGRectMake(self.headerTitleLabel.frame.origin.x, self.headerTitleLabel.frame.origin.y, self.headerTitleLabel.frame.size.width, hightTitle)];
             
             CGFloat hightHeader = hightTitle + SPACE_TITLE_TOP * 2;
-            UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, hightHeader)];
-            [headerView setBackgroundColor:[UIColor whiteColor]];
-            [headerView addSubview:self.headerTitleLabel];
-            
-            if (self.destructiveButtonTitle || tableViewButtonCount > 0) {
-                CGFloat height = 1.0 / [UIScreen mainScreen].scale;
-                UIView * lineView = [[UIView alloc] initWithFrame:CGRectMake(0, hightHeader - height, self.frame.size.width, height)];
-                [lineView setBackgroundColor:COLOR_SEPERATOR];
-                [headerView addSubview:lineView];
-            }
-
-            [self.tableView setTableHeaderView:headerView];
-            tableHeight += hightHeader;
+            [self.headerView setFrame:CGRectMake(0, 0, self.frame.size.width, hightHeader)];
+            [self.headerView addSubview:self.headerTitleLabel];
+        }
+        else {
+            [self.headerView setFrame:CGRectMake(0, 0, self.frame.size.width, 0)];
+        }
+        
+        // 添加分割线
+        if (self.destructiveButtonTitle || tableViewButtonCount > 0) {
+            CGFloat height = 1.0 / [UIScreen mainScreen].scale;
+            UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.size.height - height, self.frame.size.width, height)];
+            [lineView setBackgroundColor:COLOR_SEPERATOR];
+            [self.headerView addSubview:lineView];
         }
     }
-
-    CGFloat actionSheetHight = bottomHeight + tableHeight;
-    [self.actionSheetView setFrame:CGRectMake(0, self.frame.size.height - actionSheetHight, self.frame.size.width, actionSheetHight)];
-    [self.tableView setFrame:CGRectMake(0, 0, self.frame.size.width, tableHeight)];
-    CGFloat bottom = 0;
-    if (@available(iOS 11.0, *)) {
-        bottom = [UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom;
-    }
-    [self.cancelButton setFrame:CGRectMake(0, tableHeight, self.frame.size.width, HEIGHT_BUTTON + bottom)];
-    [self.cancelButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, bottom, 0)];
     
-    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.actionSheetView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:(CGSize){10}];
-    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    shapeLayer.path = bezierPath.CGPath;
-    self.actionSheetView.layer.mask = shapeLayer;
+    // 按钮列表
+    {
+        NSInteger tableHeight = tableViewButtonCount * HEIGHT_BUTTON;
+        [self.tableView setBounces:NO];
+        CGFloat maxHeight = (self.frame.size.height - self.headerView.frame.size.height - SPACE_MIDDEL - HEIGHT_BUTTON) * 0.6;
+        if (tableHeight > maxHeight) {
+            [self.tableView setBounces:YES];
+            tableHeight = maxHeight;
+        }
+        [self.tableView setFrame:CGRectMake(0, self.headerView.frame.size.height, self.frame.size.width, tableHeight)];
+    }
+    
+    
+   
+    // 取消按钮
+    {
+        UIEdgeInsets edgeInsets = UIEdgeInsetsZero;
+        if (@available(iOS 11.0, *)) {
+            edgeInsets = [UIApplication sharedApplication].keyWindow.safeAreaInsets;
+        }
+        NSInteger height = edgeInsets.bottom + HEIGHT_BUTTON;
+        [self.cancelButton setTitle:self.cancelButtonTitle ? self.cancelButtonTitle : @"取消" forState:UIControlStateNormal];
+        CGFloat y = self.tableView.frame.origin.y + self.tableView.frame.size.height + SPACE_MIDDEL;
+        [self.cancelButton setFrame:CGRectMake(0, y, self.frame.size.width, height)];
+        [self.cancelButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, edgeInsets.bottom, 0)];
+    }
+    
+    // 整体视图
+    {
+        CGFloat height = self.cancelButton.frame.origin.y + self.cancelButton.frame.size.height;
+        [self.actionSheetView setFrame:CGRectMake(0, self.frame.size.height - height, self.frame.size.width, height)];
+        
+        UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.actionSheetView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:(CGSize){10}];
+        CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+        shapeLayer.path = bezierPath.CGPath;
+        self.actionSheetView.layer.mask = shapeLayer;
+    }
 }
 
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated
@@ -322,7 +317,7 @@
         CGRect rect = CGRectMake(0, self.frame.size.height, self.frame.size.width, self.actionSheetView.frame.size.height);
         [UIView animateWithDuration:0.2 animations:^{
             [self.actionSheetView setFrame:rect];
-            [self.backgroudView setBackgroundColor:[UIColor clearColor]];
+            [self.shadowView setBackgroundColor:[UIColor clearColor]];
         } completion:^(BOOL finished) {
             [self removeFromSuperview];
         }];
@@ -333,34 +328,44 @@
 }
 
 #pragma mark - # Getter 
-- (UIButton *)backgroudView
+- (UIButton *)shadowView
 {
-    if (_backgroudView == nil) {
-        _backgroudView = [[UIButton alloc] init];
-        [_backgroudView addTarget:self action:@selector(didTapBackground:) forControlEvents:UIControlEventTouchUpInside];
+    if (_shadowView == nil) {
+        _shadowView = [[UIButton alloc] init];
+        [_shadowView addTarget:self action:@selector(didTapBackground:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _backgroudView;
+    return _shadowView;
 }
 
 - (UIView *)actionSheetView
 {
     if (_actionSheetView == nil) {
         _actionSheetView = [[UIView alloc] init];
-        [_actionSheetView setBackgroundColor:[UIColor whiteColor]];
+        [_actionSheetView setBackgroundColor:COLOR_TABLEVIEW_BG];
     }
     return _actionSheetView;
+}
+
+- (UIView *)headerView
+{
+    if (!_headerView) {
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 0)];
+        [_headerView setBackgroundColor:[UIColor whiteColor]];
+    }
+    return  _headerView;
 }
 
 - (UITableView *)tableView
 {
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc] init];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 0)];
         [_tableView setRowHeight:HEIGHT_BUTTON];
         [_tableView setBackgroundColor:COLOR_TABLEVIEW_BG];
         [_tableView setSeparatorColor:COLOR_SEPERATOR];
         [_tableView setTableFooterView:[UIView new]];
         [_tableView setDataSource:self];
         [_tableView setDelegate:self];
+        [_tableView setBounces:NO];
         if ([_tableView respondsToSelector:@selector(setSeparatorInset:)]) {
             [_tableView setSeparatorInset:UIEdgeInsetsZero];
         }
