@@ -78,7 +78,7 @@ static UILabel *hLabel = nil;
 
 + (void)showAlertWithTitle:(NSString *)title message:(NSString *)message
 {
-    [self showAlertWithTitle:title message:message cancelButtonTitle:nil];
+    [self showAlertWithTitle:title message:message cancelButtonTitle:@"确定"];
 }
 
 + (void)showAlertWithTitle:(NSString *)title message:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle
