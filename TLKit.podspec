@@ -31,6 +31,11 @@ Pod::Spec.new do |s|
     founc.subspec 'TLActionSheet' do |ss|
       ss.source_files = "TLKit/TLFunctional/TLActionSheet/*.{h,m}"
     end
+    
+    # TLAlertView
+    founc.subspec 'TLAlertView' do |ss|
+      ss.source_files = "TLKit/TLFunctional/TLAlertView/*.{h,m}"
+    end
 
     # TLBadge
     #founc.subspec 'TLBadge' do |ss|
