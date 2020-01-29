@@ -23,6 +23,9 @@
 		6644303C3410053444668E1B /* libPods-TLKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5C68E65072A5334C46F4DB /* libPods-TLKit_Example.a */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		7A0F88ABBEF3EE8B4A176FA6 /* libPods-TLKit_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49AF5723991AC859B2D6F2FA /* libPods-TLKit_Tests.a */; };
+		C226142623E1C3AA001CBD53 /* TLActionSheetDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C226142523E1C3AA001CBD53 /* TLActionSheetDemoViewController.m */; };
+		C226142923E1C3B6001CBD53 /* TLAlertViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C226142823E1C3B6001CBD53 /* TLAlertViewDemoViewController.m */; };
+		C226142F23E1C414001CBD53 /* TLMenuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */; };
 		C287F84123C469EB0009F76D /* TLMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C287F84023C469EB0009F76D /* TLMenuItemCell.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,12 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B5C68E65072A5334C46F4DB /* libPods-TLKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TLKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE36CE9A59BEE52BC9B9CFEF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C226142423E1C3AA001CBD53 /* TLActionSheetDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLActionSheetDemoViewController.h; sourceTree = "<group>"; };
+		C226142523E1C3AA001CBD53 /* TLActionSheetDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLActionSheetDemoViewController.m; sourceTree = "<group>"; };
+		C226142723E1C3B6001CBD53 /* TLAlertViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAlertViewDemoViewController.h; sourceTree = "<group>"; };
+		C226142823E1C3B6001CBD53 /* TLAlertViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAlertViewDemoViewController.m; sourceTree = "<group>"; };
+		C226142D23E1C414001CBD53 /* TLMenuHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLMenuHeaderView.h; sourceTree = "<group>"; };
+		C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLMenuHeaderView.m; sourceTree = "<group>"; };
 		C287F83F23C469EB0009F76D /* TLMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMenuItemCell.h; sourceTree = "<group>"; };
 		C287F84023C469EB0009F76D /* TLMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMenuItemCell.m; sourceTree = "<group>"; };
 		CA98F32C8C0934408ABA86D9 /* Pods-TLKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-TLKit_Tests/Pods-TLKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +142,7 @@
 		6003F593195388D20070C39A /* Example for TLKit */ = {
 			isa = PBXGroup;
 			children = (
+				C226142A23E1C3C7001CBD53 /* TLFunctional */,
 				C287F84323C46A1B0009F76D /* MainVC */,
 				C287F84223C46A0B0009F76D /* Launcher */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -182,6 +192,33 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		C226142A23E1C3C7001CBD53 /* TLFunctional */ = {
+			isa = PBXGroup;
+			children = (
+				C226142C23E1C3E4001CBD53 /* TLAlertView */,
+				C226142B23E1C3D6001CBD53 /* TLActionSheet */,
+			);
+			path = TLFunctional;
+			sourceTree = "<group>";
+		};
+		C226142B23E1C3D6001CBD53 /* TLActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				C226142423E1C3AA001CBD53 /* TLActionSheetDemoViewController.h */,
+				C226142523E1C3AA001CBD53 /* TLActionSheetDemoViewController.m */,
+			);
+			path = TLActionSheet;
+			sourceTree = "<group>";
+		};
+		C226142C23E1C3E4001CBD53 /* TLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				C226142723E1C3B6001CBD53 /* TLAlertViewDemoViewController.h */,
+				C226142823E1C3B6001CBD53 /* TLAlertViewDemoViewController.m */,
+			);
+			path = TLAlertView;
+			sourceTree = "<group>";
+		};
 		C287F84223C46A0B0009F76D /* Launcher */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +244,8 @@
 			children = (
 				C287F83F23C469EB0009F76D /* TLMenuItemCell.h */,
 				C287F84023C469EB0009F76D /* TLMenuItemCell.m */,
+				C226142D23E1C414001CBD53 /* TLMenuHeaderView.h */,
+				C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -393,9 +432,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* TLAppDelegate.m in Sources */,
+				C226142923E1C3B6001CBD53 /* TLAlertViewDemoViewController.m in Sources */,
+				C226142F23E1C414001CBD53 /* TLMenuHeaderView.m in Sources */,
 				6003F5A7195388D20070C39A /* TLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				C287F84123C469EB0009F76D /* TLMenuItemCell.m in Sources */,
+				C226142623E1C3AA001CBD53 /* TLActionSheetDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,11 @@
 //
 
 #import "TLViewController.h"
+#import "TLMenuHeaderView.h"
 #import "TLMenuItemCell.h"
+
+#import "TLActionSheetDemoViewController.h"
+#import "TLAlertViewDemoViewController.h"
 
 @interface TLViewController ()
 
@@ -19,21 +23,29 @@
 {
     [super loadView];
     [self setTitle:@"TLDemo"];
-    [self.view setBackgroundColor:[UIColor colorWithRed:240.0 / 255.0 green:239.0 / 255.0 blue:245.0 / 1.0 alpha:1.0]];
+    [self.view setBackgroundColor:RGBColor(240, 239, 245)];
     
     [self reloadTestMenu];
 }
 
 - (void)reloadTestMenu
 {
+    @weakify(self);
     self.clear();
     
     {
         NSInteger sectionType = 0;
-        self.addSection(sectionType).sectionInsets(UIEdgeInsetsMake(15, 0, 0, 0));
-        self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"请添加调试项").selectedAction(^ (NSString *title) {
-            TLAlertView *alertView = [[TLAlertView alloc] initWithTitle:title message:nil];
-            [alertView show];
+        self.addSection(sectionType);
+        self.setHeader([TLMenuHeaderView class]).toSection(sectionType).withDataModel(@"TLComponents");
+        self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"TLAlertView").selectedAction(^ (NSString *title) {
+            @strongify(self);
+            TLAlertViewDemoViewController *vc = [[TLAlertViewDemoViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        });
+        self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"TLActionSheet").selectedAction(^ (NSString *title) {
+            @strongify(self);
+            TLActionSheetDemoViewController *vc = [[TLActionSheetDemoViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         });
     }
     

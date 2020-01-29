@@ -1,6 +1,6 @@
 {
   "name": "TLKit",
-  "version": "0.0.28",
+  "version": "1.0",
   "platforms": {
     "ios": "8.0"
   },
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/tbl00c/TLKit.git",
-    "tag": "0.0.28"
+    "tag": "1.0"
   },
   "public_header_files": "TLKit/Classes/TLKit.h",
   "source_files": "TLKit/Classes/TLKit.h",
@@ -26,21 +26,21 @@
       "source_files": "TLKit/Classes/TLShortcut/*.{h,m}"
     },
     {
-      "name": "TLFunctional",
-      "public_header_files": "TLKit/Classes/TLFunctional/TLFunctional.h",
-      "source_files": "TLKit/Classes/TLFunctional/TLFunctional.h",
+      "name": "TLComponents",
+      "public_header_files": "TLKit/Classes/TLComponents/TLComponents.h",
+      "source_files": "TLKit/Classes/TLComponents/TLComponents.h",
       "subspecs": [
         {
           "name": "TLActionSheet",
-          "source_files": "TLKit/Classes/TLFunctional/TLActionSheet/*.{h,m}"
+          "source_files": "TLKit/Classes/TLComponents/TLActionSheet/*.{h,m}"
         },
         {
           "name": "TLAlertView",
-          "source_files": "TLKit/Classes/TLFunctional/TLAlertView/*.{h,m}"
+          "source_files": "TLKit/Classes/TLComponents/TLAlertView/*.{h,m}"
         },
         {
           "name": "TLUIUtility",
-          "source_files": "TLKit/Classes/TLFunctional/TLUIUtility/*.{h,m}",
+          "source_files": "TLKit/Classes/TLComponents/TLUIUtility/*.{h,m}",
           "dependencies": {
             "SVProgressHUD": [
               "~> 2.2.5"

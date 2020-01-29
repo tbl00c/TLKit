@@ -53,6 +53,8 @@ typedef NS_ENUM(NSInteger, TLActionSheetItemType) {
 
 - (instancetype)initWithTitle:(NSString *)title clickAction:(TLActionSheetItemClickAction)clickAction;
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message clickAction:(TLActionSheetItemClickAction)clickAction;
+- (instancetype)initWithType:(TLActionSheetItemType)type title:(NSString *)title clickAction:(TLActionSheetItemClickAction)clickAction;
+- (instancetype)initWithType:(TLActionSheetItemType)type title:(NSString *)title message:(NSString *)message clickAction:(TLActionSheetItemClickAction)clickAction;
 
 @end
 
@@ -88,6 +90,11 @@ typedef NS_ENUM(NSInteger, TLActionSheetItemType) {
  *  @param  buttonIndex     按钮index
  */
 - (NSString *)buttonTitleAtIndex:(NSInteger)buttonIndex;
+
+#pragma mark - 自定义项
+@property (nonatomic, strong) UIColor *shadowColor;
+@property (nonatomic, strong) UIColor *titleColor;
+@property (nonatomic, strong) UIFont *titleFont;
 
 #pragma mark - # 旧版本兼容
 /// 点击事件响应block

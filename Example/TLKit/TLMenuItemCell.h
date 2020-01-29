@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ZZFLEX/ZZFLEX.h>
 
-@interface TLMenuItemCell : UICollectionViewCell <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface TLMenuItemCell : UICollectionViewCell <ZZFlexibleLayoutViewProtocol>
 
 @end

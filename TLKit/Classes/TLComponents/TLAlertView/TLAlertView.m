@@ -8,24 +8,155 @@
 #import "TLAlertView.h"
 #import "TLAlertViewAppearance.h"
 
-#define     TLAV_MAX_ITEMS_HEIGHT           self.frame.size.height * 0.3
-#define     TLAV_MAX_MESSAGE_HEIGHT         self.frame.size.height * 0.45
-#define     TLAV_TITLE_EDGE_TOP             35
+#define     TLAV_MAX_ITEMS_HEIGHT           self.shadowView.frame.size.height * 0.3
+#define     TLAV_MAX_MESSAGE_HEIGHT         self.shadowView.frame.size.height * 0.45
+#define     TLAV_TITLE_EDGE_TOP             26
 #define     TLAV_TITLE_EDGE_LEFT            12
-#define     TLAV_TITLE_EDGE_BOTTOM          25
-#define     TLAV_MESSAGE_EDGE_TOP           12
-#define     TLAV_TEXTFIEld_EDGE_TOP         12
+#define     TLAV_TITLE_EDGE_BOTTOM          18
+#define     TLAV_MESSAGE_EDGE_TOP           6
+#define     TLAV_TEXTFIELD_EDGE_TOP         12
+#define     TLAV_TEXTFIELD_EDGE_BOTTOM      22
+
+#define     TLAlertViewReloadMethod(TLMethodName, TLParamType, TLParamName)    \
+- (void)TLMethodName:(TLParamType)TLParamName { \
+    _##TLParamName = TLParamName;   \
+    [self reload];  \
+}
+
+#pragma mark - # TLAlertViewItem (倒计时计时器)
+@interface TLAlertViewCountdown : NSObject
+
+@property (nonatomic, assign) NSInteger countdownTime;
+@property (nonatomic, copy) void (^progressAction)(TLAlertViewCountdown *countdown, NSInteger countdownTime);
+@property (nonatomic, copy) void (^countdownAction)(TLAlertViewCountdown *countdown);
+
+@property (nonatomic, strong) NSTimer *timer;
+
+@end
+
+@implementation TLAlertViewCountdown
+
+- (instancetype)initWithCountdownTime:(NSInteger)countdownTime progressAction:(void (^)(TLAlertViewCountdown *, NSInteger))progressAction countdownAction:(void (^)(TLAlertViewCountdown *))countdownAction
+{
+    if (self = [super init]) {
+        self.countdownTime = countdownTime;
+        self.progressAction = progressAction;
+        self.countdownAction = countdownAction;
+    }
+    return self;
+}
+
+- (void)start
+{
+    [self stop];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerEvent) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+}
+
+- (void)timerEvent
+{
+    self.countdownTime --;
+    if (self.progressAction) {
+        self.progressAction(self, self.countdownTime);
+    }
+    if (self.countdownTime <= 0) {
+        [self stop];
+        if (self.countdownAction) {
+            self.countdownAction(self);
+        }
+    }
+}
+
+- (void)stop
+{
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
+@end
 
 #pragma mark - # TLAlertViewItem
+@interface TLAlertViewItem ()
+
+@property (nonatomic, strong) NSString *displayTitle;
+@property (nonatomic, copy) void (^reloadAction)(TLAlertViewItem *item);
+@property (nonatomic, copy) void (^countdownCompleteAction)(TLAlertViewItem *item);
+@property (nonatomic, strong) TLAlertViewCountdown *countdown;
+
+@property (nonatomic, assign) NSInteger time;
+
+@end
+
 @implementation TLAlertViewItem
 
 - (instancetype)initWithTitle:(NSString *)title clickAction:(TLAlertViewItemClickAction)clickAction
 {
     if (self = [self init]) {
-        self.title = title;
-        self.clickAction = clickAction;
+        _title = title;
+        _clickAction = clickAction;
     }
     return self;
+}
+
+- (instancetype)initWithTitle:(NSString *)title clickAction:(TLAlertViewItemClickAction)clickAction countdownTime:(NSNumber *)countdownTime countdownAction:(TLAlertViewItemClickAction)countdownAction
+{
+    if (self = [self initWithTitle:title clickAction:clickAction]) {
+        _countdownTime = countdownTime;
+        _countdownAction = countdownAction;
+        _displayTitle = self.countdownTime.integerValue > 0 ? [NSString stringWithFormat:@"%@(%lds)", self.title, self.countdownTime.integerValue] : self.title;
+    }
+    return self;
+}
+
+- (void)startCountDown:(NSNumber *)countdownTime countdownAction:(TLAlertViewItemClickAction)countdownAction
+{
+    _countdownTime = countdownTime;
+    _countdownAction = countdownAction;
+    if (countdownTime.integerValue > 0) {
+        [self startTimeIfNeedWithCompleteAction:self.countdownCompleteAction];
+    }
+}
+
+- (void)startTimeIfNeedWithCompleteAction:(void (^)(TLAlertViewItem *))completeAction
+{
+    _countdownCompleteAction = completeAction;
+    __weak typeof(self) weakSelf = self;
+    if (!self.countdownTime) {
+        return;
+    }
+    self.time = self.countdownTime.integerValue;
+    self.countdown = [[TLAlertViewCountdown alloc] initWithCountdownTime:self.time progressAction:^(TLAlertViewCountdown *countdown, NSInteger countdownTime) {
+        weakSelf.displayTitle = [NSString stringWithFormat:@"%@(%lds)", self.title, countdownTime];
+        [weakSelf reload];
+    } countdownAction:^(TLAlertViewCountdown *countdown) {
+        weakSelf.displayTitle = weakSelf.title;
+        [weakSelf reload];
+        if (completeAction) {
+            completeAction(weakSelf);
+        }
+    }];
+    [self.countdown start];
+}
+
+- (void)stopCountDown
+{
+    [self.countdown stop];
+    self.displayTitle = self.title;
+    [self reload];
+}
+
+#pragma mark - # 热更新
+TLAlertViewReloadMethod(setType, TLAlertViewItemType, type)
+TLAlertViewReloadMethod(setTitle, NSString *, title)
+TLAlertViewReloadMethod(setDisable, BOOL, disable)
+TLAlertViewReloadMethod(setTitleColor, UIColor *, titleColor)
+TLAlertViewReloadMethod(setTitleColorDisable, UIColor *, titleColorDisable)
+TLAlertViewReloadMethod(setTitleFont, UIFont *, titleFont)
+- (void)reload
+{
+    if (self.reloadAction) {
+        self.reloadAction(self);
+    }
 }
 
 @end
@@ -83,8 +214,9 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
 {
     [super layoutSubviews];
     
-    CGRect rect = self.titleLabel.frame;
-    if (self.titleLabel.frame.size.width > self.contentView.frame.size.width) {
+    CGRect rect = CGRectZero;
+    rect.size = [self.titleLabel sizeThatFits:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+    if (rect.size.width > self.contentView.frame.size.width) {
         rect.size.width = self.contentView.frame.size.width;
     }
     rect.origin.y = (self.contentView.frame.size.height - rect.size.height) / 2.0;
@@ -110,30 +242,43 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
     
     TLAlertViewAppearance *appearance = [TLAlertViewAppearance appearance];
     
-    self.selectedBackgroundView.backgroundColor = appearance.separatorColor;
+    if (item.disable) {
+        self.selectedBackgroundView.backgroundColor = [UIColor clearColor];
+    }
+    else {
+        self.selectedBackgroundView.backgroundColor = appearance.separatorColor;
+    }
     
     {
         [self.titleLabel setFont:item.titleFont ? item.titleFont : appearance.itemTitleFont];
-        [self.titleLabel setText:item.title];
-        CGSize size = [self.titleLabel sizeThatFits:CGSizeMake(MAXFLOAT, MAXFLOAT)];
-        [self.titleLabel setFrame:CGRectMake(0, 0, size.width, size.height)];
+        [self.titleLabel setText:item.displayTitle ? item.displayTitle : item.title];
+        __weak typeof(self) weakSelf = self;
+        [item setReloadAction:^(TLAlertViewItem *item) {
+            if (item == weakSelf.item) {
+                [weakSelf setItem:item seperatorType:seperatorType];
+            }
+        }];
     }
     
-    if (item.type == TLAlertViewItemTypeNormal) {
-        [self.titleLabel setTextColor:item.titleColor ? item.titleColor : appearance.itemTitleColor];
+    if (item.disable) {
+        [self.titleLabel setTextColor:item.titleColorDisable ? item.titleColorDisable : appearance.itemTitleColorDisable];
     }
-    else if (item.type == TLAlertViewItemTypeDestructive) {
-        [self.titleLabel setTextColor:item.titleColor ? item.titleColor : appearance.destructiveItemTitleColor];;
-    }
-    else if (item.type == TLAlertViewItemTypeCancel) {
-        [self.titleLabel setTextColor:item.titleColor ? item.titleColor : appearance.cancelItemTitleColor];;
+    else {
+        if (item.type == TLAlertViewItemTypeNormal) {
+            [self.titleLabel setTextColor:item.titleColor ? item.titleColor : appearance.itemTitleColor];
+        }
+        else if (item.type == TLAlertViewItemTypeDestructive) {
+            [self.titleLabel setTextColor:item.titleColor ? item.titleColor : appearance.destructiveItemTitleColor];;
+        }
+        else if (item.type == TLAlertViewItemTypeCancel) {
+            [self.titleLabel setTextColor:item.titleColor ? item.titleColor : appearance.cancelItemTitleColor];;
+        }
     }
     
     [self setNeedsLayout];
 }
 
 @end
-
 
 #pragma mark - # TLAlertView
 @interface TLAlertView () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
@@ -143,7 +288,7 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
 
 @property (nonatomic, strong) UIScrollView *shadowView;
 @property (nonatomic, strong) UIView *contentView;
-@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UITextView *titleView;
 @property (nonatomic, strong) UITextView *messageView;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UIView *seperatorView;
@@ -151,6 +296,14 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
 @end
 
 @implementation TLAlertView
+
+- (instancetype)initWithCustomView:(__kindof UIView *)customView
+{
+    if (self = [self initWithFrame:CGRectZero]) {
+        _customView = customView;
+    }
+    return self;
+}
 
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message
 {
@@ -213,6 +366,7 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
 - (void)addItem:(TLAlertViewItem *)item
 {
     [_items addObject:item];
+    [self reload];
 }
 
 - (void)show
@@ -229,17 +383,15 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
         view = [UIApplication sharedApplication].keyWindow;
     }
     
-    // 重置视图
-    [self setFrame:CGRectMake(0, 0, appearance.viewWidth, view.frame.size.height)];
-    [self _resetAlertView];
-    
     // 遮罩
     [self.shadowView setFrame:view.bounds];
     [self.shadowView setContentSize:view.bounds.size];
     [self.shadowView removeFromSuperview];
     [view addSubview:_shadowView];
     
-    // 弹窗
+    // 重置弹窗视图
+    [self setFrame:CGRectMake(0, 0, appearance.viewWidth, view.frame.size.height)];
+    [self _resetAlertView];
     [self removeFromSuperview];
     [self.shadowView addSubview:self];
     [self setCenter:self.shadowView.center];
@@ -247,15 +399,24 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
     // 显示
     [self setAlpha:0];
     [self.shadowView setBackgroundColor:[UIColor clearColor]];
+    __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.2 animations:^{
         [self setAlpha:1];
-        [self.shadowView setBackgroundColor:appearance.shadowColor];
+        [self.shadowView setBackgroundColor:self.shadowColor ? self.shadowColor : appearance.shadowColor];
         if (self.textField) {
             [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardHeightChanged:) name:UIKeyboardWillChangeFrameNotification object:nil];
             [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
             [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHidden:) name:UIKeyboardWillHideNotification object:nil];
             [self.textField becomeFirstResponder];
         }
+        // 开始倒计时
+        [self.items enumerateObjectsUsingBlock:^(TLAlertViewItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [obj startTimeIfNeedWithCompleteAction:^(TLAlertViewItem *item) {
+                if (item.countdownAction) {
+                    item.countdownAction(weakSelf, item, idx);
+                }
+            }];
+        }];
     }];
 }
 
@@ -301,10 +462,15 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self dismiss];
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     TLAlertViewItem *item = indexPath.row < self.items.count ? self.items[indexPath.row] : nil;
-    if (item.clickAction) {
-        item.clickAction(self, item, indexPath.row);
+    if (!item.disable) {
+        if (!item.disableDismissAfterClick) {
+            [self dismiss];
+        }
+        if (item.clickAction) {
+            item.clickAction(self, item, indexPath.row);
+        }
     }
 }
 
@@ -355,11 +521,14 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
     }
     
     {
-        UILabel *titleLabel = [[UILabel alloc] init];
-        [titleLabel setNumberOfLines:0];
-        [titleLabel setTextAlignment:NSTextAlignmentCenter];
-        [self.contentView addSubview:titleLabel];
-        self.titleLabel = titleLabel;
+        UITextView *textView = [[UITextView alloc] init];
+        [textView setEditable:NO];
+        [textView setSelectable:NO];
+        [textView setScrollsToTop:NO];
+        [textView setScrollEnabled:NO];
+        [textView setTextAlignment:NSTextAlignmentCenter];
+        [self.contentView addSubview:textView];
+        self.titleView = textView;
     }
     
     {
@@ -411,9 +580,6 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
     [self setBackgroundColor:appearance.backgroundColor];
     [self.layer setCornerRadius:appearance.cornerRadius];
     
-    // 遮罩
-    [self.shadowView setBackgroundColor:appearance.shadowColor];
-    
     {
         // contentView
         while (self.contentView.subviews.count > 0) {
@@ -424,52 +590,62 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
             [self.contentView addSubview:self.customView];
             [self.contentView setFrame:CGRectMake(0, 0, width, self.customView.frame.size.height)];
             [self.customView setCenter:self.contentView.center];
+            y += self.customView.frame.size.height;
         }
         else {
             y += TLAV_TITLE_EDGE_TOP;
-            if (self.title.length > 0) {
-                NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
-                [style setLineSpacing:4.0f];
-                [style setParagraphSpacing:6.0f];
-                [style setAlignment:NSTextAlignmentCenter];
-                NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:self.title
-                                                                                            attributes:@{NSForegroundColorAttributeName : appearance.titleColor,
-                                                                                                         NSFontAttributeName : appearance.titleFont,
-                                                                                                         NSParagraphStyleAttributeName : style,
-                                                                                            }];
-                [self.titleLabel setAttributedText:attrStr];
-                [self.contentView addSubview:self.titleLabel];
-                CGSize size = [self.titleLabel sizeThatFits:CGSizeMake(titleWidth, MAXFLOAT)];
-                [self.titleLabel setFrame:CGRectMake(titleX, y, titleWidth, size.height)];
-                y += size.height;
-            }
-            if (self.message.length > 0) {
-                NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
-                [style setLineSpacing:4.0f];
-                [style setParagraphSpacing:6.0f];
-                [style setAlignment:NSTextAlignmentCenter];
-                NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:self.message
-                                                                                            attributes:@{NSForegroundColorAttributeName : appearance.messageColor,
-                                                                                                         NSFontAttributeName : appearance.messageFont,
-                                                                                                         NSParagraphStyleAttributeName : style,
-                                                                                            }];
-                [self.messageView setAttributedText:attrStr];
-                [self.contentView addSubview:self.messageView];
-                CGSize size = [self.messageView sizeThatFits:CGSizeMake(titleWidth, MAXFLOAT)];
-                [self.messageView setScrollEnabled:NO];
-                if (size.height > TLAV_MAX_MESSAGE_HEIGHT) {
-                    [self.messageView setScrollEnabled:YES];
-                    size.height = TLAV_MAX_MESSAGE_HEIGHT;
-                }
+            if (self.title.length > 0 || self.message.length > 0) {
                 if (self.title.length > 0) {
-                    y += TLAV_MESSAGE_EDGE_TOP;
+                    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+                    [style setLineSpacing:4.0f];
+                    [style setParagraphSpacing:6.0f];
+                    [style setAlignment:NSTextAlignmentCenter];
+                    NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:self.title
+                                                                                                attributes:@{NSForegroundColorAttributeName : (self.titleColor ? self.titleColor : appearance.titleColor),
+                                                                                                             NSFontAttributeName : (self.titleFont ? self.titleFont : appearance.titleFont),
+                                                                                                             NSParagraphStyleAttributeName : style,
+                                                                                                }];
+                    [self.titleView setAttributedText:attrStr];
+                    [self.contentView addSubview:self.titleView];
+                    CGSize size = [self.titleView sizeThatFits:CGSizeMake(titleWidth, MAXFLOAT)];
+                    [self.titleView setScrollEnabled:NO];
+                    if (size.height > TLAV_MAX_MESSAGE_HEIGHT) {
+                        [self.titleView setScrollEnabled:YES];
+                        size.height = TLAV_MAX_MESSAGE_HEIGHT;
+                    }
+                    [self.titleView setFrame:CGRectMake(titleX, y, titleWidth, size.height)];
+                    y += size.height;
                 }
-                [self.messageView setFrame:CGRectMake(titleX, y, titleWidth, size.height)];
-                y += (self.textField ? TLAV_TEXTFIEld_EDGE_TOP : TLAV_TITLE_EDGE_BOTTOM) + size.height;
+                if (self.message.length > 0) {
+                    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+                    [style setLineSpacing:4.0f];
+                    [style setParagraphSpacing:6.0f];
+                    [style setAlignment:NSTextAlignmentCenter];
+                    NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:self.message
+                                                                                                attributes:@{NSForegroundColorAttributeName : (self.messageColor ? self.messageColor : appearance.messageColor),
+                                                                                                             NSFontAttributeName : (self.messageFont ? self.messageFont : appearance.messageFont),
+                                                                                                             NSParagraphStyleAttributeName : style,
+                                                                                                }];
+                    [self.messageView setAttributedText:attrStr];
+                    [self.contentView addSubview:self.messageView];
+                    CGSize size = [self.messageView sizeThatFits:CGSizeMake(titleWidth, MAXFLOAT)];
+                    [self.messageView setScrollEnabled:NO];
+                    if (size.height > TLAV_MAX_MESSAGE_HEIGHT) {
+                        [self.messageView setScrollEnabled:YES];
+                        size.height = TLAV_MAX_MESSAGE_HEIGHT;
+                    }
+                    if (self.title.length > 0) {
+                        y += TLAV_MESSAGE_EDGE_TOP;
+                    }
+                    [self.messageView setFrame:CGRectMake(titleX, y, titleWidth, size.height)];
+                    y += size.height;
+                    y += self.textField ? TLAV_TEXTFIELD_EDGE_TOP : TLAV_TITLE_EDGE_BOTTOM;
+                }
+                else {
+                    y += self.textField ? TLAV_TITLE_EDGE_BOTTOM : TLAV_TITLE_EDGE_TOP;
+                }
             }
-            else {
-                y += self.textField ? TLAV_TITLE_EDGE_BOTTOM : TLAV_TITLE_EDGE_TOP;
-            }
+            
             
             if (self.textField) {
                 [self.textField removeFromSuperview];
@@ -478,7 +654,7 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
                 CGFloat height = 40.0f;
                 [self.textField setFrame:CGRectMake(x, y, width - x * 2, height)];
                 [self.contentView addSubview:self.textField];
-                y += (TLAV_TITLE_EDGE_BOTTOM + height);
+                y += (TLAV_TEXTFIELD_EDGE_BOTTOM + height);
             }
             [self.contentView setFrame:CGRectMake(0, 0, width, y)];
         }
@@ -508,6 +684,7 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
         }
     }
     
+    // 修正最小高度
     if (y < appearance.minViewHeight) {
         CGFloat offset = appearance.minViewHeight - y;
         {
@@ -527,7 +704,28 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
         }
         y = appearance.minViewHeight;
     }
+    
+    [self.collectionView reloadData];
+    
     [self setFrame:CGRectMake(0, 0, width, y)];
+}
+
+
+#pragma mark - # 自动刷新
+TLAlertViewReloadMethod(setShadowColor, UIColor *, shadowColor)
+TLAlertViewReloadMethod(setTitle, NSString *, title)
+TLAlertViewReloadMethod(setMessage, NSString *, message)
+TLAlertViewReloadMethod(setCustomView, __kindof UIView *, customView)
+
+TLAlertViewReloadMethod(setTitleColor, UIColor *, titleColor)
+TLAlertViewReloadMethod(setTitleFont, UIFont *, titleFont)
+TLAlertViewReloadMethod(setMessageColor, UIColor * ,messageColor)
+TLAlertViewReloadMethod(setMessageFont, UIFont *, messageFont)
+
+- (void)reload
+{
+    [self _resetAlertView];
+    [self setCenter:self.shadowView.center];
 }
 
 #pragma mark - 兼容旧版本API

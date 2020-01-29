@@ -22,6 +22,7 @@
 
 @property (nonatomic, strong) UIFont *itemTitleFont;
 @property (nonatomic, strong) UIColor *itemTitleColor;
+@property (nonatomic, strong) UIColor *itemTitleColorDisable;
 @property (nonatomic, strong) UIColor *destructiveItemTitleColor;
 @property (nonatomic, strong) UIColor *cancelItemTitleColor;
 

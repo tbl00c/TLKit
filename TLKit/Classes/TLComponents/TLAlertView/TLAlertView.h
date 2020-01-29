@@ -30,11 +30,27 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemType) {
 /// 点击事件
 @property (nonatomic, copy) TLAlertViewItemClickAction clickAction;
 
+/// 倒计时
+@property (nonatomic, strong, readonly) NSNumber *countdownTime;
+/// 倒计时结束事件
+@property (nonatomic, copy) TLAlertViewItemClickAction countdownAction;
+- (void)startCountDown:(NSNumber *)countdownTime countdownAction:(TLAlertViewItemClickAction)countdownAction;
+- (void)stopCountDown;
+
+/// 不可点击
+@property (nonatomic, assign) BOOL disable;
+
+/// 禁用点击后AlertView自动消失
+@property (nonatomic, assign) BOOL disableDismissAfterClick;
+
 #pragma mark - 自定义项
 @property (nonatomic, strong) UIColor *titleColor;
+@property (nonatomic, strong) UIColor *titleColorDisable;
 @property (nonatomic, strong) UIFont *titleFont;
 
 - (instancetype)initWithTitle:(NSString *)title clickAction:(TLAlertViewItemClickAction)clickAction;
+
+- (instancetype)initWithTitle:(NSString *)title clickAction:(TLAlertViewItemClickAction)clickAction countdownTime:(NSNumber *)countdownTime countdownAction:(TLAlertViewItemClickAction)countdownAction;
 
 @end
 
@@ -47,11 +63,12 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemType) {
 /// 按钮（不包含取消按钮）
 @property (nonatomic, strong, readonly) NSArray<TLAlertViewItem *> *items;
 
-@property (nonatomic, strong, readonly) UIView *customView;
+@property (nonatomic, strong) __kindof UIView *customView;
 
 @property (nonatomic, strong, readonly) UITextField *textField;
 
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message;
+- (instancetype)initWithCustomView:(__kindof UIView *)customView;
 
 - (void)addTextFieldWithConfigAction:(TLAlertViewTextFieldConfigAction)configAction;
 
@@ -63,6 +80,13 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemType) {
 
 - (void)show;
 - (void)dismiss;
+
+#pragma mark - 自定义项
+@property (nonatomic, strong) UIColor *shadowColor;
+@property (nonatomic, strong) UIColor *titleColor;
+@property (nonatomic, strong) UIFont *titleFont;
+@property (nonatomic, strong) UIColor *messageColor;
+@property (nonatomic, strong) UIFont *messageFont;
 
 #pragma mark - 兼容旧版本API
 + (void)showWithTitle:(NSString *)title message:(NSString *)message;

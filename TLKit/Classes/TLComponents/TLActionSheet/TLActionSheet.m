@@ -23,7 +23,18 @@
 
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message clickAction:(TLActionSheetItemClickAction)clickAction
 {
+    return [self initWithType:TLActionSheetItemTypeNormal title:title message:message clickAction:clickAction];
+}
+
+- (instancetype)initWithType:(TLActionSheetItemType)type title:(NSString *)title clickAction:(TLActionSheetItemClickAction)clickAction
+{
+    return [self initWithType:type title:title message:nil clickAction:clickAction];
+}
+
+- (instancetype)initWithType:(TLActionSheetItemType)type title:(NSString *)title message:(NSString *)message clickAction:(TLActionSheetItemClickAction)clickAction
+{
     if (self = [super init]) {
+        self.type = type;
         self.title = title;
         self.message = message;
         self.clickAction = clickAction;
@@ -246,15 +257,13 @@
 
 - (void)addDestructiveItemWithTitle:(NSString *)title clickAction:(TLActionSheetItemClickAction)clickAction
 {
-    TLActionSheetItem *item = [[TLActionSheetItem alloc] initWithTitle:title message:nil clickAction:clickAction];
-    [item setType:TLActionSheetItemTypeDestructive];
+    TLActionSheetItem *item = [[TLActionSheetItem alloc] initWithType:TLActionSheetItemTypeDestructive title:title message:nil clickAction:clickAction];
     [self addItem:item];
 }
 
 - (void)addCustomViewItem:(UIView *)customView clickAction:(TLActionSheetItemClickAction)clickAction
 {
-    TLActionSheetItem *item = [[TLActionSheetItem alloc] initWithTitle:nil clickAction:clickAction];
-    [item setType:TLActionSheetItemTypeCustom];
+    TLActionSheetItem *item = [[TLActionSheetItem alloc] initWithType:TLActionSheetItemTypeCustom title:nil clickAction:clickAction];
     [item setCustomView:customView];
     [self addItem:item];
 }
@@ -296,7 +305,7 @@
     CGRect targetRect = CGRectMake(0, view.frame.size.height - self.frame.size.height, originRect.size.width, originRect.size.height);
     [UIView animateWithDuration:0.2 animations:^{
         [self setFrame:targetRect];
-        [self.shadowView setBackgroundColor:[TLActionSheetAppearance appearance].shadowColor];
+        [self.shadowView setBackgroundColor:self.shadowColor ? self.shadowColor : [TLActionSheetAppearance appearance].shadowColor];
     }];
 }
 
@@ -419,9 +428,6 @@
     
     [self setBackgroundColor:appearance.backgroundColor];
     
-    // 遮罩
-    [self.shadowView setBackgroundColor:appearance.shadowColor];
-    
     // header
     {
         [self.headerView setHidden:YES];
@@ -435,13 +441,14 @@
             [self.customHeaderView removeFromSuperview];
             [self.customHeaderView setFrame:self.customHeaderView.bounds];
             
-            [self.headerView setFrame:self.customHeaderView.bounds];
+            [self.headerView setFrame:CGRectMake(0, 0, width, self.customHeaderView.bounds.size.height)];
             [self.headerView addSubview:self.customHeaderView];
+            [self.customHeaderView setCenter:self.headerView.center];
         }
         else if (self.title.length > 0) {
             [self.headerView setHidden:NO];
-            [self.titleLabel setTextColor:appearance.headerTitleColor];
-            [self.titleLabel setFont:appearance.headerTitleFont];
+            [self.titleLabel setTextColor:self.titleColor ? self.titleColor : appearance.headerTitleColor];
+            [self.titleLabel setFont:self.titleFont ? self.titleFont : appearance.headerTitleFont];
             [self.titleLabel setText:self.title];
             CGFloat labelWidth = width - TLAS_SPACE_TITLE_LEFT * 2;
             CGFloat labelHeight = [self.titleLabel sizeThatFits:CGSizeMake(labelWidth, MAXFLOAT)].height;

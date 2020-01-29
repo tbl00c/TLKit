@@ -36,6 +36,7 @@
     
     _titleFont = [UIFont boldSystemFontOfSize:17.0f];
     _titleColor = [UIColor blackColor];
+    _itemTitleColorDisable = [UIColor lightGrayColor];
     
     _messageFont = [UIFont systemFontOfSize:17.0f];
     _messageColor = [UIColor grayColor];

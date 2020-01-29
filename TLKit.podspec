@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   end
 
   # 基础控件
-  s.subspec 'TLFunctional' do |founc|
-    funcPath = classPath + 'TLFunctional/'
-    founc.public_header_files = funcPath + "TLFunctional.h"
-    founc.source_files = funcPath + "TLFunctional.h"
+  s.subspec 'TLComponents' do |founc|
+    funcPath = classPath + 'TLComponents/'
+    founc.public_header_files = funcPath + "TLComponents.h"
+    founc.source_files = funcPath + "TLComponents.h"
 
     # TLActionSheet
     founc.subspec 'TLActionSheet' do |ss|
