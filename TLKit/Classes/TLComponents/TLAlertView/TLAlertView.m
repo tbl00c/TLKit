@@ -12,7 +12,7 @@
 #define     TLAV_MAX_MESSAGE_HEIGHT         self.shadowView.frame.size.height * 0.45
 #define     TLAV_TITLE_EDGE_TOP             26
 #define     TLAV_TITLE_EDGE_LEFT            12
-#define     TLAV_TITLE_EDGE_BOTTOM          18
+#define     TLAV_TITLE_EDGE_BOTTOM          22
 #define     TLAV_MESSAGE_EDGE_TOP           6
 #define     TLAV_TEXTFIELD_EDGE_TOP         12
 #define     TLAV_TEXTFIELD_EDGE_BOTTOM      22
