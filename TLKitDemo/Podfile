@@ -1,6 +1,0 @@
-platform :ios, '8.0'
-inhibit_all_warnings!
-
-target :TLKit do
-    pod 'SVProgressHUD', '~> 2.2'
-end
