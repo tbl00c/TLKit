@@ -39,8 +39,8 @@
           "source_files": "TLKit/Classes/TLComponents/TLAlertView/*.{h,m}"
         },
         {
-          "name": "TLUIUtility",
-          "source_files": "TLKit/Classes/TLComponents/TLUIUtility/*.{h,m}",
+          "name": "TLToast",
+          "source_files": "TLKit/Classes/TLComponents/TLToast/*.{h,m}",
           "dependencies": {
             "SVProgressHUD": [
               "~> 2.2.5"

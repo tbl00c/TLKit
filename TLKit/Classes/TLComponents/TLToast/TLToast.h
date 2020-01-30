@@ -1,5 +1,5 @@
 //
-//  TLUIUtility.h
+//  TLToast.h
 //  TLChat
 //
 //  Created by 李伯坤 on 16/2/10.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TLUIUtility : NSObject
+@interface TLToast : NSObject
 
-#pragma mark - # HUD
 + (void)showLoading:(NSString *)title;
 + (void)hiddenLoading;
 + (void)hiddenLoadingWithDelay:(NSTimeInterval)delay;

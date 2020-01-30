@@ -12,6 +12,6 @@
 #import "TLActionSheet.h"
 #import "TLAlertView.h"
 //#import "TLBadge.h"
-#import "TLUIUtility.h"
+#import "TLToast.h"
 
 #endif /* TLComponents_h */

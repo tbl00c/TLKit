@@ -12,6 +12,7 @@
 
 #import "TLActionSheetDemoViewController.h"
 #import "TLAlertViewDemoViewController.h"
+#import "TLToastDemoViewController.h"
 
 @interface TLViewController ()
 
@@ -45,6 +46,11 @@
         self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"TLActionSheet").selectedAction(^ (NSString *title) {
             @strongify(self);
             TLActionSheetDemoViewController *vc = [[TLActionSheetDemoViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        });
+        self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"TLToast").selectedAction(^ (NSString *title) {
+            @strongify(self);
+            TLToastDemoViewController *vc = [[TLToastDemoViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         });
     }

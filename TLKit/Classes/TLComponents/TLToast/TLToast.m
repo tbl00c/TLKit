@@ -1,24 +1,25 @@
 
 //
-//  TLUIUtility.m
+//  TLToast.m
 //  TLChat
 //
 //  Created by 李伯坤 on 16/2/10.
 //  Copyright © 2016年 李伯坤. All rights reserved.
 //
 
-#import "TLUIUtility.h"
+#import "TLToast.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 
 static UILabel *hLabel = nil;
 
-@implementation TLUIUtility
+@implementation TLToast
 + (void)initialize
 {
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
+    [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeFlat];
     [SVProgressHUD setMinimumSize:CGSizeMake(110, 110)];
     [SVProgressHUD setMinimumDismissTimeInterval:1.0f];
-    [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeFlat];
 }
 
 #pragma mark - # HUD

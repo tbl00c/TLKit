@@ -45,9 +45,9 @@ Pod::Spec.new do |s|
     #  ss.source_files = funcPath + "TLBadge/*.{h,m}"
     #end
 
-    # TLUIUtility
-    founc.subspec 'TLUIUtility' do |ss|
-      ss.source_files = funcPath + "TLUIUtility/*.{h,m}"
+    # TLToast
+    founc.subspec 'TLToast' do |ss|
+      ss.source_files = funcPath + "TLToast/*.{h,m}"
       ss.dependency "SVProgressHUD", "~> 2.2.5"
     end
 

@@ -7,141 +7,141 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		010BC9FECF089D224855D59455860135 /* UIWindow+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B31B567098502BBAD4E06AC6F918B57 /* UIWindow+Extensions.m */; };
-		045357898BFA28C1E4E08CCF8D6754F7 /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 85399DEC5D2B2FD9EB0108EFAEC1E3F2 /* NSObject+Dealloc.m */; };
-		05C5DEAD81AA2C9CF045D93E31772F24 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF03483430D3AEA0FD0B0075C83960A /* UIColor+Extensions.m */; };
-		05F8D13F2673C14CF3FFCCF4AD937816 /* UIControl+ActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C37A08694BBFF584FA2F1D86751C9 /* UIControl+ActionBlocks.m */; };
-		073469A4043877911C6FB5AB3F9C91B3 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C090E28839D55AC94369A92B40C2CA /* NSString+Hash.m */; };
-		07DA67881B2D845A508FE1E95E89114D /* NSDictionary+SafeAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F71A739EBDC167559C24E322A23D06 /* NSDictionary+SafeAccess.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		08CD5E159CA592B771EDA5C6DFED384C /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B8F785DCA6C300DA4581F4F02ED6E2 /* NSString+Hash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		10ED3FDF41C0ADCCC1B929BED6ADB8B1 /* NSData+Gzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 10DB2844E8A681EDA1EE76B0FCD17B8D /* NSData+Gzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		12880A616B50A2A7D6171401DC3A8321 /* UICollectionViewCell+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9528C36EF37EFB408D14001E4376891C /* UICollectionViewCell+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1297CA2398899DE626E93F5411EDE5A8 /* NSObject+EasyCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F11EEA2C3142ACA9B2712C859568712 /* NSObject+EasyCopy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		14B33793821E9E15106D21844874843A /* TLActionSheetAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1AD8B59E20D17902A8B1DA287301A4 /* TLActionSheetAppearance.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		150CADB41D25C381ACC689A33DB13F71 /* NSDictionary+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E6BBD9FC8AB38B35EB05E0055C31CE56 /* NSDictionary+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1539F5092A40B1150B4FB6DC2AE79466 /* NSMutableDictionary+SafeAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 0897A7AC49418DCE566F8CD41EC12D31 /* NSMutableDictionary+SafeAccess.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1830451878A575140DE414C87987C04F /* NSObject+Dealloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3DFFD0CF52E085A551DE041212DFA7 /* NSObject+Dealloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		189E220CBE7BDC335220BE6D8486C662 /* UIScrollView+Pages.h in Headers */ = {isa = PBXBuildFile; fileRef = C30DB03DBD6A64AE21A53252BA5551F2 /* UIScrollView+Pages.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		18AFD9AE4E797BFBB13944F879A9D0FD /* UIScrollView+Pages.m in Sources */ = {isa = PBXBuildFile; fileRef = 0695A306D179EA7575E5B4B96DC03B91 /* UIScrollView+Pages.m */; };
-		1B0C4F01A7775FAF903FBF5C69E8B4BC /* NSTimer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89C91EF4CBC89DE3241F352724510A /* NSTimer+Block.m */; };
-		20B6BD80399A197D6326CB0B793159D0 /* NSNotificationCenter+MainThread.h in Headers */ = {isa = PBXBuildFile; fileRef = D5EFED748F299BF918B0FC246C0947EC /* NSNotificationCenter+MainThread.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		223055267EDF5DA6D604B53E8B4B54A0 /* UIViewController+NavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CEBFE51ABD3941A51E3F6A074BEEA1 /* UIViewController+NavBar.m */; };
-		2267D0D81CE2935FD75292CA425BBD80 /* UITabBarController+TLPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E8DA7A617E082EBE89F9182F78DA2 /* UITabBarController+TLPush.m */; };
-		237F7DDB2637D6BD23D9E219B46D2A45 /* UIBarButtonItem+Action.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9CB4FE26C9510CDEBEA60B1E7B8861 /* UIBarButtonItem+Action.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		28759EA6956A07232136F9816714A73F /* TLUIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B947C9A30ADCD816B9BBC811ED70 /* TLUIUtility.m */; };
-		2895D4810EDDAE8B2F04A482B822AC5A /* UINavigationBar+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB360E267455B5D4C64ED56326892AB7 /* UINavigationBar+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2919B0F163E89F1ADD86D56938160ECB /* NSObject+EasyCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BE365433D1265E26B2FCDE4DEB081D /* NSObject+EasyCopy.m */; };
-		2D3F897413947FDCF3714DDFD8D4C209 /* UIColor+Gradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 108CAD0588936FB0B2017977830F046D /* UIColor+Gradient.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		30FE98C2C539E9F742749A236AC4102E /* NSObject+Association.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9635F9D85C5E8948BBE0EA0CB560AC /* NSObject+Association.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		31D8024A955C25196E2C81A9D60FAC03 /* NSString+NormalRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B2259076D70A9DC603E4626AE4882 /* NSString+NormalRegex.m */; };
-		332FBC1E969C81D14985FF6C9C16C28B /* TLActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA8E3F296020FE8DF06648F43CB8FAA /* TLActionSheet.m */; };
-		3421E36D07A9F69F66B4BC6880475552 /* NSString+PinYin.h in Headers */ = {isa = PBXBuildFile; fileRef = E019F13C9293CAB5D1BBC16324043EB4 /* NSString+PinYin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		35CCF0B2318EBAC23C1C9A984B00A0D8 /* NSDictionary+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 554EC18089903B051ACAB59AEE26ADDF /* NSDictionary+Extensions.m */; };
-		369AEEABD0C94210F2C1FF3DE07C09D6 /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C5897B1B463B7229EE1C3D3E50E87F /* NSString+Base64.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		37CB646898790AE6AF9090358C463AC9 /* TLShortcutMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D4D4BEA29DFF69148FCED784884BC0 /* TLShortcutMethod.m */; };
-		39F279941F1ACFD0AABDA73DCFC720EF /* UIViewController+NavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC2428AEB053052B89238E1467B5B06 /* UIViewController+NavBar.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3BF04461D698A5562C7F3189488B296B /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = F12CD38B7A8B4C10392B15F8285A08B2 /* NSData+Hash.m */; };
-		3C42D5D785AC717C1E25AF2F5DE27751 /* UIScrollView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 94347B9F1D74387FDE0DC3AFD4FEF611 /* UIScrollView+Extensions.m */; };
-		405A54BF0D04D31CBD7B324E9F50DF71 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 459F5235AD35473B133B5378624D6A39 /* NSData+Base64.m */; };
-		48A051B3762CB76698D1C5C6926A9585 /* TLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42774974C163C525FF3DA955511840FF /* TLAlertView.m */; };
-		48A0EE8B084EEDA35F1FCDAB59EF07B1 /* UIColor+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C7A98501118294C155E862BAC495CA /* UIColor+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4ABCB3899F9C8B728A16B71A0C55692B /* NSObject+KVOBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D15F07F171F4CA74C8A7A9CF64C573D /* NSObject+KVOBlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4C0128E6CE2C741537410810D40156B2 /* TLShortcutMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A35A86766F39BA3286F466567513671B /* TLShortcutMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		503CA51828D974F1F1CD7FD33E7547AA /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B17B67A956FCF68DC89D7A5553D74A4F /* NSString+Base64.m */; };
-		52F810149F4DE9419038C937E6E71FDA /* UITextView+LengthLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = ED08E693D3D968408E619CAF8A1B14F7 /* UITextView+LengthLimit.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		594DAE2CC800B2F99AE59F46C959ABB1 /* UITextField+LengthLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A07F0E7D39C6CFE1823ADC15876B0EE /* UITextField+LengthLimit.m */; };
-		5CE3BCAC79B9DF19FAEF264211915FE4 /* UIImage+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B6415EB456B3C3A534AE22CCA470060E /* UIImage+Size.m */; };
-		5EAB9C0C55CE5DD057E5215149033BB2 /* UIImage+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F738BEDD1C9EDCB214E2ED6634B68D /* UIImage+Size.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		61CA50DD759A8DBDE8B09BCF59461ABA /* NSString+PinYin.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FB2AEA49C60E3D739C0EAA1572E964 /* NSString+PinYin.m */; };
-		649FACE04BDFDA127C93D587F959365E /* UITextView+Select.h in Headers */ = {isa = PBXBuildFile; fileRef = C280D10A65797350AD8B2A2838A77348 /* UITextView+Select.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		672635F9326768240C1DAE0929CA6FD1 /* TLActionSheetAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F548C596909826ADAEABA126458438 /* TLActionSheetAppearance.m */; };
-		6A75E3AA9185236FA571FBAFF65318EC /* NSMutableArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3D879EE4D0C18F7BE39B816643A7F /* NSMutableArray+SafeAccess.m */; };
-		6B29CF499707E9346D70A7DD2DEBC267 /* NSObject+KVOBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E536DF6A28366CC17839C712D50507 /* NSObject+KVOBlock.m */; };
-		6D8DEA9F9E3A48DD18000D3A598C09E5 /* UIButton+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9BFDA0BBF64707D42BDFFF273AFDD4 /* UIButton+Extensions.m */; };
-		7011444E405EF3F029C99BA922AAC9D7 /* NSString+Encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = BF896E1919540E22CB32C31B24279DDE /* NSString+Encrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7285E5341819FB2B18B2E4E790EACF9A /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 6689B80F69CE913D8971EC6A272EC7B0 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		750A628FED798AB4A62183D578C27D72 /* NSDate+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 517426C9CA95634AD0681115D126C204 /* NSDate+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		768051611A633FEFAC45DF9DFDD5D1C0 /* NSData+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = C9800E613036EDFFACC6CB87998D414F /* NSData+Hash.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		768430E8B42BDB4A3F51D495F7AF6D13 /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA57542A8252386BCEF364FB6842EC9 /* NSFileManager+Paths.m */; };
-		77204018E6191D88ED9AD92F2214A1D5 /* NSFileManager+Paths.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F059D60303C9A439987D447E3A5F311 /* NSFileManager+Paths.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7741E89BC1AD9674DDAD6499B8EA6D6D /* NSObject+Reflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FF77AA99FBF6ED1270DF973E888C22 /* NSObject+Reflection.m */; };
-		77AEF2D71E188FB16A49AC1972E8FAC6 /* NSData+Gzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 83079BB219FA489670DE2A9C0643F886 /* NSData+Gzip.m */; };
-		79C323DDF97AA1B418081E5BD34BFE12 /* UINavigationController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6764F60657BE76FF995ACBDB4C66B8B8 /* UINavigationController+Extensions.m */; };
-		7BA20293DE4A62A487B22D9F4BE68523 /* UIControl+ActionBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = F9AB7E3C06185E5D0FCBF9D90B27248B /* UIControl+ActionBlocks.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7C4B6B00A4670E302AEFCFADBA49C7B9 /* NSBundle+AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6549B07938001B484375482EAE7106A3 /* NSBundle+AppIcon.m */; };
-		7EF895450B136473171D1C087DD007DA /* UIAlertView+ActionBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 210379226F7E9215B324E0E4D1EE40AF /* UIAlertView+ActionBlocks.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		842D0FC82DF43F0722C5F57907F16F61 /* NSData+Encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = DC95E1B729351A11A136C60307A589DE /* NSData+Encrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		850858D6A0AD18CE886A5E5009BD5D48 /* NSTimer+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = F129A36A6FEB223573278FB6DD887911 /* NSTimer+Block.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		85B2C3824A88EB2E733192FE3E89DF37 /* NSString+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = D170587397A9804157AB8DE67255E3A0 /* NSString+Size.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		877452FCAA6A74FF7DB8F5361C872F39 /* UIScrollView+iOS11Fixed.m in Sources */ = {isa = PBXBuildFile; fileRef = 04455D5D0DB9505BB0282E6A368498CD /* UIScrollView+iOS11Fixed.m */; };
-		87C5ADFC9AE2DEABD7C11F0C1F44764B /* TLComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E6BC4F2BB65F51656CCCD5773EDF87 /* TLComponents.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		89878F00FE6BDD903FD713CDDD7C0965 /* UIViewController+TipView.h in Headers */ = {isa = PBXBuildFile; fileRef = D588D885D9C6B1CABAC2732A9A55738B /* UIViewController+TipView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8C091D2822159BE34E884C8DB875C7E2 /* UIWindow+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = BD570C79B433423E0BA468E21B67AA23 /* UIWindow+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		909D920ECBD29BD999127C670192282A /* TLUIUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = E5BC5A17CF22EE13D986D954F2016E03 /* TLUIUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9512514F13B020AAD309745307ABAA30 /* NSString+Contains.h in Headers */ = {isa = PBXBuildFile; fileRef = F680D4C485E16C807547B8D506C16F39 /* NSString+Contains.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		95B7F54FE87461580FF71C438562603D /* UIView+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B1D251B97C19DE288311F532BB6C3A /* UIView+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		96E4737E2369416A71C8F2EC3AE52E67 /* UITextView+Placeholder.h in Headers */ = {isa = PBXBuildFile; fileRef = F55C521FDAE6FDAB228AC8C9068D7A5E /* UITextView+Placeholder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9754ECBEBDAAF8CBB96BF68B0B4FC4A2 /* NSDate+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC4BCA93BFC181007B3ECB39BC28C40 /* NSDate+Extensions.m */; };
-		9A7BEE7C139DB048D0EE82D242CA8CD2 /* UITextField+LengthLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8F133F6F86A1FF0EED57D49BCBA2B7 /* UITextField+LengthLimit.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9BC1EA751E2EFEC34B6120D0B3833712 /* UIView+TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CDA7888D1927DE9BB65AA9B00BD72D /* UIView+TipView.m */; };
-		9C8AF6E009A992F2427BD71233746E34 /* TLAlertViewAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DA3659091728902F61661CA6085FF3 /* TLAlertViewAppearance.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9CD9B552B8FFA60F8256AF9C82A7D186 /* NSMutableArray+SafeAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD92D1DA9433A1C81830D4F844DFA98 /* NSMutableArray+SafeAccess.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9D724E39C2FD2C11C530CAD7D74F544A /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A52132AA99B8CD029799BC3DBFE26D57 /* UIView+Screenshot.m */; };
-		9DA18E12797845F45D4FC70EDD1B9FBA /* UIColor+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3191A9BFF6A413C12B4B4307F9149762 /* UIColor+Gradient.m */; };
-		9DC7C981E41BAE3360439B3C0FF65D25 /* UINavigationController+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2221BF43B058B4BE1EAEDA74DBA559 /* UINavigationController+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9E29046AD7669857DF49C4EF6175BA03 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 825B40C02E693E4597DEF5A024A83864 /* UIImage+Color.m */; };
-		9E42F5B90D2EE6A886A3AFA43EC76879 /* UIAlertView+ActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6946FED11F13FDA02EDB1C78BA6F0C /* UIAlertView+ActionBlocks.m */; };
-		A814FAB018B4BC92122F99DB44667D75 /* UITabBarController+TLPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D0D67065E1559E76986876A42343D9 /* UITabBarController+TLPush.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A8BFED1DA78E5AD58F7BCF9F2B9BB653 /* NSString+URL.h in Headers */ = {isa = PBXBuildFile; fileRef = 239733F42DE8060B0F5E624322F75650 /* NSString+URL.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A9A8C95C27C8C183D864C10B6A1DA576 /* UIScrollView+iOS11Fixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4055100DB7FD5B670060E552D9D302 /* UIScrollView+iOS11Fixed.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AAC24CB329576616E51BFEAA49D39623 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE0A6B50F6246273ADB6EEFB03360A8 /* UIImage+Color.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AD2E6B52379E8E3EE4EBDDA4AE1727F2 /* TLAlertViewAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CA79C41E9A0B035CAF69E815F736674E /* TLAlertViewAppearance.m */; };
-		B0641DAE7630A041B5BF627E3898FB94 /* NSURL+Params.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBF8278185649CDBEE68A7787A330FC /* NSURL+Params.m */; };
-		B0A030772ADD1CBB19252675DB7317AE /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2327A91FAEE0EF672BC874366EF7A877 /* NSString+URL.m */; };
-		B0E7BC0C35DA6082E50881F1BBA30144 /* TLKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4CDF1A946C844679DDF13CC32B42DC /* TLKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B5AF4BEBB62CE1DF3B5FF987FEA6BE58 /* UICollectionViewCell+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD89BDA59F1C073D24A6F9189A81A6BA /* UICollectionViewCell+Extensions.m */; };
-		B7420EA881D8B62249CA753312A94D88 /* NSData+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 716712421EADF5E12B943F96FDCEC62F /* NSData+Encrypt.m */; };
-		B8853CDB4A632EB2409B942204E102C5 /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70975FCAE42FA412DB1A2A134B152F /* UIView+Extensions.m */; };
-		BB08D593D4C82F99FF08E45EA2BE40FC /* UIView+Screenshot.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E842005A756F1748874AE9D8ADDE3D /* UIView+Screenshot.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BBC6B5F2C782ADC550535B2C15E348FD /* NSDate+Relation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5DF09E3A2904BCE55FBAFCBB4E372D /* NSDate+Relation.m */; };
-		BD82D03EBB61209125A775ACF2544257 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D79935943EC2991E33F7AE45E84C2542 /* NSString+Size.m */; };
-		BE8DA4CB49D6140CABC35D619F7AFADB /* UITextField+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EBF084067814D8ADF86E1E4D751333 /* UITextField+Select.m */; };
-		C219E88A296B0E50AEE3087AD00D34AC /* NSString+Contains.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F858DCFE9A315459F4D3F8798E75FFC /* NSString+Contains.m */; };
-		C22D50FC15A4560B7E00521E941F44AB /* NSString+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AD86D6D912F72DCB5A0096CC302361 /* NSString+Encrypt.m */; };
-		C2311B895B84C87B498B415F55925551 /* UITextView+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = DA725806503FC0F3E0F883A4BEE8AC49 /* UITextView+Select.m */; };
-		C2974AE11C412CF371D94909E73320FB /* TLShortcutMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 41CB3BEAEF8C4EECDF56E7D39ECD8CE3 /* TLShortcutMethod.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C36CD9EAEB5908113220C94CC4062F0C /* NSString+NormalRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 86857D2D01A32992F94E335CDB2C727E /* NSString+NormalRegex.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C456F5F03B387D8B5755637F861DA9AA /* UINavigationBar+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A96CF3A48DC211D0B8EFB6F22C1EDD07 /* UINavigationBar+Extensions.m */; };
-		C5D1EBA159D9EFFF9F1EA09ECAB39EE6 /* NSObject+Association.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D27899863FA537FFEE553BCA1C334B4 /* NSObject+Association.m */; };
-		C63233CA8874F2D5C04C23E0B4865865 /* UIViewController+TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FEFC8CF542DAFA19ABFCD3E2651CC /* UIViewController+TipView.m */; };
-		C6803339819F94907EF319F39A26E171 /* UIScrollView+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0C9744380093A384887BB08CAC7139 /* UIScrollView+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C7779D65F53C4489A0A84DF32D411ECC /* NSDate+Relation.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F50980B9140FB99A2D8BD9F81E1BF9 /* NSDate+Relation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C95D3008C133011C9DDD09719B883CD7 /* UIButton+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = CA09BB12DAC07BDC7424D8CB08DB1C39 /* UIButton+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CD0334485564F5BAC6AC30FE10ED74C1 /* TLAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F7A8A4CD2326696EEE01D0B694E27FB /* TLAlertView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CE3B16DFEAF1D94FF72E9FB83ADBBD9C /* NSString+StringPages.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8ED2514A6AFD0F5462AA4FEBFCC83D /* NSString+StringPages.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CEDEF1BBAE93C4147DDA02289F64ACC1 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EDDA4775A16A89154863B18841432C /* UITextView+Placeholder.m */; };
-		CFB283DB28FED9E9C3606C34D7766F41 /* TLDeallocTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 435D98F7970D7712D20B6E480058730B /* TLDeallocTask.m */; };
-		D137C14D920A4F4ECF3C589538B32B54 /* NSMutableDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE91F1D01765CF5F0CE985AB338465 /* NSMutableDictionary+SafeAccess.m */; };
-		D43E40D187A320CDD03287C01B0098AD /* UIView+TipView.h in Headers */ = {isa = PBXBuildFile; fileRef = F94A18CDE5A7B13625638834462628E3 /* UIView+TipView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D7491EFFA03B58B67FA331E824B234DF /* NSNotificationCenter+MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EC7B2C77AD7FDF959914D4F17AD72B /* NSNotificationCenter+MainThread.m */; };
-		D917B540FE60A04C68DBF0092041E5AC /* TLDeallocTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FDFFC29207E040AEC8932AD2BC3C41 /* TLDeallocTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D99BE88DACA17F5FED1C1C4AC6A4C505 /* UITextField+Select.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA552D54E836E701C6D1F51F9B8FD00 /* UITextField+Select.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D9C350945A10466BE9FC2C7ABA5C90F4 /* TLKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB809332C1D382BB3F429C42063499C /* TLKit-dummy.m */; };
-		DA5C0977504C55B4E0A9610A6392BD05 /* NSObject+Reflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDB4914B04E0E1F83B63CC4D5C98EA4 /* NSObject+Reflection.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DD0871EB378A876DDEFA1FF25CF2740D /* TLCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = BF75F286C18B350FCCCBB96BDDD0376A /* TLCategories.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DF42B53F20A85719957400FF0493DA65 /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDEB737572711CC9F8CC5ED9212720B /* NSArray+SafeAccess.m */; };
-		E046F7585102BA40C64706ADB59B3FBD /* NSURL+Params.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A08389E1843D09E65DB2B85DB02BDE0 /* NSURL+Params.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E7483B94F5D3455DB5E208E15C9029FF /* NSString+StringPages.m in Sources */ = {isa = PBXBuildFile; fileRef = FB451F33C27CAE38B8F98323DC4432F7 /* NSString+StringPages.m */; };
-		E7813854ACD114E6605EE70205AAE375 /* UITextView+LengthLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EE82E11C93C284B65AF590B2CCDDF0 /* UITextView+LengthLimit.m */; };
-		E7E3F5DA8A4B98ECA47E640645857DC0 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB32FB0AAD7C43F9DE7639486476512 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EBDE67AC6D55C7B56DCF9BC5E93B0E35 /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC5A8374D3FF20BCE70D1B9F88E6CD /* NSDictionary+SafeAccess.m */; };
-		ED664F2CE889EBC01773F6BB6EFA13A5 /* UIKit+TLCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F5F40DFB97055B8FBAE8312302200E /* UIKit+TLCategories.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EE6E5B51682998F1DBEB8594EA9D9FA4 /* Foundation+TLCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = BA99DA8DF32557B2E83980B50FF785FA /* Foundation+TLCategories.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EECD1FFC718D301BE6098CA2180597AE /* NSArray+SafeAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BB76A93B74981A21C6D47FEB3779B0 /* NSArray+SafeAccess.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EF9FB6253CB9E866E762723919B66E1A /* NSBundle+AppIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5543F7309C0F2D9D3639B923EDD33B /* NSBundle+AppIcon.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F50530D621EDBF52A0A6590D81B2127E /* UIBarButtonItem+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B64251CF8F5CC34EADA674FAF698D3 /* UIBarButtonItem+Action.m */; };
-		FA14DC8B9606C2E979CD39B1505CD7AC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BF053AEC43EEF0686DCE684429C1F8EC /* UIView+Frame.m */; };
-		FDD764287727901A4F736E39494DAD88 /* TLActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = B82D1F62B0C9931EEAD323EA0485FF3D /* TLActionSheet.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		03403D67BBA3F47E6B52DD7A2D7A7C01 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE0A6B50F6246273ADB6EEFB03360A8 /* UIImage+Color.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		04C773FFC6B39DFF39EE00F8C30EDB7F /* TLAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 685A0BC57DAC527CF22A9B237C306FFB /* TLAlertView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		089A44335FF6B0C8C44E2253FB475486 /* NSString+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AD86D6D912F72DCB5A0096CC302361 /* NSString+Encrypt.m */; };
+		08AFF5F1F71A2018E2805D3975784EBB /* UIScrollView+iOS11Fixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4055100DB7FD5B670060E552D9D302 /* UIScrollView+iOS11Fixed.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		08E1E3DD8015245C99AAF2DB55CD4706 /* UITextField+LengthLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8F133F6F86A1FF0EED57D49BCBA2B7 /* UITextField+LengthLimit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0900CC02E3934F1C635FD8BA1D2E0CF5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BF053AEC43EEF0686DCE684429C1F8EC /* UIView+Frame.m */; };
+		0E11B2B9BE0C553CA3359F27D97E25DF /* NSString+Contains.h in Headers */ = {isa = PBXBuildFile; fileRef = F680D4C485E16C807547B8D506C16F39 /* NSString+Contains.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E13613205BC1D10E10B7DE9AA710AA4 /* NSString+NormalRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 86857D2D01A32992F94E335CDB2C727E /* NSString+NormalRegex.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		10DB2E8159C37DE162F1F913F1FB8E9B /* NSURL+Params.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A08389E1843D09E65DB2B85DB02BDE0 /* NSURL+Params.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		146A79D16D7905C0B19D6DEFCF095534 /* UITextField+Select.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA552D54E836E701C6D1F51F9B8FD00 /* UITextField+Select.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		16DB44AF02A8E3C28B7972CC08BE1D01 /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA57542A8252386BCEF364FB6842EC9 /* NSFileManager+Paths.m */; };
+		17BA4A6CE834E8F68743DB9DF33FC166 /* UITextView+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = DA725806503FC0F3E0F883A4BEE8AC49 /* UITextView+Select.m */; };
+		1D6D209CFAFA0E9E028A04A5B2CCC311 /* NSString+NormalRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B2259076D70A9DC603E4626AE4882 /* NSString+NormalRegex.m */; };
+		1E0A74025F3B7E6066657BFFDD1F1746 /* NSData+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 716712421EADF5E12B943F96FDCEC62F /* NSData+Encrypt.m */; };
+		1EB9BAE194C6CD4B41B5BB8CC2ED6301 /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70975FCAE42FA412DB1A2A134B152F /* UIView+Extensions.m */; };
+		1F3953788EE9AD080F37A8E2BC9A55E4 /* NSObject+Reflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FF77AA99FBF6ED1270DF973E888C22 /* NSObject+Reflection.m */; };
+		23EB7EB7353E6CF4712AA63C2E615F06 /* NSNotificationCenter+MainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EC7B2C77AD7FDF959914D4F17AD72B /* NSNotificationCenter+MainThread.m */; };
+		277E1026A2D8142A7393200C542856E6 /* UIScrollView+iOS11Fixed.m in Sources */ = {isa = PBXBuildFile; fileRef = 04455D5D0DB9505BB0282E6A368498CD /* UIScrollView+iOS11Fixed.m */; };
+		279FE7C0302DE637E1B8AC38940F6D4D /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C5897B1B463B7229EE1C3D3E50E87F /* NSString+Base64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		286B01C317A6B12AB2180E63FE025362 /* NSObject+KVOBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E536DF6A28366CC17839C712D50507 /* NSObject+KVOBlock.m */; };
+		289B6F25170D5A2A8BB00B6225FB9F60 /* UITextView+LengthLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = ED08E693D3D968408E619CAF8A1B14F7 /* UITextView+LengthLimit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28E506943881A0F4176CB7048DDEFE6E /* UICollectionViewCell+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9528C36EF37EFB408D14001E4376891C /* UICollectionViewCell+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A2600620EA7B363B2CBA3ACAC065BAF /* UITextView+LengthLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EE82E11C93C284B65AF590B2CCDDF0 /* UITextView+LengthLimit.m */; };
+		2B0121706D24CA2F91E6F10839D49FFF /* UIViewController+TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FEFC8CF542DAFA19ABFCD3E2651CC /* UIViewController+TipView.m */; };
+		2C6591BCB0A453A399338D63A45F1CDD /* UIAlertView+ActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6946FED11F13FDA02EDB1C78BA6F0C /* UIAlertView+ActionBlocks.m */; };
+		2FFD2D488C25191B7AD248C27387E402 /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = F12CD38B7A8B4C10392B15F8285A08B2 /* NSData+Hash.m */; };
+		30FB40CF8E64AB6CCE09ED2D8D05875B /* NSDate+Relation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5DF09E3A2904BCE55FBAFCBB4E372D /* NSDate+Relation.m */; };
+		3120425BA7897B339F10F3005415445A /* TLActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A96997E5E25781B613B624CE55706D /* TLActionSheet.m */; };
+		3382B7314AAA18D6CE4C89541C98A782 /* NSData+Gzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 10DB2844E8A681EDA1EE76B0FCD17B8D /* NSData+Gzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		33EE67941493857A4FA3DC4DE973F7DD /* TLCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = BF75F286C18B350FCCCBB96BDDD0376A /* TLCategories.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39D25E311FF780693EC893417ED2C0AE /* UINavigationController+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2221BF43B058B4BE1EAEDA74DBA559 /* UINavigationController+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3BD77D45E886A7BF8CDA363436750A6F /* NSURL+Params.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBF8278185649CDBEE68A7787A330FC /* NSURL+Params.m */; };
+		40675268B7E45EC90B61040799F55C72 /* NSString+StringPages.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8ED2514A6AFD0F5462AA4FEBFCC83D /* NSString+StringPages.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		43FB50B243862F321FCC660C86A2D655 /* UITextField+LengthLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A07F0E7D39C6CFE1823ADC15876B0EE /* UITextField+LengthLimit.m */; };
+		444AA79F1485E8D6F6E1D5F87D8569CD /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B17B67A956FCF68DC89D7A5553D74A4F /* NSString+Base64.m */; };
+		47E735D68F184F2E50D7CEB8AEC0B4C6 /* UIButton+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = CA09BB12DAC07BDC7424D8CB08DB1C39 /* UIButton+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4911C7FE81F6F8AE167A9B098B3999A2 /* UIViewController+NavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CEBFE51ABD3941A51E3F6A074BEEA1 /* UIViewController+NavBar.m */; };
+		4AD1CD9C97511DCE009CEFC278DD4969 /* TLActionSheetAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6DBDAE122CEAA28ED93E1492A49739 /* TLActionSheetAppearance.m */; };
+		4DE384FF9D4220F01C1D8FF963921891 /* NSMutableArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3D879EE4D0C18F7BE39B816643A7F /* NSMutableArray+SafeAccess.m */; };
+		4EC9DAEE09E860E1201313C4D52E49B4 /* UIView+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B1D251B97C19DE288311F532BB6C3A /* UIView+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58E0311C201B3312B26736005803594D /* NSObject+Reflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDB4914B04E0E1F83B63CC4D5C98EA4 /* NSObject+Reflection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A8B76F96E4196554D3790927B63FC81 /* UIImage+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F738BEDD1C9EDCB214E2ED6634B68D /* UIImage+Size.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A91FFCB6EA80F295BB9112F28957A0E /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC5A8374D3FF20BCE70D1B9F88E6CD /* NSDictionary+SafeAccess.m */; };
+		5E3E4E03976A99DA06F29280C17504D3 /* TLAlertViewAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 51412BA4074B7FE151113D6F800FE6BE /* TLAlertViewAppearance.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5ED23274CEAB92644E6FC6910083AE6E /* UIImage+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B6415EB456B3C3A534AE22CCA470060E /* UIImage+Size.m */; };
+		5F960E77260176C9115D07F743130A28 /* NSObject+KVOBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D15F07F171F4CA74C8A7A9CF64C573D /* NSObject+KVOBlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		602091954D924E6F3531464133E3796E /* NSMutableDictionary+SafeAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 0897A7AC49418DCE566F8CD41EC12D31 /* NSMutableDictionary+SafeAccess.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		632B8F0B6D37BE4BB453D124D6706EF0 /* NSTimer+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = F129A36A6FEB223573278FB6DD887911 /* NSTimer+Block.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		693A23EF9FDDEC35285FCFDEB90AEC26 /* UIAlertView+ActionBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 210379226F7E9215B324E0E4D1EE40AF /* UIAlertView+ActionBlocks.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C07BA92E8CB7C2D6D502A0721704611 /* NSDate+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 517426C9CA95634AD0681115D126C204 /* NSDate+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C6F2F8E0FC93139CE3106ED88873DDC /* NSObject+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 85399DEC5D2B2FD9EB0108EFAEC1E3F2 /* NSObject+Dealloc.m */; };
+		710767006B7A0872F97709DBE78A287D /* NSBundle+AppIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5543F7309C0F2D9D3639B923EDD33B /* NSBundle+AppIcon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		75B5F540E9BB1953CA420BAA6F43E7B8 /* TLShortcutMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 41CB3BEAEF8C4EECDF56E7D39ECD8CE3 /* TLShortcutMethod.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		782503BC547305BCC33BAF21514F092E /* UIScrollView+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0C9744380093A384887BB08CAC7139 /* UIScrollView+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		78CDB5B86A91335D48225CD6AF8D77DF /* UIBarButtonItem+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B64251CF8F5CC34EADA674FAF698D3 /* UIBarButtonItem+Action.m */; };
+		79D69D1BFC166BEE5A3A86E2FAD03C55 /* UIViewController+TipView.h in Headers */ = {isa = PBXBuildFile; fileRef = D588D885D9C6B1CABAC2732A9A55738B /* UIViewController+TipView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7B9B35357D32FF61D74D869C41616469 /* TLShortcutMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D4D4BEA29DFF69148FCED784884BC0 /* TLShortcutMethod.m */; };
+		7BD841AA82709484FA10D0F527813824 /* NSObject+EasyCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F11EEA2C3142ACA9B2712C859568712 /* NSObject+EasyCopy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7C35C9391403CF290781DBEC87A57CD6 /* UIScrollView+Pages.m in Sources */ = {isa = PBXBuildFile; fileRef = 0695A306D179EA7575E5B4B96DC03B91 /* UIScrollView+Pages.m */; };
+		7DC8AB353F9CDA28D716E5CA8ECDF8A4 /* UIView+TipView.h in Headers */ = {isa = PBXBuildFile; fileRef = F94A18CDE5A7B13625638834462628E3 /* UIView+TipView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7EAAB21EF9B370DEBEB994D975DD1132 /* NSString+PinYin.h in Headers */ = {isa = PBXBuildFile; fileRef = E019F13C9293CAB5D1BBC16324043EB4 /* NSString+PinYin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7F18D57F562274AF21C39D2C51A5D4A8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 459F5235AD35473B133B5378624D6A39 /* NSData+Base64.m */; };
+		7F42A4162E12A27295F801F14468E579 /* TLAlertViewAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DE730F1DE2AAAD67F7D3FC9831B288 /* TLAlertViewAppearance.m */; };
+		7F5739FD83918CE78688C0626387775E /* TLActionSheetAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E62A911C391B33A485D66858216D7C6 /* TLActionSheetAppearance.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80652E7CB5E5F728392512D9EFBDE8FD /* NSString+Encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = BF896E1919540E22CB32C31B24279DDE /* NSString+Encrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8252216E14EEBCC0EA9C3E957E3B968D /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = D79935943EC2991E33F7AE45E84C2542 /* NSString+Size.m */; };
+		8398D44EAE34725E0E58D9126AB55114 /* NSString+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = D170587397A9804157AB8DE67255E3A0 /* NSString+Size.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86648DE8E27B41BCE60FA5D582D5FDBC /* UITextView+Placeholder.h in Headers */ = {isa = PBXBuildFile; fileRef = F55C521FDAE6FDAB228AC8C9068D7A5E /* UITextView+Placeholder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8838A2AA9491DD414E8D562FD7ED91FD /* NSNotificationCenter+MainThread.h in Headers */ = {isa = PBXBuildFile; fileRef = D5EFED748F299BF918B0FC246C0947EC /* NSNotificationCenter+MainThread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B3102D17F9CB93ED935DF5FCDBB16E8 /* NSObject+Dealloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3DFFD0CF52E085A551DE041212DFA7 /* NSObject+Dealloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B509928F3F05769A964C6BE37E8395F /* TLDeallocTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 435D98F7970D7712D20B6E480058730B /* TLDeallocTask.m */; };
+		8C1A141D0A6514310FD4F8FAAFACE205 /* NSString+PinYin.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FB2AEA49C60E3D739C0EAA1572E964 /* NSString+PinYin.m */; };
+		8C9D8290FAE47B89E58680F8527D3FF0 /* NSDictionary+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 554EC18089903B051ACAB59AEE26ADDF /* NSDictionary+Extensions.m */; };
+		8C9E7B3C9E4603EF04064F8D9B99CCDE /* NSObject+EasyCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BE365433D1265E26B2FCDE4DEB081D /* NSObject+EasyCopy.m */; };
+		8CB66CB2DC0EF911023BC17F950E50B1 /* UIWindow+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B31B567098502BBAD4E06AC6F918B57 /* UIWindow+Extensions.m */; };
+		8E394DD7E0A33FEB513FD22D38E90D52 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF03483430D3AEA0FD0B0075C83960A /* UIColor+Extensions.m */; };
+		8E6F15AA34E5A3E2C7E21E166227028C /* NSTimer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89C91EF4CBC89DE3241F352724510A /* NSTimer+Block.m */; };
+		8F895E895F0001FC1403E941FC8E6AD5 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB32FB0AAD7C43F9DE7639486476512 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		905E13367D253AEE205E1778601D254D /* TLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DD402A6C95C8C3BC9E0201580643EE /* TLAlertView.m */; };
+		9268A055E8FBA538DB307DC70A858661 /* UIColor+Gradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 108CAD0588936FB0B2017977830F046D /* UIColor+Gradient.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		95666A9FB4B11A03F491D7A2282DEF0E /* UINavigationBar+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB360E267455B5D4C64ED56326892AB7 /* UINavigationBar+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		974E95CA351CD658639B766190B8CCE7 /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDEB737572711CC9F8CC5ED9212720B /* NSArray+SafeAccess.m */; };
+		9830B63338F18B205856879B3B876233 /* UINavigationController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6764F60657BE76FF995ACBDB4C66B8B8 /* UINavigationController+Extensions.m */; };
+		9FD10975F0FA35216EC9C0EF3C86DB09 /* UIWindow+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = BD570C79B433423E0BA468E21B67AA23 /* UIWindow+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9FE88ED25F94506EE2A8B32DD5B70C19 /* TLKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB809332C1D382BB3F429C42063499C /* TLKit-dummy.m */; };
+		A130013B19ED3666893B1501F2572B51 /* TLComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CC403B9AB0032E0D92C1B00EF0CEDB /* TLComponents.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A162343631029B54C2C0530AE962B8EF /* NSData+Encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = DC95E1B729351A11A136C60307A589DE /* NSData+Encrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3D0052E69F662E53AE5CF3177F749FD /* TLActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CBF5392AA39926002961DAADCE39EE /* TLActionSheet.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A62DBA33BFE5CEFC592CB9D0D40030A9 /* UIControl+ActionBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C37A08694BBFF584FA2F1D86751C9 /* UIControl+ActionBlocks.m */; };
+		AA6FA6F8ADF3B3C85D787ECA3C059784 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C090E28839D55AC94369A92B40C2CA /* NSString+Hash.m */; };
+		AB4DFBCEEE523EC62EC69C66D2DAEC97 /* NSData+Gzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 83079BB219FA489670DE2A9C0643F886 /* NSData+Gzip.m */; };
+		AFED0ACED2D00554ECEFDA57228CF184 /* UIScrollView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 94347B9F1D74387FDE0DC3AFD4FEF611 /* UIScrollView+Extensions.m */; };
+		B021D559DB9A99255A3D8A3DB7229804 /* UITabBarController+TLPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9E8DA7A617E082EBE89F9182F78DA2 /* UITabBarController+TLPush.m */; };
+		B13D9AAA770AC7E7637E785FC7046E29 /* TLToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A03F3DEBE2F614CE6FED2E59A5E8A /* TLToast.m */; };
+		B907C94D4B081B3570A5B5D8A58FEFDA /* UIButton+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9BFDA0BBF64707D42BDFFF273AFDD4 /* UIButton+Extensions.m */; };
+		BB03D07D583D676096A4F439C7C3E575 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2327A91FAEE0EF672BC874366EF7A877 /* NSString+URL.m */; };
+		BF60B5B84266E71E07B3166BACB28E9B /* NSDictionary+SafeAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F71A739EBDC167559C24E322A23D06 /* NSDictionary+SafeAccess.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0D700F49EB80253D248D59283A8B50A /* TLDeallocTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FDFFC29207E040AEC8932AD2BC3C41 /* TLDeallocTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3059848FA9AADF0D80F96E3991F8F8F /* NSDate+Relation.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F50980B9140FB99A2D8BD9F81E1BF9 /* NSDate+Relation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C66F396802FB448224A738F6946F17CA /* UIKit+TLCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F5F40DFB97055B8FBAE8312302200E /* UIKit+TLCategories.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB8BD35AC4E52E1790D1C111EB2E7631 /* NSObject+Association.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E9635F9D85C5E8948BBE0EA0CB560AC /* NSObject+Association.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CBABB77C98F843106546F3BAB6F6DC2B /* UITabBarController+TLPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D0D67065E1559E76986876A42343D9 /* UITabBarController+TLPush.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CC75CF8DD93BEED91A79970C6AD465B4 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EDDA4775A16A89154863B18841432C /* UITextView+Placeholder.m */; };
+		CC923261DA072581A514A57446118390 /* TLKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4CDF1A946C844679DDF13CC32B42DC /* TLKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD9E20F91384DCF3BB0277FFE8264A97 /* UIScrollView+Pages.h in Headers */ = {isa = PBXBuildFile; fileRef = C30DB03DBD6A64AE21A53252BA5551F2 /* UIScrollView+Pages.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CDA156E95368D4B19F5CA261FE7F5078 /* UICollectionViewCell+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD89BDA59F1C073D24A6F9189A81A6BA /* UICollectionViewCell+Extensions.m */; };
+		D41A842CBA48383B23016642282BCE3B /* NSArray+SafeAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BB76A93B74981A21C6D47FEB3779B0 /* NSArray+SafeAccess.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D467CC24FAB51959A8B764883C7B4AF2 /* UIBarButtonItem+Action.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D9CB4FE26C9510CDEBEA60B1E7B8861 /* UIBarButtonItem+Action.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D46D4898A154747CE864017A7246B5C2 /* UINavigationBar+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A96CF3A48DC211D0B8EFB6F22C1EDD07 /* UINavigationBar+Extensions.m */; };
+		D6E9CA4B673F8FC796B66AFC0EA430B9 /* UIColor+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3191A9BFF6A413C12B4B4307F9149762 /* UIColor+Gradient.m */; };
+		D777737287196E330BF52846E82A0942 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 825B40C02E693E4597DEF5A024A83864 /* UIImage+Color.m */; };
+		D9E789C1E3097883213428C73C46CB36 /* NSBundle+AppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6549B07938001B484375482EAE7106A3 /* NSBundle+AppIcon.m */; };
+		DB510B132459934C345E5DED4E0020FF /* UITextView+Select.h in Headers */ = {isa = PBXBuildFile; fileRef = C280D10A65797350AD8B2A2838A77348 /* UITextView+Select.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DB6E4D66B1E8A9D8F9EBD4803DD0AAB6 /* NSString+StringPages.m in Sources */ = {isa = PBXBuildFile; fileRef = FB451F33C27CAE38B8F98323DC4432F7 /* NSString+StringPages.m */; };
+		DCB6602877B4827BDD8E6BAC2A4373BC /* TLToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 079FE0EFDF5365E35D4740FCF362290E /* TLToast.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DFC0EF16DE4AE42A4797D0B5CE67467B /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B8F785DCA6C300DA4581F4F02ED6E2 /* NSString+Hash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E15A8654F19CA5050B75F279B2D2CDEB /* NSMutableDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE91F1D01765CF5F0CE985AB338465 /* NSMutableDictionary+SafeAccess.m */; };
+		E1763E245BA4D7276E9F6DD343880DCA /* TLShortcutMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A35A86766F39BA3286F466567513671B /* TLShortcutMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E29A7A3D19FDDE13866F59BBF5B18B52 /* NSMutableArray+SafeAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD92D1DA9433A1C81830D4F844DFA98 /* NSMutableArray+SafeAccess.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E3270F05F3715CA2C7CD4C58255638D3 /* UIControl+ActionBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = F9AB7E3C06185E5D0FCBF9D90B27248B /* UIControl+ActionBlocks.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E37F6ACFAEB4173212296E334AD3EC0E /* UIViewController+NavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC2428AEB053052B89238E1467B5B06 /* UIViewController+NavBar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E5F119EE8CFE7CFF7980414F20124DDC /* UIView+TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CDA7888D1927DE9BB65AA9B00BD72D /* UIView+TipView.m */; };
+		ECC6539AE302EAAF974A367237FECD7C /* NSString+URL.h in Headers */ = {isa = PBXBuildFile; fileRef = 239733F42DE8060B0F5E624322F75650 /* NSString+URL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EDDA1FA25AA8B8ED2FA0A4D9392605BD /* NSFileManager+Paths.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F059D60303C9A439987D447E3A5F311 /* NSFileManager+Paths.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE6D29967D85CE15B4CADCC7184BD448 /* NSString+Contains.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F858DCFE9A315459F4D3F8798E75FFC /* NSString+Contains.m */; };
+		EF07F654C19DFD911A654338C1028D20 /* NSDictionary+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E6BBD9FC8AB38B35EB05E0055C31CE56 /* NSDictionary+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EF0976BDEF9ED270BDF4276E29B4A3E9 /* NSObject+Association.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D27899863FA537FFEE553BCA1C334B4 /* NSObject+Association.m */; };
+		EF20CF89BDE4CB4EEEFD0FF4FC5551BC /* UIView+Screenshot.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E842005A756F1748874AE9D8ADDE3D /* UIView+Screenshot.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0492CE2A23487AE551892BC58BFD1CC /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 6689B80F69CE913D8971EC6A272EC7B0 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F11772EC72DCEC2C2D1564ABF987904D /* NSData+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = C9800E613036EDFFACC6CB87998D414F /* NSData+Hash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F224B26BA7A42882F634B42CCD4BA26E /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A52132AA99B8CD029799BC3DBFE26D57 /* UIView+Screenshot.m */; };
+		F25D43911A0EA6731718769340BC5170 /* UIColor+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 60C7A98501118294C155E862BAC495CA /* UIColor+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F312497EE310B964E339CAFB760C70F5 /* Foundation+TLCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = BA99DA8DF32557B2E83980B50FF785FA /* Foundation+TLCategories.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F848FACCC6A46F0717C30F1E50CD57B2 /* NSDate+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC4BCA93BFC181007B3ECB39BC28C40 /* NSDate+Extensions.m */; };
+		FDD33C45A7FA3645631D41CF1E0F2116 /* UITextField+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EBF084067814D8ADF86E1E4D751333 /* UITextField+Select.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,9 +155,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01DE730F1DE2AAAD67F7D3FC9831B288 /* TLAlertViewAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLAlertViewAppearance.m; path = TLKit/Classes/TLComponents/TLAlertView/TLAlertViewAppearance.m; sourceTree = "<group>"; };
 		04455D5D0DB9505BB0282E6A368498CD /* UIScrollView+iOS11Fixed.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+iOS11Fixed.m"; path = "TLKit/Classes/TLCategories/UIKit/UIScrollView/UIScrollView+iOS11Fixed.m"; sourceTree = "<group>"; };
 		0695A306D179EA7575E5B4B96DC03B91 /* UIScrollView+Pages.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+Pages.m"; path = "TLKit/Classes/TLCategories/UIKit/UIScrollView/UIScrollView+Pages.m"; sourceTree = "<group>"; };
 		06F738BEDD1C9EDCB214E2ED6634B68D /* UIImage+Size.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Size.h"; path = "TLKit/Classes/TLCategories/UIKit/UIImage/UIImage+Size.h"; sourceTree = "<group>"; };
+		079FE0EFDF5365E35D4740FCF362290E /* TLToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLToast.h; path = TLKit/Classes/TLComponents/TLToast/TLToast.h; sourceTree = "<group>"; };
 		0897A7AC49418DCE566F8CD41EC12D31 /* NSMutableDictionary+SafeAccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+SafeAccess.h"; path = "TLKit/Classes/TLCategories/Foundation/NSMutableDictionary/NSMutableDictionary+SafeAccess.h"; sourceTree = "<group>"; };
 		0A07F0E7D39C6CFE1823ADC15876B0EE /* UITextField+LengthLimit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+LengthLimit.m"; path = "TLKit/Classes/TLCategories/UIKit/UITextField/UITextField+LengthLimit.m"; sourceTree = "<group>"; };
 		0AC2428AEB053052B89238E1467B5B06 /* UIViewController+NavBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+NavBar.h"; path = "TLKit/Classes/TLCategories/UIKit/UIViewController/UIViewController+NavBar.h"; sourceTree = "<group>"; };
@@ -167,10 +169,10 @@
 		108CAD0588936FB0B2017977830F046D /* UIColor+Gradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Gradient.h"; path = "TLKit/Classes/TLCategories/UIKit/UIColor/UIColor+Gradient.h"; sourceTree = "<group>"; };
 		10DB2844E8A681EDA1EE76B0FCD17B8D /* NSData+Gzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Gzip.h"; path = "TLKit/Classes/TLCategories/Foundation/NSData/NSData+Gzip.h"; sourceTree = "<group>"; };
 		16E536DF6A28366CC17839C712D50507 /* NSObject+KVOBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+KVOBlock.m"; path = "TLKit/Classes/TLCategories/Foundation/NSObject/NSObject+KVOBlock.m"; sourceTree = "<group>"; };
+		18CBF5392AA39926002961DAADCE39EE /* TLActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLActionSheet.h; path = TLKit/Classes/TLComponents/TLActionSheet/TLActionSheet.h; sourceTree = "<group>"; };
 		1C5543F7309C0F2D9D3639B923EDD33B /* NSBundle+AppIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+AppIcon.h"; path = "TLKit/Classes/TLCategories/Foundation/NSBundle/NSBundle+AppIcon.h"; sourceTree = "<group>"; };
 		1D9CB4FE26C9510CDEBEA60B1E7B8861 /* UIBarButtonItem+Action.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+Action.h"; path = "TLKit/Classes/TLCategories/UIKit/UIBarButtonItem/UIBarButtonItem+Action.h"; sourceTree = "<group>"; };
 		1DA552D54E836E701C6D1F51F9B8FD00 /* UITextField+Select.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+Select.h"; path = "TLKit/Classes/TLCategories/UIKit/UITextField/UITextField+Select.h"; sourceTree = "<group>"; };
-		1F1AD8B59E20D17902A8B1DA287301A4 /* TLActionSheetAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLActionSheetAppearance.h; path = TLKit/Classes/TLComponents/TLActionSheet/TLActionSheetAppearance.h; sourceTree = "<group>"; };
 		210379226F7E9215B324E0E4D1EE40AF /* UIAlertView+ActionBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+ActionBlocks.h"; path = "TLKit/Classes/TLCategories/UIKit/UIAlertView/UIAlertView+ActionBlocks.h"; sourceTree = "<group>"; };
 		2327A91FAEE0EF672BC874366EF7A877 /* NSString+URL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+URL.m"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+URL.m"; sourceTree = "<group>"; };
 		239733F42DE8060B0F5E624322F75650 /* NSString+URL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+URL.h"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+URL.h"; sourceTree = "<group>"; };
@@ -181,39 +183,41 @@
 		2EB32FB0AAD7C43F9DE7639486476512 /* UIView+Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "TLKit/Classes/TLCategories/UIKit/UIView/UIView+Frame.h"; sourceTree = "<group>"; };
 		2EF3D879EE4D0C18F7BE39B816643A7F /* NSMutableArray+SafeAccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+SafeAccess.m"; path = "TLKit/Classes/TLCategories/Foundation/NSMutableArray/NSMutableArray+SafeAccess.m"; sourceTree = "<group>"; };
 		2F858DCFE9A315459F4D3F8798E75FFC /* NSString+Contains.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Contains.m"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+Contains.m"; sourceTree = "<group>"; };
-		30E6BC4F2BB65F51656CCCD5773EDF87 /* TLComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLComponents.h; path = TLKit/Classes/TLComponents/TLComponents.h; sourceTree = "<group>"; };
 		3191A9BFF6A413C12B4B4307F9149762 /* UIColor+Gradient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Gradient.m"; path = "TLKit/Classes/TLCategories/UIKit/UIColor/UIColor+Gradient.m"; sourceTree = "<group>"; };
-		35DA3659091728902F61661CA6085FF3 /* TLAlertViewAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLAlertViewAppearance.h; path = TLKit/Classes/TLComponents/TLAlertView/TLAlertViewAppearance.h; sourceTree = "<group>"; };
+		33A96997E5E25781B613B624CE55706D /* TLActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLActionSheet.m; path = TLKit/Classes/TLComponents/TLActionSheet/TLActionSheet.m; sourceTree = "<group>"; };
 		41CB3BEAEF8C4EECDF56E7D39ECD8CE3 /* TLShortcutMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLShortcutMethod.h; path = TLKit/Classes/TLShortcut/TLShortcutMethod.h; sourceTree = "<group>"; };
 		41EE82E11C93C284B65AF590B2CCDDF0 /* UITextView+LengthLimit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+LengthLimit.m"; path = "TLKit/Classes/TLCategories/UIKit/UITextView/UITextView+LengthLimit.m"; sourceTree = "<group>"; };
-		42774974C163C525FF3DA955511840FF /* TLAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLAlertView.m; path = TLKit/Classes/TLComponents/TLAlertView/TLAlertView.m; sourceTree = "<group>"; };
 		435D98F7970D7712D20B6E480058730B /* TLDeallocTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TLDeallocTask.m; sourceTree = "<group>"; };
 		43C090E28839D55AC94369A92B40C2CA /* NSString+Hash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Hash.m"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+Hash.m"; sourceTree = "<group>"; };
 		44B64251CF8F5CC34EADA674FAF698D3 /* UIBarButtonItem+Action.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+Action.m"; path = "TLKit/Classes/TLCategories/UIKit/UIBarButtonItem/UIBarButtonItem+Action.m"; sourceTree = "<group>"; };
-		4561B947C9A30ADCD816B9BBC811ED70 /* TLUIUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLUIUtility.m; path = TLKit/Classes/TLComponents/TLUIUtility/TLUIUtility.m; sourceTree = "<group>"; };
 		459F5235AD35473B133B5378624D6A39 /* NSData+Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "TLKit/Classes/TLCategories/Foundation/NSData/NSData+Base64.m"; sourceTree = "<group>"; };
+		45CC403B9AB0032E0D92C1B00EF0CEDB /* TLComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLComponents.h; path = TLKit/Classes/TLComponents/TLComponents.h; sourceTree = "<group>"; };
 		46C5897B1B463B7229EE1C3D3E50E87F /* NSString+Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Base64.h"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+Base64.h"; sourceTree = "<group>"; };
 		46F71A739EBDC167559C24E322A23D06 /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SafeAccess.h"; path = "TLKit/Classes/TLCategories/Foundation/NSDictionary/NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
 		4B3DFFD0CF52E085A551DE041212DFA7 /* NSObject+Dealloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dealloc.h"; sourceTree = "<group>"; };
 		4BA57542A8252386BCEF364FB6842EC9 /* NSFileManager+Paths.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+Paths.m"; path = "TLKit/Classes/TLCategories/Foundation/NSFileManager/NSFileManager+Paths.m"; sourceTree = "<group>"; };
 		4BDB4914B04E0E1F83B63CC4D5C98EA4 /* NSObject+Reflection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Reflection.h"; path = "TLKit/Classes/TLCategories/Foundation/NSObject/NSObject+Reflection.h"; sourceTree = "<group>"; };
 		4E9635F9D85C5E8948BBE0EA0CB560AC /* NSObject+Association.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+Association.h"; sourceTree = "<group>"; };
+		51412BA4074B7FE151113D6F800FE6BE /* TLAlertViewAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLAlertViewAppearance.h; path = TLKit/Classes/TLComponents/TLAlertView/TLAlertViewAppearance.h; sourceTree = "<group>"; };
 		517426C9CA95634AD0681115D126C204 /* NSDate+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Extensions.h"; path = "TLKit/Classes/TLCategories/Foundation/NSDate/NSDate+Extensions.h"; sourceTree = "<group>"; };
 		554EC18089903B051ACAB59AEE26ADDF /* NSDictionary+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Extensions.m"; path = "TLKit/Classes/TLCategories/Foundation/NSDictionary/NSDictionary+Extensions.m"; sourceTree = "<group>"; };
 		58D0D67065E1559E76986876A42343D9 /* UITabBarController+TLPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+TLPush.h"; path = "TLKit/Classes/TLCategories/UIKit/UITabBarController/UITabBarController+TLPush.h"; sourceTree = "<group>"; };
 		59D4D4BEA29DFF69148FCED784884BC0 /* TLShortcutMethod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLShortcutMethod.m; path = TLKit/Classes/TLShortcut/TLShortcutMethod.m; sourceTree = "<group>"; };
 		5C8F133F6F86A1FF0EED57D49BCBA2B7 /* UITextField+LengthLimit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+LengthLimit.h"; path = "TLKit/Classes/TLCategories/UIKit/UITextField/UITextField+LengthLimit.h"; sourceTree = "<group>"; };
+		5E62A911C391B33A485D66858216D7C6 /* TLActionSheetAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLActionSheetAppearance.h; path = TLKit/Classes/TLComponents/TLActionSheet/TLActionSheetAppearance.h; sourceTree = "<group>"; };
 		5FEE91F1D01765CF5F0CE985AB338465 /* NSMutableDictionary+SafeAccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+SafeAccess.m"; path = "TLKit/Classes/TLCategories/Foundation/NSMutableDictionary/NSMutableDictionary+SafeAccess.m"; sourceTree = "<group>"; };
 		601C37A08694BBFF584FA2F1D86751C9 /* UIControl+ActionBlocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+ActionBlocks.m"; path = "TLKit/Classes/TLCategories/UIKit/UIControl/UIControl+ActionBlocks.m"; sourceTree = "<group>"; };
 		60C7A98501118294C155E862BAC495CA /* UIColor+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Extensions.h"; path = "TLKit/Classes/TLCategories/UIKit/UIColor/UIColor+Extensions.h"; sourceTree = "<group>"; };
 		6549B07938001B484375482EAE7106A3 /* NSBundle+AppIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+AppIcon.m"; path = "TLKit/Classes/TLCategories/Foundation/NSBundle/NSBundle+AppIcon.m"; sourceTree = "<group>"; };
 		6689B80F69CE913D8971EC6A272EC7B0 /* NSData+Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "TLKit/Classes/TLCategories/Foundation/NSData/NSData+Base64.h"; sourceTree = "<group>"; };
 		6764F60657BE76FF995ACBDB4C66B8B8 /* UINavigationController+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Extensions.m"; path = "TLKit/Classes/TLCategories/UIKit/UINavigationController/UINavigationController+Extensions.m"; sourceTree = "<group>"; };
+		685A0BC57DAC527CF22A9B237C306FFB /* TLAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLAlertView.h; path = TLKit/Classes/TLComponents/TLAlertView/TLAlertView.h; sourceTree = "<group>"; };
 		68FF77AA99FBF6ED1270DF973E888C22 /* NSObject+Reflection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Reflection.m"; path = "TLKit/Classes/TLCategories/Foundation/NSObject/NSObject+Reflection.m"; sourceTree = "<group>"; };
 		69630A162B69173A3360FC946EC206E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		6C9B2259076D70A9DC603E4626AE4882 /* NSString+NormalRegex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+NormalRegex.m"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+NormalRegex.m"; sourceTree = "<group>"; };
 		6DE0A6B50F6246273ADB6EEFB03360A8 /* UIImage+Color.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "TLKit/Classes/TLCategories/UIKit/UIImage/UIImage+Color.h"; sourceTree = "<group>"; };
 		6E9BFDA0BBF64707D42BDFFF273AFDD4 /* UIButton+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Extensions.m"; path = "TLKit/Classes/TLCategories/UIKit/UIButton/UIButton+Extensions.m"; sourceTree = "<group>"; };
+		6F9A03F3DEBE2F614CE6FED2E59A5E8A /* TLToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLToast.m; path = TLKit/Classes/TLComponents/TLToast/TLToast.m; sourceTree = "<group>"; };
 		6FB809332C1D382BB3F429C42063499C /* TLKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TLKit-dummy.m"; sourceTree = "<group>"; };
 		716712421EADF5E12B943F96FDCEC62F /* NSData+Encrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+Encrypt.m"; path = "TLKit/Classes/TLCategories/Foundation/NSData/NSData+Encrypt.m"; sourceTree = "<group>"; };
 		73BB76A93B74981A21C6D47FEB3779B0 /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+SafeAccess.h"; path = "TLKit/Classes/TLCategories/Foundation/NSArray/NSArray+SafeAccess.h"; sourceTree = "<group>"; };
@@ -221,7 +225,6 @@
 		79B8F785DCA6C300DA4581F4F02ED6E2 /* NSString+Hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Hash.h"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+Hash.h"; sourceTree = "<group>"; };
 		7A6946FED11F13FDA02EDB1C78BA6F0C /* UIAlertView+ActionBlocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+ActionBlocks.m"; path = "TLKit/Classes/TLCategories/UIKit/UIAlertView/UIAlertView+ActionBlocks.m"; sourceTree = "<group>"; };
 		7D6AEC79C705F8E35DC7D84C5F535278 /* TLKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLKit.xcconfig; sourceTree = "<group>"; };
-		7F7A8A4CD2326696EEE01D0B694E27FB /* TLAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLAlertView.h; path = TLKit/Classes/TLComponents/TLAlertView/TLAlertView.h; sourceTree = "<group>"; };
 		825B40C02E693E4597DEF5A024A83864 /* UIImage+Color.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "TLKit/Classes/TLCategories/UIKit/UIImage/UIImage+Color.m"; sourceTree = "<group>"; };
 		83079BB219FA489670DE2A9C0643F886 /* NSData+Gzip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+Gzip.m"; path = "TLKit/Classes/TLCategories/Foundation/NSData/NSData+Gzip.m"; sourceTree = "<group>"; };
 		85399DEC5D2B2FD9EB0108EFAEC1E3F2 /* NSObject+Dealloc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dealloc.m"; sourceTree = "<group>"; };
@@ -234,7 +237,6 @@
 		90CC5A8374D3FF20BCE70D1B9F88E6CD /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SafeAccess.m"; path = "TLKit/Classes/TLCategories/Foundation/NSDictionary/NSDictionary+SafeAccess.m"; sourceTree = "<group>"; };
 		92EC7B2C77AD7FDF959914D4F17AD72B /* NSNotificationCenter+MainThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+MainThread.m"; path = "TLKit/Classes/TLCategories/Foundation/NSNotificationCenter/NSNotificationCenter+MainThread.m"; sourceTree = "<group>"; };
 		94347B9F1D74387FDE0DC3AFD4FEF611 /* UIScrollView+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+Extensions.m"; path = "TLKit/Classes/TLCategories/UIKit/UIScrollView/UIScrollView+Extensions.m"; sourceTree = "<group>"; };
-		94F548C596909826ADAEABA126458438 /* TLActionSheetAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLActionSheetAppearance.m; path = TLKit/Classes/TLComponents/TLActionSheet/TLActionSheetAppearance.m; sourceTree = "<group>"; };
 		9528C36EF37EFB408D14001E4376891C /* UICollectionViewCell+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionViewCell+Extensions.h"; path = "TLKit/Classes/TLCategories/UIKit/UICollectionViewCell/UICollectionViewCell+Extensions.h"; sourceTree = "<group>"; };
 		9A08389E1843D09E65DB2B85DB02BDE0 /* NSURL+Params.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+Params.h"; path = "TLKit/Classes/TLCategories/Foundation/NSURL/NSURL+Params.h"; sourceTree = "<group>"; };
 		9F059D60303C9A439987D447E3A5F311 /* NSFileManager+Paths.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+Paths.h"; path = "TLKit/Classes/TLCategories/Foundation/NSFileManager/NSFileManager+Paths.h"; sourceTree = "<group>"; };
@@ -248,11 +250,10 @@
 		AA70975FCAE42FA412DB1A2A134B152F /* UIView+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extensions.m"; path = "TLKit/Classes/TLCategories/UIKit/UIView/UIView+Extensions.m"; sourceTree = "<group>"; };
 		AB360E267455B5D4C64ED56326892AB7 /* UINavigationBar+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Extensions.h"; path = "TLKit/Classes/TLCategories/UIKit/UINavigationBar/UINavigationBar+Extensions.h"; sourceTree = "<group>"; };
 		AD89C91EF4CBC89DE3241F352724510A /* NSTimer+Block.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+Block.m"; path = "TLKit/Classes/TLCategories/Foundation/NSTimer/NSTimer+Block.m"; sourceTree = "<group>"; };
-		AFA8E3F296020FE8DF06648F43CB8FAA /* TLActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLActionSheet.m; path = TLKit/Classes/TLComponents/TLActionSheet/TLActionSheet.m; sourceTree = "<group>"; };
 		B17B67A956FCF68DC89D7A5553D74A4F /* NSString+Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Base64.m"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+Base64.m"; sourceTree = "<group>"; };
 		B6415EB456B3C3A534AE22CCA470060E /* UIImage+Size.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Size.m"; path = "TLKit/Classes/TLCategories/UIKit/UIImage/UIImage+Size.m"; sourceTree = "<group>"; };
-		B82D1F62B0C9931EEAD323EA0485FF3D /* TLActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLActionSheet.h; path = TLKit/Classes/TLComponents/TLActionSheet/TLActionSheet.h; sourceTree = "<group>"; };
 		B9CDA7888D1927DE9BB65AA9B00BD72D /* UIView+TipView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TipView.m"; path = "TLKit/Classes/TLCategories/UIKit/UIView/UIView+TipView.m"; sourceTree = "<group>"; };
+		BA6DBDAE122CEAA28ED93E1492A49739 /* TLActionSheetAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLActionSheetAppearance.m; path = TLKit/Classes/TLComponents/TLActionSheet/TLActionSheetAppearance.m; sourceTree = "<group>"; };
 		BA99DA8DF32557B2E83980B50FF785FA /* Foundation+TLCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Foundation+TLCategories.h"; path = "TLKit/Classes/TLCategories/Foundation/Foundation+TLCategories.h"; sourceTree = "<group>"; };
 		BD570C79B433423E0BA468E21B67AA23 /* UIWindow+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+Extensions.h"; path = "TLKit/Classes/TLCategories/UIKit/UIWindow/UIWindow+Extensions.h"; sourceTree = "<group>"; };
 		BF053AEC43EEF0686DCE684429C1F8EC /* UIView+Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "TLKit/Classes/TLCategories/UIKit/UIView/UIView+Frame.m"; sourceTree = "<group>"; };
@@ -265,7 +266,6 @@
 		C4EBF084067814D8ADF86E1E4D751333 /* UITextField+Select.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Select.m"; path = "TLKit/Classes/TLCategories/UIKit/UITextField/UITextField+Select.m"; sourceTree = "<group>"; };
 		C9800E613036EDFFACC6CB87998D414F /* NSData+Hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Hash.h"; path = "TLKit/Classes/TLCategories/Foundation/NSData/NSData+Hash.h"; sourceTree = "<group>"; };
 		CA09BB12DAC07BDC7424D8CB08DB1C39 /* UIButton+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Extensions.h"; path = "TLKit/Classes/TLCategories/UIKit/UIButton/UIButton+Extensions.h"; sourceTree = "<group>"; };
-		CA79C41E9A0B035CAF69E815F736674E /* TLAlertViewAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLAlertViewAppearance.m; path = TLKit/Classes/TLComponents/TLAlertView/TLAlertViewAppearance.m; sourceTree = "<group>"; };
 		CD5DF09E3A2904BCE55FBAFCBB4E372D /* NSDate+Relation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Relation.m"; path = "TLKit/Classes/TLCategories/Foundation/NSDate/NSDate+Relation.m"; sourceTree = "<group>"; };
 		D0FB2AEA49C60E3D739C0EAA1572E964 /* NSString+PinYin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+PinYin.m"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+PinYin.m"; sourceTree = "<group>"; };
 		D170587397A9804157AB8DE67255E3A0 /* NSString+Size.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Size.h"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+Size.h"; sourceTree = "<group>"; };
@@ -278,7 +278,6 @@
 		DC95E1B729351A11A136C60307A589DE /* NSData+Encrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Encrypt.h"; path = "TLKit/Classes/TLCategories/Foundation/NSData/NSData+Encrypt.h"; sourceTree = "<group>"; };
 		E019F13C9293CAB5D1BBC16324043EB4 /* NSString+PinYin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+PinYin.h"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+PinYin.h"; sourceTree = "<group>"; };
 		E0BE365433D1265E26B2FCDE4DEB081D /* NSObject+EasyCopy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+EasyCopy.m"; path = "TLKit/Classes/TLCategories/Foundation/NSObject/NSObject+EasyCopy.m"; sourceTree = "<group>"; };
-		E5BC5A17CF22EE13D986D954F2016E03 /* TLUIUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLUIUtility.h; path = TLKit/Classes/TLComponents/TLUIUtility/TLUIUtility.h; sourceTree = "<group>"; };
 		E6BBD9FC8AB38B35EB05E0055C31CE56 /* NSDictionary+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Extensions.h"; path = "TLKit/Classes/TLCategories/Foundation/NSDictionary/NSDictionary+Extensions.h"; sourceTree = "<group>"; };
 		E8CE009D31AA43A7968B2FAB29EB7332 /* SVProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SVProgressHUD; path = SVProgressHUD.xcodeproj; sourceTree = "<group>"; };
 		EC0C9744380093A384887BB08CAC7139 /* UIScrollView+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+Extensions.h"; path = "TLKit/Classes/TLCategories/UIKit/UIScrollView/UIScrollView+Extensions.h"; sourceTree = "<group>"; };
@@ -292,6 +291,7 @@
 		F680D4C485E16C807547B8D506C16F39 /* NSString+Contains.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Contains.h"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+Contains.h"; sourceTree = "<group>"; };
 		F94A18CDE5A7B13625638834462628E3 /* UIView+TipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TipView.h"; path = "TLKit/Classes/TLCategories/UIKit/UIView/UIView+TipView.h"; sourceTree = "<group>"; };
 		F9AB7E3C06185E5D0FCBF9D90B27248B /* UIControl+ActionBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+ActionBlocks.h"; path = "TLKit/Classes/TLCategories/UIKit/UIControl/UIControl+ActionBlocks.h"; sourceTree = "<group>"; };
+		F9DD402A6C95C8C3BC9E0201580643EE /* TLAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLAlertView.m; path = TLKit/Classes/TLComponents/TLAlertView/TLAlertView.m; sourceTree = "<group>"; };
 		FB451F33C27CAE38B8F98323DC4432F7 /* NSString+StringPages.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+StringPages.m"; path = "TLKit/Classes/TLCategories/Foundation/NSString/NSString+StringPages.m"; sourceTree = "<group>"; };
 		FCB9A47F938AF10FE24E08C91B6E9074 /* TLKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TLKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FD89BDA59F1C073D24A6F9189A81A6BA /* UICollectionViewCell+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionViewCell+Extensions.m"; path = "TLKit/Classes/TLCategories/UIKit/UICollectionViewCell/UICollectionViewCell+Extensions.m"; sourceTree = "<group>"; };
@@ -323,17 +323,6 @@
 				F12CD38B7A8B4C10392B15F8285A08B2 /* NSData+Hash.m */,
 			);
 			name = NSData;
-			sourceTree = "<group>";
-		};
-		009B68D1C01A8478AFE3A5F1E00A727D /* TLAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				7F7A8A4CD2326696EEE01D0B694E27FB /* TLAlertView.h */,
-				42774974C163C525FF3DA955511840FF /* TLAlertView.m */,
-				35DA3659091728902F61661CA6085FF3 /* TLAlertViewAppearance.h */,
-				CA79C41E9A0B035CAF69E815F736674E /* TLAlertViewAppearance.m */,
-			);
-			name = TLAlertView;
 			sourceTree = "<group>";
 		};
 		029AA46193EA92288444039CB4E54C3C /* UINavigationController */ = {
@@ -505,13 +494,13 @@
 			name = UIScrollView;
 			sourceTree = "<group>";
 		};
-		3EFE21C6340F1A69EA4E99F2E91E166A /* TLComponents */ = {
+		3B1BF9C2E3885A3AA20166677BC93A94 /* TLComponents */ = {
 			isa = PBXGroup;
 			children = (
-				30E6BC4F2BB65F51656CCCD5773EDF87 /* TLComponents.h */,
-				DBF8C34B600C4714D095029682B789B0 /* TLActionSheet */,
-				009B68D1C01A8478AFE3A5F1E00A727D /* TLAlertView */,
-				80E1AF85D8F1FDE521A8788038EF829E /* TLUIUtility */,
+				45CC403B9AB0032E0D92C1B00EF0CEDB /* TLComponents.h */,
+				490D3FBB67713697F61260DDBE72A680 /* TLActionSheet */,
+				804BBF0588F0827EC5C2DFC8D266B5A4 /* TLAlertView */,
+				F0A65F49451E6E7095BDD95110E9FAD2 /* TLToast */,
 			);
 			name = TLComponents;
 			sourceTree = "<group>";
@@ -523,6 +512,17 @@
 				601C37A08694BBFF584FA2F1D86751C9 /* UIControl+ActionBlocks.m */,
 			);
 			name = UIControl;
+			sourceTree = "<group>";
+		};
+		490D3FBB67713697F61260DDBE72A680 /* TLActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				18CBF5392AA39926002961DAADCE39EE /* TLActionSheet.h */,
+				33A96997E5E25781B613B624CE55706D /* TLActionSheet.m */,
+				5E62A911C391B33A485D66858216D7C6 /* TLActionSheetAppearance.h */,
+				BA6DBDAE122CEAA28ED93E1492A49739 /* TLActionSheetAppearance.m */,
+			);
+			name = TLActionSheet;
 			sourceTree = "<group>";
 		};
 		52A9FE895B08EB93E0CA1439E8DBB04E /* NSBundle */ = {
@@ -625,13 +625,15 @@
 			);
 			sourceTree = "<group>";
 		};
-		80E1AF85D8F1FDE521A8788038EF829E /* TLUIUtility */ = {
+		804BBF0588F0827EC5C2DFC8D266B5A4 /* TLAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				E5BC5A17CF22EE13D986D954F2016E03 /* TLUIUtility.h */,
-				4561B947C9A30ADCD816B9BBC811ED70 /* TLUIUtility.m */,
+				685A0BC57DAC527CF22A9B237C306FFB /* TLAlertView.h */,
+				F9DD402A6C95C8C3BC9E0201580643EE /* TLAlertView.m */,
+				51412BA4074B7FE151113D6F800FE6BE /* TLAlertViewAppearance.h */,
+				01DE730F1DE2AAAD67F7D3FC9831B288 /* TLAlertViewAppearance.m */,
 			);
-			name = TLUIUtility;
+			name = TLAlertView;
 			sourceTree = "<group>";
 		};
 		81CA3DF0B98B38A3D9C6CA75D46F6D76 /* NSString */ = {
@@ -747,17 +749,6 @@
 			name = TLShortcut;
 			sourceTree = "<group>";
 		};
-		DBF8C34B600C4714D095029682B789B0 /* TLActionSheet */ = {
-			isa = PBXGroup;
-			children = (
-				B82D1F62B0C9931EEAD323EA0485FF3D /* TLActionSheet.h */,
-				AFA8E3F296020FE8DF06648F43CB8FAA /* TLActionSheet.m */,
-				1F1AD8B59E20D17902A8B1DA287301A4 /* TLActionSheetAppearance.h */,
-				94F548C596909826ADAEABA126458438 /* TLActionSheetAppearance.m */,
-			);
-			name = TLActionSheet;
-			sourceTree = "<group>";
-		};
 		DF63C5B583A6E232CEE009EEEF9684A3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -769,6 +760,15 @@
 			path = "Example/Pods/Target Support Files/TLKit";
 			sourceTree = "<group>";
 		};
+		F0A65F49451E6E7095BDD95110E9FAD2 /* TLToast */ = {
+			isa = PBXGroup;
+			children = (
+				079FE0EFDF5365E35D4740FCF362290E /* TLToast.h */,
+				6F9A03F3DEBE2F614CE6FED2E59A5E8A /* TLToast.m */,
+			);
+			name = TLToast;
+			sourceTree = "<group>";
+		};
 		F37E42C68A95EE4AF1577B8CC3EB842E /* TLKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -776,7 +776,7 @@
 				F7DA4778D08F734C08253EA885E5156F /* Pod */,
 				DF63C5B583A6E232CEE009EEEF9684A3 /* Support Files */,
 				21F239C3CC387BFA343CF2E43E51B471 /* TLCategories */,
-				3EFE21C6340F1A69EA4E99F2E91E166A /* TLComponents */,
+				3B1BF9C2E3885A3AA20166677BC93A94 /* TLComponents */,
 				D5D1A17241E38A21BC58F84F74DA71C2 /* TLShortcut */,
 			);
 			name = TLKit;
@@ -816,80 +816,80 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A1AB80EBF4EB1FA37CF6CA9F5FC915F5 /* Headers */ = {
+		1A330A4ED796228D95E5143EECBE7C55 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE6E5B51682998F1DBEB8594EA9D9FA4 /* Foundation+TLCategories.h in Headers */,
-				EECD1FFC718D301BE6098CA2180597AE /* NSArray+SafeAccess.h in Headers */,
-				EF9FB6253CB9E866E762723919B66E1A /* NSBundle+AppIcon.h in Headers */,
-				7285E5341819FB2B18B2E4E790EACF9A /* NSData+Base64.h in Headers */,
-				842D0FC82DF43F0722C5F57907F16F61 /* NSData+Encrypt.h in Headers */,
-				10ED3FDF41C0ADCCC1B929BED6ADB8B1 /* NSData+Gzip.h in Headers */,
-				768051611A633FEFAC45DF9DFDD5D1C0 /* NSData+Hash.h in Headers */,
-				750A628FED798AB4A62183D578C27D72 /* NSDate+Extensions.h in Headers */,
-				C7779D65F53C4489A0A84DF32D411ECC /* NSDate+Relation.h in Headers */,
-				150CADB41D25C381ACC689A33DB13F71 /* NSDictionary+Extensions.h in Headers */,
-				07DA67881B2D845A508FE1E95E89114D /* NSDictionary+SafeAccess.h in Headers */,
-				77204018E6191D88ED9AD92F2214A1D5 /* NSFileManager+Paths.h in Headers */,
-				9CD9B552B8FFA60F8256AF9C82A7D186 /* NSMutableArray+SafeAccess.h in Headers */,
-				1539F5092A40B1150B4FB6DC2AE79466 /* NSMutableDictionary+SafeAccess.h in Headers */,
-				20B6BD80399A197D6326CB0B793159D0 /* NSNotificationCenter+MainThread.h in Headers */,
-				30FE98C2C539E9F742749A236AC4102E /* NSObject+Association.h in Headers */,
-				1830451878A575140DE414C87987C04F /* NSObject+Dealloc.h in Headers */,
-				1297CA2398899DE626E93F5411EDE5A8 /* NSObject+EasyCopy.h in Headers */,
-				4ABCB3899F9C8B728A16B71A0C55692B /* NSObject+KVOBlock.h in Headers */,
-				DA5C0977504C55B4E0A9610A6392BD05 /* NSObject+Reflection.h in Headers */,
-				369AEEABD0C94210F2C1FF3DE07C09D6 /* NSString+Base64.h in Headers */,
-				9512514F13B020AAD309745307ABAA30 /* NSString+Contains.h in Headers */,
-				7011444E405EF3F029C99BA922AAC9D7 /* NSString+Encrypt.h in Headers */,
-				08CD5E159CA592B771EDA5C6DFED384C /* NSString+Hash.h in Headers */,
-				C36CD9EAEB5908113220C94CC4062F0C /* NSString+NormalRegex.h in Headers */,
-				3421E36D07A9F69F66B4BC6880475552 /* NSString+PinYin.h in Headers */,
-				85B2C3824A88EB2E733192FE3E89DF37 /* NSString+Size.h in Headers */,
-				CE3B16DFEAF1D94FF72E9FB83ADBBD9C /* NSString+StringPages.h in Headers */,
-				A8BFED1DA78E5AD58F7BCF9F2B9BB653 /* NSString+URL.h in Headers */,
-				850858D6A0AD18CE886A5E5009BD5D48 /* NSTimer+Block.h in Headers */,
-				E046F7585102BA40C64706ADB59B3FBD /* NSURL+Params.h in Headers */,
-				FDD764287727901A4F736E39494DAD88 /* TLActionSheet.h in Headers */,
-				14B33793821E9E15106D21844874843A /* TLActionSheetAppearance.h in Headers */,
-				CD0334485564F5BAC6AC30FE10ED74C1 /* TLAlertView.h in Headers */,
-				9C8AF6E009A992F2427BD71233746E34 /* TLAlertViewAppearance.h in Headers */,
-				DD0871EB378A876DDEFA1FF25CF2740D /* TLCategories.h in Headers */,
-				87C5ADFC9AE2DEABD7C11F0C1F44764B /* TLComponents.h in Headers */,
-				D917B540FE60A04C68DBF0092041E5AC /* TLDeallocTask.h in Headers */,
-				B0E7BC0C35DA6082E50881F1BBA30144 /* TLKit.h in Headers */,
-				4C0128E6CE2C741537410810D40156B2 /* TLShortcutMacros.h in Headers */,
-				C2974AE11C412CF371D94909E73320FB /* TLShortcutMethod.h in Headers */,
-				909D920ECBD29BD999127C670192282A /* TLUIUtility.h in Headers */,
-				7EF895450B136473171D1C087DD007DA /* UIAlertView+ActionBlocks.h in Headers */,
-				237F7DDB2637D6BD23D9E219B46D2A45 /* UIBarButtonItem+Action.h in Headers */,
-				C95D3008C133011C9DDD09719B883CD7 /* UIButton+Extensions.h in Headers */,
-				12880A616B50A2A7D6171401DC3A8321 /* UICollectionViewCell+Extensions.h in Headers */,
-				48A0EE8B084EEDA35F1FCDAB59EF07B1 /* UIColor+Extensions.h in Headers */,
-				2D3F897413947FDCF3714DDFD8D4C209 /* UIColor+Gradient.h in Headers */,
-				7BA20293DE4A62A487B22D9F4BE68523 /* UIControl+ActionBlocks.h in Headers */,
-				AAC24CB329576616E51BFEAA49D39623 /* UIImage+Color.h in Headers */,
-				5EAB9C0C55CE5DD057E5215149033BB2 /* UIImage+Size.h in Headers */,
-				ED664F2CE889EBC01773F6BB6EFA13A5 /* UIKit+TLCategories.h in Headers */,
-				2895D4810EDDAE8B2F04A482B822AC5A /* UINavigationBar+Extensions.h in Headers */,
-				9DC7C981E41BAE3360439B3C0FF65D25 /* UINavigationController+Extensions.h in Headers */,
-				C6803339819F94907EF319F39A26E171 /* UIScrollView+Extensions.h in Headers */,
-				A9A8C95C27C8C183D864C10B6A1DA576 /* UIScrollView+iOS11Fixed.h in Headers */,
-				189E220CBE7BDC335220BE6D8486C662 /* UIScrollView+Pages.h in Headers */,
-				A814FAB018B4BC92122F99DB44667D75 /* UITabBarController+TLPush.h in Headers */,
-				9A7BEE7C139DB048D0EE82D242CA8CD2 /* UITextField+LengthLimit.h in Headers */,
-				D99BE88DACA17F5FED1C1C4AC6A4C505 /* UITextField+Select.h in Headers */,
-				52F810149F4DE9419038C937E6E71FDA /* UITextView+LengthLimit.h in Headers */,
-				96E4737E2369416A71C8F2EC3AE52E67 /* UITextView+Placeholder.h in Headers */,
-				649FACE04BDFDA127C93D587F959365E /* UITextView+Select.h in Headers */,
-				95B7F54FE87461580FF71C438562603D /* UIView+Extensions.h in Headers */,
-				E7E3F5DA8A4B98ECA47E640645857DC0 /* UIView+Frame.h in Headers */,
-				BB08D593D4C82F99FF08E45EA2BE40FC /* UIView+Screenshot.h in Headers */,
-				D43E40D187A320CDD03287C01B0098AD /* UIView+TipView.h in Headers */,
-				39F279941F1ACFD0AABDA73DCFC720EF /* UIViewController+NavBar.h in Headers */,
-				89878F00FE6BDD903FD713CDDD7C0965 /* UIViewController+TipView.h in Headers */,
-				8C091D2822159BE34E884C8DB875C7E2 /* UIWindow+Extensions.h in Headers */,
+				F312497EE310B964E339CAFB760C70F5 /* Foundation+TLCategories.h in Headers */,
+				D41A842CBA48383B23016642282BCE3B /* NSArray+SafeAccess.h in Headers */,
+				710767006B7A0872F97709DBE78A287D /* NSBundle+AppIcon.h in Headers */,
+				F0492CE2A23487AE551892BC58BFD1CC /* NSData+Base64.h in Headers */,
+				A162343631029B54C2C0530AE962B8EF /* NSData+Encrypt.h in Headers */,
+				3382B7314AAA18D6CE4C89541C98A782 /* NSData+Gzip.h in Headers */,
+				F11772EC72DCEC2C2D1564ABF987904D /* NSData+Hash.h in Headers */,
+				6C07BA92E8CB7C2D6D502A0721704611 /* NSDate+Extensions.h in Headers */,
+				C3059848FA9AADF0D80F96E3991F8F8F /* NSDate+Relation.h in Headers */,
+				EF07F654C19DFD911A654338C1028D20 /* NSDictionary+Extensions.h in Headers */,
+				BF60B5B84266E71E07B3166BACB28E9B /* NSDictionary+SafeAccess.h in Headers */,
+				EDDA1FA25AA8B8ED2FA0A4D9392605BD /* NSFileManager+Paths.h in Headers */,
+				E29A7A3D19FDDE13866F59BBF5B18B52 /* NSMutableArray+SafeAccess.h in Headers */,
+				602091954D924E6F3531464133E3796E /* NSMutableDictionary+SafeAccess.h in Headers */,
+				8838A2AA9491DD414E8D562FD7ED91FD /* NSNotificationCenter+MainThread.h in Headers */,
+				CB8BD35AC4E52E1790D1C111EB2E7631 /* NSObject+Association.h in Headers */,
+				8B3102D17F9CB93ED935DF5FCDBB16E8 /* NSObject+Dealloc.h in Headers */,
+				7BD841AA82709484FA10D0F527813824 /* NSObject+EasyCopy.h in Headers */,
+				5F960E77260176C9115D07F743130A28 /* NSObject+KVOBlock.h in Headers */,
+				58E0311C201B3312B26736005803594D /* NSObject+Reflection.h in Headers */,
+				279FE7C0302DE637E1B8AC38940F6D4D /* NSString+Base64.h in Headers */,
+				0E11B2B9BE0C553CA3359F27D97E25DF /* NSString+Contains.h in Headers */,
+				80652E7CB5E5F728392512D9EFBDE8FD /* NSString+Encrypt.h in Headers */,
+				DFC0EF16DE4AE42A4797D0B5CE67467B /* NSString+Hash.h in Headers */,
+				0E13613205BC1D10E10B7DE9AA710AA4 /* NSString+NormalRegex.h in Headers */,
+				7EAAB21EF9B370DEBEB994D975DD1132 /* NSString+PinYin.h in Headers */,
+				8398D44EAE34725E0E58D9126AB55114 /* NSString+Size.h in Headers */,
+				40675268B7E45EC90B61040799F55C72 /* NSString+StringPages.h in Headers */,
+				ECC6539AE302EAAF974A367237FECD7C /* NSString+URL.h in Headers */,
+				632B8F0B6D37BE4BB453D124D6706EF0 /* NSTimer+Block.h in Headers */,
+				10DB2E8159C37DE162F1F913F1FB8E9B /* NSURL+Params.h in Headers */,
+				A3D0052E69F662E53AE5CF3177F749FD /* TLActionSheet.h in Headers */,
+				7F5739FD83918CE78688C0626387775E /* TLActionSheetAppearance.h in Headers */,
+				04C773FFC6B39DFF39EE00F8C30EDB7F /* TLAlertView.h in Headers */,
+				5E3E4E03976A99DA06F29280C17504D3 /* TLAlertViewAppearance.h in Headers */,
+				33EE67941493857A4FA3DC4DE973F7DD /* TLCategories.h in Headers */,
+				A130013B19ED3666893B1501F2572B51 /* TLComponents.h in Headers */,
+				C0D700F49EB80253D248D59283A8B50A /* TLDeallocTask.h in Headers */,
+				CC923261DA072581A514A57446118390 /* TLKit.h in Headers */,
+				E1763E245BA4D7276E9F6DD343880DCA /* TLShortcutMacros.h in Headers */,
+				75B5F540E9BB1953CA420BAA6F43E7B8 /* TLShortcutMethod.h in Headers */,
+				DCB6602877B4827BDD8E6BAC2A4373BC /* TLToast.h in Headers */,
+				693A23EF9FDDEC35285FCFDEB90AEC26 /* UIAlertView+ActionBlocks.h in Headers */,
+				D467CC24FAB51959A8B764883C7B4AF2 /* UIBarButtonItem+Action.h in Headers */,
+				47E735D68F184F2E50D7CEB8AEC0B4C6 /* UIButton+Extensions.h in Headers */,
+				28E506943881A0F4176CB7048DDEFE6E /* UICollectionViewCell+Extensions.h in Headers */,
+				F25D43911A0EA6731718769340BC5170 /* UIColor+Extensions.h in Headers */,
+				9268A055E8FBA538DB307DC70A858661 /* UIColor+Gradient.h in Headers */,
+				E3270F05F3715CA2C7CD4C58255638D3 /* UIControl+ActionBlocks.h in Headers */,
+				03403D67BBA3F47E6B52DD7A2D7A7C01 /* UIImage+Color.h in Headers */,
+				5A8B76F96E4196554D3790927B63FC81 /* UIImage+Size.h in Headers */,
+				C66F396802FB448224A738F6946F17CA /* UIKit+TLCategories.h in Headers */,
+				95666A9FB4B11A03F491D7A2282DEF0E /* UINavigationBar+Extensions.h in Headers */,
+				39D25E311FF780693EC893417ED2C0AE /* UINavigationController+Extensions.h in Headers */,
+				782503BC547305BCC33BAF21514F092E /* UIScrollView+Extensions.h in Headers */,
+				08AFF5F1F71A2018E2805D3975784EBB /* UIScrollView+iOS11Fixed.h in Headers */,
+				CD9E20F91384DCF3BB0277FFE8264A97 /* UIScrollView+Pages.h in Headers */,
+				CBABB77C98F843106546F3BAB6F6DC2B /* UITabBarController+TLPush.h in Headers */,
+				08E1E3DD8015245C99AAF2DB55CD4706 /* UITextField+LengthLimit.h in Headers */,
+				146A79D16D7905C0B19D6DEFCF095534 /* UITextField+Select.h in Headers */,
+				289B6F25170D5A2A8BB00B6225FB9F60 /* UITextView+LengthLimit.h in Headers */,
+				86648DE8E27B41BCE60FA5D582D5FDBC /* UITextView+Placeholder.h in Headers */,
+				DB510B132459934C345E5DED4E0020FF /* UITextView+Select.h in Headers */,
+				4EC9DAEE09E860E1201313C4D52E49B4 /* UIView+Extensions.h in Headers */,
+				8F895E895F0001FC1403E941FC8E6AD5 /* UIView+Frame.h in Headers */,
+				EF20CF89BDE4CB4EEEFD0FF4FC5551BC /* UIView+Screenshot.h in Headers */,
+				7DC8AB353F9CDA28D716E5CA8ECDF8A4 /* UIView+TipView.h in Headers */,
+				E37F6ACFAEB4173212296E334AD3EC0E /* UIViewController+NavBar.h in Headers */,
+				79D69D1BFC166BEE5A3A86E2FAD03C55 /* UIViewController+TipView.h in Headers */,
+				9FD10975F0FA35216EC9C0EF3C86DB09 /* UIWindow+Extensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,8 +900,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA9F2A5A42576A0A9B0A41A69F4209C7 /* Build configuration list for PBXNativeTarget "TLKit" */;
 			buildPhases = (
-				A1AB80EBF4EB1FA37CF6CA9F5FC915F5 /* Headers */,
-				5F1B8A626B5380856F766676783BE8AE /* Sources */,
+				1A330A4ED796228D95E5143EECBE7C55 /* Headers */,
+				F34623B8DF28FDF7AD198B34022F247B /* Sources */,
 				97929343C6E158E23D5467F46013DFD4 /* Frameworks */,
 			);
 			buildRules = (
@@ -947,75 +947,75 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5F1B8A626B5380856F766676783BE8AE /* Sources */ = {
+		F34623B8DF28FDF7AD198B34022F247B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF42B53F20A85719957400FF0493DA65 /* NSArray+SafeAccess.m in Sources */,
-				7C4B6B00A4670E302AEFCFADBA49C7B9 /* NSBundle+AppIcon.m in Sources */,
-				405A54BF0D04D31CBD7B324E9F50DF71 /* NSData+Base64.m in Sources */,
-				B7420EA881D8B62249CA753312A94D88 /* NSData+Encrypt.m in Sources */,
-				77AEF2D71E188FB16A49AC1972E8FAC6 /* NSData+Gzip.m in Sources */,
-				3BF04461D698A5562C7F3189488B296B /* NSData+Hash.m in Sources */,
-				9754ECBEBDAAF8CBB96BF68B0B4FC4A2 /* NSDate+Extensions.m in Sources */,
-				BBC6B5F2C782ADC550535B2C15E348FD /* NSDate+Relation.m in Sources */,
-				35CCF0B2318EBAC23C1C9A984B00A0D8 /* NSDictionary+Extensions.m in Sources */,
-				EBDE67AC6D55C7B56DCF9BC5E93B0E35 /* NSDictionary+SafeAccess.m in Sources */,
-				768430E8B42BDB4A3F51D495F7AF6D13 /* NSFileManager+Paths.m in Sources */,
-				6A75E3AA9185236FA571FBAFF65318EC /* NSMutableArray+SafeAccess.m in Sources */,
-				D137C14D920A4F4ECF3C589538B32B54 /* NSMutableDictionary+SafeAccess.m in Sources */,
-				D7491EFFA03B58B67FA331E824B234DF /* NSNotificationCenter+MainThread.m in Sources */,
-				C5D1EBA159D9EFFF9F1EA09ECAB39EE6 /* NSObject+Association.m in Sources */,
-				045357898BFA28C1E4E08CCF8D6754F7 /* NSObject+Dealloc.m in Sources */,
-				2919B0F163E89F1ADD86D56938160ECB /* NSObject+EasyCopy.m in Sources */,
-				6B29CF499707E9346D70A7DD2DEBC267 /* NSObject+KVOBlock.m in Sources */,
-				7741E89BC1AD9674DDAD6499B8EA6D6D /* NSObject+Reflection.m in Sources */,
-				503CA51828D974F1F1CD7FD33E7547AA /* NSString+Base64.m in Sources */,
-				C219E88A296B0E50AEE3087AD00D34AC /* NSString+Contains.m in Sources */,
-				C22D50FC15A4560B7E00521E941F44AB /* NSString+Encrypt.m in Sources */,
-				073469A4043877911C6FB5AB3F9C91B3 /* NSString+Hash.m in Sources */,
-				31D8024A955C25196E2C81A9D60FAC03 /* NSString+NormalRegex.m in Sources */,
-				61CA50DD759A8DBDE8B09BCF59461ABA /* NSString+PinYin.m in Sources */,
-				BD82D03EBB61209125A775ACF2544257 /* NSString+Size.m in Sources */,
-				E7483B94F5D3455DB5E208E15C9029FF /* NSString+StringPages.m in Sources */,
-				B0A030772ADD1CBB19252675DB7317AE /* NSString+URL.m in Sources */,
-				1B0C4F01A7775FAF903FBF5C69E8B4BC /* NSTimer+Block.m in Sources */,
-				B0641DAE7630A041B5BF627E3898FB94 /* NSURL+Params.m in Sources */,
-				332FBC1E969C81D14985FF6C9C16C28B /* TLActionSheet.m in Sources */,
-				672635F9326768240C1DAE0929CA6FD1 /* TLActionSheetAppearance.m in Sources */,
-				48A051B3762CB76698D1C5C6926A9585 /* TLAlertView.m in Sources */,
-				AD2E6B52379E8E3EE4EBDDA4AE1727F2 /* TLAlertViewAppearance.m in Sources */,
-				CFB283DB28FED9E9C3606C34D7766F41 /* TLDeallocTask.m in Sources */,
-				D9C350945A10466BE9FC2C7ABA5C90F4 /* TLKit-dummy.m in Sources */,
-				37CB646898790AE6AF9090358C463AC9 /* TLShortcutMethod.m in Sources */,
-				28759EA6956A07232136F9816714A73F /* TLUIUtility.m in Sources */,
-				9E42F5B90D2EE6A886A3AFA43EC76879 /* UIAlertView+ActionBlocks.m in Sources */,
-				F50530D621EDBF52A0A6590D81B2127E /* UIBarButtonItem+Action.m in Sources */,
-				6D8DEA9F9E3A48DD18000D3A598C09E5 /* UIButton+Extensions.m in Sources */,
-				B5AF4BEBB62CE1DF3B5FF987FEA6BE58 /* UICollectionViewCell+Extensions.m in Sources */,
-				05C5DEAD81AA2C9CF045D93E31772F24 /* UIColor+Extensions.m in Sources */,
-				9DA18E12797845F45D4FC70EDD1B9FBA /* UIColor+Gradient.m in Sources */,
-				05F8D13F2673C14CF3FFCCF4AD937816 /* UIControl+ActionBlocks.m in Sources */,
-				9E29046AD7669857DF49C4EF6175BA03 /* UIImage+Color.m in Sources */,
-				5CE3BCAC79B9DF19FAEF264211915FE4 /* UIImage+Size.m in Sources */,
-				C456F5F03B387D8B5755637F861DA9AA /* UINavigationBar+Extensions.m in Sources */,
-				79C323DDF97AA1B418081E5BD34BFE12 /* UINavigationController+Extensions.m in Sources */,
-				3C42D5D785AC717C1E25AF2F5DE27751 /* UIScrollView+Extensions.m in Sources */,
-				877452FCAA6A74FF7DB8F5361C872F39 /* UIScrollView+iOS11Fixed.m in Sources */,
-				18AFD9AE4E797BFBB13944F879A9D0FD /* UIScrollView+Pages.m in Sources */,
-				2267D0D81CE2935FD75292CA425BBD80 /* UITabBarController+TLPush.m in Sources */,
-				594DAE2CC800B2F99AE59F46C959ABB1 /* UITextField+LengthLimit.m in Sources */,
-				BE8DA4CB49D6140CABC35D619F7AFADB /* UITextField+Select.m in Sources */,
-				E7813854ACD114E6605EE70205AAE375 /* UITextView+LengthLimit.m in Sources */,
-				CEDEF1BBAE93C4147DDA02289F64ACC1 /* UITextView+Placeholder.m in Sources */,
-				C2311B895B84C87B498B415F55925551 /* UITextView+Select.m in Sources */,
-				B8853CDB4A632EB2409B942204E102C5 /* UIView+Extensions.m in Sources */,
-				FA14DC8B9606C2E979CD39B1505CD7AC /* UIView+Frame.m in Sources */,
-				9D724E39C2FD2C11C530CAD7D74F544A /* UIView+Screenshot.m in Sources */,
-				9BC1EA751E2EFEC34B6120D0B3833712 /* UIView+TipView.m in Sources */,
-				223055267EDF5DA6D604B53E8B4B54A0 /* UIViewController+NavBar.m in Sources */,
-				C63233CA8874F2D5C04C23E0B4865865 /* UIViewController+TipView.m in Sources */,
-				010BC9FECF089D224855D59455860135 /* UIWindow+Extensions.m in Sources */,
+				974E95CA351CD658639B766190B8CCE7 /* NSArray+SafeAccess.m in Sources */,
+				D9E789C1E3097883213428C73C46CB36 /* NSBundle+AppIcon.m in Sources */,
+				7F18D57F562274AF21C39D2C51A5D4A8 /* NSData+Base64.m in Sources */,
+				1E0A74025F3B7E6066657BFFDD1F1746 /* NSData+Encrypt.m in Sources */,
+				AB4DFBCEEE523EC62EC69C66D2DAEC97 /* NSData+Gzip.m in Sources */,
+				2FFD2D488C25191B7AD248C27387E402 /* NSData+Hash.m in Sources */,
+				F848FACCC6A46F0717C30F1E50CD57B2 /* NSDate+Extensions.m in Sources */,
+				30FB40CF8E64AB6CCE09ED2D8D05875B /* NSDate+Relation.m in Sources */,
+				8C9D8290FAE47B89E58680F8527D3FF0 /* NSDictionary+Extensions.m in Sources */,
+				5A91FFCB6EA80F295BB9112F28957A0E /* NSDictionary+SafeAccess.m in Sources */,
+				16DB44AF02A8E3C28B7972CC08BE1D01 /* NSFileManager+Paths.m in Sources */,
+				4DE384FF9D4220F01C1D8FF963921891 /* NSMutableArray+SafeAccess.m in Sources */,
+				E15A8654F19CA5050B75F279B2D2CDEB /* NSMutableDictionary+SafeAccess.m in Sources */,
+				23EB7EB7353E6CF4712AA63C2E615F06 /* NSNotificationCenter+MainThread.m in Sources */,
+				EF0976BDEF9ED270BDF4276E29B4A3E9 /* NSObject+Association.m in Sources */,
+				6C6F2F8E0FC93139CE3106ED88873DDC /* NSObject+Dealloc.m in Sources */,
+				8C9E7B3C9E4603EF04064F8D9B99CCDE /* NSObject+EasyCopy.m in Sources */,
+				286B01C317A6B12AB2180E63FE025362 /* NSObject+KVOBlock.m in Sources */,
+				1F3953788EE9AD080F37A8E2BC9A55E4 /* NSObject+Reflection.m in Sources */,
+				444AA79F1485E8D6F6E1D5F87D8569CD /* NSString+Base64.m in Sources */,
+				EE6D29967D85CE15B4CADCC7184BD448 /* NSString+Contains.m in Sources */,
+				089A44335FF6B0C8C44E2253FB475486 /* NSString+Encrypt.m in Sources */,
+				AA6FA6F8ADF3B3C85D787ECA3C059784 /* NSString+Hash.m in Sources */,
+				1D6D209CFAFA0E9E028A04A5B2CCC311 /* NSString+NormalRegex.m in Sources */,
+				8C1A141D0A6514310FD4F8FAAFACE205 /* NSString+PinYin.m in Sources */,
+				8252216E14EEBCC0EA9C3E957E3B968D /* NSString+Size.m in Sources */,
+				DB6E4D66B1E8A9D8F9EBD4803DD0AAB6 /* NSString+StringPages.m in Sources */,
+				BB03D07D583D676096A4F439C7C3E575 /* NSString+URL.m in Sources */,
+				8E6F15AA34E5A3E2C7E21E166227028C /* NSTimer+Block.m in Sources */,
+				3BD77D45E886A7BF8CDA363436750A6F /* NSURL+Params.m in Sources */,
+				3120425BA7897B339F10F3005415445A /* TLActionSheet.m in Sources */,
+				4AD1CD9C97511DCE009CEFC278DD4969 /* TLActionSheetAppearance.m in Sources */,
+				905E13367D253AEE205E1778601D254D /* TLAlertView.m in Sources */,
+				7F42A4162E12A27295F801F14468E579 /* TLAlertViewAppearance.m in Sources */,
+				8B509928F3F05769A964C6BE37E8395F /* TLDeallocTask.m in Sources */,
+				9FE88ED25F94506EE2A8B32DD5B70C19 /* TLKit-dummy.m in Sources */,
+				7B9B35357D32FF61D74D869C41616469 /* TLShortcutMethod.m in Sources */,
+				B13D9AAA770AC7E7637E785FC7046E29 /* TLToast.m in Sources */,
+				2C6591BCB0A453A399338D63A45F1CDD /* UIAlertView+ActionBlocks.m in Sources */,
+				78CDB5B86A91335D48225CD6AF8D77DF /* UIBarButtonItem+Action.m in Sources */,
+				B907C94D4B081B3570A5B5D8A58FEFDA /* UIButton+Extensions.m in Sources */,
+				CDA156E95368D4B19F5CA261FE7F5078 /* UICollectionViewCell+Extensions.m in Sources */,
+				8E394DD7E0A33FEB513FD22D38E90D52 /* UIColor+Extensions.m in Sources */,
+				D6E9CA4B673F8FC796B66AFC0EA430B9 /* UIColor+Gradient.m in Sources */,
+				A62DBA33BFE5CEFC592CB9D0D40030A9 /* UIControl+ActionBlocks.m in Sources */,
+				D777737287196E330BF52846E82A0942 /* UIImage+Color.m in Sources */,
+				5ED23274CEAB92644E6FC6910083AE6E /* UIImage+Size.m in Sources */,
+				D46D4898A154747CE864017A7246B5C2 /* UINavigationBar+Extensions.m in Sources */,
+				9830B63338F18B205856879B3B876233 /* UINavigationController+Extensions.m in Sources */,
+				AFED0ACED2D00554ECEFDA57228CF184 /* UIScrollView+Extensions.m in Sources */,
+				277E1026A2D8142A7393200C542856E6 /* UIScrollView+iOS11Fixed.m in Sources */,
+				7C35C9391403CF290781DBEC87A57CD6 /* UIScrollView+Pages.m in Sources */,
+				B021D559DB9A99255A3D8A3DB7229804 /* UITabBarController+TLPush.m in Sources */,
+				43FB50B243862F321FCC660C86A2D655 /* UITextField+LengthLimit.m in Sources */,
+				FDD33C45A7FA3645631D41CF1E0F2116 /* UITextField+Select.m in Sources */,
+				2A2600620EA7B363B2CBA3ACAC065BAF /* UITextView+LengthLimit.m in Sources */,
+				CC75CF8DD93BEED91A79970C6AD465B4 /* UITextView+Placeholder.m in Sources */,
+				17BA4A6CE834E8F68743DB9DF33FC166 /* UITextView+Select.m in Sources */,
+				1EB9BAE194C6CD4B41B5BB8CC2ED6301 /* UIView+Extensions.m in Sources */,
+				0900CC02E3934F1C635FD8BA1D2E0CF5 /* UIView+Frame.m in Sources */,
+				F224B26BA7A42882F634B42CCD4BA26E /* UIView+Screenshot.m in Sources */,
+				E5F119EE8CFE7CFF7980414F20124DDC /* UIView+TipView.m in Sources */,
+				4911C7FE81F6F8AE167A9B098B3999A2 /* UIViewController+NavBar.m in Sources */,
+				2B0121706D24CA2F91E6F10839D49FFF /* UIViewController+TipView.m in Sources */,
+				8CB66CB2DC0EF911023BC17F950E50B1 /* UIWindow+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

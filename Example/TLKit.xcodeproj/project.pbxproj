@@ -27,6 +27,7 @@
 		C226142923E1C3B6001CBD53 /* TLAlertViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C226142823E1C3B6001CBD53 /* TLAlertViewDemoViewController.m */; };
 		C226142F23E1C414001CBD53 /* TLMenuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */; };
 		C287F84123C469EB0009F76D /* TLMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C287F84023C469EB0009F76D /* TLMenuItemCell.m */; };
+		C2ECB50123E2CB6900E8D039 /* TLToastDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ECB50023E2CB6900E8D039 /* TLToastDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLMenuHeaderView.m; sourceTree = "<group>"; };
 		C287F83F23C469EB0009F76D /* TLMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMenuItemCell.h; sourceTree = "<group>"; };
 		C287F84023C469EB0009F76D /* TLMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMenuItemCell.m; sourceTree = "<group>"; };
+		C2ECB4FF23E2CB6900E8D039 /* TLToastDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLToastDemoViewController.h; sourceTree = "<group>"; };
+		C2ECB50023E2CB6900E8D039 /* TLToastDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLToastDemoViewController.m; sourceTree = "<group>"; };
 		CA98F32C8C0934408ABA86D9 /* Pods-TLKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-TLKit_Tests/Pods-TLKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D9035464D22322B497A72BC0 /* TLKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TLKit.podspec; path = ../TLKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
@@ -195,6 +198,7 @@
 		C226142A23E1C3C7001CBD53 /* TLFunctional */ = {
 			isa = PBXGroup;
 			children = (
+				C2ECB4FE23E2CAB100E8D039 /* TLToast */,
 				C226142C23E1C3E4001CBD53 /* TLAlertView */,
 				C226142B23E1C3D6001CBD53 /* TLActionSheet */,
 			);
@@ -248,6 +252,15 @@
 				C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		C2ECB4FE23E2CAB100E8D039 /* TLToast */ = {
+			isa = PBXGroup;
+			children = (
+				C2ECB4FF23E2CB6900E8D039 /* TLToastDemoViewController.h */,
+				C2ECB50023E2CB6900E8D039 /* TLToastDemoViewController.m */,
+			);
+			path = TLToast;
 			sourceTree = "<group>";
 		};
 		FFF791AAE9F85552746F67F9 /* Pods */ = {
@@ -436,6 +449,7 @@
 				C226142F23E1C414001CBD53 /* TLMenuHeaderView.m in Sources */,
 				6003F5A7195388D20070C39A /* TLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C2ECB50123E2CB6900E8D039 /* TLToastDemoViewController.m in Sources */,
 				C287F84123C469EB0009F76D /* TLMenuItemCell.m in Sources */,
 				C226142623E1C3AA001CBD53 /* TLActionSheetDemoViewController.m in Sources */,
 			);
