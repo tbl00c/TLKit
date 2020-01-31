@@ -11,15 +11,15 @@
 @interface TLToast : NSObject
 
 + (void)showLoading:(NSString *)title;
-+ (void)hiddenLoading;
-+ (void)hiddenLoadingWithDelay:(NSTimeInterval)delay;
-+ (void)hiddenLoadingWithCompletion:(void (^)(void))completion;
-+ (void)hiddenLoadingWithDelay:(NSTimeInterval)delay completion:(void (^)(void))completion;
++ (void)dismiss;
++ (BOOL)isVisible;
 
-+ (void)showSuccessHint:(NSString *)hintText;
-+ (void)showErrorHint:(NSString *)hintText;
-+ (void)showInfoHint:(NSString *)hintText;
++ (void)showProgress:(CGFloat)progress;
 
-+ (BOOL)isShowLoading;
++ (void)showSuccessToast:(NSString *)message;
++ (void)showErrorToast:(NSString *)message;
++ (void)showWarningToast:(NSString *)message;
+
+
 
 @end

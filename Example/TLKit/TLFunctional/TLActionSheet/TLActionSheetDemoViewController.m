@@ -22,7 +22,7 @@
     [self setTitle:@"TLAlertView"];
     
     [self.view setBackgroundColor:RGBColor(240, 239, 245)];
-    
+
     [self reloadTestMenu];
 }
 
@@ -115,6 +115,7 @@
         });
         self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"定制Header").selectedAction(^ (NSString *title) {
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 180)];
+            [label setTextColor:[UIColor blackColor]];
             [label setFont:[UIFont systemFontOfSize:72]];
             [label setText:@"Hi"];
             [label setTextAlignment:NSTextAlignmentCenter];

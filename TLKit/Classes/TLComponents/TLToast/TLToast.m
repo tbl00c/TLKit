@@ -28,44 +28,34 @@ static UILabel *hLabel = nil;
     [SVProgressHUD showWithStatus:hintText];
 }
 
-+ (void)hiddenLoading
++ (void)dismiss
 {
-    [self hiddenLoadingWithCompletion:nil];
+    [SVProgressHUD dismissWithCompletion:nil];
 }
 
-+ (void)hiddenLoadingWithDelay:(NSTimeInterval)delay
-{
-    [self hiddenLoadingWithDelay:delay completion:nil];
-}
-
-+ (void)hiddenLoadingWithCompletion:(void (^)())completion
-{
-    [SVProgressHUD dismissWithCompletion:completion];
-}
-
-+ (void)hiddenLoadingWithDelay:(NSTimeInterval)delay completion:(void (^)())completion
-{
-    [SVProgressHUD dismissWithDelay:delay completion:completion];
-}
-
-+ (void)showSuccessHint:(NSString *)hintText
-{
-    [SVProgressHUD showSuccessWithStatus:hintText];
-}
-
-+ (void)showErrorHint:(NSString *)hintText
-{
-    [SVProgressHUD showErrorWithStatus:hintText];
-}
-
-+ (void)showInfoHint:(NSString *)hintText
-{
-    [SVProgressHUD showInfoWithStatus:hintText];
-}
-
-+ (BOOL)isShowLoading
++ (BOOL)isVisible
 {
     return [SVProgressHUD isVisible];
+}
+
++ (void)showProgress:(CGFloat)progress
+{
+    [SVProgressHUD showProgress:progress];
+}
+
++ (void)showSuccessToast:(NSString *)message
+{
+    [SVProgressHUD showSuccessWithStatus:message];
+}
+
++ (void)showErrorToast:(NSString *)message
+{
+    [SVProgressHUD showErrorWithStatus:message];
+}
+
++ (void)showWarningToast:(NSString *)message
+{
+    [SVProgressHUD showInfoWithStatus:message];
 }
 
 @end

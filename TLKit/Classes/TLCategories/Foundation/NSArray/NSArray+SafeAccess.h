@@ -11,46 +11,46 @@
 
 @interface NSArray (SafeAccess)
 
-- (id)safeObjectWithIndex:(NSUInteger)index;
+- (id)safeObjectAtIndex:(NSUInteger)index;
 
-- (NSString *)stringWithIndex:(NSUInteger)index;
+- (NSString *)stringAtIndex:(NSUInteger)index;
 
-- (NSNumber *)numberWithIndex:(NSUInteger)index;
+- (NSNumber *)numberAtIndex:(NSUInteger)index;
 
-- (NSDecimalNumber *)decimalNumberWithIndex:(NSUInteger)index;
+- (NSDecimalNumber *)decimalNumberAtIndex:(NSUInteger)index;
 
-- (NSArray *)arrayWithIndex:(NSUInteger)index;
+- (NSArray *)arrayAtIndex:(NSUInteger)index;
 
-- (NSDictionary *)dictionaryWithIndex:(NSUInteger)index;
+- (NSDictionary *)dictionaryAtIndex:(NSUInteger)index;
 
-- (NSInteger)integerWithIndex:(NSUInteger)index;
+- (NSInteger)integerAtIndex:(NSUInteger)index;
 
-- (NSUInteger)unsignedIntegerWithIndex:(NSUInteger)index;
+- (NSUInteger)unsignedIntegerAtIndex:(NSUInteger)index;
 
-- (BOOL)boolWithIndex:(NSUInteger)index;
+- (BOOL)boolAtIndex:(NSUInteger)index;
 
-- (int16_t)int16WithIndex:(NSUInteger)index;
+- (int16_t)int16AtIndex:(NSUInteger)index;
 
-- (int32_t)int32WithIndex:(NSUInteger)index;
+- (int32_t)int32AtIndex:(NSUInteger)index;
 
-- (int64_t)int64WithIndex:(NSUInteger)index;
+- (int64_t)int64AtIndex:(NSUInteger)index;
 
-- (char)charWithIndex:(NSUInteger)index;
+- (char)charAtIndex:(NSUInteger)index;
 
-- (short)shortWithIndex:(NSUInteger)index;
+- (short)shortAtIndex:(NSUInteger)index;
 
-- (float)floatWithIndex:(NSUInteger)index;
+- (float)floatAtIndex:(NSUInteger)index;
 
-- (double)doubleWithIndex:(NSUInteger)index;
+- (double)doubleAtIndex:(NSUInteger)index;
 
-- (NSDate *)dateWithIndex:(NSUInteger)index dateFormat:(NSString *)dateFormat;
+- (NSDate *)dateAtIndex:(NSUInteger)index dateFormat:(NSString *)dateFormat;
 
-- (CGFloat)CGFloatWithIndex:(NSUInteger)index;
+- (CGFloat)CGFloatAtIndex:(NSUInteger)index;
 
-- (CGPoint)pointWithIndex:(NSUInteger)index;
+- (CGPoint)pointAtIndex:(NSUInteger)index;
 
-- (CGSize)sizeWithIndex:(NSUInteger)index;
+- (CGSize)sizeAtIndex:(NSUInteger)index;
 
-- (CGRect)rectWithIndex:(NSUInteger)index;
+- (CGRect)rectAtIndex:(NSUInteger)index;
 
 @end

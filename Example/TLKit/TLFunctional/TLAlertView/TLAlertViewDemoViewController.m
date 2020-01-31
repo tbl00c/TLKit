@@ -146,6 +146,7 @@
         });
         self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"定制弹窗内容").selectedAction(^ (NSString *title) {
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 180)];
+            [label setTextColor:[UIColor blackColor]];
             [label setFont:[UIFont systemFontOfSize:72]];
             [label setText:@"Hi"];
             [label setTextAlignment:NSTextAlignmentCenter];
@@ -238,6 +239,7 @@
                 }
                 else {
                     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 180)];
+                    [label setTextColor:[UIColor blackColor]];
                     [label setFont:[UIFont systemFontOfSize:72]];
                     [label setText:@"Hi"];
                     [label setTextAlignment:NSTextAlignmentCenter];

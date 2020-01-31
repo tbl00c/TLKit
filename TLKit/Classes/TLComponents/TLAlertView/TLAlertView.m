@@ -113,6 +113,8 @@
     _countdownTime = countdownTime;
     _countdownAction = countdownAction;
     if (countdownTime.integerValue > 0) {
+        _displayTitle = [NSString stringWithFormat:@"%@(%lds)", self.title, (long)countdownTime.integerValue];
+        [self reload];
         [self startTimeIfNeedWithCompleteAction:self.countdownCompleteAction];
     }
 }
@@ -126,7 +128,7 @@
     }
     self.time = self.countdownTime.integerValue;
     self.countdown = [[TLAlertViewCountdown alloc] initWithCountdownTime:self.time progressAction:^(TLAlertViewCountdown *countdown, NSInteger countdownTime) {
-        weakSelf.displayTitle = [NSString stringWithFormat:@"%@(%lds)", self.title, countdownTime];
+        weakSelf.displayTitle = [NSString stringWithFormat:@"%@(%lds)", self.title, (long)countdownTime];
         [weakSelf reload];
     } countdownAction:^(TLAlertViewCountdown *countdown) {
         weakSelf.displayTitle = weakSelf.title;
@@ -522,6 +524,7 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
     
     {
         UITextView *textView = [[UITextView alloc] init];
+        [textView setBackgroundColor:[UIColor clearColor]];
         [textView setEditable:NO];
         [textView setSelectable:NO];
         [textView setScrollsToTop:NO];
@@ -533,6 +536,7 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
     
     {
         UITextView *textView = [[UITextView alloc] init];
+        [textView setBackgroundColor:[UIColor clearColor]];
         [textView setEditable:NO];
         [textView setSelectable:NO];
         [textView setScrollsToTop:NO];
