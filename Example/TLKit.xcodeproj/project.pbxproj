@@ -405,10 +405,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TLKit_Example/Pods-TLKit_Example-resources.sh",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLAlwaysActivity/silence.m4a",
+				"${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLAlwaysActivity/test.m4a",
+				"${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLColor/TLColorTable.txt",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/silence.m4a",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/test.m4a",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TLColorTable.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

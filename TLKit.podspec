@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TLKit"
-  s.version      = "1.0"
+  s.version      = "2.0"
   s.platform     = :ios, "8.0"
   s.summary      = "iOS开发基础组件库"
   s.description  = <<-DESC
@@ -50,7 +50,61 @@ Pod::Spec.new do |s|
       ss.source_files = funcPath + "TLToast/*.{h,m}"
       ss.dependency "SVProgressHUD", "~> 2.2.5"
     end
+    
+    founc.subspec 'TLTheme' do |ss|
+      ss.source_files = funcPath + "TLTheme/*.{h,m}"
+    end
 
+    # TLColor
+    founc.subspec 'TLColor' do |ss|
+      ss.source_files = funcPath + "TLColor/*.{h,m}"
+      ss.dependency "TLKit/TLCategories/UIKit/UIColor"
+      ss.dependency "TLKit/TLShortcut"
+      ss.dependency "TLKit/TLComponents/TLTheme"
+      ss.resource = funcPath + 'TLColor/TLColorTable.txt'
+    end
+
+    # TLPictureCarouselView
+    founc.subspec 'TLPictureCarouselView' do |ss|
+      ss.source_files = funcPath + "TLPictureCarouselView/*.{h,m}"
+      ss.dependency "TLKit/TLCategories/UIKit/UIScrollView"
+    end
+
+    # TLLocalPushManager
+    founc.subspec 'TLLocalPushManager' do |ss|
+      ss.source_files = funcPath + "TLLocalPushManager/*.{h,m}"
+    end
+
+    # TLStatusBarAlert
+    founc.subspec 'TLStatusBarAlert' do |ss|
+      ss.source_files = funcPath + "TLStatusBarAlert/**/*.{h,m}"
+    end
+
+    # GKCover
+    founc.subspec 'GKCover' do |ss|
+      ss.source_files = funcPath + "GKCover/**/*.{h,m}"
+    end
+
+    # RSA
+    founc.subspec 'RSA' do |ss|
+      ss.source_files = funcPath + "RSA/*.{h,m}"
+    end
+
+    # TLAlertnateIconManager
+    founc.subspec 'TLAlertnateIconManager' do |ss|
+      ss.source_files = funcPath + "TLAlertnateIconManager/*.{h,m}"
+    end
+    
+    # TLAlertnateIconManager
+    founc.subspec 'TLAppUtility' do |ss|
+      ss.source_files = funcPath + "TLAppUtility/*.{h,m}"
+    end
+    
+    # TLAlwaysActivity
+    founc.subspec 'TLAlwaysActivity' do |ss|
+      ss.source_files = funcPath + "TLAlwaysActivity/*.{h,m}"
+      ss.resource = funcPath + 'TLAlwaysActivity/*.m4a'
+    end
   end
 
   
@@ -59,6 +113,7 @@ Pod::Spec.new do |s|
     catePath = classPath + 'TLCategories/'
     foundationPath = catePath + "Foundation/"
     uikitPath = catePath + "UIKit/"
+    caPath = catePath + "CoreAnimation/"
     
     categories.public_header_files = catePath + "TLCategories.h"
     categories.source_files = catePath + "TLCategories.h"
@@ -238,6 +293,5 @@ Pod::Spec.new do |s|
         ss.source_files = uikitPath + "UIAlertView/*.{h,m}"
       end
     end
-    
   end
 end

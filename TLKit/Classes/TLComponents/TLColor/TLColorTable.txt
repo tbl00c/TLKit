@@ -1,0 +1,55 @@
+# 色值表，#或//标识注释，色值以#开头，支持6位和8位（后两位位透明度），=标识映射
+
+# 白色
+white       #FFFFFF       #FFFFFFCC
+
+# 黑色
+black       #000000
+
+# 灰色
+gray        #808080
+lightGry    #A0A0A0
+darkGray    #696969
+grayTips    #F5F5F5       #131313
+
+# 红色
+red         #E44447       #E44447
+redHL       #CD3E40       #CD3E40
+
+# 绿色
+green       #02BB00       #02BB00
+greenHL     #2E8B2E       #2E8B2E
+
+# 蓝色
+blue        #4A638D       #4A638D
+
+# 黄色
+yellow      #F4C500       #F4C500
+
+# 粉色
+lightPink   #FFEFDB      #FFEFDB66
+
+
+# 标准色
+background  #F0EFF5       #161616
+content     #FFFFFF       #222222
+seperator   #EAEAEA       #2F2F2F
+shadow      #00000088     #000000C6
+
+label           #000000EE   #FFFFFFCC
+secondaryLabel  #000000AA   #FFFFFF99
+tertiaryLabel   #00000077   #FFFFFF77
+quaternaryLabel #0000004C   #FFFFFF5C
+
+navBarTint    #0078FF       #EDEDED
+navBarBG      =content
+navBarTitle   =label
+tabBarTint              =navBarTint
+tabBarUnselectedTint    #A0A0A0
+tabBarBG                =content
+menuBarTint             =label
+menuBarBG               =content
+menuBarUnselectedTint   =tabBarUnselectedTint
+menuPopupBG     =content
+menuPopupTint   =label
+controlBarBG    =content

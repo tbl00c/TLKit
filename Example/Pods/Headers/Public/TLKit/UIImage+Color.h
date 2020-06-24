@@ -1,1 +1,0 @@
-../../../../../TLKit/Classes/TLCategories/UIKit/UIImage/UIImage+Color.h

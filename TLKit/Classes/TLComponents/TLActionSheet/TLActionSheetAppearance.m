@@ -6,6 +6,7 @@
 //
 
 #import "TLActionSheetAppearance.h"
+#import "UIColor+TLKit.h"
 
 @implementation TLActionSheetAppearance
 
@@ -29,20 +30,20 @@
 
 - (void)resetData
 {
-    _shadowColor = [UIColor colorWithWhite:0.0 alpha:0.4];
-    _backgroundColor = [UIColor colorWithRed:239.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1.0];
-    _separatorColor = [UIColor colorWithRed:220.0/255.0 green:220.0/255.0 blue:220.0/255.0 alpha:1.0];
+    _shadowColor = [UIColor colorShadow];
+    _backgroundColor = [UIColor colorBG];
+    _separatorColor = [UIColor colorSeperator];
     
     _headerTitleFont = [UIFont systemFontOfSize:13.0f];
     _headerTitleColor = [UIColor grayColor];
     
     _itemHeight = 52;
-    _itemBackgroundColor = [UIColor whiteColor];
+    _itemBackgroundColor = [UIColor colorContent];
     
     _itemTitleFont = [UIFont systemFontOfSize:17.0f];
-    _itemTitleColor = [UIColor blackColor];
+    _itemTitleColor = [UIColor colorLabel];
     _destructiveItemTitleColor = [UIColor redColor];
-    _cancelItemTitleColor = [UIColor blackColor];
+    _cancelItemTitleColor = [UIColor colorLabel];
     
     _itemMessageFont = [UIFont systemFontOfSize:12.0f];
     _itemMessageColor = [UIColor grayColor];

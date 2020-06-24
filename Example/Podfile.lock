@@ -78,11 +78,35 @@ PODS:
     - TLKit/TLCategories/UIKit/UIView
   - TLKit/TLCategories/UIKit/UIWindow (1.0)
   - TLKit/TLComponents (1.0):
+    - TLKit/TLComponents/GKCover (= 1.0)
+    - TLKit/TLComponents/RSA (= 1.0)
     - TLKit/TLComponents/TLActionSheet (= 1.0)
+    - TLKit/TLComponents/TLAlertnateIconManager (= 1.0)
     - TLKit/TLComponents/TLAlertView (= 1.0)
+    - TLKit/TLComponents/TLAlwaysActivity (= 1.0)
+    - TLKit/TLComponents/TLAppUtility (= 1.0)
+    - TLKit/TLComponents/TLColor (= 1.0)
+    - TLKit/TLComponents/TLLocalPushManager (= 1.0)
+    - TLKit/TLComponents/TLPictureCarouselView (= 1.0)
+    - TLKit/TLComponents/TLStatusBarAlert (= 1.0)
+    - TLKit/TLComponents/TLTheme (= 1.0)
     - TLKit/TLComponents/TLToast (= 1.0)
+  - TLKit/TLComponents/GKCover (1.0)
+  - TLKit/TLComponents/RSA (1.0)
   - TLKit/TLComponents/TLActionSheet (1.0)
+  - TLKit/TLComponents/TLAlertnateIconManager (1.0)
   - TLKit/TLComponents/TLAlertView (1.0)
+  - TLKit/TLComponents/TLAlwaysActivity (1.0)
+  - TLKit/TLComponents/TLAppUtility (1.0)
+  - TLKit/TLComponents/TLColor (1.0):
+    - TLKit/TLCategories/UIKit/UIColor
+    - TLKit/TLComponents/TLTheme
+    - TLKit/TLShortcut
+  - TLKit/TLComponents/TLLocalPushManager (1.0)
+  - TLKit/TLComponents/TLPictureCarouselView (1.0):
+    - TLKit/TLCategories/UIKit/UIScrollView
+  - TLKit/TLComponents/TLStatusBarAlert (1.0)
+  - TLKit/TLComponents/TLTheme (1.0)
   - TLKit/TLComponents/TLToast (1.0):
     - SVProgressHUD (~> 2.2.5)
   - TLKit/TLShortcut (1.0)
@@ -113,9 +137,9 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TLKit: 75e3c6d703001e1422afafb9a22d84f7cd5bcfb9
+  TLKit: f0f9ecd8799b869e370c7ce7a55fc441158aba91
   ZZFLEX: 6fe8d2dc973495b32a7fe79cb4b00a5b8fb845c8
 
 PODFILE CHECKSUM: af38079c417e46457400decaba8b6a937db554a1
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

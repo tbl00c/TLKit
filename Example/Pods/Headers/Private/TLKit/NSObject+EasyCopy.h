@@ -1,1 +1,0 @@
-../../../../../TLKit/Classes/TLCategories/Foundation/NSObject/NSObject+EasyCopy.h

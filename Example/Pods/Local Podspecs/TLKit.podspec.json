@@ -46,6 +46,64 @@
               "~> 2.2.5"
             ]
           }
+        },
+        {
+          "name": "TLTheme",
+          "source_files": "TLKit/Classes/TLComponents/TLTheme/*.{h,m}"
+        },
+        {
+          "name": "TLColor",
+          "source_files": "TLKit/Classes/TLComponents/TLColor/*.{h,m}",
+          "dependencies": {
+            "TLKit/TLCategories/UIKit/UIColor": [
+
+            ],
+            "TLKit/TLShortcut": [
+
+            ],
+            "TLKit/TLComponents/TLTheme": [
+
+            ]
+          },
+          "resources": "TLKit/Classes/TLComponents/TLColor/TLColorTable.txt"
+        },
+        {
+          "name": "TLPictureCarouselView",
+          "source_files": "TLKit/Classes/TLComponents/TLPictureCarouselView/*.{h,m}",
+          "dependencies": {
+            "TLKit/TLCategories/UIKit/UIScrollView": [
+
+            ]
+          }
+        },
+        {
+          "name": "TLLocalPushManager",
+          "source_files": "TLKit/Classes/TLComponents/TLLocalPushManager/*.{h,m}"
+        },
+        {
+          "name": "TLStatusBarAlert",
+          "source_files": "TLKit/Classes/TLComponents/TLStatusBarAlert/**/*.{h,m}"
+        },
+        {
+          "name": "GKCover",
+          "source_files": "TLKit/Classes/TLComponents/GKCover/**/*.{h,m}"
+        },
+        {
+          "name": "RSA",
+          "source_files": "TLKit/Classes/TLComponents/RSA/*.{h,m}"
+        },
+        {
+          "name": "TLAlertnateIconManager",
+          "source_files": "TLKit/Classes/TLComponents/TLAlertnateIconManager/*.{h,m}"
+        },
+        {
+          "name": "TLAppUtility",
+          "source_files": "TLKit/Classes/TLComponents/TLAppUtility/*.{h,m}"
+        },
+        {
+          "name": "TLAlwaysActivity",
+          "source_files": "TLKit/Classes/TLComponents/TLAlwaysActivity/*.{h,m}",
+          "resources": "TLKit/Classes/TLComponents/TLAlwaysActivity/*.m4a"
         }
       ]
     },

@@ -7,6 +7,7 @@
 
 #import "TLAlertView.h"
 #import "TLAlertViewAppearance.h"
+#import "UIColor+TLKit.h"
 
 #define     TLAV_MAX_ITEMS_HEIGHT           self.shadowView.frame.size.height * 0.3
 #define     TLAV_MAX_MESSAGE_HEIGHT         self.shadowView.frame.size.height * 0.45
@@ -552,7 +553,7 @@ typedef NS_ENUM(NSInteger, TLAlertViewItemCellSeperatorType) {
         [layout setMinimumInteritemSpacing:0];
         [layout setSectionInset:UIEdgeInsetsZero];
         UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-        [collectionView setBackgroundColor:[UIColor whiteColor]];
+        [collectionView setBackgroundColor:[UIColor colorContent]];
         [collectionView setScrollEnabled:NO];
         [collectionView setScrollsToTop:NO];
         [collectionView setDelegate:self];

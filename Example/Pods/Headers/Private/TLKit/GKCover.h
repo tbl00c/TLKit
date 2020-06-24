@@ -1,0 +1,1 @@
+../../../../../TLKit/Classes/TLComponents/GKCover/GKCover.h

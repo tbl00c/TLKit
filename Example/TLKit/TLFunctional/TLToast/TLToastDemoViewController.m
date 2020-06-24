@@ -37,7 +37,7 @@
         [TLToast showSuccessToast:@"修改成功"];
     });
     self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"失败").selectedAction(^ (NSString *title) {
-        [TLToast showFailureToast:@"请求失败"];
+        [TLToast showErrorToast:@"请求失败"];
     });
     self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"警告").selectedAction(^ (NSString *title) {
         [TLToast showWarningToast:@"无有效内容"];

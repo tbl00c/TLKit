@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+Dealloc.h"
+#import "NSObject+TLDealloc.h"
 
 @interface TLDeallocTask : NSObject
 

@@ -13,5 +13,9 @@
 #import "TLAlertView.h"
 //#import "TLBadge.h"
 #import "TLToast.h"
+#import "UIColor+TLKit.h"
+#import "TLPictureCarouselView.h"
+#import "TLTheme.h"
+#import "TLAppUtility.h"
 
 #endif /* TLComponents_h */
