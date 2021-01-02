@@ -99,13 +99,11 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLAlwaysActivity/silence.m4a"
-  install_resource "${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLAlwaysActivity/test.m4a"
   install_resource "${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLColor/TLColorTable.txt"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLAlwaysActivity/silence.m4a"
-  install_resource "${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLAlwaysActivity/test.m4a"
   install_resource "${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLColor/TLColorTable.txt"
 fi
 

@@ -8,7 +8,7 @@
 
 #import "UIColor+TLKit.h"
 #import "UIColor+TLExtensions.h"
-#import "TLShortcutMacros.h"
+#import "TLMacros.h"
 #import "UIColor+TLDarkMode.h"
 
 #define KEY_LCCOLOR_NORMAL      @"normal"

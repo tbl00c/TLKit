@@ -1,13 +1,13 @@
 //
-//  TLShortcutMacros.h
+//  TLMacros.h
 //  TLChat
 //
 //  Created by 李伯坤 on 2017/7/6.
 //  Copyright © 2017年 李伯坤. All rights reserved.
 //
 
-#ifndef TLShortcutMacros_h
-#define TLShortcutMacros_h
+#ifndef TLMacros_h
+#define TLMacros_h
 
 #define     IS_IPHONEX              (([UIScreen mainScreen].bounds.size.width == 375.0f && [UIScreen mainScreen].bounds.size.height == 812.0f) || ([UIScreen mainScreen].bounds.size.width == 414.0f && [UIScreen mainScreen].bounds.size.height == 896.0f))
 
@@ -136,4 +136,4 @@
 #define     SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
 
-#endif /* TLShortcutMacros_h */
+#endif /* TLMacros_h */

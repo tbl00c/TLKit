@@ -1,6 +1,6 @@
 {
   "name": "TLKit",
-  "version": "1.0",
+  "version": "2.0",
   "platforms": {
     "ios": "8.0"
   },
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/tbl00c/TLKit.git",
-    "tag": "1.0"
+    "tag": "2.0"
   },
   "public_header_files": "TLKit/Classes/TLKit.h",
   "source_files": "TLKit/Classes/TLKit.h",
@@ -30,6 +30,14 @@
       "public_header_files": "TLKit/Classes/TLComponents/TLComponents.h",
       "source_files": "TLKit/Classes/TLComponents/TLComponents.h",
       "subspecs": [
+        {
+          "name": "TLMaskView",
+          "source_files": "TLKit/Classes/TLComponents/TLMaskView/*.{h,m}"
+        },
+        {
+          "name": "TLCover",
+          "source_files": "TLKit/Classes/TLComponents/TLCover/*.{h,m}"
+        },
         {
           "name": "TLActionSheet",
           "source_files": "TLKit/Classes/TLComponents/TLActionSheet/*.{h,m}"

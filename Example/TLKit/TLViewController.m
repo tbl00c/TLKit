@@ -10,6 +10,8 @@
 #import "TLMenuHeaderView.h"
 #import "TLMenuItemCell.h"
 
+#import "TLMaskViewDemoViewController.h"
+#import "TLCoverDemoViewController.h"
 #import "TLActionSheetDemoViewController.h"
 #import "TLAlertViewDemoViewController.h"
 #import "TLToastDemoViewController.h"
@@ -38,6 +40,16 @@
         NSInteger sectionType = 0;
         self.addSection(sectionType);
         self.setHeader([TLMenuHeaderView class]).toSection(sectionType).withDataModel(@"TLComponents");
+        self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"TLMaskView").selectedAction(^ (NSString *title) {
+            @strongify(self);
+            TLMaskViewDemoViewController *vc = [[TLMaskViewDemoViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        });
+        self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"TLCover").selectedAction(^ (NSString *title) {
+            @strongify(self);
+            TLCoverDemoViewController *vc = [[TLCoverDemoViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        });
         self.addCell([TLMenuItemCell class]).toSection(sectionType).withDataModel(@"TLAlertView").selectedAction(^ (NSString *title) {
             @strongify(self);
             TLAlertViewDemoViewController *vc = [[TLAlertViewDemoViewController alloc] init];

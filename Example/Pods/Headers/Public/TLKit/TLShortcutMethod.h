@@ -1,1 +1,0 @@
-../../../../../TLKit/Classes/TLShortcut/TLShortcutMethod.h

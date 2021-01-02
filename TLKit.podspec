@@ -30,6 +30,17 @@ Pod::Spec.new do |s|
     founc.public_header_files = funcPath + "TLComponents.h"
     founc.source_files = funcPath + "TLComponents.h"
 
+	# TLMaskView
+    founc.subspec 'TLMaskView' do |ss|
+      ss.source_files = funcPath + "TLMaskView/*.{h,m}"
+    end
+    
+    # TLCover
+    founc.subspec 'TLCover' do |ss|
+      ss.source_files = funcPath + "TLCover/*.{h,m}"
+      ss.dependency 'TLKit/TLComponents/TLMaskView'
+    end
+
     # TLActionSheet
     founc.subspec 'TLActionSheet' do |ss|
       ss.source_files = funcPath + "TLActionSheet/*.{h,m}"

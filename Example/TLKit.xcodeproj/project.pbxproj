@@ -27,6 +27,8 @@
 		C226142923E1C3B6001CBD53 /* TLAlertViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C226142823E1C3B6001CBD53 /* TLAlertViewDemoViewController.m */; };
 		C226142F23E1C414001CBD53 /* TLMenuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */; };
 		C287F84123C469EB0009F76D /* TLMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C287F84023C469EB0009F76D /* TLMenuItemCell.m */; };
+		C2BFFBB425A046F100AB0A51 /* TLMaskViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BFFBB325A046F100AB0A51 /* TLMaskViewDemoViewController.m */; };
+		C2E50B83259FA30B0043EC82 /* TLCoverDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50B82259FA30B0043EC82 /* TLCoverDemoViewController.m */; };
 		C2ECB50123E2CB6900E8D039 /* TLToastDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ECB50023E2CB6900E8D039 /* TLToastDemoViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,10 @@
 		C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLMenuHeaderView.m; sourceTree = "<group>"; };
 		C287F83F23C469EB0009F76D /* TLMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMenuItemCell.h; sourceTree = "<group>"; };
 		C287F84023C469EB0009F76D /* TLMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMenuItemCell.m; sourceTree = "<group>"; };
+		C2BFFBB225A046F100AB0A51 /* TLMaskViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLMaskViewDemoViewController.h; sourceTree = "<group>"; };
+		C2BFFBB325A046F100AB0A51 /* TLMaskViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLMaskViewDemoViewController.m; sourceTree = "<group>"; };
+		C2E50B81259FA30B0043EC82 /* TLCoverDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLCoverDemoViewController.h; sourceTree = "<group>"; };
+		C2E50B82259FA30B0043EC82 /* TLCoverDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLCoverDemoViewController.m; sourceTree = "<group>"; };
 		C2ECB4FF23E2CB6900E8D039 /* TLToastDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLToastDemoViewController.h; sourceTree = "<group>"; };
 		C2ECB50023E2CB6900E8D039 /* TLToastDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLToastDemoViewController.m; sourceTree = "<group>"; };
 		CA98F32C8C0934408ABA86D9 /* Pods-TLKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-TLKit_Tests/Pods-TLKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +204,8 @@
 		C226142A23E1C3C7001CBD53 /* TLFunctional */ = {
 			isa = PBXGroup;
 			children = (
+				C2BFFBB125A046E000AB0A51 /* TLMaskView */,
+				C2E50B80259FA2F20043EC82 /* TLCover */,
 				C2ECB4FE23E2CAB100E8D039 /* TLToast */,
 				C226142C23E1C3E4001CBD53 /* TLAlertView */,
 				C226142B23E1C3D6001CBD53 /* TLActionSheet */,
@@ -252,6 +260,24 @@
 				C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		C2BFFBB125A046E000AB0A51 /* TLMaskView */ = {
+			isa = PBXGroup;
+			children = (
+				C2BFFBB225A046F100AB0A51 /* TLMaskViewDemoViewController.h */,
+				C2BFFBB325A046F100AB0A51 /* TLMaskViewDemoViewController.m */,
+			);
+			path = TLMaskView;
+			sourceTree = "<group>";
+		};
+		C2E50B80259FA2F20043EC82 /* TLCover */ = {
+			isa = PBXGroup;
+			children = (
+				C2E50B81259FA30B0043EC82 /* TLCoverDemoViewController.h */,
+				C2E50B82259FA30B0043EC82 /* TLCoverDemoViewController.m */,
+			);
+			path = TLCover;
 			sourceTree = "<group>";
 		};
 		C2ECB4FE23E2CAB100E8D039 /* TLToast */ = {
@@ -406,14 +432,12 @@
 				"${PODS_ROOT}/Target Support Files/Pods-TLKit_Example/Pods-TLKit_Example-resources.sh",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLAlwaysActivity/silence.m4a",
-				"${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLAlwaysActivity/test.m4a",
 				"${PODS_ROOT}/../../TLKit/Classes/TLComponents/TLColor/TLColorTable.txt",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/silence.m4a",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/test.m4a",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TLColorTable.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,10 +475,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* TLAppDelegate.m in Sources */,
+				C2E50B83259FA30B0043EC82 /* TLCoverDemoViewController.m in Sources */,
 				C226142923E1C3B6001CBD53 /* TLAlertViewDemoViewController.m in Sources */,
 				C226142F23E1C414001CBD53 /* TLMenuHeaderView.m in Sources */,
 				6003F5A7195388D20070C39A /* TLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				C2BFFBB425A046F100AB0A51 /* TLMaskViewDemoViewController.m in Sources */,
 				C2ECB50123E2CB6900E8D039 /* TLToastDemoViewController.m in Sources */,
 				C287F84123C469EB0009F76D /* TLMenuItemCell.m in Sources */,
 				C226142623E1C3AA001CBD53 /* TLActionSheetDemoViewController.m in Sources */,
