@@ -104,7 +104,8 @@ PODS:
     - TLKit/TLCategories/UIKit/UIColor
     - TLKit/TLComponents/TLTheme
     - TLKit/TLShortcut
-  - TLKit/TLComponents/TLCover (2.0)
+  - TLKit/TLComponents/TLCover (2.0):
+    - TLKit/TLComponents/TLMaskView
   - TLKit/TLComponents/TLLocalPushManager (2.0)
   - TLKit/TLComponents/TLMaskView (2.0)
   - TLKit/TLComponents/TLPictureCarouselView (2.0):
@@ -141,9 +142,9 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TLKit: cb115de9bd5f91dda4fbe939d939bf6be95a3247
+  TLKit: f864404ec662c6ca9e466a8f3279fc214796d07b
   ZZFLEX: 6fe8d2dc973495b32a7fe79cb4b00a5b8fb845c8
 
 PODFILE CHECKSUM: af38079c417e46457400decaba8b6a937db554a1
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.9.1

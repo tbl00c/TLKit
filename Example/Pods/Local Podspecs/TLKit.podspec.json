@@ -36,7 +36,12 @@
         },
         {
           "name": "TLCover",
-          "source_files": "TLKit/Classes/TLComponents/TLCover/*.{h,m}"
+          "source_files": "TLKit/Classes/TLComponents/TLCover/*.{h,m}",
+          "dependencies": {
+            "TLKit/TLComponents/TLMaskView": [
+
+            ]
+          }
         },
         {
           "name": "TLActionSheet",
