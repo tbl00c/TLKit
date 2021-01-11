@@ -7,6 +7,7 @@
 
 #import "TLActionSheet.h"
 #import "TLActionSheetAppearance.h"
+#import "TLCover.h"
 
 #define     TLAS_SPACE_TITLE_LEFT            22.0f
 #define     TLAS_SPACE_TITLE_TOP             20.0f
@@ -198,7 +199,7 @@
     NSMutableArray *_items;
 }
 
-@property (nonatomic, strong) UIControl *shadowView;
+@property (nonatomic, strong) TLCover *cover;
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UITableView *tableView;
@@ -228,9 +229,11 @@
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame]) {
+    if (self = [super initWithFrame:[UIScreen mainScreen].bounds]) {
         _items = [[NSMutableArray alloc] init];
         _cancelItem = [[TLActionSheetItem alloc] initWithTitle:@"取消" clickAction:nil];
+        _cover = [[TLCover alloc] initWithStyle:TLCoverStyleBottom];
+        [_cover setContentView:self];
         
         [self _initActionSheet];
     }
@@ -280,45 +283,18 @@
 
 - (void)showInView:(UIView *)view
 {
-    // 父视图
-    if (!view) {
-        view = [UIApplication sharedApplication].keyWindow;
-    }
-    
     // 重置视图
-    [self setFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
+    [self setFrame:[UIScreen mainScreen].bounds];
     [self _resetActionSheet];
     
-    // 遮罩
-    [self.shadowView setFrame:view.bounds];
-    [self.shadowView removeFromSuperview];
-    [view addSubview:_shadowView];
-    
-    // 弹窗
-    [self removeFromSuperview];
-    [view addSubview:self];
-    CGRect originRect = CGRectMake(0, view.frame.size.height + self.frame.size.height, self.frame.size.width, self.frame.size.height);
-    [self setFrame:originRect];
-    
     // 显示
-    [self.shadowView setBackgroundColor:[UIColor clearColor]];
-    CGRect targetRect = CGRectMake(0, view.frame.size.height - self.frame.size.height, originRect.size.width, originRect.size.height);
-    [UIView animateWithDuration:0.2 animations:^{
-        [self setFrame:targetRect];
-        [self.shadowView setBackgroundColor:self.shadowColor ? self.shadowColor : [TLActionSheetAppearance appearance].shadowColor];
-    }];
+    [self.cover.maskView setBackgroundColor:self.shadowColor ? self.shadowColor : [TLActionSheetAppearance appearance].shadowColor];
+    [self.cover showInView:view];
 }
 
 - (void)dismiss
 {
-    CGRect targetRect = CGRectMake(0, _shadowView.frame.size.height + self.frame.size.height, self.frame.size.width, self.frame.size.height);
-    [UIView animateWithDuration:0.2 animations:^{
-        [self setFrame:targetRect];
-        [self.shadowView setBackgroundColor:[UIColor clearColor]];
-    } completion:^(BOOL finished) {
-        [self.shadowView removeFromSuperview];
-        [self removeFromSuperview];
-    }];
+    [self.cover dismissWithAnimated:YES];
 }
 
 #pragma mark - # Event
@@ -367,13 +343,6 @@
 #pragma mark - # Private
 - (void)_initActionSheet
 {
-    // 遮罩
-    {
-        UIControl *view = [[UIControl alloc] init];
-        [view addTarget:self action:@selector(excuteCancelAction) forControlEvents:UIControlEventTouchUpInside];
-        self.shadowView = view;
-    }
-    
     // header
     {
         UIView *view = [[UIView alloc] init];

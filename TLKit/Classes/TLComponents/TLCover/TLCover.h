@@ -19,8 +19,8 @@ typedef NS_ENUM(NSInteger, TLCoverStyle) {
 
 @interface TLCover : UIView
 
-@property (nonatomic, strong) __kindof UIView *contentView;
-@property (nonatomic, strong) __kindof UIViewController *contentVC;
+@property (nonatomic, weak) __kindof UIView *contentView;
+@property (nonatomic, weak) __kindof UIViewController *contentVC;
 
 @property (nonatomic, assign) CGFloat animatedDuration;
 
@@ -32,6 +32,8 @@ typedef NS_ENUM(NSInteger, TLCoverStyle) {
 
 /// 是否正在显示
 @property (nonatomic, assign, readonly) BOOL isShowing;
+
+- (instancetype)initWithStyle:(TLCoverStyle)style;
 
 - (void)show;
 - (void)showWithAnimated:(BOOL)animated;

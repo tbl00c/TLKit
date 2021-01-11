@@ -17,6 +17,14 @@
 @implementation TLCover
 @synthesize maskView = _maskView;
 
+- (instancetype)initWithStyle:(TLCoverStyle)style
+{
+    if (self = [self initWithFrame:CGRectZero]) {
+        self.style = style;
+    }
+    return self;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
@@ -28,25 +36,37 @@
 
 - (void)setContentVC:(__kindof UIViewController *)contentVC
 {
+    _contentVC = contentVC;
     if (_contentVC) {
         [_contentVC.view removeFromSuperview];
     }
     _contentVC = contentVC;
     [contentVC.view removeFromSuperview];
     [self addSubview:contentVC.view];
-    self.frame = contentVC.view.bounds;
-    contentVC.view.frame = self.bounds;
+    [self resetContentFrame];
 }
 
 - (void)setContentView:(__kindof UIView *)contentView
 {
+    _contentView = contentView;
     if (_contentView) {
         [_contentView removeFromSuperview];
     }
     [contentView removeFromSuperview];
     [self addSubview:contentView];
-    self.frame = contentView.bounds;
-    contentView.frame = self.bounds;
+    [self resetContentFrame];
+}
+
+- (void)resetContentFrame
+{
+    if (_contentVC) {
+        self.frame = _contentVC.view.bounds;
+        _contentVC.view.frame = self.bounds;
+    }
+    else if (_contentView) {
+        self.frame = _contentView.bounds;
+        _contentView.frame = self.bounds;
+    }
 }
 
 #pragma mark - # Content显示与隐藏
@@ -101,6 +121,7 @@
     if (self.isShowing) {
         return;
     }
+    [self resetContentFrame];
     [self.maskView showInView:view animated:NO];
     [self __showContentWithAnimated:animated];
     

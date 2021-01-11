@@ -71,7 +71,6 @@ typedef NS_ENUM(NSInteger, TLActionSheetItemType) {
 - (instancetype)initWithTitle:(NSString *)title;
 - (instancetype)initWithTitle:(NSString *)title items:(NSArray<TLActionSheetItem *> *)items;
 
-
 - (void)addItem:(TLActionSheetItem *)item;
 
 - (void)addItemWithTitle:(NSString *)title clickAction:(TLActionSheetItemClickAction)clickAction;
