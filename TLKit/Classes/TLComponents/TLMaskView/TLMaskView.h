@@ -25,6 +25,8 @@ typedef NS_ENUM(NSInteger, TLMaskViewStyle) {
 @property (nonatomic, assign) BOOL disableTapEvent;
 /// 自定义背景点击事件（实现后，不会再触发dismiss）
 @property (nonatomic, copy) void (^tapAction)(TLMaskView *maskView);
+/// 动画
+@property (nonatomic, assign) BOOL animated;
 
 - (instancetype)initWithStyle:(TLMaskViewStyle)style;
 

@@ -33,6 +33,7 @@
 {
     if (self = [super initWithFrame:frame]) {
         _animationDuration = 0.1;
+        _animated = YES;
         [self setBackgroundColor:[UIColor colorShadow]];
         [self setDisableTapEvent:NO];
     }
@@ -43,6 +44,9 @@
 {
     [super layoutSubviews];
     
+    if (self.superview && !CGRectEqualToRect(self.frame, self.superview.bounds)) {
+        self.frame = self.superview.bounds;
+    }
     if (self.effectview) {
         self.effectview.frame = self.bounds;
     }
@@ -93,17 +97,17 @@
 #pragma mark - # 显示与隐藏
 - (void)show
 {
-    [self showWithAnimated:YES];
+    [self showWithAnimated:self.animated];
 }
 
 - (void)showWithAnimated:(BOOL)animated
 {
-    [self showInView:nil animated:YES];
+    [self showInView:nil animated:animated];
 }
 
 - (void)showInView:(__kindof UIView *)view
 {
-    [self showInView:view animated:YES];
+    [self showInView:view animated:self.animated];
 }
 
 - (void)showInView:(__kindof UIView *)view animated:(BOOL)animated
@@ -111,6 +115,7 @@
     if (self.isShowing) {
         return;
     }
+    self.animated = animated;
     self.isShowing = YES;
     __hasShowAnimated = animated;
     
@@ -118,6 +123,9 @@
     UIView *targetView = view;
     if (!targetView) {
         UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        UIViewController *vc = [[UIViewController alloc] init];
+        [vc.view setBackgroundColor:[UIColor clearColor]];
+        [window setRootViewController:vc];
         [window setBackgroundColor:[UIColor clearColor]];
         [window makeKeyAndVisible];
         targetView = self.displayWindow = window;
@@ -135,7 +143,7 @@
 
 - (void)dismiss
 {
-    [self dismissWithAnimated:YES];
+    [self dismissWithAnimated:self.animated];
 }
 
 - (void)dismissWithAnimated:(BOOL)animated

@@ -27,6 +27,9 @@
 		C226142923E1C3B6001CBD53 /* TLAlertViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C226142823E1C3B6001CBD53 /* TLAlertViewDemoViewController.m */; };
 		C226142F23E1C414001CBD53 /* TLMenuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */; };
 		C287F84123C469EB0009F76D /* TLMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C287F84023C469EB0009F76D /* TLMenuItemCell.m */; };
+		C29E93ED25AE0F7C0052EBF8 /* TLMenuSwitchItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C29E93EC25AE0F7C0052EBF8 /* TLMenuSwitchItemCell.m */; };
+		C29E93F225AE12EE0052EBF8 /* TLMenuSelectItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C29E93F125AE12EE0052EBF8 /* TLMenuSelectItemCell.m */; };
+		C29E93F925AE176C0052EBF8 /* TLMenuCenterItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C29E93F825AE176C0052EBF8 /* TLMenuCenterItemCell.m */; };
 		C2BFFBB425A046F100AB0A51 /* TLMaskViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BFFBB325A046F100AB0A51 /* TLMaskViewDemoViewController.m */; };
 		C2E50B83259FA30B0043EC82 /* TLCoverDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E50B82259FA30B0043EC82 /* TLCoverDemoViewController.m */; };
 		C2ECB50123E2CB6900E8D039 /* TLToastDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ECB50023E2CB6900E8D039 /* TLToastDemoViewController.m */; };
@@ -78,6 +81,12 @@
 		C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLMenuHeaderView.m; sourceTree = "<group>"; };
 		C287F83F23C469EB0009F76D /* TLMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMenuItemCell.h; sourceTree = "<group>"; };
 		C287F84023C469EB0009F76D /* TLMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMenuItemCell.m; sourceTree = "<group>"; };
+		C29E93EB25AE0F7C0052EBF8 /* TLMenuSwitchItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLMenuSwitchItemCell.h; sourceTree = "<group>"; };
+		C29E93EC25AE0F7C0052EBF8 /* TLMenuSwitchItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLMenuSwitchItemCell.m; sourceTree = "<group>"; };
+		C29E93F025AE12EE0052EBF8 /* TLMenuSelectItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLMenuSelectItemCell.h; sourceTree = "<group>"; };
+		C29E93F125AE12EE0052EBF8 /* TLMenuSelectItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLMenuSelectItemCell.m; sourceTree = "<group>"; };
+		C29E93F725AE176C0052EBF8 /* TLMenuCenterItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLMenuCenterItemCell.h; sourceTree = "<group>"; };
+		C29E93F825AE176C0052EBF8 /* TLMenuCenterItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLMenuCenterItemCell.m; sourceTree = "<group>"; };
 		C2BFFBB225A046F100AB0A51 /* TLMaskViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLMaskViewDemoViewController.h; sourceTree = "<group>"; };
 		C2BFFBB325A046F100AB0A51 /* TLMaskViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLMaskViewDemoViewController.m; sourceTree = "<group>"; };
 		C2E50B81259FA30B0043EC82 /* TLCoverDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLCoverDemoViewController.h; sourceTree = "<group>"; };
@@ -258,6 +267,12 @@
 				C287F84023C469EB0009F76D /* TLMenuItemCell.m */,
 				C226142D23E1C414001CBD53 /* TLMenuHeaderView.h */,
 				C226142E23E1C414001CBD53 /* TLMenuHeaderView.m */,
+				C29E93EB25AE0F7C0052EBF8 /* TLMenuSwitchItemCell.h */,
+				C29E93EC25AE0F7C0052EBF8 /* TLMenuSwitchItemCell.m */,
+				C29E93F025AE12EE0052EBF8 /* TLMenuSelectItemCell.h */,
+				C29E93F125AE12EE0052EBF8 /* TLMenuSelectItemCell.m */,
+				C29E93F725AE176C0052EBF8 /* TLMenuCenterItemCell.h */,
+				C29E93F825AE176C0052EBF8 /* TLMenuCenterItemCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -476,12 +491,15 @@
 			files = (
 				6003F59E195388D20070C39A /* TLAppDelegate.m in Sources */,
 				C2E50B83259FA30B0043EC82 /* TLCoverDemoViewController.m in Sources */,
+				C29E93ED25AE0F7C0052EBF8 /* TLMenuSwitchItemCell.m in Sources */,
 				C226142923E1C3B6001CBD53 /* TLAlertViewDemoViewController.m in Sources */,
 				C226142F23E1C414001CBD53 /* TLMenuHeaderView.m in Sources */,
+				C29E93F925AE176C0052EBF8 /* TLMenuCenterItemCell.m in Sources */,
 				6003F5A7195388D20070C39A /* TLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				C2BFFBB425A046F100AB0A51 /* TLMaskViewDemoViewController.m in Sources */,
 				C2ECB50123E2CB6900E8D039 /* TLToastDemoViewController.m in Sources */,
+				C29E93F225AE12EE0052EBF8 /* TLMenuSelectItemCell.m in Sources */,
 				C287F84123C469EB0009F76D /* TLMenuItemCell.m in Sources */,
 				C226142623E1C3AA001CBD53 /* TLActionSheetDemoViewController.m in Sources */,
 			);

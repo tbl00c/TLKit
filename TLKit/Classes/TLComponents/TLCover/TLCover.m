@@ -28,10 +28,18 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
+        self.animated = YES;
         self.animatedDuration = 0.25;
         [self.maskView addSubview:self];
     }
     return self;
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    
 }
 
 - (void)setContentVC:(__kindof UIViewController *)contentVC
@@ -70,9 +78,8 @@
 }
 
 #pragma mark - # Content显示与隐藏
-- (void)__showContentWithAnimated:(BOOL)animated
+- (void)_resetContentRect:(CGSize)viewSize
 {
-    CGSize viewSize = [UIScreen mainScreen].bounds.size;
     CGSize targetSize = self.frame.size;
     CGRect sourceRect = CGRectMake(0, 0, targetSize.width, targetSize.height);
     CGRect targetRect = CGRectMake(0, 0, targetSize.width, targetSize.height);
@@ -94,7 +101,7 @@
         targetRect.origin.x = (viewSize.width - targetSize.width) / 2.0;
         targetRect.origin.y = (viewSize.height - targetSize.height) / 2.0;
         sourceRect.origin.x = targetRect.origin.x;
-        sourceRect.origin.y = targetRect.origin.y + 50;
+        sourceRect.origin.y = targetRect.origin.y;
     }
     self.sourceRect = sourceRect;
     self.targetRect = targetRect;
@@ -103,17 +110,17 @@
 #pragma mark - # 显示与隐藏
 - (void)show
 {
-    [self showWithAnimated:YES];
+    [self showWithAnimated:self.animated];
 }
 
 - (void)showWithAnimated:(BOOL)animated
 {
-    [self showInView:nil animated:YES];
+    [self showInView:nil animated:animated];
 }
 
 - (void)showInView:(__kindof UIView *)view
 {
-    [self showInView:view animated:YES];
+    [self showInView:view animated:self.animated];
 }
 
 - (void)showInView:(__kindof UIView *)view animated:(BOOL)animated
@@ -121,14 +128,19 @@
     if (self.isShowing) {
         return;
     }
+    self.animated = animated;
     [self resetContentFrame];
     [self.maskView showInView:view animated:NO];
-    [self __showContentWithAnimated:animated];
+    [self _resetContentRect:self.maskView.frame.size];
     
     if (animated) {
         [self setFrame:self.sourceRect];
         self.maskView.alpha = 0;
+        if (self.style == TLCoverStyleCenter) {
+            self.alpha = 0;
+        }
         [UIView animateWithDuration:self.animatedDuration animations:^{
+            self.alpha = 1;
             self.maskView.alpha = 1;
             self.frame = self.targetRect;
         } completion:^(BOOL finished) {
@@ -142,7 +154,7 @@
 
 - (void)dismiss
 {
-    [self dismissWithAnimated:YES];
+    [self dismissWithAnimated:self.animated];
 }
 
 - (void)dismissWithAnimated:(BOOL)animated
@@ -155,6 +167,9 @@
     if (animated) {
         [UIView animateWithDuration:self.animatedDuration animations:^{
             self.maskView.alpha = 0;
+            if (self.style == TLCoverStyleCenter) {
+                self.alpha = 0;
+            }
             self.frame = self.sourceRect;
         } completion:^(BOOL finished) {
             dismissAction();

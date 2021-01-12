@@ -21,6 +21,24 @@
     return 42.0f;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    CGFloat left = 15;
+    CGFloat right = -15;
+    if (@available(iOS 11.0, *)) {
+        left += self.safeAreaInsets.left;
+        right -= self.safeAreaInsets.right;
+    }
+    if (self.titleLabel.left != left) {
+        [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(left);
+            make.right.mas_lessThanOrEqualTo(right);
+        }];
+    }
+}
+
 - (void)setViewDataModel:(id)dataModel
 {
     [self.titleLabel setText:dataModel];
@@ -31,9 +49,19 @@
     if (self = [super initWithFrame:frame]) {
         [self setBackgroundColor:[UIColor clearColor]];
         
+        CGFloat left = 15;
+        CGFloat right = -15;
+        if (@available(iOS 11.0, *)) {
+            left += self.safeAreaInsets.left;
+            right -= self.safeAreaInsets.right;
+        }
         self.titleLabel = self.addLabel(1)
         .font([UIFont boldSystemFontOfSize:14]).textColor([UIColor grayColor])
-        .frame(CGRectMake(15, (52 - 18) / 2.0, frame.size.width - 30, 18))
+        .masonry(^ (UIView *sender, MASConstraintMaker *make) {
+            make.left.mas_equalTo(left);
+            make.centerY.mas_equalTo(0);
+            make.right.mas_lessThanOrEqualTo(right);
+        })
         .view;
     }
     return self;

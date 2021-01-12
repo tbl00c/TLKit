@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@interface TLMenuItem : NSObject
+
+@property (nonatomic, strong) NSString *title;
+
+@end
+
 @interface TLMenuItemCell : UICollectionViewCell <ZZFlexibleLayoutViewProtocol>
+
+@property (nonatomic, strong) UILabel *titleLabel;
+
+@property (nonatomic, copy) id (^viewEventAction)(NSInteger, id);
 
 @end

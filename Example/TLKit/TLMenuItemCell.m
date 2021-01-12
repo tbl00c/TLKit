@@ -8,22 +8,40 @@
 
 #import "TLMenuItemCell.h"
 
-@interface TLMenuItemCell ()
-
-@property (nonatomic, strong) UILabel *titleLabel;
+@implementation TLMenuItem
 
 @end
 
 @implementation TLMenuItemCell
 
-+ (CGFloat)viewHeightByDataModel:(id)dataModel
++ (CGSize)viewSizeByDataModel:(id)dataModel
 {
-    return 52.0f;
+    return CGSizeMake(-1, 52.0f);
 }
 
 - (void)setViewDataModel:(id)dataModel
 {
-    [self.titleLabel setText:dataModel];
+    if ([dataModel isKindOfClass:[NSString class]]) {
+        [self.titleLabel setText:dataModel];
+    }
+    else if ([dataModel isKindOfClass:[TLMenuItem class]]) {
+        [self.titleLabel setText:[(TLMenuItem *)dataModel title]];
+    }
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    if (@available(iOS 11.0, *)) {
+        if (self.safeAreaInsets.left != self.contentView.left) {
+            [self.contentView mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.top.bottom.mas_equalTo(0);
+                make.left.mas_equalTo(self.safeAreaInsets.left);
+                make.right.mas_equalTo(-self.safeAreaInsets.right);
+            }];
+        }
+    }
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -31,9 +49,16 @@
     if (self = [super initWithFrame:frame]) {
         [self setBackgroundColor:[UIColor whiteColor]];
         
+        CGFloat left = 15;
+        if (@available(iOS 11.0, *)) {
+            left += self.safeAreaInsets.left;
+        }
         self.titleLabel = self.contentView.addLabel(1)
         .font([UIFont boldSystemFontOfSize:18]).textColor([UIColor blackColor])
-        .frame(CGRectMake(15, (52 - 18) / 2.0, frame.size.width - 30, 18))
+        .masonry(^(__kindof UIView *view, MASConstraintMaker *make) {
+            make.left.mas_equalTo(15);
+            make.centerY.mas_equalTo(0);
+        })
         .view;
     }
     return self;

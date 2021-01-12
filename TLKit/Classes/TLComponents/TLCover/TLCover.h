@@ -33,6 +33,9 @@ typedef NS_ENUM(NSInteger, TLCoverStyle) {
 /// 是否正在显示
 @property (nonatomic, assign, readonly) BOOL isShowing;
 
+/// 动画
+@property (nonatomic, assign) BOOL animated;
+
 - (instancetype)initWithStyle:(TLCoverStyle)style;
 
 - (void)show;
