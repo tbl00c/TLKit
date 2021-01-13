@@ -5,6 +5,12 @@
 //  Created by libokun on 2021/1/2.
 //
 
+/*
+ 遮罩视图容器
+ 
+ self大小与content一致，也可以直接addSubView
+ */
+
 #import <UIKit/UIKit.h>
 #import "TLMaskView.h"
 
@@ -14,7 +20,7 @@ typedef NS_ENUM(NSInteger, TLCoverStyle) {
     TLCoverStyleRight = 2,      // 显示在右侧
     TLCoverStyleTop = 3,        // 显示在上面
     TLCoverStyleCenter = 4,     // 显示在中间
-//    TLCoverStyleUserDefine = 5, // 用户自定义
+    TLCoverStyleUserDefine = 5, // 用户自定义（用户设置位置，无自动动效）
 };
 
 @interface TLCover : UIView
@@ -22,17 +28,14 @@ typedef NS_ENUM(NSInteger, TLCoverStyle) {
 @property (nonatomic, weak) __kindof UIView *contentView;
 @property (nonatomic, weak) __kindof UIViewController *contentVC;
 
+/// 动效时间（默认0.25）
 @property (nonatomic, assign) CGFloat animatedDuration;
-
 /// 背景遮罩视图
 @property (nonatomic, strong, readonly) TLMaskView *maskView;
-
 /// cover风格
 @property (nonatomic, assign) TLCoverStyle style;
-
 /// 是否正在显示
 @property (nonatomic, assign, readonly) BOOL isShowing;
-
 /// 动画
 @property (nonatomic, assign) BOOL animated;
 
@@ -40,7 +43,6 @@ typedef NS_ENUM(NSInteger, TLCoverStyle) {
 
 - (void)show;
 - (void)showWithAnimated:(BOOL)animated;
-
 - (void)showInView:(__kindof UIView *)view;
 - (void)showInView:(__kindof UIView *)view animated:(BOOL)animated;
 

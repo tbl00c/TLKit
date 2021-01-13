@@ -7,6 +7,7 @@
 
 #import "TLMaskView.h"
 #import "UIColor+TLKit.h"
+#import <Masonry/Masonry.h>
 
 @interface TLMaskView ()
 
@@ -16,9 +17,6 @@
 @end
 
 @implementation TLMaskView
-{
-    BOOL __hasShowAnimated;
-}
 @synthesize isShowing = _isShowing;
 
 - (instancetype)initWithStyle:(TLMaskViewStyle)style
@@ -38,18 +36,6 @@
         [self setDisableTapEvent:NO];
     }
     return self;
-}
-
-- (void)layoutSubviews
-{
-    [super layoutSubviews];
-    
-    if (self.superview && !CGRectEqualToRect(self.frame, self.superview.bounds)) {
-        self.frame = self.superview.bounds;
-    }
-    if (self.effectview) {
-        self.effectview.frame = self.bounds;
-    }
 }
 
 - (void)setStyle:(TLMaskViewStyle)style
@@ -73,6 +59,9 @@
         [effectview setUserInteractionEnabled:NO];
         _effectview = effectview;
         [self insertSubview:self.effectview atIndex:0];
+        [self.effectview mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.edges.mas_equalTo(0);
+        }];
     }
 }
 
@@ -91,7 +80,7 @@
         self.tapAction(self);
         return;
     }
-    [self dismissWithAnimated:__hasShowAnimated];
+    [self dismissWithAnimated:self.animated];
 }
 
 #pragma mark - # 显示与隐藏
@@ -117,7 +106,6 @@
     }
     self.animated = animated;
     self.isShowing = YES;
-    __hasShowAnimated = animated;
     
     // 处理父视图
     UIView *targetView = view;
@@ -132,7 +120,10 @@
     }
     [self removeFromSuperview];
     [targetView addSubview:self];
-    self.frame = targetView.bounds;
+    [self mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
+    [self layoutIfNeeded];
     if (animated) {
         self.alpha = 0;
         [UIView animateWithDuration:self.animationDuration animations:^{

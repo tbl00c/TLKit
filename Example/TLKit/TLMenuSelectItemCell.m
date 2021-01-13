@@ -40,6 +40,7 @@
         self.segmentControl = [[UISegmentedControl alloc] init];
         [self.contentView addSubview:self.segmentControl];
         [self.segmentControl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_greaterThanOrEqualTo(self.titleLabel.mas_right).mas_offset(15);
             make.right.mas_equalTo(-15);
             make.centerY.mas_equalTo(0);
         }];

@@ -64,7 +64,7 @@
         self.setHeader([TLMenuHeaderView class]).toSection(sectionType).withDataModel(@"样式设置");
         
         {
-            TLMenuSelectItem *item = [TLMenuSelectItem createWithTitle:@"父视图" menuItems:@[@"nil", @"self.view", @"keyWindow"]];
+            TLMenuSelectItem *item = [TLMenuSelectItem createWithTitle:@"父视图" menuItems:@[@"nil", @"self.view", @"self.nav", @"keyWindow"]];
             item.selectedIndex = self.superType;
             self.addCell([TLMenuSelectItemCell class]).toSection(sectionType).withDataModel(item).eventAction(^ id(NSInteger type, NSNumber *index) {
                 @strongify(self);
@@ -115,6 +115,9 @@
                 view = self.view;
             }
             else if (self.superType == 2) {
+                view = self.navigationController.view;
+            }
+            else if (self.superType == 3) {
                 view = [UIApplication sharedApplication].keyWindow;
             }
             [maskView showInView:view animated:!self.animatedDisable];

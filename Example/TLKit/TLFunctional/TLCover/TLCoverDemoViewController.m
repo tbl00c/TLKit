@@ -60,7 +60,7 @@
         }
         
         {
-            TLMenuSelectItem *item = [TLMenuSelectItem createWithTitle:@"父视图" menuItems:@[@"nil", @"self.view", @"keyWindow"]];
+            TLMenuSelectItem *item = [TLMenuSelectItem createWithTitle:@"父视图" menuItems:@[@"nil", @"self.view", @"self.nav", @"keyWindow"]];
             item.selectedIndex = self.superType;
             self.addCell([TLMenuSelectItemCell class]).toSection(sectionType).withDataModel(item).eventAction(^ id(NSInteger type, NSNumber *index) {
                 @strongify(self);
@@ -109,10 +109,10 @@
         CGFloat width = self.superType == 1 ? self.view.width : [UIScreen mainScreen].bounds.size.width;
         CGFloat height = self.superType == 1 ? self.view.height : [UIScreen mainScreen].bounds.size.height;
         if (self.coverStyle == TLCoverStyleLeft || self.coverStyle == TLCoverStyleRight || self.coverStyle == TLCoverStyleCenter) {
-            width = width * 0.65;
+            width = width * 0.75;
         }
         if (self.coverStyle == TLCoverStyleTop || self.coverStyle == TLCoverStyleBottom || self.coverStyle == TLCoverStyleCenter) {
-            height = height * 0.55;
+            height = height * 0.65;
         }
         [vc.view setFrame:CGRectMake(0, 0, width, height)];
         
@@ -126,6 +126,9 @@
             view = self.view;
         }
         else if (self.superType == 2) {
+            view = self.navigationController.view;
+        }
+        else if (self.superType == 3) {
             view = [UIApplication sharedApplication].keyWindow;
         }
         [cover showInView:view animated:!self.animatedDisable];

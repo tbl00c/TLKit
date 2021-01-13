@@ -5,6 +5,13 @@
 //  Created by libokun on 2021/1/1.
 //
 
+/*
+ 遮罩视图
+ 
+ 调用addSubView添加子视图，然后调用show即可
+ 遮罩视图大小与父视图一致，有点击事件，可直接调用UIControl API
+ */
+
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, TLMaskViewStyle) {
@@ -17,6 +24,7 @@ typedef NS_ENUM(NSInteger, TLMaskViewStyle) {
 
 @property (nonatomic, assign) TLMaskViewStyle style;
 
+@property (nonatomic, assign) UIEdgeInsets *edgeInsets;
 /// 动画时长，默认0.2
 @property (nonatomic, assign) CGFloat animationDuration;
 /// 是否正在显示
@@ -32,7 +40,6 @@ typedef NS_ENUM(NSInteger, TLMaskViewStyle) {
 
 - (void)show;
 - (void)showWithAnimated:(BOOL)animated;
-
 - (void)showInView:(__kindof UIView *)view;
 - (void)showInView:(__kindof UIView *)view animated:(BOOL)animated;
 

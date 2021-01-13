@@ -6,6 +6,7 @@
 //
 
 #import "TLCover.h"
+#import <Masonry/Masonry.h>
 
 @interface TLCover ()
 
@@ -33,13 +34,6 @@
         [self.maskView addSubview:self];
     }
     return self;
-}
-
-- (void)layoutSubviews
-{
-    [super layoutSubviews];
-    
-    
 }
 
 - (void)setContentVC:(__kindof UIViewController *)contentVC

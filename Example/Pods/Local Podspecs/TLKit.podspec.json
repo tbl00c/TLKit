@@ -32,7 +32,12 @@
       "subspecs": [
         {
           "name": "TLMaskView",
-          "source_files": "TLKit/Classes/TLComponents/TLMaskView/*.{h,m}"
+          "source_files": "TLKit/Classes/TLComponents/TLMaskView/*.{h,m}",
+          "dependencies": {
+            "ZZFLEX": [
+
+            ]
+          }
         },
         {
           "name": "TLCover",

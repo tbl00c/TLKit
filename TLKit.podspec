@@ -33,6 +33,7 @@ Pod::Spec.new do |s|
 	# TLMaskView
     founc.subspec 'TLMaskView' do |ss|
       ss.source_files = funcPath + "TLMaskView/*.{h,m}"
+      ss.dependency 'ZZFLEX'
     end
     
     # TLCover
