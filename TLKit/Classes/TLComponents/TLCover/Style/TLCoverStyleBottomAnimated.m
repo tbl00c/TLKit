@@ -20,19 +20,18 @@
     }
     if (animated) {
         cover.maskView.alpha = 0;
-        [contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(0);
+        [contentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(cover.edgeInsets.left);
+            make.right.mas_equalTo(-cover.edgeInsets.right);
             make.top.mas_equalTo(cover.mas_bottom);
-            make.size.mas_equalTo(size);
+            make.height.mas_equalTo(size.height);
         }];
         [cover layoutIfNeeded];
     }
     
     // 动画
-    [contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(0);
-        make.bottom.mas_equalTo(0);
-        make.size.mas_equalTo(size);
+    [contentView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(cover.mas_bottom).mas_offset(-size.height - cover.edgeInsets.bottom);
     }];
     
     if (animated) {
@@ -55,14 +54,11 @@
 
 - (void)dismiss:(TLCover *)cover contentView:(UIView *)contentView animated:(BOOL)animated willDismissAction:(void (^)(NSObject<ITLCoverStyleAnimated> *))willDismissAction didDismissAction:(void (^)(NSObject<ITLCoverStyleAnimated> *))didDismissAction
 {
-    CGSize size = contentView.frame.size;
     if (willDismissAction) {
         willDismissAction(self);
     }
-    [contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(0);
+    [contentView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(cover.mas_bottom);
-        make.size.mas_equalTo(size);
     }];
     
     if (animated) {

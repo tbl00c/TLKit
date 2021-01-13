@@ -22,6 +22,7 @@
 @property (nonatomic, assign) BOOL tapDisable;
 @property (nonatomic, assign) BOOL animatedDisable;
 @property (nonatomic, assign) NSInteger superType;
+@property (nonatomic, assign) BOOL edgeInsets;
 
 @end
 
@@ -96,6 +97,15 @@
                 return nil;
             });
         }
+        
+        {
+            TLMenuSwitchItem *item = [TLMenuSwitchItem createWithTitle:@"边距20" on:self.edgeInsets];
+            self.addCell([TLMenuSwitchItemCell class]).toSection(sectionType).withDataModel(item).eventAction(^ id(NSInteger type, NSNumber *index) {
+                @strongify(self);
+                self.edgeInsets = index.boolValue;
+                return nil;
+            });
+        }
     }
     
     
@@ -120,6 +130,10 @@
         cover.maskView.style = self.maskStyle;
         cover.maskView.disableTapEvent = self.tapDisable;
         [cover setContentVC:vc];
+        
+        if (self.edgeInsets) {
+            cover.edgeInsets = UIEdgeInsetsMake(20, 20, 20, 20);
+        }
         
         __kindof UIView *view;
         if (self.superType == 1) {
