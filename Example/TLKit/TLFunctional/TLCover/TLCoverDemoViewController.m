@@ -60,7 +60,7 @@
         }
         
         {
-            TLMenuSelectItem *item = [TLMenuSelectItem createWithTitle:@"父视图" menuItems:@[@"nil", @"self.view", @"self.nav", @"keyWindow"]];
+            TLMenuSelectItem *item = [TLMenuSelectItem createWithTitle:@"父视图" menuItems:@[@"nil", @"self.view", @"keyWindow"]];
             item.selectedIndex = self.superType;
             self.addCell([TLMenuSelectItemCell class]).toSection(sectionType).withDataModel(item).eventAction(^ id(NSInteger type, NSNumber *index) {
                 @strongify(self);
@@ -126,9 +126,6 @@
             view = self.view;
         }
         else if (self.superType == 2) {
-            view = self.navigationController.view;
-        }
-        else if (self.superType == 3) {
             view = [UIApplication sharedApplication].keyWindow;
         }
         [cover showInView:view animated:!self.animatedDisable];

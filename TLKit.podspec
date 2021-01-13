@@ -38,8 +38,9 @@ Pod::Spec.new do |s|
     
     # TLCover
     founc.subspec 'TLCover' do |ss|
-      ss.source_files = funcPath + "TLCover/*.{h,m}"
+      ss.source_files = funcPath + "TLCover/**/*.{h,m}"
       ss.dependency 'TLKit/TLComponents/TLMaskView'
+      ss.dependency 'TLKit/TLShortcut'
     end
 
     # TLActionSheet

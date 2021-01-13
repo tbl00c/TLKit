@@ -106,6 +106,7 @@ PODS:
     - TLKit/TLShortcut
   - TLKit/TLComponents/TLCover (2.0):
     - TLKit/TLComponents/TLMaskView
+    - TLKit/TLShortcut
   - TLKit/TLComponents/TLLocalPushManager (2.0)
   - TLKit/TLComponents/TLMaskView (2.0):
     - ZZFLEX
@@ -143,9 +144,9 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TLKit: b67f66770560638f6e0cadd0230f6db6e46e3015
+  TLKit: 2e5b923794af6fcf7596585c20c02a61441835f5
   ZZFLEX: 6fe8d2dc973495b32a7fe79cb4b00a5b8fb845c8
 
 PODFILE CHECKSUM: af38079c417e46457400decaba8b6a937db554a1
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0
