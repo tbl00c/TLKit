@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, ZZFLEXAngelViewType) {
     ZZFLEXAngelViewTypeFooter,
 };
 
-@class ZZFlexibleLayoutViewModel;
+@class ZZFLEXViewModel;
 @interface ZZFLEXAngelViewBaseChainModel<ZZFLEXReturnType> : NSObject
 
 /// 将cell添加到某个section
@@ -47,9 +47,11 @@ typedef NS_ENUM(NSInteger, ZZFLEXAngelViewType) {
 /// 手动配置cell高度，cell实现viewSizeByDataModel:或viewHeightByDataModel:后此设置失效
 - (ZZFLEXReturnType (^)(CGFloat height))viewHeight;
 
+@property (nonatomic, strong, readonly) ZZFLEXViewModel *viewModel;
+
 /// 框架内部使用
 @property (nonatomic, assign, readonly) ZZFLEXAngelViewType type;
-- (id)initWithListData:(NSMutableArray *)listData viewModel:(ZZFlexibleLayoutViewModel *)viewModel andType:(ZZFLEXAngelViewType)type;
+- (id)initWithListData:(NSMutableArray *)listData viewModel:(ZZFLEXViewModel *)viewModel andType:(ZZFLEXAngelViewType)type;
 
 @end
 

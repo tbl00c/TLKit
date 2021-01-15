@@ -116,7 +116,7 @@ PODS:
   - TLKit/TLComponents/TLToast (2.0):
     - SVProgressHUD (~> 2.2.5)
   - TLKit/TLShortcut (2.0)
-  - ZZFLEX (1.0):
+  - ZZFLEX (1.2.0):
     - Masonry
 
 DEPENDENCIES:
@@ -137,14 +137,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ZZFLEX:
-    :commit: da7bc35e7e4fb7d92860bd2d56d22603c852b85d
+    :commit: ab99c9c21e367c89c2c196589c468f6f1f3e5013
     :git: "git@github.com:tbl00c/ZZFLEX.git"
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TLKit: b67f66770560638f6e0cadd0230f6db6e46e3015
-  ZZFLEX: 6fe8d2dc973495b32a7fe79cb4b00a5b8fb845c8
+  ZZFLEX: 27aee319fa25913822ea6d0a341d4243b43c02f7
 
 PODFILE CHECKSUM: af38079c417e46457400decaba8b6a937db554a1
 

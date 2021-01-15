@@ -10,10 +10,12 @@
 
 @interface ZZFLEXAngel (Private)
 
-- (ZZFlexibleLayoutSectionModel *)sectionModelAtIndex:(NSInteger)section;
+- (ZZFLEXSectionModel *)sectionModelAtIndex:(NSInteger)section;
 
-- (ZZFlexibleLayoutSectionModel *)sectionModelForTag:(NSInteger)sectionTag;
+- (ZZFLEXSectionModel *)sectionModelForTag:(NSInteger)sectionTag;
 
-- (ZZFlexibleLayoutViewModel *)viewModelAtIndexPath:(NSIndexPath *)indexPath;
+- (ZZFLEXViewModel *)viewModelAtIndexPath:(NSIndexPath *)indexPath;
+
+- (NSArray<ZZFLEXViewModel *> *)viewModelsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths;
 
 @end

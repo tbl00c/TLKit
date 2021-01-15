@@ -7,109 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AA2360397E17982F8F00EFBE3010C37 /* ZZMutableAttributeStringChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED381F807B7230CA2BB76163B05237F6 /* ZZMutableAttributeStringChainModel.m */; };
-		0BB9A31BC3CA2F556131066EB56F151A /* ZZFlexibleLayoutViewController+Kernel.m in Sources */ = {isa = PBXBuildFile; fileRef = A620DD22D111E9DD838AA96726CC69BF /* ZZFlexibleLayoutViewController+Kernel.m */; };
-		0DBD51D52C70B05381064303D1FE1F61 /* ZZMutableAttributeStringChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 262EF46FE7C9F90CAE4666491E33369F /* ZZMutableAttributeStringChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0E673D36C36DBA7C1A42BA8499459236 /* ZZFlexibleLayoutViewModel+HostView.h in Headers */ = {isa = PBXBuildFile; fileRef = E25F41FB7A748D67E6B530011757C7DB /* ZZFlexibleLayoutViewModel+HostView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		15E45047D73F8830416C81A71DE5B768 /* ZZSwitchChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2350A7A919C449B191ECD8F67143301 /* ZZSwitchChainModel.m */; };
-		15E73A85B159FBAB5153660C97374F60 /* ZZFlexibleLayoutViewModel+UITableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6960165D6772AF2810A58F3106F98CE5 /* ZZFlexibleLayoutViewModel+UITableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		16A3C15C805D0D7818AE135319DD16DB /* ZZFLEXAngel+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 481D16B835262AD460189C960BE30AC6 /* ZZFLEXAngel+Private.m */; };
-		16E6ED136457FC79C1CB7FF0B5932B0F /* ZZImageViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E16F88BAF5D7275C70264A46B92861B /* ZZImageViewChainModel.m */; };
-		20BF50078C3D66F69E81FAADC82EE5B1 /* ZZFLEXAngelSectionChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A80330B1E332762E876BC6F1C56835 /* ZZFLEXAngelSectionChainModel.m */; };
-		2179C4AD81758F51EB09070A94553411 /* ZZFLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F748625F5FBBB2F6AD8E94EEA3AA7D6 /* ZZFLEX.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		217EFD7F87327F8C263C8142B52D6D76 /* ZZButtonChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A475FE913B79DDBCEC6601B8FB61FE78 /* ZZButtonChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		218AAC423ED260BE33AE540D499C8618 /* ZZFLEXRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B176CF5A13096DC4F1BD8810222369 /* ZZFLEXRequestModel.m */; };
-		25059874F21A0316EBD7EC04BB46A2C2 /* UIView+ZZCornor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B852000C2A5955C7D8373858E392F47 /* UIView+ZZCornor.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2817E45FD3854FBB542B20F0BD60C124 /* NSMutableParagraphStyle+ZZFLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FECBA654D987C814AD0B94772266E8 /* NSMutableParagraphStyle+ZZFLEX.m */; };
-		3221540060531C2AE67C98438F1B110F /* ZZImageViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 272D573A3859CF837F47B589A8A2D08A /* ZZImageViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		355D423AAED7DC88D611A442356FFF57 /* ZZViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F38C366766830C26CA6DC76F2A470C /* ZZViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		36A544E69A84A2A680DE936AFC4B9933 /* UIView+ZZSeparator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB05E85CCFA781800DDDD78E4D575D2 /* UIView+ZZSeparator.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3864F649A7C9325941B0428C02708D50 /* ZZFLEXFoundationExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B574D12DF265431F9C3B4E7E08B8C6B9 /* ZZFLEXFoundationExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		38B4C36CAA508BF3CB9CF008E0DE18C1 /* ZZFLEXAngel+UICollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCD0456FEA8D9B9809F57D0877AE843 /* ZZFLEXAngel+UICollectionView.m */; };
-		397759D19FBCE606046E727F90DB31D6 /* ZZFLEXAngel+UITableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EA83955657E66BFEAC30790DD81DB5C /* ZZFLEXAngel+UITableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3B8E33053F275FE2A94AF3DA78C4A1B3 /* ZZFLEXAngelViewBatchChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B819AA65EA3077E0D0467D4DB97CED /* ZZFLEXAngelViewBatchChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		444DB769D0F34953EC91F9B4FC58D3E1 /* ZZFLEXAngel+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 155D4C60A9FEDA2BD057605D5A1EAF7F /* ZZFLEXAngel+UITableView.m */; };
-		4BEACD24F4C5E208E1C3BA8ED697D71A /* ZZCollectionViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1642E155EC45A4D5200F9698467731F0 /* ZZCollectionViewChainModel.m */; };
-		5030AFA70F4210A7F13BAA276355CF96 /* ZZTableViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BC91E848950CFF56E91B3D83B9B098B6 /* ZZTableViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5D02595E5719993AC055E5B720C984BB /* ZZFlexibleLayoutViewController+Kernel.h in Headers */ = {isa = PBXBuildFile; fileRef = C1CCCDF689AEBD92B04E9858208AB662 /* ZZFlexibleLayoutViewController+Kernel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5D8063E105AFB0A4356ED068A92B8C95 /* ZZFLEXEditModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 86C8A2B991AD5E0B179B972DA3A246C3 /* ZZFLEXEditModelProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5F3A8066AF826E788CBFFDCA5E41515F /* ZZFLEXTableViewEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E024C3B3063AA0BF887EDD25795F07DB /* ZZFLEXTableViewEmptyCell.m */; };
-		615783AEA899583D05BA67D4AF62BE07 /* ZZBaseViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C421381E9F5766ECA4CD4AD1066A8E4 /* ZZBaseViewChainModel.m */; };
-		63B21157B2B20FE2FB76B6EF3570BD6E /* ZZFLEXRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D135D81752946E6651FF7077DC214DC3 /* ZZFLEXRequestQueue.m */; };
-		64A6AECA559F575927E8645509B7FE82 /* UIView+ZZFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B279CFBE66F8A8B5DCA63082172427 /* UIView+ZZFrame.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		65E4810DA3E71E64EDF556B9B87468FB /* ZZFLEXViewExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = CA172C67AF95B10BCC6EA2AF3689A317 /* ZZFLEXViewExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		67D04088F36841FEB6A931E2DB4E13AB /* ZZFlexibleLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473F3B936D50991700C437F9EF1265AF /* ZZFlexibleLayoutViewController.m */; };
-		68FBBE675DC6274CD21AA01EB46540B3 /* UIControl+ZZEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D490EC033A641854124E75011DE267C /* UIControl+ZZEvent.m */; };
-		6963A5B07F72DCFED89D76616ECC45A1 /* ZZFLEXAngelViewEditChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A50D752CF9AC3AB8BD4D6C69F31192 /* ZZFLEXAngelViewEditChainModel.m */; };
-		6C89C53DDC6850657E58704D9722FF48 /* ZZTableViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030AB4289353F56FBB07780BF889DF0E /* ZZTableViewChainModel.m */; };
-		6CAAACF1EB09AE3F5DFF976A7894C845 /* ZZFlexibleLayoutFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB0261C84FA60A08FFB4014CFE0F293 /* ZZFlexibleLayoutFlowLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6FC3B7846341773A534AC0BE06CB5A0B /* ZZFLEXAngel+UICollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A5275A943F9A2390D17590EED620EE /* ZZFLEXAngel+UICollectionView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6FCFB012E610AC9337EE857C269F1C6D /* UIButton+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F19C2195F54ED3F6DC9615F6A97B14DF /* UIButton+ZZExtension.m */; };
-		7045ED05D39D291A1CC05633378B14A9 /* ZZFlexibleLayoutViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA69845CDC565DD9C56F1FADAF96049 /* ZZFlexibleLayoutViewModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		717527827571757320D191A7932D64EF /* ZZControlChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 12AEB973EA0F5984809E9505F25356C7 /* ZZControlChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		74CBFE3006A4129D9271D5EAC14F45D6 /* UIView+ZZFLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FF481DFADC1A63F27C030C212808AE /* UIView+ZZFLEX.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		775EB8BED414BEA08C9CBF32AA9E4215 /* ZZControlChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A508E1CE9134F0B2535AF0C9FBE9BD3C /* ZZControlChainModel.m */; };
-		77B4D32E9C7BB7F765150D4B71423760 /* ZZFLEXMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 72122C7F0D0771D57993138C91A34E4B /* ZZFLEXMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		77CFD112013BCC4BBD370A7285D15061 /* ZZFlexibleLayoutSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B4CC1A72F7AD14D51D5662651B376C /* ZZFlexibleLayoutSectionModel.m */; };
-		7993983420488EB6AA401FC7D85BF91F /* ZZFLEXAngelViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = ACABA38E854F4640CB8FE8963AFE693F /* ZZFLEXAngelViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7C942CED7A3CCDE586C907490765762D /* NSMutableAttributedString+ZZFLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C8E6571E0F2C0FD399EB0AE0C03118 /* NSMutableAttributedString+ZZFLEX.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7EE78A996CB69A669074FDAB6FC9DB1D /* ZZFLEXEditModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE48BE1BE78630DBCA2E8BE484A9BE86 /* ZZFLEXEditModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8121CC1D22653B035B4A7B1EEDE98DF3 /* ZZFLEXAngelViewBatchChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B546DAA603979060D0002522EAB35FCA /* ZZFLEXAngelViewBatchChainModel.m */; };
-		8366A47EFB74E94FEE6E688ECBDBC00E /* ZZFLEXRequestModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D9E0088FDDBFE55010DF2AF42A4D4E92 /* ZZFLEXRequestModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		893B91D464D66DED2215AC988B079174 /* NSMutableAttributedString+ZZFLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EB07DDBA474E8BAB866D0C647EEC5C /* NSMutableAttributedString+ZZFLEX.m */; };
-		8A23135540D42E31EF2876435AC3F785 /* ZZSwitchChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 513A03ED4BB197566D2353FF5DC24E58 /* ZZSwitchChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8B689BFA3075D370119A1950C748A404 /* ZZLabelChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5406134B349F311114BE37E09F336699 /* ZZLabelChainModel.m */; };
-		8D3DC890CFD2EAFF75EB54DEB30EB2CB /* UIView+ZZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5D69F4E28EEBFEDA8AAC15C1B5678 /* UIView+ZZFrame.m */; };
-		8F7E1B75152615C35A140BC6F43424E3 /* ZZMutableParagraphStyleChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81327851127C2F094ABF24E4579386F6 /* ZZMutableParagraphStyleChainModel.m */; };
-		9221FB43B41DA748469DC3F16BCDBB6A /* ZZFLEXAngel+EditExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FC90E63CC206F5C38614EBEFB2B263 /* ZZFLEXAngel+EditExtension.m */; };
-		95C9571A6DD71F81042FDDF4C7CA50D1 /* ZZTextFieldChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E55FB8688AE6CAF292991709D5986A8 /* ZZTextFieldChainModel.m */; };
-		97E53AB680240A801FE29383C627B47F /* ZZMutableParagraphStyleChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B39125FF7B4A3290F085E4BE0E9871B /* ZZMutableParagraphStyleChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		97E7CF04267988143965B0FDD3C0B7F5 /* ZZFlexibleLayoutEmptyHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DE498E77CF134732860BE5478624EC /* ZZFlexibleLayoutEmptyHeaderFooterView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		98D2DF57A4B174E5118BD8FA10ACDBA1 /* ZZTextViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AC767FA45898E26DBB9803A93149746 /* ZZTextViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		991D6B2FD4AC887CDDA0A656EA01D437 /* ZZTextViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF03AE2615219C57CDCA3B3DEC58FD93 /* ZZTextViewChainModel.m */; };
-		994A4B53851EAE351E73B01035905F44 /* UIControl+ZZEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 82423476EFC705E553AFEA3E214D3292 /* UIControl+ZZEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9E5AC0E6F75CA735B98C7507B8F4F5AA /* ZZFlexibleLayoutSeperatorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AF0B944D3D20EE290391D2DC373971D6 /* ZZFlexibleLayoutSeperatorCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ABC7715B9B775081F5D72EED90DF2D89 /* ZZFlexibleLayoutViewController+EditExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8B2302117BBBB593658904DBEE29E4 /* ZZFlexibleLayoutViewController+EditExtension.m */; };
-		AE0AD882E1AFBB1F3B6BB9339A96BF1C /* ZZViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DED041F4455C28EDB319F1AE249F592 /* ZZViewChainModel.m */; };
-		B23272E06D01879C647553017E8CF10E /* ZZFlexibleLayoutViewModel+HostView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1993F8D66F1532FAF4F19BD8059A3C8F /* ZZFlexibleLayoutViewModel+HostView.m */; };
-		B48E85ADD8F5659C123C0C9A5CDB6558 /* ZZFlexibleLayoutViewModel+UICollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 095A61AA35B322D08669E307A96FAE99 /* ZZFlexibleLayoutViewModel+UICollectionView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B6398759F22178CDE0C00ABF164AA6E9 /* ZZFLEXAngelViewEditChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBEADD4D97E1AEC12385EAA09420E68 /* ZZFLEXAngelViewEditChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B7C41BC962261B9F9BBB86033725F743 /* UIView+ZZCornor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AC93F391DEDB6D5ABBFBF0BECCF965 /* UIView+ZZCornor.m */; };
-		B8FA0238CEF1CDC3BCA8AF66C1CE1898 /* ZZButtonChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B3D45313EA5F00E4246368B873D706 /* ZZButtonChainModel.m */; };
-		BA3C7B043D0703D5C2B8CDA0409E207B /* ZZFlexibleLayoutViewController+EditExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A558F286F1B0B377D596D6A907B901E /* ZZFlexibleLayoutViewController+EditExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BB44DEAF7170180A4E3E221A03303342 /* ZZFlexibleLayoutEmptyHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5725A1981137F483DA6183FB9E457C9 /* ZZFlexibleLayoutEmptyHeaderFooterView.m */; };
-		BC7EF6C58C918F1883D21F677F158FD3 /* ZZFLEXAngel+EditExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F17D06D8E13C4EC15C1A1B613CBE422 /* ZZFLEXAngel+EditExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BC83A97BB111B7584D90A7051CDE00C0 /* ZZFlexibleLayoutViewModel+UICollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC3B34B297E1077F64455AE9B4FB2BA /* ZZFlexibleLayoutViewModel+UICollectionView.m */; };
-		BD6C28C121F5AE00BEE561B390D94427 /* UIButton+ZZExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C7701C0EED5DAD199248150A5CD130 /* UIButton+ZZExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BE8A7863B6B81237AFC35656D2EDAE9F /* ZZScrollViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B29BE87B1AFEC25ACD62782C0DC487 /* ZZScrollViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BEE0F121DF4110FD20EFD91FBF08C30C /* ZZFLEXAngelViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7CD529A04344A1694BB1E6C6D86E7 /* ZZFLEXAngelViewChainModel.m */; };
-		BFDD594A18261CD1307BB83F8DF45004 /* ZZFLEXTableViewEmptyCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A849CA459929948E5995A39A065AB1C3 /* ZZFLEXTableViewEmptyCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C33652B09B02FFF29BFE9BD964A0A6F6 /* ZZFLEXRequestQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC8B225326AAF9878F5F934B0851274 /* ZZFLEXRequestQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C841D79EFF24AE605969BBB8F9C3610C /* ZZFLEXAngel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8369FE88123264A6C012BF7919FDEA /* ZZFLEXAngel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C98565A17AA8298AB98E4765B40B068F /* UIView+ZZFLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 43336BB5D17001021D0101CFAE4706B8 /* UIView+ZZFLEX.m */; };
-		C9FC0704C88AC7EDFA7DD97FED0E943C /* ZZFlexibleLayoutViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F691B8A3FFF01C76B5D41E4C146B8 /* ZZFlexibleLayoutViewModel.m */; };
-		CEBBB284D0B0369B0D255FD861E1D431 /* ZZFlexibleLayoutFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0026BF88E211CD9843E9E00C7B3D671D /* ZZFlexibleLayoutFlowLayout.m */; };
-		CF15436853417B9F0457247AE777AD55 /* ZZFLEXAngelSectionChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B19D3538904019E6222D1DC31B4CEB0A /* ZZFLEXAngelSectionChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D5E21259FB08FE09A18C95426D5E2EF3 /* ZZScrollViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE46DE44FD73EE45AFA0061CD010546E /* ZZScrollViewChainModel.m */; };
-		D76C6E9EAF680AE76F905D754775C10A /* ZZFLEX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1050DE9ABBBF0A9E85371D20B157321 /* ZZFLEX-dummy.m */; };
-		DA0C4FEF6B752D30E3BB12104E43FEBC /* ZZFLEXAngel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF75AF404750D6F6D6FE86630964936 /* ZZFLEXAngel.m */; };
-		DCEE9BB8D692EBD3318A01C461657B6B /* ZZTextFieldChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 36026EC89D7F9F090661EDEAEF35030D /* ZZTextFieldChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DE0D28AE7F5E55EE90DEF088B5492005 /* ZZFlexibleLayoutViewModel+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CFF4DEF7BE7991B0B85E5F10906756 /* ZZFlexibleLayoutViewModel+UITableView.m */; };
-		DFB90C7084069E545DAA2E9B3164F920 /* ZZCollectionViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F26606A559057D376C3E68BFED99AF /* ZZCollectionViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E25C1077D3203C630DEADAE21DAF6C31 /* NSMutableParagraphStyle+ZZFLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = BCA60996B7C0DD9021D0B600C76AB79A /* NSMutableParagraphStyle+ZZFLEX.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E6FD71D0871560AA18A69896CBAB4B58 /* ZZLabelChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0327B2C1FBB7EB3702E2338A6646B4 /* ZZLabelChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E7495EEEE911B2C75D5CE99AEADD0232 /* ZZFlexibleLayoutViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D48C4FB2F38A1C659E7599BD28B641B /* ZZFlexibleLayoutViewProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EF1A8EDE27DEAAA8A408EA2F4C402EE8 /* UIView+ZZSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD76BAE028324E0E8691EBA238FB439 /* UIView+ZZSeparator.m */; };
-		F086FDD3C369689E2242906051898E2E /* ZZFlexibleLayoutSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CF9F2E45A8A7F0301FACB724F45BB189 /* ZZFlexibleLayoutSectionModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F13E1E12000B43F94D30536B6AF3BF4C /* ZZFlexibleLayoutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB76DF48FB765DA0BAF1168318CBC36 /* ZZFlexibleLayoutViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F2563823FE0CE3EDE2F0D750A3EBD3B5 /* ZZBaseViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B1F1A6D49A36109C11FDFBBCD5D753 /* ZZBaseViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F47B740B03644775A7A34102F34E0287 /* ZZFlexibleLayoutSeperatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 072C48D04B4C2A0BD3F057DF8E383343 /* ZZFlexibleLayoutSeperatorCell.m */; };
-		F6D0D16709C961C3220E3075A0E8B68F /* ZZFLEXAngel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1801B6802D554E36E5D308D39EB1687A /* ZZFLEXAngel+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F934DA51A69BE50C740E103432C16E20 /* ZZFLEXEditModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8EC1A0498AD7C2C145F9D112D68B4D /* ZZFLEXEditModel.m */; };
+		026D649713386D52BF6FA0EEB88E3A48 /* ZZFLEXEditModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C16198BCE1AF5F4369E830BBD47B4B31 /* ZZFLEXEditModel.m */; };
+		0E402DAC01B6C1B55984FE1FB0375055 /* ZZFLEXCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E759B07881DAA160222E1652D4E7E /* ZZFLEXCollectionViewController.m */; };
+		10C798F8B722027FB8C8642A9B5B1AD9 /* ZZFlexibleLayoutSeperatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90831CF78F5EEF212589AC00D0EAE517 /* ZZFlexibleLayoutSeperatorCell.m */; };
+		13F01CEB8B02661E720023BC05B84050 /* ZZButtonChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F437E01B0A49993F4E0303BA57C5D5 /* ZZButtonChainModel.m */; };
+		1584F27D0360B024EB4992C4AB494785 /* UIView+ZZCornor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C3E95BB5122DAADFFE78386637525EF /* UIView+ZZCornor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C7E366D8BB77CAE48D03138E7EDA444 /* ZZFLEXViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E6DAB3F25935D477D8E7FE604676710 /* ZZFLEXViewModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E3A658C5481ADE322C458E7D53D3B12 /* ZZFLEXAngelViewBatchChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3E787D9C852565D4DE838C68E71C9 /* ZZFLEXAngelViewBatchChainModel.m */; };
+		238B289FF0742E0DE69050A20A7250E3 /* UIControl+ZZEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD5660446E588D238C3FC8B7D1E54B1 /* UIControl+ZZEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25D86E67CB6BC5EA813B5BEDBDE694C0 /* ZZImageViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 111DB8A56AFB8AFDF75A8909B545BA56 /* ZZImageViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28ADFA6190F86B293ACBDC6F42BDE260 /* ZZTextFieldChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8A40BA64479161ACFF8634DEF528A /* ZZTextFieldChainModel.m */; };
+		2C4CFCF2D55A9D2487703A4C70BBFB56 /* UIView+ZZFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 6800D00E43706E3CA942E3E8AA8DFECC /* UIView+ZZFrame.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F93E0B532FC557F54324C482EED507B /* UIView+ZZCornor.m in Sources */ = {isa = PBXBuildFile; fileRef = 770C90BF7E2ABF0443F11ABBBCB5E74B /* UIView+ZZCornor.m */; };
+		3AEA3F1989F552B7F27B27ADBB5E6009 /* ZZFlexibleLayoutSeperatorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B329D3A284828D497490C3F1E96C149C /* ZZFlexibleLayoutSeperatorCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3C6DEE2C6DD7A7371173CC38B661013E /* ZZFLEXAngelViewBatchChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 288F5BB655ADFB6FFF23CD2587558E0A /* ZZFLEXAngelViewBatchChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3F69992C0D78ACB96704CEB72C8D8885 /* ZZTableViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3112E1BC6ABEA7816396AE67AA1CE1A9 /* ZZTableViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		417F5632BD31B1F867612C06BA7B5E28 /* ZZFLEXAngel+EditExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF6BDA1BA31B9CB760E18A6693D6540 /* ZZFLEXAngel+EditExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		45166ADFE66433376E873083554478E0 /* ZZFLEXAngel+EditExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 318EFF7298B8DF46FF43871F23BA9AB6 /* ZZFLEXAngel+EditExtension.m */; };
+		4A3D22F8AC7B98793FB00149A512C86A /* ZZFLEXAngelSectionChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = EB30EBF148E88AEFAFAC55545D1DE8B7 /* ZZFLEXAngelSectionChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52231612AC92A76D63BF8D505CD803EE /* ZZMutableAttributeStringChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F65896C2CDF2F790A56418CB46E3052A /* ZZMutableAttributeStringChainModel.m */; };
+		52F01E063D3AB4D9E22A84A1A7C6AF4E /* ZZImageViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AC33B87DFA94D5A2BFAC2270105C6B /* ZZImageViewChainModel.m */; };
+		530439BEC8893455058B579402B16995 /* ZZControlChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E640A4C5942B452B2D84BC8803F70F7F /* ZZControlChainModel.m */; };
+		5893827D569D3A7BAF62A08E6DF43779 /* UIView+ZZFLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CAB50626636F190BAEC4721314D1694 /* UIView+ZZFLEX.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		59E8125CB41D570F3A611A435ABE1E0E /* ZZFLEXAngelViewEditChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B50967C8741D3799909830C1DF7DB4 /* ZZFLEXAngelViewEditChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5AB66208E59381D3B1654DF1944D716A /* ZZFlexibleLayoutFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A968B97025A4F0583CB8832D2951A8 /* ZZFlexibleLayoutFlowLayout.m */; };
+		5B39CE62A66E826D7D0CCEAD7A2105B9 /* ZZControlChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DF62B6ECE2E97C375736021B0C9C58D0 /* ZZControlChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5EFE8C09AB5B71044B9F455CB7BDE255 /* ZZTextViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 398237CFDE1E362FB3E45605E3798017 /* ZZTextViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5FC9491A56FC5CD68956D1654CA04831 /* ZZLabelChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BB919F421B6360F60AB8861E9EDDFADC /* ZZLabelChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5FFA53B437E4CC4F7BF09F46F5A4E022 /* NSMutableParagraphStyle+ZZFLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = E38C9773609DE391BEC7F9840EBD8A74 /* NSMutableParagraphStyle+ZZFLEX.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		625316FF71A211CF8AAB21C5013E44F5 /* ZZFLEXAngel+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD864D04B1656E1DDB9E05DD7933AE0D /* ZZFLEXAngel+UITableView.m */; };
+		658EE21C622D184FA1A0A0606A29A35E /* ZZFLEXAngel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD4A73E037BADC432654E52A47DBFB1 /* ZZFLEXAngel+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6EA388302BD39CFF3A0D2C0B2A2E658C /* ZZFlexibleLayoutEmptyHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D05CC02E06D96D9A493F7F0D3331D76F /* ZZFlexibleLayoutEmptyHeaderFooterView.m */; };
+		707DB27FC36A3446198E2BC8163D1F1F /* ZZFlexibleLayoutEmptyHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86217015B49D447BA3A35739869670AA /* ZZFlexibleLayoutEmptyHeaderFooterView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7184B9F1ADA8F0B72F4ED2B93DCE6613 /* NSMutableParagraphStyle+ZZFLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 844D68C7BA074AAA00E144DE9A17764D /* NSMutableParagraphStyle+ZZFLEX.m */; };
+		71CB36393FBBA57DE986384AB79C119F /* ZZFLEXEditModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E4ADFB561C97260E5C7BA3027B0071 /* ZZFLEXEditModelProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		73A1A524E017D9E0A2ED80E3456F0ADE /* ZZMutableParagraphStyleChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F90CB2DD6A9E1D0261463BE33B38C8 /* ZZMutableParagraphStyleChainModel.m */; };
+		7429C0AFDA56B0124975A97AFF56E954 /* ZZFLEXMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DF520321967669A00CCB793FBD7595AE /* ZZFLEXMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7739787604234BEF0F5DE59C2F6A63F8 /* ZZTableViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 175CC91AF1E9BB8F9564E9E38E5080AE /* ZZTableViewChainModel.m */; };
+		7AE1CDEF415074C43471C49CCBC017EF /* ZZFLEXAngel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C1B1CBD6AE92B90962E687DA233C51 /* ZZFLEXAngel.m */; };
+		7B50D867014059998525F41BC14F42BB /* UIView+ZZSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11891C8CED5823D579F48FE174EC9F /* UIView+ZZSeparator.m */; };
+		7CA4C261C23C6A4E31C51AD89FAFDA5B /* ZZBaseViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C31CB8C9FA39A64BFD52A53E419FA0C /* ZZBaseViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		863F1E45593A518ADEC7BFA8FB8441DC /* ZZFLEXTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C86795880C7080EC19BB4DFA29B0ACF /* ZZFLEXTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86E97FBBF8AF917512918DF79CFA3E20 /* ZZViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FC54D59CA2FEA2453C213E50AA726442 /* ZZViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87CC43480D47548CCB82974E3CDF0748 /* ZZBaseViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B7092669352CB2118C0246289BA99 /* ZZBaseViewChainModel.m */; };
+		8868C07D49DA199A6A0B5F15FDC0FBA8 /* ZZFLEXFoundationExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3537DA8F4FB618499C3B05E949A31AA8 /* ZZFLEXFoundationExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B07C8402E3A48465152223F17932532 /* ZZFLEXTableViewEmptyCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7FC012AB3FB272FC897B06E5109C75 /* ZZFLEXTableViewEmptyCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		947F85B8017AECB990FF7B000AF5DA80 /* ZZFLEXAngel+UITableView.h in Headers */ = {isa = PBXBuildFile; fileRef = A73C7710B69E5AF0EFFA724E679B6ED6 /* ZZFLEXAngel+UITableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9571DE27034451670FFBE0C9D11ED14B /* ZZFLEXAngel+UICollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5555DB078ABF0E03E1A3044536655F9 /* ZZFLEXAngel+UICollectionView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9AF6F109A2A4A538DD0D1EB66ABECBD7 /* ZZFLEX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BD6DC38A917A8428E37BBAF271FA9 /* ZZFLEX-dummy.m */; };
+		A08DEC85D294EBB11F8F8AB953466114 /* ZZActivityIndicatorViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F8C8B6B9E36C94B2AEB24924A26882 /* ZZActivityIndicatorViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A114F51DD634F1374DD8D82AF8FA9DB2 /* ZZFLEXTableViewHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E27D6A03BC8580C09F710D379C7EE6 /* ZZFLEXTableViewHeaderFooterView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1DEE2544BFCFA1EF0E37E88B8EFB8FE /* NSMutableAttributedString+ZZFLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = D4570318A906C6BF04C5E56A4AB0BC71 /* NSMutableAttributedString+ZZFLEX.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A222C10BC0EB9DA7AD3F1F1BC59CB214 /* ZZFLEXAngel+UICollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F29F7406C110220CE23978623AD04C /* ZZFLEXAngel+UICollectionView.m */; };
+		A42C4C4F9F0675B34C3DAC17B205FA60 /* ZZFlexibleLayoutFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 60628D60A4916534899FE527D2D5F8AE /* ZZFlexibleLayoutFlowLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A6543254CB6101F613640813C3C78D42 /* ZZProgressViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5A84C1B2CFE748F1DD79CE2E2B000C /* ZZProgressViewChainModel.m */; };
+		A955D94F87C81CE7DC9AA11904EAE2F9 /* UIView+ZZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D07C1DE1C734A9C868233899F6F079 /* UIView+ZZFrame.m */; };
+		AA40FFFCCAFC8E0538E8F983271BABA2 /* ZZTextViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 757EC3E98F43C5CC1F065653950FF5F9 /* ZZTextViewChainModel.m */; };
+		AB1D5D78FC3A5C57F20F6B5372D35011 /* ZZFLEXSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A50A1EE55B0F8B491D75A38EBE36277 /* ZZFLEXSectionModel.m */; };
+		B013FE8551CDB3A74E2CD0B09C32441A /* ZZFLEXViewModel+Angel.h in Headers */ = {isa = PBXBuildFile; fileRef = 54976937E2477ECB1A34B85C52E5DB60 /* ZZFLEXViewModel+Angel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B201ABC7C2C1D7F9BCC46269731CF53C /* NSMutableAttributedString+ZZFLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = A068AF1226002E674874AB64EAA2E0DA /* NSMutableAttributedString+ZZFLEX.m */; };
+		B7A3521BF243AB4F037432E3343942D5 /* ZZFLEXAngelViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 89179AC233BAEDABE7EB3813C3F06B10 /* ZZFLEXAngelViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B8E68F0B3912FBECCB937479BEFD7678 /* ZZFLEXCollectionViewController+EditExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = D018444BFD9D3FC174C40FF21B856C15 /* ZZFLEXCollectionViewController+EditExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BBA01C3C90EE3C17678944A3E758A45B /* ZZFLEXTableViewEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE58C0EA91F9D2535D2A65D7B96AC93 /* ZZFLEXTableViewEmptyCell.m */; };
+		BE49D1ABFD70B109ACB7D87DE219B6D1 /* UIButton+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7497AD8E3CD29D57F6559801F099E1B9 /* UIButton+ZZExtension.m */; };
+		BF033D45791D855D3A3B78B2FAB09995 /* ZZMutableAttributeStringChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E24953E9BB9DFCF152DFAB09C75BBD /* ZZMutableAttributeStringChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0114214D821FC9E5B0522B6EACC5418 /* ZZFLEXRequestModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5007D3D9D616162F54E9BDF43D32B408 /* ZZFLEXRequestModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1B35C5B4146AE3F99EBC5900FA78E15 /* ZZFLEXRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAAEF5F3113092E4C7D80AD18B2E6F8 /* ZZFLEXRequestModel.m */; };
+		C6E2A76E05248776DE6385E583C3BFAB /* ZZProgressViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC948EAF5DED819CBFC51DB3B3E46E8 /* ZZProgressViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C88BC10507B2386057F7C062B3E63C3E /* ZZFlexibleLayoutViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 91751B35D76A066918B4F784C589AB8E /* ZZFlexibleLayoutViewProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C98754F36482BED4FD4F6D63D4123DAB /* ZZFLEXViewModel+Angel.m in Sources */ = {isa = PBXBuildFile; fileRef = F03AB9F798DE23E874A1D9F6E848EA8C /* ZZFLEXViewModel+Angel.m */; };
+		CACB5B9EF52F6AC8646EBD4A69CAB18F /* ZZFLEXSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4690D4A783FF7998557F6C5AFFA763 /* ZZFLEXSectionModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD88C7708F24009120D58D742A99A6B6 /* ZZTextFieldChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F0F663E9583C8F88E56443EBD9476BC /* ZZTextFieldChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE1AFCD4284E43F96375EAFD31EB653A /* ZZFLEXTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D2EB5ECCC7E841506B93CD186A23E8 /* ZZFLEXTableViewHeaderFooterView.m */; };
+		CE7AE76EB8C868D90260D3BE6499CD5A /* ZZButtonChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 597E25C2363E45E3A238BAE48FC01D22 /* ZZButtonChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CFE314468CFCD1A39FFF5D3317408358 /* ZZFLEXAngel+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C80A4212329264963AA55E12B44C4A /* ZZFLEXAngel+Private.m */; };
+		D24291635B856E8C38EC311BAF3ACFE7 /* ZZActivityIndicatorViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A1A75EAB1D89E544A5218A2EA90582 /* ZZActivityIndicatorViewChainModel.m */; };
+		D2D4D91A90BF298CBCA63E855C01B2E4 /* UIView+ZZSeparator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1352CB02168D86F5D80ABDEC69B894B1 /* UIView+ZZSeparator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4969F38A746EAB9156245591728757F /* ZZFLEXViewExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = C167EA1870624AEB5D9D5078DACC021A /* ZZFLEXViewExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5DDB9B0CE1DCC06CEC553CE1F450BC5 /* ZZScrollViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C3B0EDC9BCBBAD5F24F4309DE5B271 /* ZZScrollViewChainModel.m */; };
+		D79D9400F089BB2718C6673942AC6075 /* ZZFLEXEditModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 06052F93DF838C019630F6973024E58D /* ZZFLEXEditModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D8BB734D3BA639C2538BC105BBDB7302 /* ZZFLEXAngelSectionChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E81F40A1D71049664810B49E98670E /* ZZFLEXAngelSectionChainModel.m */; };
+		D94FBBA92B4E7303F8F4F8A6A1EFF268 /* ZZFLEXAngel.h in Headers */ = {isa = PBXBuildFile; fileRef = 120A1242576238450358EDD47232F08C /* ZZFLEXAngel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D99E8BA0DB79B28E003C194E2A546E86 /* ZZFLEXViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CFA582894CBF95D6D362BAC9420072 /* ZZFLEXViewModel.m */; };
+		DAD4A1ECC613214F1F14AD832793EA65 /* ZZFLEXRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BE07B898EFB20727EAF1CF3068663412 /* ZZFLEXRequestQueue.m */; };
+		DE115CF849645946C283FBA2D46716D3 /* ZZFLEXCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7315BEDF1A054B619E97E81F73651F3F /* ZZFLEXCollectionViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF8A18194C23FB43E4C71C10EC435D84 /* UIControl+ZZEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 79423FC83489FE7FABF8AAF02605E66B /* UIControl+ZZEvent.m */; };
+		E1A4FEFF71145B0C688B0868FDE39E4A /* ZZFLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 39031AA23DC7FA8C2D21F65B4B0090CE /* ZZFLEX.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E412BFECF1DE774B789FB6ECC4CFF590 /* ZZScrollViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C23B6516EE26246906594C0770B92A3 /* ZZScrollViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E48E00535E2BD2E3CA3192ADBE83DBB4 /* UIButton+ZZExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B855C2E35F235D6113C88939934D3E /* UIButton+ZZExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8DC5CF90BB27CF05410DE90E67F8276 /* ZZLabelChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E98D96CA34DC9BEE813513865789DC /* ZZLabelChainModel.m */; };
+		E8FA4652219C9C7BF1967D774D001F00 /* ZZSwitchChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3515623A4D9AFB53C284D0370485E8FD /* ZZSwitchChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E9F95A3D585FCB106486870854BB32AF /* ZZFLEXRequestQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7441B37E5EDB321DC2F5CBCF378514E8 /* ZZFLEXRequestQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EF66498082EE06EA6EA344C1BCF3F9DB /* ZZCollectionViewChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DC85B242F5BC73FBBDB73B6A3D747C /* ZZCollectionViewChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EFC1744C98EE3D87C1D773DCE4C00B6C /* ZZFLEXCollectionViewController+EditExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 612164EF7B940F9C91AE0DA425BC1AA5 /* ZZFLEXCollectionViewController+EditExtension.m */; };
+		F472C40D26C82079F0BC1767E859A491 /* ZZSwitchChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCE011A661750C001633FA6DF4835FB /* ZZSwitchChainModel.m */; };
+		F49CB90A611BF1DE206FD5812A8AA372 /* ZZCollectionViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5094B652C0A6E97F496B90D9B579AB2B /* ZZCollectionViewChainModel.m */; };
+		F819721DFCD5814CEB35F94364751243 /* ZZMutableParagraphStyleChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BF61574CCD3C22E14B131969276D0A01 /* ZZMutableParagraphStyleChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FAE8A1B10EC710E6D165A828E20D0259 /* ZZFLEXAngelViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0EB06E60E9B4A516F8A7FEDF956866 /* ZZFLEXAngelViewChainModel.m */; };
+		FD8230CDBDEDB51E55E4C2F720E64910 /* UIView+ZZFLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D090B4124C0B524F3A70297AA607D7 /* UIView+ZZFLEX.m */; };
+		FDD2DB53E0849FFA019B521538B0F03B /* ZZFLEXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBCF533E7A93ED1C41BD7C5CF308AA8 /* ZZFLEXTableViewController.m */; };
+		FEC06C3BB7F8EA836224A234CC4B7D3E /* ZZViewChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9920D253972A9558C4760ED16E3327DF /* ZZViewChainModel.m */; };
+		FEC8F06C7AFCDA3AF58D583D3E977DC0 /* ZZFLEXAngelViewEditChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D647BD8910F673F44D29BFDD802E712D /* ZZFLEXAngelViewEditChainModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9CD2E82B0176393136761EE11E341251 /* PBXContainerItemProxy */ = {
+		5F5ABCA667C45065F5B670F752BA8349 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 915EFE64F66B6639314BAEFE8E74012C /* Masonry.xcodeproj */;
 			proxyType = 1;
@@ -119,114 +121,116 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0026BF88E211CD9843E9E00C7B3D671D /* ZZFlexibleLayoutFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFlexibleLayoutFlowLayout.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/ZZFlexibleLayoutFlowLayout.m"; sourceTree = "<group>"; };
-		030AB4289353F56FBB07780BF889DF0E /* ZZTableViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZTableViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTableViewChainModel.m"; sourceTree = "<group>"; };
-		06B4CC1A72F7AD14D51D5662651B376C /* ZZFlexibleLayoutSectionModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFlexibleLayoutSectionModel.m; path = ZZFLEX/ZZFLEXAngel/ViewModels/ZZFlexibleLayoutSectionModel.m; sourceTree = "<group>"; };
-		06FC90E63CC206F5C38614EBEFB2B263 /* ZZFLEXAngel+EditExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFLEXAngel+EditExtension.m"; path = "ZZFLEX/ZZFLEXEditExtension/ZZFLEXAngel+EditExtension.m"; sourceTree = "<group>"; };
-		072C48D04B4C2A0BD3F057DF8E383343 /* ZZFlexibleLayoutSeperatorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFlexibleLayoutSeperatorCell.m; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFlexibleLayoutSeperatorCell.m; sourceTree = "<group>"; };
-		095A61AA35B322D08669E307A96FAE99 /* ZZFlexibleLayoutViewModel+UICollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFlexibleLayoutViewModel+UICollectionView.h"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFlexibleLayoutViewModel+UICollectionView.h"; sourceTree = "<group>"; };
-		0DD76BAE028324E0E8691EBA238FB439 /* UIView+ZZSeparator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZZSeparator.m"; path = "ZZFLEX/ZZFLEXViewExtension/Seperator/UIView+ZZSeparator.m"; sourceTree = "<group>"; };
-		12AEB973EA0F5984809E9505F25356C7 /* ZZControlChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZControlChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZControlChainModel.h"; sourceTree = "<group>"; };
-		1509AA62EAE184D4A59C43C92710CB59 /* ZZFLEX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZZFLEX.debug.xcconfig; sourceTree = "<group>"; };
-		155D4C60A9FEDA2BD057605D5A1EAF7F /* ZZFLEXAngel+UITableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFLEXAngel+UITableView.m"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+UITableView.m"; sourceTree = "<group>"; };
-		1642E155EC45A4D5200F9698467731F0 /* ZZCollectionViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZCollectionViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZCollectionViewChainModel.m"; sourceTree = "<group>"; };
-		1801B6802D554E36E5D308D39EB1687A /* ZZFLEXAngel+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFLEXAngel+Private.h"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+Private.h"; sourceTree = "<group>"; };
-		1993F8D66F1532FAF4F19BD8059A3C8F /* ZZFlexibleLayoutViewModel+HostView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFlexibleLayoutViewModel+HostView.m"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFlexibleLayoutViewModel+HostView.m"; sourceTree = "<group>"; };
-		1A558F286F1B0B377D596D6A907B901E /* ZZFlexibleLayoutViewController+EditExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFlexibleLayoutViewController+EditExtension.h"; path = "ZZFLEX/ZZFLEXEditExtension/ZZFlexibleLayoutViewController+EditExtension.h"; sourceTree = "<group>"; };
-		1BA5D69F4E28EEBFEDA8AAC15C1B5678 /* UIView+ZZFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZZFrame.m"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIView+ZZFrame.m"; sourceTree = "<group>"; };
-		1DEB002D69D513C5FBB0391F4DEB4039 /* ZZFLEX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZZFLEX.release.xcconfig; sourceTree = "<group>"; };
-		1E16F88BAF5D7275C70264A46B92861B /* ZZImageViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZImageViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZImageViewChainModel.m"; sourceTree = "<group>"; };
-		1FB76DF48FB765DA0BAF1168318CBC36 /* ZZFlexibleLayoutViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutViewController.h; path = ZZFLEX/ZZFlexibleLayoutViewController/ZZFlexibleLayoutViewController.h; sourceTree = "<group>"; };
-		262EF46FE7C9F90CAE4666491E33369F /* ZZMutableAttributeStringChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZMutableAttributeStringChainModel.h; path = ZZFLEX/ZZFLEXFoundationExtension/FoundationChainModels/ZZMutableAttributeStringChainModel.h; sourceTree = "<group>"; };
-		272D573A3859CF837F47B589A8A2D08A /* ZZImageViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZImageViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZImageViewChainModel.h"; sourceTree = "<group>"; };
-		29DE498E77CF134732860BE5478624EC /* ZZFlexibleLayoutEmptyHeaderFooterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutEmptyHeaderFooterView.h; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFlexibleLayoutEmptyHeaderFooterView.h; sourceTree = "<group>"; };
-		2B852000C2A5955C7D8373858E392F47 /* UIView+ZZCornor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZZCornor.h"; path = "ZZFLEX/ZZFLEXViewExtension/Cornor/UIView+ZZCornor.h"; sourceTree = "<group>"; };
-		2BF75AF404750D6F6D6FE86630964936 /* ZZFLEXAngel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXAngel.m; path = ZZFLEX/ZZFLEXAngel/ZZFLEXAngel.m; sourceTree = "<group>"; };
-		2F748625F5FBBB2F6AD8E94EEA3AA7D6 /* ZZFLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEX.h; path = ZZFLEX/ZZFLEX.h; sourceTree = "<group>"; };
-		35B7CD529A04344A1694BB1E6C6D86E7 /* ZZFLEXAngelViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXAngelViewChainModel.m; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewChainModel.m; sourceTree = "<group>"; };
-		36026EC89D7F9F090661EDEAEF35030D /* ZZTextFieldChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZTextFieldChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTextFieldChainModel.h"; sourceTree = "<group>"; };
-		3D8369FE88123264A6C012BF7919FDEA /* ZZFLEXAngel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXAngel.h; path = ZZFLEX/ZZFLEXAngel/ZZFLEXAngel.h; sourceTree = "<group>"; };
-		3EA83955657E66BFEAC30790DD81DB5C /* ZZFLEXAngel+UITableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFLEXAngel+UITableView.h"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+UITableView.h"; sourceTree = "<group>"; };
-		43336BB5D17001021D0101CFAE4706B8 /* UIView+ZZFLEX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZZFLEX.m"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/UIView+ZZFLEX.m"; sourceTree = "<group>"; };
-		473F3B936D50991700C437F9EF1265AF /* ZZFlexibleLayoutViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFlexibleLayoutViewController.m; path = ZZFLEX/ZZFlexibleLayoutViewController/ZZFlexibleLayoutViewController.m; sourceTree = "<group>"; };
-		481D16B835262AD460189C960BE30AC6 /* ZZFLEXAngel+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFLEXAngel+Private.m"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+Private.m"; sourceTree = "<group>"; };
-		4AC767FA45898E26DBB9803A93149746 /* ZZTextViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZTextViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTextViewChainModel.h"; sourceTree = "<group>"; };
-		4B39125FF7B4A3290F085E4BE0E9871B /* ZZMutableParagraphStyleChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZMutableParagraphStyleChainModel.h; path = ZZFLEX/ZZFLEXFoundationExtension/FoundationChainModels/ZZMutableParagraphStyleChainModel.h; sourceTree = "<group>"; };
-		4DED041F4455C28EDB319F1AE249F592 /* ZZViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZViewChainModel.m"; sourceTree = "<group>"; };
-		4EC3B34B297E1077F64455AE9B4FB2BA /* ZZFlexibleLayoutViewModel+UICollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFlexibleLayoutViewModel+UICollectionView.m"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFlexibleLayoutViewModel+UICollectionView.m"; sourceTree = "<group>"; };
-		50F26606A559057D376C3E68BFED99AF /* ZZCollectionViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZCollectionViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZCollectionViewChainModel.h"; sourceTree = "<group>"; };
-		513A03ED4BB197566D2353FF5DC24E58 /* ZZSwitchChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZSwitchChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZSwitchChainModel.h"; sourceTree = "<group>"; };
-		5406134B349F311114BE37E09F336699 /* ZZLabelChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZLabelChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZLabelChainModel.m"; sourceTree = "<group>"; };
-		5CBEADD4D97E1AEC12385EAA09420E68 /* ZZFLEXAngelViewEditChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXAngelViewEditChainModel.h; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewEditChainModel.h; sourceTree = "<group>"; };
-		5DB0261C84FA60A08FFB4014CFE0F293 /* ZZFlexibleLayoutFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutFlowLayout.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/ZZFlexibleLayoutFlowLayout.h"; sourceTree = "<group>"; };
-		5EA69845CDC565DD9C56F1FADAF96049 /* ZZFlexibleLayoutViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutViewModel.h; path = ZZFLEX/ZZFLEXAngel/ViewModels/ZZFlexibleLayoutViewModel.h; sourceTree = "<group>"; };
-		6960165D6772AF2810A58F3106F98CE5 /* ZZFlexibleLayoutViewModel+UITableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFlexibleLayoutViewModel+UITableView.h"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFlexibleLayoutViewModel+UITableView.h"; sourceTree = "<group>"; };
-		6D8B2302117BBBB593658904DBEE29E4 /* ZZFlexibleLayoutViewController+EditExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFlexibleLayoutViewController+EditExtension.m"; path = "ZZFLEX/ZZFLEXEditExtension/ZZFlexibleLayoutViewController+EditExtension.m"; sourceTree = "<group>"; };
-		70CFF4DEF7BE7991B0B85E5F10906756 /* ZZFlexibleLayoutViewModel+UITableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFlexibleLayoutViewModel+UITableView.m"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFlexibleLayoutViewModel+UITableView.m"; sourceTree = "<group>"; };
-		72122C7F0D0771D57993138C91A34E4B /* ZZFLEXMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXMacros.h; path = ZZFLEX/ZZFLEXAngel/Private/ZZFLEXMacros.h; sourceTree = "<group>"; };
-		75F38C366766830C26CA6DC76F2A470C /* ZZViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZViewChainModel.h"; sourceTree = "<group>"; };
-		7E55FB8688AE6CAF292991709D5986A8 /* ZZTextFieldChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZTextFieldChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTextFieldChainModel.m"; sourceTree = "<group>"; };
-		7EB05E85CCFA781800DDDD78E4D575D2 /* UIView+ZZSeparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZZSeparator.h"; path = "ZZFLEX/ZZFLEXViewExtension/Seperator/UIView+ZZSeparator.h"; sourceTree = "<group>"; };
-		7F8EC1A0498AD7C2C145F9D112D68B4D /* ZZFLEXEditModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXEditModel.m; path = ZZFLEX/ZZFLEXEditExtension/ZZFLEXEditModel.m; sourceTree = "<group>"; };
-		81327851127C2F094ABF24E4579386F6 /* ZZMutableParagraphStyleChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZMutableParagraphStyleChainModel.m; path = ZZFLEX/ZZFLEXFoundationExtension/FoundationChainModels/ZZMutableParagraphStyleChainModel.m; sourceTree = "<group>"; };
-		81A80330B1E332762E876BC6F1C56835 /* ZZFLEXAngelSectionChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXAngelSectionChainModel.m; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelSectionChainModel.m; sourceTree = "<group>"; };
-		82423476EFC705E553AFEA3E214D3292 /* UIControl+ZZEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+ZZEvent.h"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIControl+ZZEvent.h"; sourceTree = "<group>"; };
-		83C8E6571E0F2C0FD399EB0AE0C03118 /* NSMutableAttributedString+ZZFLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+ZZFLEX.h"; path = "ZZFLEX/ZZFLEXFoundationExtension/NSMutableAttributedString+ZZFLEX.h"; sourceTree = "<group>"; };
-		84B29BE87B1AFEC25ACD62782C0DC487 /* ZZScrollViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZScrollViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZScrollViewChainModel.h"; sourceTree = "<group>"; };
-		86C8A2B991AD5E0B179B972DA3A246C3 /* ZZFLEXEditModelProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXEditModelProtocol.h; path = ZZFLEX/ZZFLEXEditExtension/ZZFLEXEditModelProtocol.h; sourceTree = "<group>"; };
-		88A5275A943F9A2390D17590EED620EE /* ZZFLEXAngel+UICollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFLEXAngel+UICollectionView.h"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+UICollectionView.h"; sourceTree = "<group>"; };
-		8D48C4FB2F38A1C659E7599BD28B641B /* ZZFlexibleLayoutViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutViewProtocol.h; path = ZZFLEX/ZZFLEXAngel/ZZFlexibleLayoutViewProtocol.h; sourceTree = "<group>"; };
-		8D490EC033A641854124E75011DE267C /* UIControl+ZZEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+ZZEvent.m"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIControl+ZZEvent.m"; sourceTree = "<group>"; };
+		03DC85B242F5BC73FBBDB73B6A3D747C /* ZZCollectionViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZCollectionViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZCollectionViewChainModel.h"; sourceTree = "<group>"; };
+		06052F93DF838C019630F6973024E58D /* ZZFLEXEditModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXEditModel.h; path = ZZFLEX/ZZFLEXEditExtension/ZZFLEXEditModel.h; sourceTree = "<group>"; };
+		0FE58C0EA91F9D2535D2A65D7B96AC93 /* ZZFLEXTableViewEmptyCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXTableViewEmptyCell.m; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFLEXTableViewEmptyCell.m; sourceTree = "<group>"; };
+		111DB8A56AFB8AFDF75A8909B545BA56 /* ZZImageViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZImageViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZImageViewChainModel.h"; sourceTree = "<group>"; };
+		120A1242576238450358EDD47232F08C /* ZZFLEXAngel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXAngel.h; path = ZZFLEX/ZZFLEXAngel/ZZFLEXAngel.h; sourceTree = "<group>"; };
+		12A1A75EAB1D89E544A5218A2EA90582 /* ZZActivityIndicatorViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZActivityIndicatorViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZActivityIndicatorViewChainModel.m"; sourceTree = "<group>"; };
+		12E24953E9BB9DFCF152DFAB09C75BBD /* ZZMutableAttributeStringChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZMutableAttributeStringChainModel.h; path = ZZFLEX/ZZFLEXFoundationExtension/FoundationChainModels/ZZMutableAttributeStringChainModel.h; sourceTree = "<group>"; };
+		1352CB02168D86F5D80ABDEC69B894B1 /* UIView+ZZSeparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZZSeparator.h"; path = "ZZFLEX/ZZFLEXViewExtension/Seperator/UIView+ZZSeparator.h"; sourceTree = "<group>"; };
+		15A968B97025A4F0583CB8832D2951A8 /* ZZFlexibleLayoutFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFlexibleLayoutFlowLayout.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/ZZFlexibleLayoutFlowLayout.m"; sourceTree = "<group>"; };
+		175CC91AF1E9BB8F9564E9E38E5080AE /* ZZTableViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZTableViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTableViewChainModel.m"; sourceTree = "<group>"; };
+		1C86795880C7080EC19BB4DFA29B0ACF /* ZZFLEXTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXTableViewController.h; path = ZZFLEX/ZZFLEXViewController/ZZFLEXTableViewController.h; sourceTree = "<group>"; };
+		288F5BB655ADFB6FFF23CD2587558E0A /* ZZFLEXAngelViewBatchChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXAngelViewBatchChainModel.h; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewBatchChainModel.h; sourceTree = "<group>"; };
+		2D5A84C1B2CFE748F1DD79CE2E2B000C /* ZZProgressViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZProgressViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZProgressViewChainModel.m"; sourceTree = "<group>"; };
+		3112E1BC6ABEA7816396AE67AA1CE1A9 /* ZZTableViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZTableViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTableViewChainModel.h"; sourceTree = "<group>"; };
+		318EFF7298B8DF46FF43871F23BA9AB6 /* ZZFLEXAngel+EditExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFLEXAngel+EditExtension.m"; path = "ZZFLEX/ZZFLEXEditExtension/ZZFLEXAngel+EditExtension.m"; sourceTree = "<group>"; };
+		3515623A4D9AFB53C284D0370485E8FD /* ZZSwitchChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZSwitchChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZSwitchChainModel.h"; sourceTree = "<group>"; };
+		3537DA8F4FB618499C3B05E949A31AA8 /* ZZFLEXFoundationExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXFoundationExtension.h; path = ZZFLEX/ZZFLEXFoundationExtension/ZZFLEXFoundationExtension.h; sourceTree = "<group>"; };
+		39031AA23DC7FA8C2D21F65B4B0090CE /* ZZFLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEX.h; path = ZZFLEX/ZZFLEX.h; sourceTree = "<group>"; };
+		398237CFDE1E362FB3E45605E3798017 /* ZZTextViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZTextViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTextViewChainModel.h"; sourceTree = "<group>"; };
+		3E1BD6DC38A917A8428E37BBAF271FA9 /* ZZFLEX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZZFLEX-dummy.m"; sourceTree = "<group>"; };
+		3E6DAB3F25935D477D8E7FE604676710 /* ZZFLEXViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXViewModel.h; path = ZZFLEX/ZZFLEXAngel/ViewModels/ZZFLEXViewModel.h; sourceTree = "<group>"; };
+		45B855C2E35F235D6113C88939934D3E /* UIButton+ZZExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+ZZExtension.h"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIButton+ZZExtension.h"; sourceTree = "<group>"; };
+		48AC33B87DFA94D5A2BFAC2270105C6B /* ZZImageViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZImageViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZImageViewChainModel.m"; sourceTree = "<group>"; };
+		4B7FC012AB3FB272FC897B06E5109C75 /* ZZFLEXTableViewEmptyCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXTableViewEmptyCell.h; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFLEXTableViewEmptyCell.h; sourceTree = "<group>"; };
+		4C23B6516EE26246906594C0770B92A3 /* ZZScrollViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZScrollViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZScrollViewChainModel.h"; sourceTree = "<group>"; };
+		4DC948EAF5DED819CBFC51DB3B3E46E8 /* ZZProgressViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZProgressViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZProgressViewChainModel.h"; sourceTree = "<group>"; };
+		4EAAEF5F3113092E4C7D80AD18B2E6F8 /* ZZFLEXRequestModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXRequestModel.m; path = ZZFLEX/ZZFLEXRequestQueue/ZZFLEXRequestModel.m; sourceTree = "<group>"; };
+		5007D3D9D616162F54E9BDF43D32B408 /* ZZFLEXRequestModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXRequestModel.h; path = ZZFLEX/ZZFLEXRequestQueue/ZZFLEXRequestModel.h; sourceTree = "<group>"; };
+		5094B652C0A6E97F496B90D9B579AB2B /* ZZCollectionViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZCollectionViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZCollectionViewChainModel.m"; sourceTree = "<group>"; };
+		5251EC016DD5886B16E6FDA9D0097DC5 /* ZZFLEX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZZFLEX.release.xcconfig; sourceTree = "<group>"; };
+		54976937E2477ECB1A34B85C52E5DB60 /* ZZFLEXViewModel+Angel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFLEXViewModel+Angel.h"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXViewModel+Angel.h"; sourceTree = "<group>"; };
+		54D090B4124C0B524F3A70297AA607D7 /* UIView+ZZFLEX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZZFLEX.m"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/UIView+ZZFLEX.m"; sourceTree = "<group>"; };
+		55F437E01B0A49993F4E0303BA57C5D5 /* ZZButtonChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZButtonChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZButtonChainModel.m"; sourceTree = "<group>"; };
+		56C80A4212329264963AA55E12B44C4A /* ZZFLEXAngel+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFLEXAngel+Private.m"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+Private.m"; sourceTree = "<group>"; };
+		58F29F7406C110220CE23978623AD04C /* ZZFLEXAngel+UICollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFLEXAngel+UICollectionView.m"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+UICollectionView.m"; sourceTree = "<group>"; };
+		597E25C2363E45E3A238BAE48FC01D22 /* ZZButtonChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZButtonChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZButtonChainModel.h"; sourceTree = "<group>"; };
+		5AAEF629CB9D4AF5D7A72DE2F2012718 /* ZZFLEX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZZFLEX.debug.xcconfig; sourceTree = "<group>"; };
+		5AD5660446E588D238C3FC8B7D1E54B1 /* UIControl+ZZEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+ZZEvent.h"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIControl+ZZEvent.h"; sourceTree = "<group>"; };
+		5C3E95BB5122DAADFFE78386637525EF /* UIView+ZZCornor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZZCornor.h"; path = "ZZFLEX/ZZFLEXViewExtension/Cornor/UIView+ZZCornor.h"; sourceTree = "<group>"; };
+		5E11891C8CED5823D579F48FE174EC9F /* UIView+ZZSeparator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZZSeparator.m"; path = "ZZFLEX/ZZFLEXViewExtension/Seperator/UIView+ZZSeparator.m"; sourceTree = "<group>"; };
+		60628D60A4916534899FE527D2D5F8AE /* ZZFlexibleLayoutFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutFlowLayout.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/ZZFlexibleLayoutFlowLayout.h"; sourceTree = "<group>"; };
+		612164EF7B940F9C91AE0DA425BC1AA5 /* ZZFLEXCollectionViewController+EditExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFLEXCollectionViewController+EditExtension.m"; path = "ZZFLEX/ZZFLEXEditExtension/ZZFLEXCollectionViewController+EditExtension.m"; sourceTree = "<group>"; };
+		63C1B1CBD6AE92B90962E687DA233C51 /* ZZFLEXAngel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXAngel.m; path = ZZFLEX/ZZFLEXAngel/ZZFLEXAngel.m; sourceTree = "<group>"; };
+		6800D00E43706E3CA942E3E8AA8DFECC /* UIView+ZZFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZZFrame.h"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIView+ZZFrame.h"; sourceTree = "<group>"; };
+		6CE3E787D9C852565D4DE838C68E71C9 /* ZZFLEXAngelViewBatchChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXAngelViewBatchChainModel.m; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewBatchChainModel.m; sourceTree = "<group>"; };
+		7315BEDF1A054B619E97E81F73651F3F /* ZZFLEXCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXCollectionViewController.h; path = ZZFLEX/ZZFLEXViewController/ZZFLEXCollectionViewController.h; sourceTree = "<group>"; };
+		7441B37E5EDB321DC2F5CBCF378514E8 /* ZZFLEXRequestQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXRequestQueue.h; path = ZZFLEX/ZZFLEXRequestQueue/ZZFLEXRequestQueue.h; sourceTree = "<group>"; };
+		7497AD8E3CD29D57F6559801F099E1B9 /* UIButton+ZZExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ZZExtension.m"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIButton+ZZExtension.m"; sourceTree = "<group>"; };
+		757EC3E98F43C5CC1F065653950FF5F9 /* ZZTextViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZTextViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTextViewChainModel.m"; sourceTree = "<group>"; };
+		770C90BF7E2ABF0443F11ABBBCB5E74B /* UIView+ZZCornor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZZCornor.m"; path = "ZZFLEX/ZZFLEXViewExtension/Cornor/UIView+ZZCornor.m"; sourceTree = "<group>"; };
+		79423FC83489FE7FABF8AAF02605E66B /* UIControl+ZZEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+ZZEvent.m"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIControl+ZZEvent.m"; sourceTree = "<group>"; };
+		7A50A1EE55B0F8B491D75A38EBE36277 /* ZZFLEXSectionModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXSectionModel.m; path = ZZFLEX/ZZFLEXAngel/ViewModels/ZZFLEXSectionModel.m; sourceTree = "<group>"; };
+		7CAB50626636F190BAEC4721314D1694 /* UIView+ZZFLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZZFLEX.h"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/UIView+ZZFLEX.h"; sourceTree = "<group>"; };
+		7F0F663E9583C8F88E56443EBD9476BC /* ZZTextFieldChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZTextFieldChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTextFieldChainModel.h"; sourceTree = "<group>"; };
+		82F90CB2DD6A9E1D0261463BE33B38C8 /* ZZMutableParagraphStyleChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZMutableParagraphStyleChainModel.m; path = ZZFLEX/ZZFLEXFoundationExtension/FoundationChainModels/ZZMutableParagraphStyleChainModel.m; sourceTree = "<group>"; };
+		844D68C7BA074AAA00E144DE9A17764D /* NSMutableParagraphStyle+ZZFLEX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableParagraphStyle+ZZFLEX.m"; path = "ZZFLEX/ZZFLEXFoundationExtension/NSMutableParagraphStyle+ZZFLEX.m"; sourceTree = "<group>"; };
+		85E27D6A03BC8580C09F710D379C7EE6 /* ZZFLEXTableViewHeaderFooterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXTableViewHeaderFooterView.h; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFLEXTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		86217015B49D447BA3A35739869670AA /* ZZFlexibleLayoutEmptyHeaderFooterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutEmptyHeaderFooterView.h; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFlexibleLayoutEmptyHeaderFooterView.h; sourceTree = "<group>"; };
+		88D2EB5ECCC7E841506B93CD186A23E8 /* ZZFLEXTableViewHeaderFooterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXTableViewHeaderFooterView.m; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFLEXTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		89179AC233BAEDABE7EB3813C3F06B10 /* ZZFLEXAngelViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXAngelViewChainModel.h; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewChainModel.h; sourceTree = "<group>"; };
+		8C31CB8C9FA39A64BFD52A53E419FA0C /* ZZBaseViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZBaseViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZBaseViewChainModel.h"; sourceTree = "<group>"; };
+		8E8B7092669352CB2118C0246289BA99 /* ZZBaseViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZBaseViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZBaseViewChainModel.m"; sourceTree = "<group>"; };
+		90831CF78F5EEF212589AC00D0EAE517 /* ZZFlexibleLayoutSeperatorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFlexibleLayoutSeperatorCell.m; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFlexibleLayoutSeperatorCell.m; sourceTree = "<group>"; };
+		90F8A40BA64479161ACFF8634DEF528A /* ZZTextFieldChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZTextFieldChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTextFieldChainModel.m"; sourceTree = "<group>"; };
 		915EFE64F66B6639314BAEFE8E74012C /* Masonry */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry; path = Masonry.xcodeproj; sourceTree = "<group>"; };
-		95B279CFBE66F8A8B5DCA63082172427 /* UIView+ZZFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZZFrame.h"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIView+ZZFrame.h"; sourceTree = "<group>"; };
-		98B819AA65EA3077E0D0467D4DB97CED /* ZZFLEXAngelViewBatchChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXAngelViewBatchChainModel.h; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewBatchChainModel.h; sourceTree = "<group>"; };
-		9A0F691B8A3FFF01C76B5D41E4C146B8 /* ZZFlexibleLayoutViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFlexibleLayoutViewModel.m; path = ZZFLEX/ZZFLEXAngel/ViewModels/ZZFlexibleLayoutViewModel.m; sourceTree = "<group>"; };
-		9C421381E9F5766ECA4CD4AD1066A8E4 /* ZZBaseViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZBaseViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZBaseViewChainModel.m"; sourceTree = "<group>"; };
-		9F17D06D8E13C4EC15C1A1B613CBE422 /* ZZFLEXAngel+EditExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFLEXAngel+EditExtension.h"; path = "ZZFLEX/ZZFLEXEditExtension/ZZFLEXAngel+EditExtension.h"; sourceTree = "<group>"; };
-		A3C7701C0EED5DAD199248150A5CD130 /* UIButton+ZZExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+ZZExtension.h"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIButton+ZZExtension.h"; sourceTree = "<group>"; };
-		A475FE913B79DDBCEC6601B8FB61FE78 /* ZZButtonChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZButtonChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZButtonChainModel.h"; sourceTree = "<group>"; };
-		A508E1CE9134F0B2535AF0C9FBE9BD3C /* ZZControlChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZControlChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZControlChainModel.m"; sourceTree = "<group>"; };
-		A620DD22D111E9DD838AA96726CC69BF /* ZZFlexibleLayoutViewController+Kernel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFlexibleLayoutViewController+Kernel.m"; path = "ZZFLEX/ZZFlexibleLayoutViewController/Private/ZZFlexibleLayoutViewController+Kernel.m"; sourceTree = "<group>"; };
-		A849CA459929948E5995A39A065AB1C3 /* ZZFLEXTableViewEmptyCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXTableViewEmptyCell.h; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFLEXTableViewEmptyCell.h; sourceTree = "<group>"; };
-		ACABA38E854F4640CB8FE8963AFE693F /* ZZFLEXAngelViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXAngelViewChainModel.h; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewChainModel.h; sourceTree = "<group>"; };
-		AF0B944D3D20EE290391D2DC373971D6 /* ZZFlexibleLayoutSeperatorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutSeperatorCell.h; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFlexibleLayoutSeperatorCell.h; sourceTree = "<group>"; };
-		B19D3538904019E6222D1DC31B4CEB0A /* ZZFLEXAngelSectionChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXAngelSectionChainModel.h; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelSectionChainModel.h; sourceTree = "<group>"; };
-		B4B1F1A6D49A36109C11FDFBBCD5D753 /* ZZBaseViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZBaseViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZBaseViewChainModel.h"; sourceTree = "<group>"; };
-		B546DAA603979060D0002522EAB35FCA /* ZZFLEXAngelViewBatchChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXAngelViewBatchChainModel.m; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewBatchChainModel.m; sourceTree = "<group>"; };
-		B574D12DF265431F9C3B4E7E08B8C6B9 /* ZZFLEXFoundationExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXFoundationExtension.h; path = ZZFLEX/ZZFLEXFoundationExtension/ZZFLEXFoundationExtension.h; sourceTree = "<group>"; };
-		BC0327B2C1FBB7EB3702E2338A6646B4 /* ZZLabelChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZLabelChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZLabelChainModel.h"; sourceTree = "<group>"; };
-		BC91E848950CFF56E91B3D83B9B098B6 /* ZZTableViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZTableViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTableViewChainModel.h"; sourceTree = "<group>"; };
-		BCA60996B7C0DD9021D0B600C76AB79A /* NSMutableParagraphStyle+ZZFLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableParagraphStyle+ZZFLEX.h"; path = "ZZFLEX/ZZFLEXFoundationExtension/NSMutableParagraphStyle+ZZFLEX.h"; sourceTree = "<group>"; };
-		BF03AE2615219C57CDCA3B3DEC58FD93 /* ZZTextViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZTextViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZTextViewChainModel.m"; sourceTree = "<group>"; };
-		C1CCCDF689AEBD92B04E9858208AB662 /* ZZFlexibleLayoutViewController+Kernel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFlexibleLayoutViewController+Kernel.h"; path = "ZZFLEX/ZZFlexibleLayoutViewController/Private/ZZFlexibleLayoutViewController+Kernel.h"; sourceTree = "<group>"; };
-		C9B176CF5A13096DC4F1BD8810222369 /* ZZFLEXRequestModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXRequestModel.m; path = ZZFLEX/ZZFLEXRequestQueue/ZZFLEXRequestModel.m; sourceTree = "<group>"; };
-		CA172C67AF95B10BCC6EA2AF3689A317 /* ZZFLEXViewExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXViewExtension.h; path = ZZFLEX/ZZFLEXViewExtension/ZZFLEXViewExtension.h; sourceTree = "<group>"; };
-		CDBFE3FD5D067F384D06A8E6425C2DA9 /* ZZFLEX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZZFLEX-prefix.pch"; sourceTree = "<group>"; };
-		CE48BE1BE78630DBCA2E8BE484A9BE86 /* ZZFLEXEditModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXEditModel.h; path = ZZFLEX/ZZFLEXEditExtension/ZZFLEXEditModel.h; sourceTree = "<group>"; };
+		91751B35D76A066918B4F784C589AB8E /* ZZFlexibleLayoutViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutViewProtocol.h; path = ZZFLEX/ZZFLEXAngel/ZZFlexibleLayoutViewProtocol.h; sourceTree = "<group>"; };
+		95B50967C8741D3799909830C1DF7DB4 /* ZZFLEXAngelViewEditChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXAngelViewEditChainModel.h; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewEditChainModel.h; sourceTree = "<group>"; };
+		98E4ADFB561C97260E5C7BA3027B0071 /* ZZFLEXEditModelProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXEditModelProtocol.h; path = ZZFLEX/ZZFLEXEditExtension/ZZFLEXEditModelProtocol.h; sourceTree = "<group>"; };
+		9920D253972A9558C4760ED16E3327DF /* ZZViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZViewChainModel.m"; sourceTree = "<group>"; };
+		A068AF1226002E674874AB64EAA2E0DA /* NSMutableAttributedString+ZZFLEX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+ZZFLEX.m"; path = "ZZFLEX/ZZFLEXFoundationExtension/NSMutableAttributedString+ZZFLEX.m"; sourceTree = "<group>"; };
+		A73C7710B69E5AF0EFFA724E679B6ED6 /* ZZFLEXAngel+UITableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFLEXAngel+UITableView.h"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+UITableView.h"; sourceTree = "<group>"; };
+		A9CFA582894CBF95D6D362BAC9420072 /* ZZFLEXViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXViewModel.m; path = ZZFLEX/ZZFLEXAngel/ViewModels/ZZFLEXViewModel.m; sourceTree = "<group>"; };
+		A9F8C8B6B9E36C94B2AEB24924A26882 /* ZZActivityIndicatorViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZActivityIndicatorViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZActivityIndicatorViewChainModel.h"; sourceTree = "<group>"; };
+		AFF6BDA1BA31B9CB760E18A6693D6540 /* ZZFLEXAngel+EditExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFLEXAngel+EditExtension.h"; path = "ZZFLEX/ZZFLEXEditExtension/ZZFLEXAngel+EditExtension.h"; sourceTree = "<group>"; };
+		B02E759B07881DAA160222E1652D4E7E /* ZZFLEXCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXCollectionViewController.m; path = ZZFLEX/ZZFLEXViewController/ZZFLEXCollectionViewController.m; sourceTree = "<group>"; };
+		B2C3B0EDC9BCBBAD5F24F4309DE5B271 /* ZZScrollViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZScrollViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZScrollViewChainModel.m"; sourceTree = "<group>"; };
+		B329D3A284828D497490C3F1E96C149C /* ZZFlexibleLayoutSeperatorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutSeperatorCell.h; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFlexibleLayoutSeperatorCell.h; sourceTree = "<group>"; };
+		BB919F421B6360F60AB8861E9EDDFADC /* ZZLabelChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZLabelChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZLabelChainModel.h"; sourceTree = "<group>"; };
+		BD864D04B1656E1DDB9E05DD7933AE0D /* ZZFLEXAngel+UITableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFLEXAngel+UITableView.m"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+UITableView.m"; sourceTree = "<group>"; };
+		BE07B898EFB20727EAF1CF3068663412 /* ZZFLEXRequestQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXRequestQueue.m; path = ZZFLEX/ZZFLEXRequestQueue/ZZFLEXRequestQueue.m; sourceTree = "<group>"; };
+		BF61574CCD3C22E14B131969276D0A01 /* ZZMutableParagraphStyleChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZMutableParagraphStyleChainModel.h; path = ZZFLEX/ZZFLEXFoundationExtension/FoundationChainModels/ZZMutableParagraphStyleChainModel.h; sourceTree = "<group>"; };
+		C16198BCE1AF5F4369E830BBD47B4B31 /* ZZFLEXEditModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXEditModel.m; path = ZZFLEX/ZZFLEXEditExtension/ZZFLEXEditModel.m; sourceTree = "<group>"; };
+		C167EA1870624AEB5D9D5078DACC021A /* ZZFLEXViewExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXViewExtension.h; path = ZZFLEX/ZZFLEXViewExtension/ZZFLEXViewExtension.h; sourceTree = "<group>"; };
+		C5D07C1DE1C734A9C868233899F6F079 /* UIView+ZZFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZZFrame.m"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIView+ZZFrame.m"; sourceTree = "<group>"; };
+		CBBCF533E7A93ED1C41BD7C5CF308AA8 /* ZZFLEXTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXTableViewController.m; path = ZZFLEX/ZZFLEXViewController/ZZFLEXTableViewController.m; sourceTree = "<group>"; };
 		CF2FDAA4CEE238EDAC45D363FD00BC2E /* libZZFLEX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZZFLEX.a; path = libZZFLEX.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF9F2E45A8A7F0301FACB724F45BB189 /* ZZFlexibleLayoutSectionModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFlexibleLayoutSectionModel.h; path = ZZFLEX/ZZFLEXAngel/ViewModels/ZZFlexibleLayoutSectionModel.h; sourceTree = "<group>"; };
-		D135D81752946E6651FF7077DC214DC3 /* ZZFLEXRequestQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXRequestQueue.m; path = ZZFLEX/ZZFLEXRequestQueue/ZZFLEXRequestQueue.m; sourceTree = "<group>"; };
-		D5FF481DFADC1A63F27C030C212808AE /* UIView+ZZFLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ZZFLEX.h"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/UIView+ZZFLEX.h"; sourceTree = "<group>"; };
-		D8A50D752CF9AC3AB8BD4D6C69F31192 /* ZZFLEXAngelViewEditChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXAngelViewEditChainModel.m; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewEditChainModel.m; sourceTree = "<group>"; };
-		D9E0088FDDBFE55010DF2AF42A4D4E92 /* ZZFLEXRequestModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXRequestModel.h; path = ZZFLEX/ZZFLEXRequestQueue/ZZFLEXRequestModel.h; sourceTree = "<group>"; };
-		DBCD0456FEA8D9B9809F57D0877AE843 /* ZZFLEXAngel+UICollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFLEXAngel+UICollectionView.m"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+UICollectionView.m"; sourceTree = "<group>"; };
-		E024C3B3063AA0BF887EDD25795F07DB /* ZZFLEXTableViewEmptyCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXTableViewEmptyCell.m; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFLEXTableViewEmptyCell.m; sourceTree = "<group>"; };
-		E1050DE9ABBBF0A9E85371D20B157321 /* ZZFLEX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZZFLEX-dummy.m"; sourceTree = "<group>"; };
-		E2350A7A919C449B191ECD8F67143301 /* ZZSwitchChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZSwitchChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZSwitchChainModel.m"; sourceTree = "<group>"; };
-		E25F41FB7A748D67E6B530011757C7DB /* ZZFlexibleLayoutViewModel+HostView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFlexibleLayoutViewModel+HostView.h"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFlexibleLayoutViewModel+HostView.h"; sourceTree = "<group>"; };
-		ED381F807B7230CA2BB76163B05237F6 /* ZZMutableAttributeStringChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZMutableAttributeStringChainModel.m; path = ZZFLEX/ZZFLEXFoundationExtension/FoundationChainModels/ZZMutableAttributeStringChainModel.m; sourceTree = "<group>"; };
-		EE46DE44FD73EE45AFA0061CD010546E /* ZZScrollViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZScrollViewChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZScrollViewChainModel.m"; sourceTree = "<group>"; };
-		F19C2195F54ED3F6DC9615F6A97B14DF /* UIButton+ZZExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ZZExtension.m"; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/Base/UIButton+ZZExtension.m"; sourceTree = "<group>"; };
-		F2EB07DDBA474E8BAB866D0C647EEC5C /* NSMutableAttributedString+ZZFLEX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+ZZFLEX.m"; path = "ZZFLEX/ZZFLEXFoundationExtension/NSMutableAttributedString+ZZFLEX.m"; sourceTree = "<group>"; };
-		F3AC93F391DEDB6D5ABBFBF0BECCF965 /* UIView+ZZCornor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZZCornor.m"; path = "ZZFLEX/ZZFLEXViewExtension/Cornor/UIView+ZZCornor.m"; sourceTree = "<group>"; };
-		F4FECBA654D987C814AD0B94772266E8 /* NSMutableParagraphStyle+ZZFLEX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableParagraphStyle+ZZFLEX.m"; path = "ZZFLEX/ZZFLEXFoundationExtension/NSMutableParagraphStyle+ZZFLEX.m"; sourceTree = "<group>"; };
-		F5725A1981137F483DA6183FB9E457C9 /* ZZFlexibleLayoutEmptyHeaderFooterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFlexibleLayoutEmptyHeaderFooterView.m; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFlexibleLayoutEmptyHeaderFooterView.m; sourceTree = "<group>"; };
-		F6B3D45313EA5F00E4246368B873D706 /* ZZButtonChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZButtonChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZButtonChainModel.m"; sourceTree = "<group>"; };
-		FDC8B225326AAF9878F5F934B0851274 /* ZZFLEXRequestQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXRequestQueue.h; path = ZZFLEX/ZZFLEXRequestQueue/ZZFLEXRequestQueue.h; sourceTree = "<group>"; };
+		CFD4A73E037BADC432654E52A47DBFB1 /* ZZFLEXAngel+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFLEXAngel+Private.h"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+Private.h"; sourceTree = "<group>"; };
+		D018444BFD9D3FC174C40FF21B856C15 /* ZZFLEXCollectionViewController+EditExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFLEXCollectionViewController+EditExtension.h"; path = "ZZFLEX/ZZFLEXEditExtension/ZZFLEXCollectionViewController+EditExtension.h"; sourceTree = "<group>"; };
+		D05CC02E06D96D9A493F7F0D3331D76F /* ZZFlexibleLayoutEmptyHeaderFooterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFlexibleLayoutEmptyHeaderFooterView.m; path = ZZFLEX/ZZFLEXAngel/CommonViews/ZZFlexibleLayoutEmptyHeaderFooterView.m; sourceTree = "<group>"; };
+		D33A08DDB06289D5C8E64C5B888190F8 /* ZZFLEX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZZFLEX-prefix.pch"; sourceTree = "<group>"; };
+		D4570318A906C6BF04C5E56A4AB0BC71 /* NSMutableAttributedString+ZZFLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+ZZFLEX.h"; path = "ZZFLEX/ZZFLEXFoundationExtension/NSMutableAttributedString+ZZFLEX.h"; sourceTree = "<group>"; };
+		D647BD8910F673F44D29BFDD802E712D /* ZZFLEXAngelViewEditChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXAngelViewEditChainModel.m; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewEditChainModel.m; sourceTree = "<group>"; };
+		DF520321967669A00CCB793FBD7595AE /* ZZFLEXMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXMacros.h; path = ZZFLEX/ZZFLEXAngel/Private/ZZFLEXMacros.h; sourceTree = "<group>"; };
+		DF62B6ECE2E97C375736021B0C9C58D0 /* ZZControlChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZControlChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZControlChainModel.h"; sourceTree = "<group>"; };
+		E38C9773609DE391BEC7F9840EBD8A74 /* NSMutableParagraphStyle+ZZFLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableParagraphStyle+ZZFLEX.h"; path = "ZZFLEX/ZZFLEXFoundationExtension/NSMutableParagraphStyle+ZZFLEX.h"; sourceTree = "<group>"; };
+		E5E98D96CA34DC9BEE813513865789DC /* ZZLabelChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZLabelChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZLabelChainModel.m"; sourceTree = "<group>"; };
+		E640A4C5942B452B2D84BC8803F70F7F /* ZZControlChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZControlChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZControlChainModel.m"; sourceTree = "<group>"; };
+		EB30EBF148E88AEFAFAC55545D1DE8B7 /* ZZFLEXAngelSectionChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXAngelSectionChainModel.h; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelSectionChainModel.h; sourceTree = "<group>"; };
+		F03AB9F798DE23E874A1D9F6E848EA8C /* ZZFLEXViewModel+Angel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ZZFLEXViewModel+Angel.m"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXViewModel+Angel.m"; sourceTree = "<group>"; };
+		F2E81F40A1D71049664810B49E98670E /* ZZFLEXAngelSectionChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXAngelSectionChainModel.m; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelSectionChainModel.m; sourceTree = "<group>"; };
+		F5555DB078ABF0E03E1A3044536655F9 /* ZZFLEXAngel+UICollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ZZFLEXAngel+UICollectionView.h"; path = "ZZFLEX/ZZFLEXAngel/Private/ZZFLEXAngel+UICollectionView.h"; sourceTree = "<group>"; };
+		F65896C2CDF2F790A56418CB46E3052A /* ZZMutableAttributeStringChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZMutableAttributeStringChainModel.m; path = ZZFLEX/ZZFLEXFoundationExtension/FoundationChainModels/ZZMutableAttributeStringChainModel.m; sourceTree = "<group>"; };
+		FC54D59CA2FEA2453C213E50AA726442 /* ZZViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZViewChainModel.h; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZViewChainModel.h"; sourceTree = "<group>"; };
+		FCCE011A661750C001633FA6DF4835FB /* ZZSwitchChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZSwitchChainModel.m; path = "ZZFLEX/ZZFLEXViewExtension/UIView+ZZFLEX/ViewsChainModels/ZZSwitchChainModel.m"; sourceTree = "<group>"; };
+		FD0EB06E60E9B4A516F8A7FEDF956866 /* ZZFLEXAngelViewChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZZFLEXAngelViewChainModel.m; path = ZZFLEX/ZZFLEXAngel/ChainModels/ZZFLEXAngelViewChainModel.m; sourceTree = "<group>"; };
+		FF4690D4A783FF7998557F6C5AFFA763 /* ZZFLEXSectionModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZZFLEXSectionModel.h; path = ZZFLEX/ZZFLEXAngel/ViewModels/ZZFLEXSectionModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B8BED83372FA6933F4179A6E83AC1BE1 /* Frameworks */ = {
+		9EE62FD28C90892D08E16AD255BC0C0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,120 +247,110 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		29B8173CE526E44AEA8562C7668F55CA /* Support Files */ = {
+		21E326D71B9292E65CCFBF53D823FC35 /* ZZFLEX */ = {
 			isa = PBXGroup;
 			children = (
-				E1050DE9ABBBF0A9E85371D20B157321 /* ZZFLEX-dummy.m */,
-				CDBFE3FD5D067F384D06A8E6425C2DA9 /* ZZFLEX-prefix.pch */,
-				1509AA62EAE184D4A59C43C92710CB59 /* ZZFLEX.debug.xcconfig */,
-				1DEB002D69D513C5FBB0391F4DEB4039 /* ZZFLEX.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ZZFLEX";
-			sourceTree = "<group>";
-		};
-		CF921AF109C3DD78427CF6DC8EC3326E /* ZZFLEX */ = {
-			isa = PBXGroup;
-			children = (
-				83C8E6571E0F2C0FD399EB0AE0C03118 /* NSMutableAttributedString+ZZFLEX.h */,
-				F2EB07DDBA474E8BAB866D0C647EEC5C /* NSMutableAttributedString+ZZFLEX.m */,
-				BCA60996B7C0DD9021D0B600C76AB79A /* NSMutableParagraphStyle+ZZFLEX.h */,
-				F4FECBA654D987C814AD0B94772266E8 /* NSMutableParagraphStyle+ZZFLEX.m */,
-				A3C7701C0EED5DAD199248150A5CD130 /* UIButton+ZZExtension.h */,
-				F19C2195F54ED3F6DC9615F6A97B14DF /* UIButton+ZZExtension.m */,
-				82423476EFC705E553AFEA3E214D3292 /* UIControl+ZZEvent.h */,
-				8D490EC033A641854124E75011DE267C /* UIControl+ZZEvent.m */,
-				2B852000C2A5955C7D8373858E392F47 /* UIView+ZZCornor.h */,
-				F3AC93F391DEDB6D5ABBFBF0BECCF965 /* UIView+ZZCornor.m */,
-				D5FF481DFADC1A63F27C030C212808AE /* UIView+ZZFLEX.h */,
-				43336BB5D17001021D0101CFAE4706B8 /* UIView+ZZFLEX.m */,
-				95B279CFBE66F8A8B5DCA63082172427 /* UIView+ZZFrame.h */,
-				1BA5D69F4E28EEBFEDA8AAC15C1B5678 /* UIView+ZZFrame.m */,
-				7EB05E85CCFA781800DDDD78E4D575D2 /* UIView+ZZSeparator.h */,
-				0DD76BAE028324E0E8691EBA238FB439 /* UIView+ZZSeparator.m */,
-				B4B1F1A6D49A36109C11FDFBBCD5D753 /* ZZBaseViewChainModel.h */,
-				9C421381E9F5766ECA4CD4AD1066A8E4 /* ZZBaseViewChainModel.m */,
-				A475FE913B79DDBCEC6601B8FB61FE78 /* ZZButtonChainModel.h */,
-				F6B3D45313EA5F00E4246368B873D706 /* ZZButtonChainModel.m */,
-				50F26606A559057D376C3E68BFED99AF /* ZZCollectionViewChainModel.h */,
-				1642E155EC45A4D5200F9698467731F0 /* ZZCollectionViewChainModel.m */,
-				12AEB973EA0F5984809E9505F25356C7 /* ZZControlChainModel.h */,
-				A508E1CE9134F0B2535AF0C9FBE9BD3C /* ZZControlChainModel.m */,
-				2F748625F5FBBB2F6AD8E94EEA3AA7D6 /* ZZFLEX.h */,
-				3D8369FE88123264A6C012BF7919FDEA /* ZZFLEXAngel.h */,
-				2BF75AF404750D6F6D6FE86630964936 /* ZZFLEXAngel.m */,
-				9F17D06D8E13C4EC15C1A1B613CBE422 /* ZZFLEXAngel+EditExtension.h */,
-				06FC90E63CC206F5C38614EBEFB2B263 /* ZZFLEXAngel+EditExtension.m */,
-				1801B6802D554E36E5D308D39EB1687A /* ZZFLEXAngel+Private.h */,
-				481D16B835262AD460189C960BE30AC6 /* ZZFLEXAngel+Private.m */,
-				88A5275A943F9A2390D17590EED620EE /* ZZFLEXAngel+UICollectionView.h */,
-				DBCD0456FEA8D9B9809F57D0877AE843 /* ZZFLEXAngel+UICollectionView.m */,
-				3EA83955657E66BFEAC30790DD81DB5C /* ZZFLEXAngel+UITableView.h */,
-				155D4C60A9FEDA2BD057605D5A1EAF7F /* ZZFLEXAngel+UITableView.m */,
-				B19D3538904019E6222D1DC31B4CEB0A /* ZZFLEXAngelSectionChainModel.h */,
-				81A80330B1E332762E876BC6F1C56835 /* ZZFLEXAngelSectionChainModel.m */,
-				98B819AA65EA3077E0D0467D4DB97CED /* ZZFLEXAngelViewBatchChainModel.h */,
-				B546DAA603979060D0002522EAB35FCA /* ZZFLEXAngelViewBatchChainModel.m */,
-				ACABA38E854F4640CB8FE8963AFE693F /* ZZFLEXAngelViewChainModel.h */,
-				35B7CD529A04344A1694BB1E6C6D86E7 /* ZZFLEXAngelViewChainModel.m */,
-				5CBEADD4D97E1AEC12385EAA09420E68 /* ZZFLEXAngelViewEditChainModel.h */,
-				D8A50D752CF9AC3AB8BD4D6C69F31192 /* ZZFLEXAngelViewEditChainModel.m */,
-				CE48BE1BE78630DBCA2E8BE484A9BE86 /* ZZFLEXEditModel.h */,
-				7F8EC1A0498AD7C2C145F9D112D68B4D /* ZZFLEXEditModel.m */,
-				86C8A2B991AD5E0B179B972DA3A246C3 /* ZZFLEXEditModelProtocol.h */,
-				B574D12DF265431F9C3B4E7E08B8C6B9 /* ZZFLEXFoundationExtension.h */,
-				29DE498E77CF134732860BE5478624EC /* ZZFlexibleLayoutEmptyHeaderFooterView.h */,
-				F5725A1981137F483DA6183FB9E457C9 /* ZZFlexibleLayoutEmptyHeaderFooterView.m */,
-				5DB0261C84FA60A08FFB4014CFE0F293 /* ZZFlexibleLayoutFlowLayout.h */,
-				0026BF88E211CD9843E9E00C7B3D671D /* ZZFlexibleLayoutFlowLayout.m */,
-				CF9F2E45A8A7F0301FACB724F45BB189 /* ZZFlexibleLayoutSectionModel.h */,
-				06B4CC1A72F7AD14D51D5662651B376C /* ZZFlexibleLayoutSectionModel.m */,
-				AF0B944D3D20EE290391D2DC373971D6 /* ZZFlexibleLayoutSeperatorCell.h */,
-				072C48D04B4C2A0BD3F057DF8E383343 /* ZZFlexibleLayoutSeperatorCell.m */,
-				1FB76DF48FB765DA0BAF1168318CBC36 /* ZZFlexibleLayoutViewController.h */,
-				473F3B936D50991700C437F9EF1265AF /* ZZFlexibleLayoutViewController.m */,
-				1A558F286F1B0B377D596D6A907B901E /* ZZFlexibleLayoutViewController+EditExtension.h */,
-				6D8B2302117BBBB593658904DBEE29E4 /* ZZFlexibleLayoutViewController+EditExtension.m */,
-				C1CCCDF689AEBD92B04E9858208AB662 /* ZZFlexibleLayoutViewController+Kernel.h */,
-				A620DD22D111E9DD838AA96726CC69BF /* ZZFlexibleLayoutViewController+Kernel.m */,
-				5EA69845CDC565DD9C56F1FADAF96049 /* ZZFlexibleLayoutViewModel.h */,
-				9A0F691B8A3FFF01C76B5D41E4C146B8 /* ZZFlexibleLayoutViewModel.m */,
-				E25F41FB7A748D67E6B530011757C7DB /* ZZFlexibleLayoutViewModel+HostView.h */,
-				1993F8D66F1532FAF4F19BD8059A3C8F /* ZZFlexibleLayoutViewModel+HostView.m */,
-				095A61AA35B322D08669E307A96FAE99 /* ZZFlexibleLayoutViewModel+UICollectionView.h */,
-				4EC3B34B297E1077F64455AE9B4FB2BA /* ZZFlexibleLayoutViewModel+UICollectionView.m */,
-				6960165D6772AF2810A58F3106F98CE5 /* ZZFlexibleLayoutViewModel+UITableView.h */,
-				70CFF4DEF7BE7991B0B85E5F10906756 /* ZZFlexibleLayoutViewModel+UITableView.m */,
-				8D48C4FB2F38A1C659E7599BD28B641B /* ZZFlexibleLayoutViewProtocol.h */,
-				72122C7F0D0771D57993138C91A34E4B /* ZZFLEXMacros.h */,
-				D9E0088FDDBFE55010DF2AF42A4D4E92 /* ZZFLEXRequestModel.h */,
-				C9B176CF5A13096DC4F1BD8810222369 /* ZZFLEXRequestModel.m */,
-				FDC8B225326AAF9878F5F934B0851274 /* ZZFLEXRequestQueue.h */,
-				D135D81752946E6651FF7077DC214DC3 /* ZZFLEXRequestQueue.m */,
-				A849CA459929948E5995A39A065AB1C3 /* ZZFLEXTableViewEmptyCell.h */,
-				E024C3B3063AA0BF887EDD25795F07DB /* ZZFLEXTableViewEmptyCell.m */,
-				CA172C67AF95B10BCC6EA2AF3689A317 /* ZZFLEXViewExtension.h */,
-				272D573A3859CF837F47B589A8A2D08A /* ZZImageViewChainModel.h */,
-				1E16F88BAF5D7275C70264A46B92861B /* ZZImageViewChainModel.m */,
-				BC0327B2C1FBB7EB3702E2338A6646B4 /* ZZLabelChainModel.h */,
-				5406134B349F311114BE37E09F336699 /* ZZLabelChainModel.m */,
-				262EF46FE7C9F90CAE4666491E33369F /* ZZMutableAttributeStringChainModel.h */,
-				ED381F807B7230CA2BB76163B05237F6 /* ZZMutableAttributeStringChainModel.m */,
-				4B39125FF7B4A3290F085E4BE0E9871B /* ZZMutableParagraphStyleChainModel.h */,
-				81327851127C2F094ABF24E4579386F6 /* ZZMutableParagraphStyleChainModel.m */,
-				84B29BE87B1AFEC25ACD62782C0DC487 /* ZZScrollViewChainModel.h */,
-				EE46DE44FD73EE45AFA0061CD010546E /* ZZScrollViewChainModel.m */,
-				513A03ED4BB197566D2353FF5DC24E58 /* ZZSwitchChainModel.h */,
-				E2350A7A919C449B191ECD8F67143301 /* ZZSwitchChainModel.m */,
-				BC91E848950CFF56E91B3D83B9B098B6 /* ZZTableViewChainModel.h */,
-				030AB4289353F56FBB07780BF889DF0E /* ZZTableViewChainModel.m */,
-				36026EC89D7F9F090661EDEAEF35030D /* ZZTextFieldChainModel.h */,
-				7E55FB8688AE6CAF292991709D5986A8 /* ZZTextFieldChainModel.m */,
-				4AC767FA45898E26DBB9803A93149746 /* ZZTextViewChainModel.h */,
-				BF03AE2615219C57CDCA3B3DEC58FD93 /* ZZTextViewChainModel.m */,
-				75F38C366766830C26CA6DC76F2A470C /* ZZViewChainModel.h */,
-				4DED041F4455C28EDB319F1AE249F592 /* ZZViewChainModel.m */,
-				29B8173CE526E44AEA8562C7668F55CA /* Support Files */,
+				D4570318A906C6BF04C5E56A4AB0BC71 /* NSMutableAttributedString+ZZFLEX.h */,
+				A068AF1226002E674874AB64EAA2E0DA /* NSMutableAttributedString+ZZFLEX.m */,
+				E38C9773609DE391BEC7F9840EBD8A74 /* NSMutableParagraphStyle+ZZFLEX.h */,
+				844D68C7BA074AAA00E144DE9A17764D /* NSMutableParagraphStyle+ZZFLEX.m */,
+				45B855C2E35F235D6113C88939934D3E /* UIButton+ZZExtension.h */,
+				7497AD8E3CD29D57F6559801F099E1B9 /* UIButton+ZZExtension.m */,
+				5AD5660446E588D238C3FC8B7D1E54B1 /* UIControl+ZZEvent.h */,
+				79423FC83489FE7FABF8AAF02605E66B /* UIControl+ZZEvent.m */,
+				5C3E95BB5122DAADFFE78386637525EF /* UIView+ZZCornor.h */,
+				770C90BF7E2ABF0443F11ABBBCB5E74B /* UIView+ZZCornor.m */,
+				7CAB50626636F190BAEC4721314D1694 /* UIView+ZZFLEX.h */,
+				54D090B4124C0B524F3A70297AA607D7 /* UIView+ZZFLEX.m */,
+				6800D00E43706E3CA942E3E8AA8DFECC /* UIView+ZZFrame.h */,
+				C5D07C1DE1C734A9C868233899F6F079 /* UIView+ZZFrame.m */,
+				1352CB02168D86F5D80ABDEC69B894B1 /* UIView+ZZSeparator.h */,
+				5E11891C8CED5823D579F48FE174EC9F /* UIView+ZZSeparator.m */,
+				A9F8C8B6B9E36C94B2AEB24924A26882 /* ZZActivityIndicatorViewChainModel.h */,
+				12A1A75EAB1D89E544A5218A2EA90582 /* ZZActivityIndicatorViewChainModel.m */,
+				8C31CB8C9FA39A64BFD52A53E419FA0C /* ZZBaseViewChainModel.h */,
+				8E8B7092669352CB2118C0246289BA99 /* ZZBaseViewChainModel.m */,
+				597E25C2363E45E3A238BAE48FC01D22 /* ZZButtonChainModel.h */,
+				55F437E01B0A49993F4E0303BA57C5D5 /* ZZButtonChainModel.m */,
+				03DC85B242F5BC73FBBDB73B6A3D747C /* ZZCollectionViewChainModel.h */,
+				5094B652C0A6E97F496B90D9B579AB2B /* ZZCollectionViewChainModel.m */,
+				DF62B6ECE2E97C375736021B0C9C58D0 /* ZZControlChainModel.h */,
+				E640A4C5942B452B2D84BC8803F70F7F /* ZZControlChainModel.m */,
+				39031AA23DC7FA8C2D21F65B4B0090CE /* ZZFLEX.h */,
+				120A1242576238450358EDD47232F08C /* ZZFLEXAngel.h */,
+				63C1B1CBD6AE92B90962E687DA233C51 /* ZZFLEXAngel.m */,
+				AFF6BDA1BA31B9CB760E18A6693D6540 /* ZZFLEXAngel+EditExtension.h */,
+				318EFF7298B8DF46FF43871F23BA9AB6 /* ZZFLEXAngel+EditExtension.m */,
+				CFD4A73E037BADC432654E52A47DBFB1 /* ZZFLEXAngel+Private.h */,
+				56C80A4212329264963AA55E12B44C4A /* ZZFLEXAngel+Private.m */,
+				F5555DB078ABF0E03E1A3044536655F9 /* ZZFLEXAngel+UICollectionView.h */,
+				58F29F7406C110220CE23978623AD04C /* ZZFLEXAngel+UICollectionView.m */,
+				A73C7710B69E5AF0EFFA724E679B6ED6 /* ZZFLEXAngel+UITableView.h */,
+				BD864D04B1656E1DDB9E05DD7933AE0D /* ZZFLEXAngel+UITableView.m */,
+				EB30EBF148E88AEFAFAC55545D1DE8B7 /* ZZFLEXAngelSectionChainModel.h */,
+				F2E81F40A1D71049664810B49E98670E /* ZZFLEXAngelSectionChainModel.m */,
+				288F5BB655ADFB6FFF23CD2587558E0A /* ZZFLEXAngelViewBatchChainModel.h */,
+				6CE3E787D9C852565D4DE838C68E71C9 /* ZZFLEXAngelViewBatchChainModel.m */,
+				89179AC233BAEDABE7EB3813C3F06B10 /* ZZFLEXAngelViewChainModel.h */,
+				FD0EB06E60E9B4A516F8A7FEDF956866 /* ZZFLEXAngelViewChainModel.m */,
+				95B50967C8741D3799909830C1DF7DB4 /* ZZFLEXAngelViewEditChainModel.h */,
+				D647BD8910F673F44D29BFDD802E712D /* ZZFLEXAngelViewEditChainModel.m */,
+				7315BEDF1A054B619E97E81F73651F3F /* ZZFLEXCollectionViewController.h */,
+				B02E759B07881DAA160222E1652D4E7E /* ZZFLEXCollectionViewController.m */,
+				D018444BFD9D3FC174C40FF21B856C15 /* ZZFLEXCollectionViewController+EditExtension.h */,
+				612164EF7B940F9C91AE0DA425BC1AA5 /* ZZFLEXCollectionViewController+EditExtension.m */,
+				06052F93DF838C019630F6973024E58D /* ZZFLEXEditModel.h */,
+				C16198BCE1AF5F4369E830BBD47B4B31 /* ZZFLEXEditModel.m */,
+				98E4ADFB561C97260E5C7BA3027B0071 /* ZZFLEXEditModelProtocol.h */,
+				3537DA8F4FB618499C3B05E949A31AA8 /* ZZFLEXFoundationExtension.h */,
+				86217015B49D447BA3A35739869670AA /* ZZFlexibleLayoutEmptyHeaderFooterView.h */,
+				D05CC02E06D96D9A493F7F0D3331D76F /* ZZFlexibleLayoutEmptyHeaderFooterView.m */,
+				60628D60A4916534899FE527D2D5F8AE /* ZZFlexibleLayoutFlowLayout.h */,
+				15A968B97025A4F0583CB8832D2951A8 /* ZZFlexibleLayoutFlowLayout.m */,
+				B329D3A284828D497490C3F1E96C149C /* ZZFlexibleLayoutSeperatorCell.h */,
+				90831CF78F5EEF212589AC00D0EAE517 /* ZZFlexibleLayoutSeperatorCell.m */,
+				91751B35D76A066918B4F784C589AB8E /* ZZFlexibleLayoutViewProtocol.h */,
+				DF520321967669A00CCB793FBD7595AE /* ZZFLEXMacros.h */,
+				5007D3D9D616162F54E9BDF43D32B408 /* ZZFLEXRequestModel.h */,
+				4EAAEF5F3113092E4C7D80AD18B2E6F8 /* ZZFLEXRequestModel.m */,
+				7441B37E5EDB321DC2F5CBCF378514E8 /* ZZFLEXRequestQueue.h */,
+				BE07B898EFB20727EAF1CF3068663412 /* ZZFLEXRequestQueue.m */,
+				FF4690D4A783FF7998557F6C5AFFA763 /* ZZFLEXSectionModel.h */,
+				7A50A1EE55B0F8B491D75A38EBE36277 /* ZZFLEXSectionModel.m */,
+				1C86795880C7080EC19BB4DFA29B0ACF /* ZZFLEXTableViewController.h */,
+				CBBCF533E7A93ED1C41BD7C5CF308AA8 /* ZZFLEXTableViewController.m */,
+				4B7FC012AB3FB272FC897B06E5109C75 /* ZZFLEXTableViewEmptyCell.h */,
+				0FE58C0EA91F9D2535D2A65D7B96AC93 /* ZZFLEXTableViewEmptyCell.m */,
+				85E27D6A03BC8580C09F710D379C7EE6 /* ZZFLEXTableViewHeaderFooterView.h */,
+				88D2EB5ECCC7E841506B93CD186A23E8 /* ZZFLEXTableViewHeaderFooterView.m */,
+				C167EA1870624AEB5D9D5078DACC021A /* ZZFLEXViewExtension.h */,
+				3E6DAB3F25935D477D8E7FE604676710 /* ZZFLEXViewModel.h */,
+				A9CFA582894CBF95D6D362BAC9420072 /* ZZFLEXViewModel.m */,
+				54976937E2477ECB1A34B85C52E5DB60 /* ZZFLEXViewModel+Angel.h */,
+				F03AB9F798DE23E874A1D9F6E848EA8C /* ZZFLEXViewModel+Angel.m */,
+				111DB8A56AFB8AFDF75A8909B545BA56 /* ZZImageViewChainModel.h */,
+				48AC33B87DFA94D5A2BFAC2270105C6B /* ZZImageViewChainModel.m */,
+				BB919F421B6360F60AB8861E9EDDFADC /* ZZLabelChainModel.h */,
+				E5E98D96CA34DC9BEE813513865789DC /* ZZLabelChainModel.m */,
+				12E24953E9BB9DFCF152DFAB09C75BBD /* ZZMutableAttributeStringChainModel.h */,
+				F65896C2CDF2F790A56418CB46E3052A /* ZZMutableAttributeStringChainModel.m */,
+				BF61574CCD3C22E14B131969276D0A01 /* ZZMutableParagraphStyleChainModel.h */,
+				82F90CB2DD6A9E1D0261463BE33B38C8 /* ZZMutableParagraphStyleChainModel.m */,
+				4DC948EAF5DED819CBFC51DB3B3E46E8 /* ZZProgressViewChainModel.h */,
+				2D5A84C1B2CFE748F1DD79CE2E2B000C /* ZZProgressViewChainModel.m */,
+				4C23B6516EE26246906594C0770B92A3 /* ZZScrollViewChainModel.h */,
+				B2C3B0EDC9BCBBAD5F24F4309DE5B271 /* ZZScrollViewChainModel.m */,
+				3515623A4D9AFB53C284D0370485E8FD /* ZZSwitchChainModel.h */,
+				FCCE011A661750C001633FA6DF4835FB /* ZZSwitchChainModel.m */,
+				3112E1BC6ABEA7816396AE67AA1CE1A9 /* ZZTableViewChainModel.h */,
+				175CC91AF1E9BB8F9564E9E38E5080AE /* ZZTableViewChainModel.m */,
+				7F0F663E9583C8F88E56443EBD9476BC /* ZZTextFieldChainModel.h */,
+				90F8A40BA64479161ACFF8634DEF528A /* ZZTextFieldChainModel.m */,
+				398237CFDE1E362FB3E45605E3798017 /* ZZTextViewChainModel.h */,
+				757EC3E98F43C5CC1F065653950FF5F9 /* ZZTextViewChainModel.m */,
+				FC54D59CA2FEA2453C213E50AA726442 /* ZZViewChainModel.h */,
+				9920D253972A9558C4760ED16E3327DF /* ZZViewChainModel.m */,
+				F5095B5A4E8A5735AF0DC1BFBDF47674 /* Support Files */,
 			);
 			name = ZZFLEX;
 			path = ZZFLEX;
@@ -376,7 +370,7 @@
 				EE7568D09D01479FA60A56A1D22FAFBF /* Dependencies */,
 				0C0A4F8E2520D7C30FB5EB04BB6A0DAA /* Frameworks */,
 				D2FA7C003B8CAA110ADE506EE853B287 /* Products */,
-				CF921AF109C3DD78427CF6DC8EC3326E /* ZZFLEX */,
+				21E326D71B9292E65CCFBF53D823FC35 /* ZZFLEX */,
 			);
 			sourceTree = "<group>";
 		};
@@ -388,65 +382,78 @@
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
+		F5095B5A4E8A5735AF0DC1BFBDF47674 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E1BD6DC38A917A8428E37BBAF271FA9 /* ZZFLEX-dummy.m */,
+				D33A08DDB06289D5C8E64C5B888190F8 /* ZZFLEX-prefix.pch */,
+				5AAEF629CB9D4AF5D7A72DE2F2012718 /* ZZFLEX.debug.xcconfig */,
+				5251EC016DD5886B16E6FDA9D0097DC5 /* ZZFLEX.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZZFLEX";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		46A9935CEA5B55DF59C9784C5683F694 /* Headers */ = {
+		6F498C4A5D516EE80DB4EFD2467A1EEC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C942CED7A3CCDE586C907490765762D /* NSMutableAttributedString+ZZFLEX.h in Headers */,
-				E25C1077D3203C630DEADAE21DAF6C31 /* NSMutableParagraphStyle+ZZFLEX.h in Headers */,
-				BD6C28C121F5AE00BEE561B390D94427 /* UIButton+ZZExtension.h in Headers */,
-				994A4B53851EAE351E73B01035905F44 /* UIControl+ZZEvent.h in Headers */,
-				25059874F21A0316EBD7EC04BB46A2C2 /* UIView+ZZCornor.h in Headers */,
-				74CBFE3006A4129D9271D5EAC14F45D6 /* UIView+ZZFLEX.h in Headers */,
-				64A6AECA559F575927E8645509B7FE82 /* UIView+ZZFrame.h in Headers */,
-				36A544E69A84A2A680DE936AFC4B9933 /* UIView+ZZSeparator.h in Headers */,
-				F2563823FE0CE3EDE2F0D750A3EBD3B5 /* ZZBaseViewChainModel.h in Headers */,
-				217EFD7F87327F8C263C8142B52D6D76 /* ZZButtonChainModel.h in Headers */,
-				DFB90C7084069E545DAA2E9B3164F920 /* ZZCollectionViewChainModel.h in Headers */,
-				717527827571757320D191A7932D64EF /* ZZControlChainModel.h in Headers */,
-				2179C4AD81758F51EB09070A94553411 /* ZZFLEX.h in Headers */,
-				BC7EF6C58C918F1883D21F677F158FD3 /* ZZFLEXAngel+EditExtension.h in Headers */,
-				F6D0D16709C961C3220E3075A0E8B68F /* ZZFLEXAngel+Private.h in Headers */,
-				6FC3B7846341773A534AC0BE06CB5A0B /* ZZFLEXAngel+UICollectionView.h in Headers */,
-				397759D19FBCE606046E727F90DB31D6 /* ZZFLEXAngel+UITableView.h in Headers */,
-				C841D79EFF24AE605969BBB8F9C3610C /* ZZFLEXAngel.h in Headers */,
-				CF15436853417B9F0457247AE777AD55 /* ZZFLEXAngelSectionChainModel.h in Headers */,
-				3B8E33053F275FE2A94AF3DA78C4A1B3 /* ZZFLEXAngelViewBatchChainModel.h in Headers */,
-				7993983420488EB6AA401FC7D85BF91F /* ZZFLEXAngelViewChainModel.h in Headers */,
-				B6398759F22178CDE0C00ABF164AA6E9 /* ZZFLEXAngelViewEditChainModel.h in Headers */,
-				7EE78A996CB69A669074FDAB6FC9DB1D /* ZZFLEXEditModel.h in Headers */,
-				5D8063E105AFB0A4356ED068A92B8C95 /* ZZFLEXEditModelProtocol.h in Headers */,
-				3864F649A7C9325941B0428C02708D50 /* ZZFLEXFoundationExtension.h in Headers */,
-				97E7CF04267988143965B0FDD3C0B7F5 /* ZZFlexibleLayoutEmptyHeaderFooterView.h in Headers */,
-				6CAAACF1EB09AE3F5DFF976A7894C845 /* ZZFlexibleLayoutFlowLayout.h in Headers */,
-				F086FDD3C369689E2242906051898E2E /* ZZFlexibleLayoutSectionModel.h in Headers */,
-				9E5AC0E6F75CA735B98C7507B8F4F5AA /* ZZFlexibleLayoutSeperatorCell.h in Headers */,
-				BA3C7B043D0703D5C2B8CDA0409E207B /* ZZFlexibleLayoutViewController+EditExtension.h in Headers */,
-				5D02595E5719993AC055E5B720C984BB /* ZZFlexibleLayoutViewController+Kernel.h in Headers */,
-				F13E1E12000B43F94D30536B6AF3BF4C /* ZZFlexibleLayoutViewController.h in Headers */,
-				0E673D36C36DBA7C1A42BA8499459236 /* ZZFlexibleLayoutViewModel+HostView.h in Headers */,
-				B48E85ADD8F5659C123C0C9A5CDB6558 /* ZZFlexibleLayoutViewModel+UICollectionView.h in Headers */,
-				15E73A85B159FBAB5153660C97374F60 /* ZZFlexibleLayoutViewModel+UITableView.h in Headers */,
-				7045ED05D39D291A1CC05633378B14A9 /* ZZFlexibleLayoutViewModel.h in Headers */,
-				E7495EEEE911B2C75D5CE99AEADD0232 /* ZZFlexibleLayoutViewProtocol.h in Headers */,
-				77B4D32E9C7BB7F765150D4B71423760 /* ZZFLEXMacros.h in Headers */,
-				8366A47EFB74E94FEE6E688ECBDBC00E /* ZZFLEXRequestModel.h in Headers */,
-				C33652B09B02FFF29BFE9BD964A0A6F6 /* ZZFLEXRequestQueue.h in Headers */,
-				BFDD594A18261CD1307BB83F8DF45004 /* ZZFLEXTableViewEmptyCell.h in Headers */,
-				65E4810DA3E71E64EDF556B9B87468FB /* ZZFLEXViewExtension.h in Headers */,
-				3221540060531C2AE67C98438F1B110F /* ZZImageViewChainModel.h in Headers */,
-				E6FD71D0871560AA18A69896CBAB4B58 /* ZZLabelChainModel.h in Headers */,
-				0DBD51D52C70B05381064303D1FE1F61 /* ZZMutableAttributeStringChainModel.h in Headers */,
-				97E53AB680240A801FE29383C627B47F /* ZZMutableParagraphStyleChainModel.h in Headers */,
-				BE8A7863B6B81237AFC35656D2EDAE9F /* ZZScrollViewChainModel.h in Headers */,
-				8A23135540D42E31EF2876435AC3F785 /* ZZSwitchChainModel.h in Headers */,
-				5030AFA70F4210A7F13BAA276355CF96 /* ZZTableViewChainModel.h in Headers */,
-				DCEE9BB8D692EBD3318A01C461657B6B /* ZZTextFieldChainModel.h in Headers */,
-				98D2DF57A4B174E5118BD8FA10ACDBA1 /* ZZTextViewChainModel.h in Headers */,
-				355D423AAED7DC88D611A442356FFF57 /* ZZViewChainModel.h in Headers */,
+				A1DEE2544BFCFA1EF0E37E88B8EFB8FE /* NSMutableAttributedString+ZZFLEX.h in Headers */,
+				5FFA53B437E4CC4F7BF09F46F5A4E022 /* NSMutableParagraphStyle+ZZFLEX.h in Headers */,
+				E48E00535E2BD2E3CA3192ADBE83DBB4 /* UIButton+ZZExtension.h in Headers */,
+				238B289FF0742E0DE69050A20A7250E3 /* UIControl+ZZEvent.h in Headers */,
+				1584F27D0360B024EB4992C4AB494785 /* UIView+ZZCornor.h in Headers */,
+				5893827D569D3A7BAF62A08E6DF43779 /* UIView+ZZFLEX.h in Headers */,
+				2C4CFCF2D55A9D2487703A4C70BBFB56 /* UIView+ZZFrame.h in Headers */,
+				D2D4D91A90BF298CBCA63E855C01B2E4 /* UIView+ZZSeparator.h in Headers */,
+				A08DEC85D294EBB11F8F8AB953466114 /* ZZActivityIndicatorViewChainModel.h in Headers */,
+				7CA4C261C23C6A4E31C51AD89FAFDA5B /* ZZBaseViewChainModel.h in Headers */,
+				CE7AE76EB8C868D90260D3BE6499CD5A /* ZZButtonChainModel.h in Headers */,
+				EF66498082EE06EA6EA344C1BCF3F9DB /* ZZCollectionViewChainModel.h in Headers */,
+				5B39CE62A66E826D7D0CCEAD7A2105B9 /* ZZControlChainModel.h in Headers */,
+				E1A4FEFF71145B0C688B0868FDE39E4A /* ZZFLEX.h in Headers */,
+				417F5632BD31B1F867612C06BA7B5E28 /* ZZFLEXAngel+EditExtension.h in Headers */,
+				658EE21C622D184FA1A0A0606A29A35E /* ZZFLEXAngel+Private.h in Headers */,
+				9571DE27034451670FFBE0C9D11ED14B /* ZZFLEXAngel+UICollectionView.h in Headers */,
+				947F85B8017AECB990FF7B000AF5DA80 /* ZZFLEXAngel+UITableView.h in Headers */,
+				D94FBBA92B4E7303F8F4F8A6A1EFF268 /* ZZFLEXAngel.h in Headers */,
+				4A3D22F8AC7B98793FB00149A512C86A /* ZZFLEXAngelSectionChainModel.h in Headers */,
+				3C6DEE2C6DD7A7371173CC38B661013E /* ZZFLEXAngelViewBatchChainModel.h in Headers */,
+				B7A3521BF243AB4F037432E3343942D5 /* ZZFLEXAngelViewChainModel.h in Headers */,
+				59E8125CB41D570F3A611A435ABE1E0E /* ZZFLEXAngelViewEditChainModel.h in Headers */,
+				B8E68F0B3912FBECCB937479BEFD7678 /* ZZFLEXCollectionViewController+EditExtension.h in Headers */,
+				DE115CF849645946C283FBA2D46716D3 /* ZZFLEXCollectionViewController.h in Headers */,
+				D79D9400F089BB2718C6673942AC6075 /* ZZFLEXEditModel.h in Headers */,
+				71CB36393FBBA57DE986384AB79C119F /* ZZFLEXEditModelProtocol.h in Headers */,
+				8868C07D49DA199A6A0B5F15FDC0FBA8 /* ZZFLEXFoundationExtension.h in Headers */,
+				707DB27FC36A3446198E2BC8163D1F1F /* ZZFlexibleLayoutEmptyHeaderFooterView.h in Headers */,
+				A42C4C4F9F0675B34C3DAC17B205FA60 /* ZZFlexibleLayoutFlowLayout.h in Headers */,
+				3AEA3F1989F552B7F27B27ADBB5E6009 /* ZZFlexibleLayoutSeperatorCell.h in Headers */,
+				C88BC10507B2386057F7C062B3E63C3E /* ZZFlexibleLayoutViewProtocol.h in Headers */,
+				7429C0AFDA56B0124975A97AFF56E954 /* ZZFLEXMacros.h in Headers */,
+				C0114214D821FC9E5B0522B6EACC5418 /* ZZFLEXRequestModel.h in Headers */,
+				E9F95A3D585FCB106486870854BB32AF /* ZZFLEXRequestQueue.h in Headers */,
+				CACB5B9EF52F6AC8646EBD4A69CAB18F /* ZZFLEXSectionModel.h in Headers */,
+				863F1E45593A518ADEC7BFA8FB8441DC /* ZZFLEXTableViewController.h in Headers */,
+				8B07C8402E3A48465152223F17932532 /* ZZFLEXTableViewEmptyCell.h in Headers */,
+				A114F51DD634F1374DD8D82AF8FA9DB2 /* ZZFLEXTableViewHeaderFooterView.h in Headers */,
+				D4969F38A746EAB9156245591728757F /* ZZFLEXViewExtension.h in Headers */,
+				B013FE8551CDB3A74E2CD0B09C32441A /* ZZFLEXViewModel+Angel.h in Headers */,
+				1C7E366D8BB77CAE48D03138E7EDA444 /* ZZFLEXViewModel.h in Headers */,
+				25D86E67CB6BC5EA813B5BEDBDE694C0 /* ZZImageViewChainModel.h in Headers */,
+				5FC9491A56FC5CD68956D1654CA04831 /* ZZLabelChainModel.h in Headers */,
+				BF033D45791D855D3A3B78B2FAB09995 /* ZZMutableAttributeStringChainModel.h in Headers */,
+				F819721DFCD5814CEB35F94364751243 /* ZZMutableParagraphStyleChainModel.h in Headers */,
+				C6E2A76E05248776DE6385E583C3BFAB /* ZZProgressViewChainModel.h in Headers */,
+				E412BFECF1DE774B789FB6ECC4CFF590 /* ZZScrollViewChainModel.h in Headers */,
+				E8FA4652219C9C7BF1967D774D001F00 /* ZZSwitchChainModel.h in Headers */,
+				3F69992C0D78ACB96704CEB72C8D8885 /* ZZTableViewChainModel.h in Headers */,
+				CD88C7708F24009120D58D742A99A6B6 /* ZZTextFieldChainModel.h in Headers */,
+				5EFE8C09AB5B71044B9F455CB7BDE255 /* ZZTextViewChainModel.h in Headers */,
+				86E97FBBF8AF917512918DF79CFA3E20 /* ZZViewChainModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,16 +462,16 @@
 /* Begin PBXNativeTarget section */
 		C11B6A3130168632F80EBAABD2D5F994 /* ZZFLEX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D3A5EADB2A1B52C3ADEFC5DC62D1D18 /* Build configuration list for PBXNativeTarget "ZZFLEX" */;
+			buildConfigurationList = 7F4464B021CA17A80DB4A7DDC520C7FC /* Build configuration list for PBXNativeTarget "ZZFLEX" */;
 			buildPhases = (
-				46A9935CEA5B55DF59C9784C5683F694 /* Headers */,
-				B84F739762EE5CD676CADA1995E2870F /* Sources */,
-				B8BED83372FA6933F4179A6E83AC1BE1 /* Frameworks */,
+				6F498C4A5D516EE80DB4EFD2467A1EEC /* Headers */,
+				363DA9A0C02DE2B1F4F1CF4203853E6B /* Sources */,
+				9EE62FD28C90892D08E16AD255BC0C0D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FD8C78DBE2F122C462F7C72FB85AB8D3 /* PBXTargetDependency */,
+				3795F254F0E32580279D76C9A08A75E4 /* PBXTargetDependency */,
 			);
 			name = ZZFLEX;
 			productName = ZZFLEX;
@@ -504,120 +511,72 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B84F739762EE5CD676CADA1995E2870F /* Sources */ = {
+		363DA9A0C02DE2B1F4F1CF4203853E6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893B91D464D66DED2215AC988B079174 /* NSMutableAttributedString+ZZFLEX.m in Sources */,
-				2817E45FD3854FBB542B20F0BD60C124 /* NSMutableParagraphStyle+ZZFLEX.m in Sources */,
-				6FCFB012E610AC9337EE857C269F1C6D /* UIButton+ZZExtension.m in Sources */,
-				68FBBE675DC6274CD21AA01EB46540B3 /* UIControl+ZZEvent.m in Sources */,
-				B7C41BC962261B9F9BBB86033725F743 /* UIView+ZZCornor.m in Sources */,
-				C98565A17AA8298AB98E4765B40B068F /* UIView+ZZFLEX.m in Sources */,
-				8D3DC890CFD2EAFF75EB54DEB30EB2CB /* UIView+ZZFrame.m in Sources */,
-				EF1A8EDE27DEAAA8A408EA2F4C402EE8 /* UIView+ZZSeparator.m in Sources */,
-				615783AEA899583D05BA67D4AF62BE07 /* ZZBaseViewChainModel.m in Sources */,
-				B8FA0238CEF1CDC3BCA8AF66C1CE1898 /* ZZButtonChainModel.m in Sources */,
-				4BEACD24F4C5E208E1C3BA8ED697D71A /* ZZCollectionViewChainModel.m in Sources */,
-				775EB8BED414BEA08C9CBF32AA9E4215 /* ZZControlChainModel.m in Sources */,
-				D76C6E9EAF680AE76F905D754775C10A /* ZZFLEX-dummy.m in Sources */,
-				9221FB43B41DA748469DC3F16BCDBB6A /* ZZFLEXAngel+EditExtension.m in Sources */,
-				16A3C15C805D0D7818AE135319DD16DB /* ZZFLEXAngel+Private.m in Sources */,
-				38B4C36CAA508BF3CB9CF008E0DE18C1 /* ZZFLEXAngel+UICollectionView.m in Sources */,
-				444DB769D0F34953EC91F9B4FC58D3E1 /* ZZFLEXAngel+UITableView.m in Sources */,
-				DA0C4FEF6B752D30E3BB12104E43FEBC /* ZZFLEXAngel.m in Sources */,
-				20BF50078C3D66F69E81FAADC82EE5B1 /* ZZFLEXAngelSectionChainModel.m in Sources */,
-				8121CC1D22653B035B4A7B1EEDE98DF3 /* ZZFLEXAngelViewBatchChainModel.m in Sources */,
-				BEE0F121DF4110FD20EFD91FBF08C30C /* ZZFLEXAngelViewChainModel.m in Sources */,
-				6963A5B07F72DCFED89D76616ECC45A1 /* ZZFLEXAngelViewEditChainModel.m in Sources */,
-				F934DA51A69BE50C740E103432C16E20 /* ZZFLEXEditModel.m in Sources */,
-				BB44DEAF7170180A4E3E221A03303342 /* ZZFlexibleLayoutEmptyHeaderFooterView.m in Sources */,
-				CEBBB284D0B0369B0D255FD861E1D431 /* ZZFlexibleLayoutFlowLayout.m in Sources */,
-				77CFD112013BCC4BBD370A7285D15061 /* ZZFlexibleLayoutSectionModel.m in Sources */,
-				F47B740B03644775A7A34102F34E0287 /* ZZFlexibleLayoutSeperatorCell.m in Sources */,
-				ABC7715B9B775081F5D72EED90DF2D89 /* ZZFlexibleLayoutViewController+EditExtension.m in Sources */,
-				0BB9A31BC3CA2F556131066EB56F151A /* ZZFlexibleLayoutViewController+Kernel.m in Sources */,
-				67D04088F36841FEB6A931E2DB4E13AB /* ZZFlexibleLayoutViewController.m in Sources */,
-				B23272E06D01879C647553017E8CF10E /* ZZFlexibleLayoutViewModel+HostView.m in Sources */,
-				BC83A97BB111B7584D90A7051CDE00C0 /* ZZFlexibleLayoutViewModel+UICollectionView.m in Sources */,
-				DE0D28AE7F5E55EE90DEF088B5492005 /* ZZFlexibleLayoutViewModel+UITableView.m in Sources */,
-				C9FC0704C88AC7EDFA7DD97FED0E943C /* ZZFlexibleLayoutViewModel.m in Sources */,
-				218AAC423ED260BE33AE540D499C8618 /* ZZFLEXRequestModel.m in Sources */,
-				63B21157B2B20FE2FB76B6EF3570BD6E /* ZZFLEXRequestQueue.m in Sources */,
-				5F3A8066AF826E788CBFFDCA5E41515F /* ZZFLEXTableViewEmptyCell.m in Sources */,
-				16E6ED136457FC79C1CB7FF0B5932B0F /* ZZImageViewChainModel.m in Sources */,
-				8B689BFA3075D370119A1950C748A404 /* ZZLabelChainModel.m in Sources */,
-				0AA2360397E17982F8F00EFBE3010C37 /* ZZMutableAttributeStringChainModel.m in Sources */,
-				8F7E1B75152615C35A140BC6F43424E3 /* ZZMutableParagraphStyleChainModel.m in Sources */,
-				D5E21259FB08FE09A18C95426D5E2EF3 /* ZZScrollViewChainModel.m in Sources */,
-				15E45047D73F8830416C81A71DE5B768 /* ZZSwitchChainModel.m in Sources */,
-				6C89C53DDC6850657E58704D9722FF48 /* ZZTableViewChainModel.m in Sources */,
-				95C9571A6DD71F81042FDDF4C7CA50D1 /* ZZTextFieldChainModel.m in Sources */,
-				991D6B2FD4AC887CDDA0A656EA01D437 /* ZZTextViewChainModel.m in Sources */,
-				AE0AD882E1AFBB1F3B6BB9339A96BF1C /* ZZViewChainModel.m in Sources */,
+				B201ABC7C2C1D7F9BCC46269731CF53C /* NSMutableAttributedString+ZZFLEX.m in Sources */,
+				7184B9F1ADA8F0B72F4ED2B93DCE6613 /* NSMutableParagraphStyle+ZZFLEX.m in Sources */,
+				BE49D1ABFD70B109ACB7D87DE219B6D1 /* UIButton+ZZExtension.m in Sources */,
+				DF8A18194C23FB43E4C71C10EC435D84 /* UIControl+ZZEvent.m in Sources */,
+				2F93E0B532FC557F54324C482EED507B /* UIView+ZZCornor.m in Sources */,
+				FD8230CDBDEDB51E55E4C2F720E64910 /* UIView+ZZFLEX.m in Sources */,
+				A955D94F87C81CE7DC9AA11904EAE2F9 /* UIView+ZZFrame.m in Sources */,
+				7B50D867014059998525F41BC14F42BB /* UIView+ZZSeparator.m in Sources */,
+				D24291635B856E8C38EC311BAF3ACFE7 /* ZZActivityIndicatorViewChainModel.m in Sources */,
+				87CC43480D47548CCB82974E3CDF0748 /* ZZBaseViewChainModel.m in Sources */,
+				13F01CEB8B02661E720023BC05B84050 /* ZZButtonChainModel.m in Sources */,
+				F49CB90A611BF1DE206FD5812A8AA372 /* ZZCollectionViewChainModel.m in Sources */,
+				530439BEC8893455058B579402B16995 /* ZZControlChainModel.m in Sources */,
+				9AF6F109A2A4A538DD0D1EB66ABECBD7 /* ZZFLEX-dummy.m in Sources */,
+				45166ADFE66433376E873083554478E0 /* ZZFLEXAngel+EditExtension.m in Sources */,
+				CFE314468CFCD1A39FFF5D3317408358 /* ZZFLEXAngel+Private.m in Sources */,
+				A222C10BC0EB9DA7AD3F1F1BC59CB214 /* ZZFLEXAngel+UICollectionView.m in Sources */,
+				625316FF71A211CF8AAB21C5013E44F5 /* ZZFLEXAngel+UITableView.m in Sources */,
+				7AE1CDEF415074C43471C49CCBC017EF /* ZZFLEXAngel.m in Sources */,
+				D8BB734D3BA639C2538BC105BBDB7302 /* ZZFLEXAngelSectionChainModel.m in Sources */,
+				1E3A658C5481ADE322C458E7D53D3B12 /* ZZFLEXAngelViewBatchChainModel.m in Sources */,
+				FAE8A1B10EC710E6D165A828E20D0259 /* ZZFLEXAngelViewChainModel.m in Sources */,
+				FEC8F06C7AFCDA3AF58D583D3E977DC0 /* ZZFLEXAngelViewEditChainModel.m in Sources */,
+				EFC1744C98EE3D87C1D773DCE4C00B6C /* ZZFLEXCollectionViewController+EditExtension.m in Sources */,
+				0E402DAC01B6C1B55984FE1FB0375055 /* ZZFLEXCollectionViewController.m in Sources */,
+				026D649713386D52BF6FA0EEB88E3A48 /* ZZFLEXEditModel.m in Sources */,
+				6EA388302BD39CFF3A0D2C0B2A2E658C /* ZZFlexibleLayoutEmptyHeaderFooterView.m in Sources */,
+				5AB66208E59381D3B1654DF1944D716A /* ZZFlexibleLayoutFlowLayout.m in Sources */,
+				10C798F8B722027FB8C8642A9B5B1AD9 /* ZZFlexibleLayoutSeperatorCell.m in Sources */,
+				C1B35C5B4146AE3F99EBC5900FA78E15 /* ZZFLEXRequestModel.m in Sources */,
+				DAD4A1ECC613214F1F14AD832793EA65 /* ZZFLEXRequestQueue.m in Sources */,
+				AB1D5D78FC3A5C57F20F6B5372D35011 /* ZZFLEXSectionModel.m in Sources */,
+				FDD2DB53E0849FFA019B521538B0F03B /* ZZFLEXTableViewController.m in Sources */,
+				BBA01C3C90EE3C17678944A3E758A45B /* ZZFLEXTableViewEmptyCell.m in Sources */,
+				CE1AFCD4284E43F96375EAFD31EB653A /* ZZFLEXTableViewHeaderFooterView.m in Sources */,
+				C98754F36482BED4FD4F6D63D4123DAB /* ZZFLEXViewModel+Angel.m in Sources */,
+				D99E8BA0DB79B28E003C194E2A546E86 /* ZZFLEXViewModel.m in Sources */,
+				52F01E063D3AB4D9E22A84A1A7C6AF4E /* ZZImageViewChainModel.m in Sources */,
+				E8DC5CF90BB27CF05410DE90E67F8276 /* ZZLabelChainModel.m in Sources */,
+				52231612AC92A76D63BF8D505CD803EE /* ZZMutableAttributeStringChainModel.m in Sources */,
+				73A1A524E017D9E0A2ED80E3456F0ADE /* ZZMutableParagraphStyleChainModel.m in Sources */,
+				A6543254CB6101F613640813C3C78D42 /* ZZProgressViewChainModel.m in Sources */,
+				D5DDB9B0CE1DCC06CEC553CE1F450BC5 /* ZZScrollViewChainModel.m in Sources */,
+				F472C40D26C82079F0BC1767E859A491 /* ZZSwitchChainModel.m in Sources */,
+				7739787604234BEF0F5DE59C2F6A63F8 /* ZZTableViewChainModel.m in Sources */,
+				28ADFA6190F86B293ACBDC6F42BDE260 /* ZZTextFieldChainModel.m in Sources */,
+				AA40FFFCCAFC8E0538E8F983271BABA2 /* ZZTextViewChainModel.m in Sources */,
+				FEC06C3BB7F8EA836224A234CC4B7D3E /* ZZViewChainModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FD8C78DBE2F122C462F7C72FB85AB8D3 /* PBXTargetDependency */ = {
+		3795F254F0E32580279D76C9A08A75E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
-			targetProxy = 9CD2E82B0176393136761EE11E341251 /* PBXContainerItemProxy */;
+			targetProxy = 5F5ABCA667C45065F5B670F752BA8349 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		31C34F912A9DF9FA9632E0C24251C675 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1509AA62EAE184D4A59C43C92710CB59 /* ZZFLEX.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ZZFLEX/ZZFLEX-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ZZFLEX;
-				PRODUCT_NAME = ZZFLEX;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		617AC38B8E6D186405336BE832398D0F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DEB002D69D513C5FBB0391F4DEB4039 /* ZZFLEX.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ZZFLEX/ZZFLEX-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ZZFLEX;
-				PRODUCT_NAME = ZZFLEX;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		9766C2C0EDBB07994B08EEB930ADA253 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -675,6 +634,31 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B2CF54FD720DB4C47E7D5B263D705680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5251EC016DD5886B16E6FDA9D0097DC5 /* ZZFLEX.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ZZFLEX/ZZFLEX-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZZFLEX;
+				PRODUCT_NAME = ZZFLEX;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -742,23 +726,47 @@
 			};
 			name = Debug;
 		};
+		F588818AA9358A0D8666832F89A8875C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AAEF629CB9D4AF5D7A72DE2F2012718 /* ZZFLEX.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ZZFLEX/ZZFLEX-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZZFLEX;
+				PRODUCT_NAME = ZZFLEX;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D3A5EADB2A1B52C3ADEFC5DC62D1D18 /* Build configuration list for PBXNativeTarget "ZZFLEX" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31C34F912A9DF9FA9632E0C24251C675 /* Debug */,
-				617AC38B8E6D186405336BE832398D0F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		74A8A379AABF4C91CD584BC350245E9C /* Build configuration list for PBXProject "ZZFLEX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B683FC340930AF8D0FA8984C0A675B82 /* Debug */,
 				9766C2C0EDBB07994B08EEB930ADA253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F4464B021CA17A80DB4A7DDC520C7FC /* Build configuration list for PBXNativeTarget "ZZFLEX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F588818AA9358A0D8666832F89A8875C /* Debug */,
+				B2CF54FD720DB4C47E7D5B263D705680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

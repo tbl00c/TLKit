@@ -7,24 +7,23 @@
 //
 
 #import "ZZFLEXAngelViewChainModel.h"
-#import "ZZFlexibleLayoutSectionModel.h"
+#import "ZZFLEXSectionModel.h"
 
 #pragma mark - ## ZZFLEXAngelViewBaseChainModel （单个，基类）
 @interface ZZFLEXAngelViewBaseChainModel()
 
 @property (nonatomic, strong) NSMutableArray *listData;
-@property (nonatomic, strong) ZZFlexibleLayoutViewModel *viewModel;
 
 @end
 
 @implementation ZZFLEXAngelViewBaseChainModel
 
-- (id)initWithListData:(NSMutableArray *)listData viewModel:(ZZFlexibleLayoutViewModel *)viewModel andType:(ZZFLEXAngelViewType)type;
+- (id)initWithListData:(NSMutableArray *)listData viewModel:(ZZFLEXViewModel *)viewModel andType:(ZZFLEXAngelViewType)type;
 {
     if (self = [super init]) {
         _type = type;
-        self.listData = listData;
-        self.viewModel = viewModel;
+        _listData = listData;
+        _viewModel = viewModel;
     }
     return self;
 }
@@ -32,7 +31,7 @@
 - (id (^)(NSInteger section))toSection
 {
     return ^(NSInteger section) {
-        for (ZZFlexibleLayoutSectionModel *sectionModel in self.listData) {
+        for (ZZFLEXSectionModel *sectionModel in self.listData) {
             if (sectionModel.sectionTag == section) {
                 if (self.type == ZZFLEXAngelViewTypeCell) {
                     [sectionModel addObject:self.viewModel];
@@ -129,7 +128,7 @@ typedef NS_OPTIONS(NSInteger, ZZFLEXInsertDataStatus) {
 };
 @interface ZZFLEXAngelViewInsertChainModel ()
 
-@property (nonatomic, strong) ZZFlexibleLayoutSectionModel *sectionModel;
+@property (nonatomic, strong) ZZFLEXSectionModel *sectionModel;
 
 @property (nonatomic, assign) NSInteger insertTag;
 
@@ -142,7 +141,7 @@ typedef NS_OPTIONS(NSInteger, ZZFLEXInsertDataStatus) {
 - (id (^)(NSInteger section))toSection
 {
     return ^(NSInteger section) {
-        for (ZZFlexibleLayoutSectionModel *model in self.listData) {
+        for (ZZFLEXSectionModel *model in self.listData) {
             if (model.sectionTag == section) {
                 self.sectionModel = model;
             }
@@ -197,7 +196,7 @@ typedef NS_OPTIONS(NSInteger, ZZFLEXInsertDataStatus) {
     }
     else if ((self.status & ZZFLEXInsertDataStatusBefore)|| (self.status & ZZFLEXInsertDataStatusAfter)) {
         for (NSInteger i = 0; i < self.sectionModel.itemsArray.count; i++) {
-            ZZFlexibleLayoutViewModel *viewModel = [self.sectionModel objectAtIndex:i];
+            ZZFLEXViewModel *viewModel = [self.sectionModel objectAtIndex:i];
             if (viewModel.viewTag == self.insertTag) {
                 index = (self.status & ZZFLEXInsertDataStatusBefore) ? i : i + 1;
                 break;

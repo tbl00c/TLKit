@@ -6,11 +6,11 @@
 //  Copyright © 2020 libokun. All rights reserved.
 //
 
-#import "ZZFlexibleLayoutViewController.h"
+#import <ZZFLEX/ZZFLEXCollectionViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TLActionSheetDemoViewController : ZZFlexibleLayoutViewController
+@interface TLActionSheetDemoViewController : ZZFLEXCollectionViewController
 
 @end
 

@@ -8,6 +8,6 @@
 
 #import <ZZFLEX/ZZFLEX.h>
 
-@interface TLViewController : ZZFlexibleLayoutViewController
+@interface TLViewController : ZZFLEXCollectionViewController
 
 @end

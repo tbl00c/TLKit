@@ -22,9 +22,6 @@
     [self setTitle:@"TLToast"];
     
     [self.view setBackgroundColor:RGBColor(240, 239, 245)];
-    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(0);
-    }];
     [self reloadTestMenu];
 }
 

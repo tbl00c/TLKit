@@ -34,9 +34,6 @@
     
     [self.view setBackgroundColor:RGBColor(240, 239, 245)];
     [self reloadTestMenu];
-    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(0);
-    }];
 }
 
 - (void)reloadTestMenu
