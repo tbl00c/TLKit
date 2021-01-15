@@ -22,6 +22,7 @@
 @property (nonatomic, assign) BOOL tapDisable;
 @property (nonatomic, assign) BOOL animatedDisable;
 @property (nonatomic, assign) NSInteger superType;
+@property (nonatomic, assign) BOOL edgeInsets;
 
 @end
 
@@ -57,7 +58,7 @@
         }
         
         {
-            TLMenuSelectItem *item = [TLMenuSelectItem createWithTitle:@"父视图" menuItems:@[@"nil", @"self.view", @"self.nav", @"keyWindow"]];
+            TLMenuSelectItem *item = [TLMenuSelectItem createWithTitle:@"父视图" menuItems:@[@"nil", @"self.view", @"keyWindow"]];
             item.selectedIndex = self.superType;
             self.addCell([TLMenuSelectItemCell class]).toSection(sectionType).withDataModel(item).eventAction(^ id(NSInteger type, NSNumber *index) {
                 @strongify(self);
@@ -93,6 +94,15 @@
                 return nil;
             });
         }
+        
+        {
+            TLMenuSwitchItem *item = [TLMenuSwitchItem createWithTitle:@"边距20" on:self.edgeInsets];
+            self.addCell([TLMenuSwitchItemCell class]).toSection(sectionType).withDataModel(item).eventAction(^ id(NSInteger type, NSNumber *index) {
+                @strongify(self);
+                self.edgeInsets = index.boolValue;
+                return nil;
+            });
+        }
     }
     
     
@@ -118,14 +128,15 @@
         cover.maskView.disableTapEvent = self.tapDisable;
         [cover setContentVC:vc];
         
+        if (self.edgeInsets) {
+            cover.edgeInsets = UIEdgeInsetsMake(20, 20, 20, 20);
+        }
+        
         __kindof UIView *view;
         if (self.superType == 1) {
             view = self.view;
         }
         else if (self.superType == 2) {
-            view = self.navigationController.view;
-        }
-        else if (self.superType == 3) {
             view = [UIApplication sharedApplication].keyWindow;
         }
         [cover showInView:view animated:!self.animatedDisable];

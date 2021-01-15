@@ -8,10 +8,11 @@
 /*
  遮罩视图容器
  
- self大小与content一致，也可以直接addSubView
+ self大小与super一致，也可以直接addSubView
  */
 
 #import <UIKit/UIKit.h>
+#import "ITLCoverStyleAnimated.h"
 #import "TLMaskView.h"
 
 typedef NS_ENUM(NSInteger, TLCoverStyle) {
@@ -28,12 +29,15 @@ typedef NS_ENUM(NSInteger, TLCoverStyle) {
 @property (nonatomic, weak) __kindof UIView *contentView;
 @property (nonatomic, weak) __kindof UIViewController *contentVC;
 
+@property (nonatomic, assign) UIEdgeInsets edgeInsets;
 /// 动效时间（默认0.25）
 @property (nonatomic, assign) CGFloat animatedDuration;
 /// 背景遮罩视图
 @property (nonatomic, strong, readonly) TLMaskView *maskView;
 /// cover风格
 @property (nonatomic, assign) TLCoverStyle style;
+/// style为TLCoverStyleUserDefine有效
+@property (nonatomic, strong) NSObject<ITLCoverStyleAnimated> *userDefineStyleAnimated;
 /// 是否正在显示
 @property (nonatomic, assign, readonly) BOOL isShowing;
 /// 动画

@@ -6,10 +6,21 @@
 //
 
 #import "TLCover.h"
+#import "TLMacros.h"
 #import <Masonry/Masonry.h>
 
+#import "TLCoverStyleTopAnimated.h"
+#import "TLCoverStyleBottomAnimated.h"
+#import "TLCoverStyleLeftAnimated.h"
+#import "TLCoverStyleRightAnimated.h"
+#import "TLCoverStyleCenterAnimated.h"
+
+#pragma mark - ## TLCover
 @interface TLCover ()
 
+@property (nonatomic, strong) UIView *realContentView;
+@property (nonatomic, strong) NSObject<ITLCoverStyleAnimated> *styleAnimated;
+@property (nonatomic, weak, readonly) NSObject<ITLCoverStyleAnimated> *realStyleAnimated;
 @property (nonatomic, assign) CGRect sourceRect;
 @property (nonatomic, assign) CGRect targetRect;
 
@@ -32,8 +43,24 @@
         self.animated = YES;
         self.animatedDuration = 0.25;
         [self.maskView addSubview:self];
+        [self mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(0);
+        }];
+        [self addSubview:self.realContentView];
     }
     return self;
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    for (UIView *subView in self.subviews) {
+        CGPoint sp = [self convertPoint:point toView:subView];
+        UIView *view = [subView hitTest:sp withEvent:event];
+        if (view) {
+            return view                         ;
+        }
+    }
+    return self.maskView;
 }
 
 - (void)setContentVC:(__kindof UIViewController *)contentVC
@@ -43,9 +70,9 @@
         [_contentVC.view removeFromSuperview];
     }
     _contentVC = contentVC;
-    [contentVC.view removeFromSuperview];
-    [self addSubview:contentVC.view];
-    [self resetContentFrame];
+    [self.realContentView addSubview:contentVC.view];
+    self.realContentView.frame = contentVC.view.bounds;
+    contentVC.view.frame = self.realContentView.bounds;
 }
 
 - (void)setContentView:(__kindof UIView *)contentView
@@ -54,51 +81,30 @@
     if (_contentView) {
         [_contentView removeFromSuperview];
     }
-    [contentView removeFromSuperview];
-    [self addSubview:contentView];
-    [self resetContentFrame];
+    [self.realContentView addSubview:contentView];
+    self.realContentView.frame = contentView.bounds;
+    contentView.frame = self.realContentView.bounds;
 }
 
-- (void)resetContentFrame
+- (void)setStyle:(TLCoverStyle)style
 {
-    if (_contentVC) {
-        self.frame = _contentVC.view.bounds;
-        _contentVC.view.frame = self.bounds;
+    _style = style;
+    _styleAnimated = nil;
+    if (_style == TLCoverStyleBottom) {
+        _styleAnimated = [[TLCoverStyleBottomAnimated alloc] init];
     }
-    else if (_contentView) {
-        self.frame = _contentView.bounds;
-        _contentView.frame = self.bounds;
+    else if (style == TLCoverStyleTop) {
+        _styleAnimated = [[TLCoverStyleTopAnimated alloc] init];
     }
-}
-
-#pragma mark - # Content显示与隐藏
-- (void)_resetContentRect:(CGSize)viewSize
-{
-    CGSize targetSize = self.frame.size;
-    CGRect sourceRect = CGRectMake(0, 0, targetSize.width, targetSize.height);
-    CGRect targetRect = CGRectMake(0, 0, targetSize.width, targetSize.height);
-    if (self.style == TLCoverStyleTop) {
-        sourceRect.origin.y = -targetSize.height;
+    else if (style == TLCoverStyleLeft) {
+        _styleAnimated = [[TLCoverStyleLeftAnimated alloc] init];
     }
-    else if (self.style == TLCoverStyleBottom) {
-        sourceRect.origin.y = viewSize.height;
-        targetRect.origin.y = viewSize.height - targetSize.height;
+    else if (style == TLCoverStyleRight) {
+        _styleAnimated = [[TLCoverStyleRightAnimated alloc] init];
     }
-    else if (self.style == TLCoverStyleLeft) {
-        sourceRect.origin.x = -targetSize.width;
+    else if (style == TLCoverStyleCenter) {
+        _styleAnimated = [[TLCoverStyleCenterAnimated alloc] init];
     }
-    else if (self.style == TLCoverStyleRight) {
-        sourceRect.origin.x = viewSize.width;
-        targetRect.origin.x = viewSize.width - targetSize.width;
-    }
-    else if (self.style == TLCoverStyleCenter) {
-        targetRect.origin.x = (viewSize.width - targetSize.width) / 2.0;
-        targetRect.origin.y = (viewSize.height - targetSize.height) / 2.0;
-        sourceRect.origin.x = targetRect.origin.x;
-        sourceRect.origin.y = targetRect.origin.y;
-    }
-    self.sourceRect = sourceRect;
-    self.targetRect = targetRect;
 }
 
 #pragma mark - # 显示与隐藏
@@ -123,27 +129,12 @@
         return;
     }
     self.animated = animated;
-    [self resetContentFrame];
     [self.maskView showInView:view animated:NO];
-    [self _resetContentRect:self.maskView.frame.size];
-    
-    if (animated) {
-        [self setFrame:self.sourceRect];
-        self.maskView.alpha = 0;
-        if (self.style == TLCoverStyleCenter) {
-            self.alpha = 0;
-        }
-        [UIView animateWithDuration:self.animatedDuration animations:^{
-            self.alpha = 1;
-            self.maskView.alpha = 1;
-            self.frame = self.targetRect;
-        } completion:^(BOOL finished) {
-            
-        }];
-    }
-    else {
-        [self setFrame:self.targetRect];
-    }
+    [self.styleAnimated show:self contentView:self.realContentView animated:animated willShowAction:^(NSObject<ITLCoverStyleAnimated> *styleAnimated) {
+        
+    } didShowAction:^(NSObject<ITLCoverStyleAnimated> *styleAnimated) {
+        
+    }];
 }
 
 - (void)dismiss
@@ -153,28 +144,35 @@
 
 - (void)dismissWithAnimated:(BOOL)animated
 {
-    void (^dismissAction)(void) = ^{
+    @weakify(self);
+    [self.styleAnimated dismiss:self contentView:self.realContentView animated:animated willDismissAction:^(NSObject<ITLCoverStyleAnimated> *styleAnimated) {
+            
+    } didDismissAction:^(NSObject<ITLCoverStyleAnimated> *styleAnimated) {
+        @strongify(self);
         [self.maskView dismissWithAnimated:NO];
         [self removeFromSuperview];
         self.maskView = nil;
-    };
-    if (animated) {
-        [UIView animateWithDuration:self.animatedDuration animations:^{
-            self.maskView.alpha = 0;
-            if (self.style == TLCoverStyleCenter) {
-                self.alpha = 0;
-            }
-            self.frame = self.sourceRect;
-        } completion:^(BOOL finished) {
-            dismissAction();
-        }];
-    }
-    else {
-        dismissAction();
-    }
+    }];
 }
 
 #pragma mark - # Getter
+- (UIView *)realContentView
+{
+    if (!_realContentView) {
+        _realContentView = [[UIView alloc] init];
+        [_realContentView setBackgroundColor:[UIColor clearColor]];
+    }
+    return _realContentView;
+}
+
+- (NSObject<ITLCoverStyleAnimated> *)realStyleAnimated
+{
+    if (self.style == TLCoverStyleUserDefine) {
+        return self.userDefineStyleAnimated;
+    }
+    return self.styleAnimated;
+}
+
 - (TLMaskView *)maskView
 {
     if (!_maskView) {
