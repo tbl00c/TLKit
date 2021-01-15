@@ -46,6 +46,7 @@
         }];
         self.segmentControl.zz_setup.eventBlock(UIControlEventValueChanged, ^(id sender) {
             @strongify(self);
+            [(TLMenuSelectItem *)self.menuItem setSelectedIndex:self.segmentControl.selectedSegmentIndex];
             if (self.viewEventAction) {
                 self.viewEventAction(0, @(self.segmentControl.selectedSegmentIndex));
             }

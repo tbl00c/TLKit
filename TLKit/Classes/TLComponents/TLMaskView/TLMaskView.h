@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, TLMaskViewStyle) {
 @property (nonatomic, assign) TLMaskViewStyle style;
 
 @property (nonatomic, assign) UIEdgeInsets *edgeInsets;
-/// 动画时长，默认0.2
+/// 动画时长，默认0.15
 @property (nonatomic, assign) CGFloat animationDuration;
 /// 是否正在显示
 @property (nonatomic, assign, readonly) BOOL isShowing;

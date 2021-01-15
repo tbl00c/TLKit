@@ -20,7 +20,6 @@
 
 @end
 
-
 @implementation TLMenuSwitchItemCell
 
 - (void)setViewDataModel:(TLMenuSwitchItem *)dataModel
@@ -40,6 +39,7 @@
         })
         .eventBlock(UIControlEventValueChanged, ^(UISwitch *sender) {
             @strongify(self);
+            [(TLMenuSwitchItem *)self.menuItem setOn:sender.on];
             if (self.viewEventAction) {
                 self.viewEventAction(0, @(sender.on));
             }

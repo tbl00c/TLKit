@@ -30,7 +30,7 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        _animationDuration = 0.1;
+        _animationDuration = 0.15;
         _animated = YES;
         [self setBackgroundColor:[UIColor colorShadow]];
         [self setDisableTapEvent:NO];

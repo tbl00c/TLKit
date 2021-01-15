@@ -16,6 +16,8 @@
 
 @interface TLMenuItemCell : UICollectionViewCell <ZZFlexibleLayoutViewProtocol>
 
+@property (nonatomic, strong) TLMenuItem *menuItem;
+
 @property (nonatomic, strong) UILabel *titleLabel;
 
 @property (nonatomic, copy) id (^viewEventAction)(NSInteger, id);

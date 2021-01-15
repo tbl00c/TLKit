@@ -28,7 +28,7 @@
 - (void)loadView
 {
     [super loadView];
-    [self setTitle:@"TLCover"];
+    [self setTitle:@"TLMaskView"];
     
     [self.view setBackgroundColor:RGBColor(240, 239, 245)];
     [self reloadTestMenu];

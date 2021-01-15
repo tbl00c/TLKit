@@ -21,6 +21,7 @@
 
 - (void)setViewDataModel:(id)dataModel
 {
+    _menuItem = dataModel;
     if ([dataModel isKindOfClass:[NSString class]]) {
         [self.titleLabel setText:dataModel];
     }
