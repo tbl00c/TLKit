@@ -7,6 +7,11 @@
 
 #import <UIKit/UIKit.h>
 
+#define     SPACE_TITLE_LEFT            22.0f
+#define     SPACE_TITLE_TOP             20.0f
+#define     SPACE_MIDDEL                8.0f
+#define     MAX_TABLEVIEW_HEIGHT        self.frame.size.height * 0.6
+
 @interface TLActionSheetAppearance : NSObject
 
 @property (nonatomic, strong) UIColor *shadowColor;

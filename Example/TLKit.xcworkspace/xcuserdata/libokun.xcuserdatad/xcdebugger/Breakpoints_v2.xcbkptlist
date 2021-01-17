@@ -15,5 +15,53 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A447A52B-1162-4B8C-9306-A7F18FF22452"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../TLKit/Classes/TLComponents/TLCover/TLCover.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "-showInView:animated:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A447A52B-1162-4B8C-9306-A7F18FF22452 - eaab17c425a72cd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TLCover showInView:animated:]"
+                  moduleName = "TLKit_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/libokun/lbk/Project/TLKit/TLKit/Classes/TLComponents/TLCover/TLCover.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "A447A52B-1162-4B8C-9306-A7F18FF22452 - 84ba31660e276ab5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__31-[TLCover showInView:animated:]_block_invoke"
+                  moduleName = "TLKit_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/libokun/lbk/Project/TLKit/TLKit/Classes/TLComponents/TLCover/TLCover.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

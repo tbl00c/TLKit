@@ -45,12 +45,13 @@ Pod::Spec.new do |s|
 
     # TLActionSheet
     founc.subspec 'TLActionSheet' do |ss|
-      ss.source_files = funcPath + "TLActionSheet/*.{h,m}"
+      ss.source_files = funcPath + "TLActionSheet/**/*.{h,m}"
+      ss.dependency 'TLKit/TLComponents/TLCover'
     end
     
     # TLAlertView
     founc.subspec 'TLAlertView' do |ss|
-      ss.source_files = funcPath + "TLAlertView/*.{h,m}"
+      ss.source_files = funcPath + "TLAlertView/**/*.{h,m}"
     end
 
     # TLBadge

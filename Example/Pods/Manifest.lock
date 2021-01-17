@@ -95,7 +95,8 @@ PODS:
     - TLKit/TLComponents/TLToast (= 2.0)
   - TLKit/TLComponents/GKCover (2.0)
   - TLKit/TLComponents/RSA (2.0)
-  - TLKit/TLComponents/TLActionSheet (2.0)
+  - TLKit/TLComponents/TLActionSheet (2.0):
+    - TLKit/TLComponents/TLCover
   - TLKit/TLComponents/TLAlertnateIconManager (2.0)
   - TLKit/TLComponents/TLAlertView (2.0)
   - TLKit/TLComponents/TLAlwaysActivity (2.0)
@@ -144,7 +145,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TLKit: 2e5b923794af6fcf7596585c20c02a61441835f5
+  TLKit: 0c9bdb23a9465a779a7625f80d85e05df34f5a6c
   ZZFLEX: 27aee319fa25913822ea6d0a341d4243b43c02f7
 
 PODFILE CHECKSUM: af38079c417e46457400decaba8b6a937db554a1

@@ -30,14 +30,19 @@ typedef NS_ENUM(NSInteger, TLActionSheetItemType) {
 /// 类型
 @property (nonatomic, assign) TLActionSheetItemType type;
 
-/// 标题
-@property (nonatomic, strong) NSString *title;
-/// 副标题
-@property (nonatomic, strong) NSString *message;
+/// 左侧图标（支持NSString、UIImage, UIView）
+@property (nonatomic, strong) id leftIcon;
+/// 标题（支持NSString、NSAttributeString、UIImage, UIView）
+@property (nonatomic, strong) id title;
+/// 右侧图标（支持NSString、UIImage, UIView）
+@property (nonatomic, strong) id rightIcon;
+
+/// 副标题（支持NSString、NSAttributeString, UIView）
+@property (nonatomic, strong) id message;
+
 /// 点击事件
 @property (nonatomic, copy) TLActionSheetItemClickAction clickAction;
-/// 红点，空字符串显示数字，其他直接显示
-//@property (nonatomic, strong) NSString *badge;
+
 /// 自定义类型
 @property (nonatomic, strong) UIView *customView;
 
@@ -51,34 +56,33 @@ typedef NS_ENUM(NSInteger, TLActionSheetItemType) {
 @property (nonatomic, strong) UIColor *messageColor;
 @property (nonatomic, strong) UIFont *messageFont;
 
-- (instancetype)initWithTitle:(NSString *)title clickAction:(TLActionSheetItemClickAction)clickAction;
-- (instancetype)initWithTitle:(NSString *)title message:(NSString *)message clickAction:(TLActionSheetItemClickAction)clickAction;
-- (instancetype)initWithType:(TLActionSheetItemType)type title:(NSString *)title clickAction:(TLActionSheetItemClickAction)clickAction;
-- (instancetype)initWithType:(TLActionSheetItemType)type title:(NSString *)title message:(NSString *)message clickAction:(TLActionSheetItemClickAction)clickAction;
+- (instancetype)initWithTitle:(id)title clickAction:(TLActionSheetItemClickAction)clickAction;
+- (instancetype)initWithTitle:(id)title message:(id)message clickAction:(TLActionSheetItemClickAction)clickAction;
+- (instancetype)initWithType:(TLActionSheetItemType)type title:(id)title clickAction:(TLActionSheetItemClickAction)clickAction;
+- (instancetype)initWithType:(TLActionSheetItemType)type title:(id)title message:(id)message clickAction:(TLActionSheetItemClickAction)clickAction;
 
 @end
 
 #pragma mark - # TLActionSheet
 @interface TLActionSheet : UIView
 
-/// 标题
-@property (nonatomic, strong) NSString *title;
-/// 自定义头部视图
-@property (nonatomic, strong) UIView *customHeaderView;
+/// 标题 (支持NSString、NSAttributeString、UIView)
+@property (nonatomic, strong) id title;
+
 /// 按钮（不包含取消按钮）
 @property (nonatomic, strong, readonly) NSArray<TLActionSheetItem *> *items;
 
-- (instancetype)initWithTitle:(NSString *)title;
-- (instancetype)initWithTitle:(NSString *)title items:(NSArray<TLActionSheetItem *> *)items;
+- (instancetype)initWithTitle:(id)title;
+- (instancetype)initWithTitle:(id)title items:(NSArray<TLActionSheetItem *> *)items;
 
 - (void)addItem:(TLActionSheetItem *)item;
 
-- (void)addItemWithTitle:(NSString *)title clickAction:(TLActionSheetItemClickAction)clickAction;
-- (void)addItemWithTitle:(NSString *)title message:(NSString *)message clickAction:(TLActionSheetItemClickAction)clickAction;
-- (void)addDestructiveItemWithTitle:(NSString *)title clickAction:(TLActionSheetItemClickAction)clickAction;
+- (void)addItemWithTitle:(id)title clickAction:(TLActionSheetItemClickAction)clickAction;
+- (void)addItemWithTitle:(id)title message:(id)message clickAction:(TLActionSheetItemClickAction)clickAction;
+- (void)addDestructiveItemWithTitle:(id)title clickAction:(TLActionSheetItemClickAction)clickAction;
 - (void)addCustomViewItem:(UIView *)customView clickAction:(TLActionSheetItemClickAction)clickAction;
 
-- (void)setCancelItemTitle:(NSString *)title clickAction:(TLActionSheetItemClickAction)clickAction;
+- (void)setCancelItemTitle:(id)title clickAction:(TLActionSheetItemClickAction)clickAction;
 
 - (void)show;
 - (void)dismiss;
@@ -106,4 +110,3 @@ destructiveButtonTitle:(NSString *)destructiveButtonTitle
   otherButtonTitles:(NSString *)otherButtonTitles, ...;
 
 @end
-

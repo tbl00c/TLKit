@@ -53,11 +53,16 @@
         },
         {
           "name": "TLActionSheet",
-          "source_files": "TLKit/Classes/TLComponents/TLActionSheet/*.{h,m}"
+          "source_files": "TLKit/Classes/TLComponents/TLActionSheet/**/*.{h,m}",
+          "dependencies": {
+            "TLKit/TLComponents/TLCover": [
+
+            ]
+          }
         },
         {
           "name": "TLAlertView",
-          "source_files": "TLKit/Classes/TLComponents/TLAlertView/*.{h,m}"
+          "source_files": "TLKit/Classes/TLComponents/TLAlertView/**/*.{h,m}"
         },
         {
           "name": "TLToast",

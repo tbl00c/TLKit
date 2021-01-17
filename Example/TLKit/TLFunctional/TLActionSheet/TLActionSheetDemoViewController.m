@@ -119,8 +119,7 @@
             [label setText:@"Hi"];
             [label setTextAlignment:NSTextAlignmentCenter];
             
-            TLActionSheet *actionSheet = [[TLActionSheet alloc] initWithTitle:nil];
-            [actionSheet setCustomHeaderView:label];
+            TLActionSheet *actionSheet = [[TLActionSheet alloc] initWithTitle:label];
             for (NSInteger i = 0; i < 5; i++) {
                 [actionSheet addItemWithTitle:[NSString stringWithFormat:@"按钮 %ld", i] clickAction:clickAction];
             }

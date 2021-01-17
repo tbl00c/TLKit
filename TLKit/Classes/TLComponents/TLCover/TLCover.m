@@ -71,8 +71,10 @@
     }
     _contentVC = contentVC;
     [self.realContentView addSubview:contentVC.view];
-    self.realContentView.frame = contentVC.view.bounds;
-    contentVC.view.frame = self.realContentView.bounds;
+    [self.realContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(contentVC.view);
+    }];
+    [self layoutIfNeeded];
 }
 
 - (void)setContentView:(__kindof UIView *)contentView
@@ -82,8 +84,10 @@
         [_contentView removeFromSuperview];
     }
     [self.realContentView addSubview:contentView];
-    self.realContentView.frame = contentView.bounds;
-    contentView.frame = self.realContentView.bounds;
+    [self.realContentView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(contentView);
+    }];
+    [self layoutIfNeeded];
 }
 
 - (void)setStyle:(TLCoverStyle)style
